@@ -1,5 +1,15 @@
 $(document).ready(function() {
 
+  /*
+  $(".single-product").each(function(){
+    $(this).on("mouseenter", function(){
+      $(this).find("video").trigger("play");
+    });
+    $(this).on("mouseleave", function(){
+      $(this).find("video").trigger("pause");
+    });
+  });
+  */
   
   $("#header .menu-btn").click(function(){
     $('body').toggleClass("open-menu");
@@ -18,7 +28,15 @@ $(document).ready(function() {
     return false;
   });
 
-  
+  $(".tabs1 .tab-header").on("click", function() {
+      $(this).parent().toggleClass("open");
+  })
+
+  $('.tabs1 .nav button').click(function () {
+      $(this).parents(".tabs1").find(".title").text($(this).text());
+      $(this).parents('.tabs1').removeClass('open');
+  });
+ 
    $('.carousel1').owlCarousel({
     loop:true,
     autoplay:true,
@@ -40,7 +58,6 @@ $(document).ready(function() {
     }
   });
  
-
 $('.carousel2').owlCarousel({
   center: true,
   items:3,
@@ -63,6 +80,17 @@ $('.carousel2').owlCarousel({
       items:6,
     }
   }
+});
+
+$('.carousel3').owlCarousel({
+  loop: true,
+  autoplay:false,
+  autoplaySpeed: 2000,
+   slideTransition: 'linear',
+  nav: true,
+  items: 3,
+  center: true,
+  mouseDrag: false,
 });
 
 $('.slideshow2').each(function(){
@@ -103,6 +131,28 @@ $('.slideshow2-nav').each(function(){
     ]
   });
 });
+
+const Items = document.querySelectorAll(".carousel3 .item");
+  for (var i = 0; i < Items.length; i++) {
+    const cells = Items[i].getElementsByTagName('h4');
+    for (let cell of cells) {
+      let chars = cell.getAttribute('data-chars');
+      new CircleType(cell)
+        .dir(-1)
+        .radius(chars);
+    }
+  }
+
+  const MYcookies = document.querySelectorAll(".about-cookies .column");
+  for (var i = 0; i < MYcookies.length; i++) {
+    const cells = MYcookies[i].getElementsByTagName('h4');
+    for (let cell of cells) {
+      let chars = cell.getAttribute('data-chars');
+      new CircleType(cell)
+        .dir(-1)
+        .radius(chars);
+    }
+  }
 
 $('.gallery1').height($('.gallery1 img').outerHeight());
 
