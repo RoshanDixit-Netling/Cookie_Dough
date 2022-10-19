@@ -1,0 +1,179 @@
+<!-- section -->
+        <div class="section our-stores">
+          <div class="container">
+            <div class="row">
+              {% for block in section.blocks %}
+                {% case block.type %}
+                  {% when 'store' %}
+                      <div class="col-lg-4 col-md-6 column">
+                        <div class="box1">
+                          <figure class="figure1">
+                            <img class="w-100" src="{{ block.settings.store-image | image_url }}" alt="{{ block.settings.store-image.alt }}">
+                          </figure>
+                          <div class="content">
+                            <h2><a href="#">{{ block.settings.store-location }} </a></h2>
+                            {{ block.settings.store-address }}
+                            <div class="timings-chart">
+                              <a href="#" class="toggle-btn"><span>{{ block.settings.timing-label }}</span> <i class="icon"><img src="{{ 'down-arrow.svg' | asset_url }}" alt="arrow"></i></a>
+                              <table class="custom-table1">
+                                <tbody>
+                                  <tr>
+                                    <td class="week">MON:</td>
+                                    <td> {{ block.settings.mon-timing }} </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="week">TUE:</td>
+                                    <td> {{ block.settings.tue-timing }} </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="week">WED:</td>
+                                    <td> {{ block.settings.wed-timing }} </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="week">THU:</td>
+                                    <td> {{ block.settings.thu-timing }} </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="week">FRI:</td>
+                                    <td> {{ block.settings.fri-timing }} </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="week">SAT:</td>
+                                    <td> {{ block.settings.sat-timing }} </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="week">SUN</td>
+                                    <td> {{ block.settings.sun-timing }} </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <footer>
+                            <a href="{{ block.settings.button-url }}" class="btn btn-primary bg-color1">{{ block.settings.button-label }}</a>
+                          </footer>
+                        </div>
+                      </div>
+                {% endcase %}
+              {% endfor %}
+            </div>
+            <footer class="text-center pt-4 pt-lg-5">
+              <span class="note"> {{ section.settings.more-store-label }} </span>
+            </footer>
+          </div>
+        </div>
+<!-- /section -->
+
+
+{% schema %}
+  {
+    "name": "Our Stores",
+    "settings": [
+      {
+        "id": "more-store-label",
+        "type": "text",
+        "label": "More Stores Opening Label",
+        "default": "More UK Stores opening soon!"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Store",
+        "type": "store",
+        "settings": [
+          {
+            "id": "store-image",
+            "type": "image_picker",
+            "label": "Image"
+          },
+          {
+            "id": "store-location",
+            "type": "text",
+            "label": "Location",
+            "default": "Location(City)"
+          },
+          {
+            "id": "store-address",
+            "type": "richtext",
+            "label": "Address",
+            "default": "<p>Address of the shop</p>"
+          },
+          {
+            "type": "header",
+            "content": "Timings"
+          },
+          {
+            "id": "timing-label",
+            "type": "text",
+            "label": "Timing Label",
+            "default": "OPENING TIMES"
+          },
+          {
+            "id": "mon-timing",
+            "type": "text",
+            "label": "MON",
+            "default": "9:00 AM - 6:00 PM"
+          },
+          {
+            "id": "tue-timing",
+            "type": "text",
+            "label": "TUE",
+            "default": "9:00 AM - 6:00 PM"
+          },
+          {
+            "id": "wed-timing",
+            "type": "text",
+            "label": "WED",
+            "default": "9:00 AM - 6:00 PM"
+          },
+          {
+            "id": "thu-timing",
+            "type": "text",
+            "label": "THU",
+            "default": "9:00 AM - 6:00 PM"
+          },
+          {
+            "id": "fri-timing",
+            "type": "text",
+            "label": "FRI",
+            "default": "9:00 AM - 6:00 PM"
+          },
+          {
+            "id": "sat-timing",
+            "type": "text",
+            "label": "SAT",
+            "default": "9:00 AM - 6:00 PM"
+          },
+          {
+            "id": "sun-timing",
+            "type": "text",
+            "label": "SUN",
+            "default": "11:00 AM - 5:00 PM"
+          },
+          {
+            "id": "button-label",
+            "type": "text",
+            "label": "Button Label",
+            "default": "Get Directions"
+          },
+		  {
+            "id": "button-url",
+            "type": "text",
+            "label": "Google Map URL"
+          }
+        ]
+      }
+    ],
+	"presets": [
+		{
+			"name": "Our Stores"
+		}
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

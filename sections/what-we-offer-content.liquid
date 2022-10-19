@@ -1,0 +1,52 @@
+                <h2>{{ section.settings.heading }}</h2>
+                <ul class="list2">
+                  {% for block in section.blocks %}
+                    {% case block.type %}
+                      {% when 'offer' %}
+                        <li>{{ block.settings.offer-text }}</li>
+                    {% endcase %}
+                  {% endfor %}
+                </ul>
+                <footer>
+                  <a href="#" class="btn btn-primary btn-xl w-100">{{ section.settings.button-label }}</a>
+                </footer>
+
+{% schema %}
+  {
+    "name": "What We Offer Content",
+	"class": "col-xl-5 col-md-6 ps-lg-4",
+    "settings": [
+		{
+			"id": "heading",
+			"type": "text",
+			"label": "Heading",
+			"default": "What we offer…"
+		},
+        {
+			"id": "button-label",
+			"type": "text",
+			"label": "Button Label",
+			"default": "Enquire Now"
+		}
+	],
+	"blocks": [
+		{
+			"name": "Offer",
+			"type": "offer",
+			"settings": [
+				{
+                    "id": "offer-text",
+                    "type": "textarea",
+                    "label": "Content",
+                    "default": "Offer goes here"
+                }
+			]
+		}
+	],
+	"presets": [
+		{
+			"name": "What We Offer Content"
+		}
+	]
+  }
+{% endschema %}

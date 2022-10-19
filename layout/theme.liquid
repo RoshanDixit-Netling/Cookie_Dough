@@ -1,0 +1,53 @@
+<!doctype html>
+<html class="">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Page Title -->
+    {% if request.path == '/' %}
+    	<title>Home | My Cookie Dough</title>
+    {% else %}
+    	<title>{{ page_title }} | My Cookie Dough</title>
+   	{% endif %}
+    <!-- Stylesheets -->
+    {{ 'bootstrap.css' | asset_url | stylesheet_tag }}
+    {{ 'owl.carousel-min.css' | asset_url | stylesheet_tag }}
+    {{ 'slick.css' | asset_url | stylesheet_tag }}
+    {{ 'jquery-ui.css' | asset_url | stylesheet_tag }}
+    {{ 'main.css' | asset_url | stylesheet_tag }}
+    {{ 'fontawesome-webfont.css' | asset_url | stylesheet_tag }}
+
+    <!-- Javascript -->
+    {{ 'head.core.js' | asset_url | script_tag }}
+    {{ 'lt-ie-9.js' | asset_url | script_tag }}
+    
+    {{ content_for_header }}
+  </head>
+  {% if request.path contains "products" %}
+    <body class="bg-color2">
+  {% else %}
+    <body class="bg-color1">
+  {% endif %}
+    <!-- container -->
+    <div id="container">
+       {% section 'header' %}
+       <div id="content">
+         {{ content_for_layout }}
+       </div>
+       {% section 'footer' %}
+    </div>
+  
+    <!-- Footer Javascript -->
+    {{ 'jquery.js' | asset_url | script_tag }}
+    {{ 'popper.js' | asset_url | script_tag }}
+    {{ 'bootstrap.js' | asset_url | script_tag }}
+    {{ 'ofi.browser.js' | asset_url | script_tag }}
+    {{ 'owl.carousel-min.js' | asset_url | script_tag }}
+    {{ 'slick.min.js' | asset_url | script_tag }}
+    {{ 'skrollr.js' | asset_url | script_tag }}
+    {{ 'jquery-ui.js' | asset_url | script_tag }}
+    {{ 'main.js' | asset_url | script_tag }}
+  </body>
+</html>

@@ -1,0 +1,117 @@
+<!-- section -->
+        <div class="section enquiry relative overflow-hidden">
+          <div class="container relative">
+            <div class="row justify-content-center">
+              <div class="col-md-10">
+                <div class="row mb-4">
+                  <div class="col-lg-8">
+                    <h2>{{ section.settings.heading }}</h2>
+                    {{ section.settings.text }}
+                  </div>
+                </div>
+                <div class="form">
+                  {% form 'contact' %}
+                    <div class="row">
+                      <div class="col-md-6 form-group">
+                        <input type="text" name="contact[name]" placeholder="Name" class="form-control">
+                      </div>
+                      <div class="col-md-6 form-group">
+                        <input type="text" name="contact[business_name]" placeholder="Business Name" class="form-control">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12 form-group">
+                        <input type="email" name="contact[email]" placeholder="Email Address" class="form-control">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12 form-group">
+                        <input type="text" name="contact[event_date]" placeholder="Event Date (if applicable)" id="datepicker" class="form-control calendar">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12 form-group">
+                        <input type="text" name="contact[number_of_cookies]" placeholder="Number of cookies for event or number of boxes of cookies" class="form-control">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12 form-group">
+                        <textarea name="contact[body]" placeholder="Message" class="form-control"></textarea>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12 form-group">
+                        <label class="file-upload" for="formFile">
+                          <span class="btn btn-outline-primary">Choose File</span>
+                          <span class="file-name">No file chosen</span>
+                          <input class="form-control" type="file" name="contact[file]" id="formFile">
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12 form-group">
+                        <button type="submit" class="btn btn-primary w-100">{{ section.settings.button-label }}</button>
+                      </div>
+                    </div>
+                  {% endform %}
+                </div>
+              </div>
+            </div>
+          </div>
+          <span class="cloud cloud1">
+          </span>
+          <span class="cloud cloud2">
+          </span>
+          <span class="cloud cloud3">
+          </span>
+          <span class="cloud cloud4">
+          </span>
+        </div>
+<!-- /section -->
+
+
+{% schema %}
+  {
+    "name": "Enquiry Form",
+    "settings": [
+		{
+			"id": "heading",
+			"type": "text",
+			"label": "Heading",
+			"default": "Enquiry form"
+		},
+		{
+			"id": "text",
+			"type": "richtext",
+			"label": "Text",
+			"default": "<p>Get in touch today! We will do our very best to meet your bespoke corporate gifting needs! </p>"
+		},
+		{
+			"id": "button-label",
+			"type": "text",
+			"label": "Send Button Label",
+			"default": "Send Enquiry"
+		}
+	],
+	"presets": [
+		{
+			"name": "Enquiry Form"
+		}
+	]
+  }
+{% endschema %}
+
+{% javascript %}
+
+let formFile = document.getElementById("formFile");
+let fileName = document.querySelector('.file-name');
+formFile.addEventListener("change", function () {
+    if(formFile.files[0] != undefined){
+        fileName.innerText = formFile.files[0].name;
+    }
+	else{
+		fileName.innerText = "No file chosen";
+	}
+});
+
+{% endjavascript %}

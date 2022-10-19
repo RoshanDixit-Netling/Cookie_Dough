@@ -1,0 +1,50 @@
+<!-- section -->
+        <div class="section pb-0">
+          <div class="container">
+            <div class="owl-carousel carousel1">
+              {% for block in section.blocks %}
+                {% case block.type %}
+                  {% when 'image' %}
+                    <div class="item">
+                      <figure class="figure1">
+                        <img class="w-100" src="{{ block.settings.slider-image | image_url }}" alt="{{ block.settings.slider-image.alt }}">
+                      </figure>
+                    </div>
+               {% endcase %}
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+<!-- /section -->
+
+
+{% schema %}
+  {
+    "name": "Image Slider",
+    "settings": [],
+    "blocks": [
+      {
+        "name": "Image",
+        "type": "image",
+        "settings": [
+          {
+            "id": "slider-image",
+            "type": "image_picker",
+            "label": "Upload Image"
+          }
+        ]
+      }
+    ],
+	"presets": [
+		{
+			"name": "Image Slider"
+		}
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,111 @@
+<div class="section single-product-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-5 col-md-12 order-lg-2 column mb-lg-0">
+                <div class="product-image-slider">
+                  <div class="slideshow2 slick-slider">
+                    <div>
+                      <img src="{{ product.featured_image | image_url }}" alt="img">
+                    </div>
+                    <div>
+                      <img src="{{ product.featured_image | image_url }}" alt="img">
+                    </div>
+                    <div>
+                      <img src="{{ product.featured_image | image_url }}" alt="img">
+                    </div>
+                  </div>
+                  <div class="slideshow2-nav slick-slider">
+                    <div class="slick-slide">
+                      <span class="thumb-img">
+                        <img src="{{ 'thumb1.jpg' | asset_url }}" alt="img">
+                      </span>
+                    </div>
+                    <div class="slick-slide">
+                      <span class="thumb-img">
+                        <img src="{{ 'thumb2.jpg' | asset_url }}" alt="img">
+                      </span>
+                    </div>
+                    <div class="slick-slide">
+                      <span class="thumb-img">
+                        <img src="{{ 'thumb3.jpg' | asset_url }}" alt="img">
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-12">
+                <div class="side-content">
+                  <div class="logo">
+                    <img src="{{ 'my-cookies.svg' | asset_url }}" alt="my-cookies">
+                  </div>
+                  <h1>{{ product.title }}</h1>
+                  <p>{{ product.description }}</p>
+                  <div class="flavours">
+                    <h4>ALL flavours</h4>
+                    <ul class="flavours-list">
+                      <li class="current">
+                        <a href="#">Milk Chocolate Chip</a>
+                      </li>
+                      <li>
+                        <a href="#">Vegan chocolate chip</a>
+                      </li>
+                      <li>
+                        <a href="#">Nutella</a>
+                      </li>
+                      <li>
+                        <a href="#">Double chocolate brownie</a>
+                      </li>
+                      <li>
+                        <a href="#">Biscoff (Vegan)</a>
+                      </li>
+                      <li>
+                        <a href="#">Lemon meringue</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="product-price">
+                    <ul>
+                      <li>
+                        <span class="price">From {{ product.price | money }}</span>
+                      </li>
+                      <li>
+                        <a href="#" class="btn btn-primary-light">Build your box</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span class="cloud cloud1">
+          </span>
+          <span class="cloud cloud2">
+          </span>
+          <span class="cloud cloud3">
+          </span>
+          <span class="cloud cloud4">
+          </span>
+          <span class="cloud cloud5">
+          </span>
+          <span class="cloud cloud6">
+          </span>
+          <span class="cloud cloud7">
+          </span>
+          <span class="cloud cloud8">
+          </span>
+        </div>
+        <!--  /section -->
+
+
+{% schema %}
+  {
+    "name": "Banner",
+    "settings": []
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

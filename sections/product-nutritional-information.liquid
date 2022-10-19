@@ -1,0 +1,101 @@
+<!--  section -->
+        <div class="section nutritional-info">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <header>
+                  <h3>{{ section.settings.heading }}</h3>
+                </header>
+                <div class="custom-accordion">
+                  
+                  <div class="custom-card active">
+                    <div class="custom-accordion-header"> {{ section.settings.summary-heading }} </div>
+                    <div class="custom-accordion-content">
+                      <div class="inner-content">
+                        <ul class="list3">
+
+                              {% for label in product.metafields.Summary.label %}
+                                <li>
+                                  <span class="data">{{ label }}</span>
+                                  <span class="value">{{ product.metafields.Summary.value[forloop.index0] }}</span>
+                                </li>
+                              {% endfor %}
+                              
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                <div class="custom-card">
+                    <div class="custom-accordion-header"> {{ section.settings.allergen-heading }} </div>
+                    <div class="custom-accordion-content">
+                      <div class="inner-content">
+                        <ul class="list3">
+                         
+                          {% for label in product.metafields.Allergen.label %}
+                            <li>
+                              <span class="data">{{ label }}</span>
+                              <span class="value">{{ product.metafields.Allergen.value[forloop.index0] }}</span>
+                            </li>
+                          {% endfor %}
+                          
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="custom-card">
+                    <div class="custom-accordion-header"> {{ section.settings.storage-heading }} </div>
+                    <div class="custom-accordion-content">
+                      <div class="inner-content">
+                        <ul class="list3">
+
+                           {% for label in product.metafields.Storage.label %}
+                              <li>
+                                <span class="data">{{ label }}</span>
+                                <span class="value">{{ product.metafields.Storage.value[forloop.index0] }}</span>
+                              </li>
+                           {% endfor %} 
+                          
+                      </div>
+                    </div>
+                  </div>
+    
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /section -->
+
+
+{% schema %}
+  {
+    "name": "Nutritional Information",
+    "settings": [
+      {
+        "id": "heading",
+        "type": "text",
+        "label": "Heading",
+        "default": "NUTRITIONAL INFORMATION"
+      },
+      {
+        "id": "summary-heading",
+        "type": "text",
+        "label": "Nutrition Summary Heading",
+        "default": "Nutrition Summary"
+      },
+      {
+        "id": "allergen-heading",
+        "type": "text",
+        "label": "Allergen Info Heading",
+        "default": "Allergen Info"
+      },
+      {
+        "id": "storage-heading",
+        "type": "text",
+        "label": "Storage Details Heading",
+        "default": "Storage Details"
+      }
+    ]
+  }
+{% endschema %}
