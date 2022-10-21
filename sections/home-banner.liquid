@@ -2,9 +2,9 @@
       <div id="page-head" class="text-center">
         <div class="container">
           <h1 class="display-1">{{ section.settings.banner-heading }}</h1>
-          <p>Experience moments of pure joy at <br> our My Cookie Dough Stores. </p>
+          <p>{{ section.settings.sub-heading }}</p>
           <footer>
-            <a href="#" class="btn btn-primary btn-sm">View all locations</a>
+            <a href="{{ section.settings.button-url }}" class="btn btn-primary btn-sm">{{ section.settings.banner-button-label }}</a>
           </footer>
         </div>
         <span class="cloud cloud1">
@@ -46,7 +46,7 @@
       "label": "Button Label"
     },
     {
-      "id": "button-label",
+      "id": "button-url",
       "type": "text",
       "label": "Button Url"
     }
