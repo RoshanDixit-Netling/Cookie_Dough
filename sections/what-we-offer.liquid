@@ -16,7 +16,12 @@
               <div class="col-xl-5 col-md-6 ps-lg-4">
                 <h2>{{ section.settings.heading }}</h2>
                 <ul class="list2">
-                  <li>Large orders for events at your offices or other locations</li>
+                  {%  for block in section.blocks %}
+                    {% case block.type %}
+                      {% when 'offer' %}
+                      <li>{{ block.settings.offer-text }}</li>
+                      {% endcase %}
+                    {% endfor %}
                   <li>Birthday gifts for employees</li>
                   <li>Multi-address shipping for at home employees</li>
                   <li>Christmas and seasonal gifts</li>
