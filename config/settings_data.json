@@ -667,6 +667,45 @@
       },
       "what-we-offer": {
         "type": "what-we-offer",
+        "blocks": {
+          "c956e92d-f692-4237-8323-17543c48332f": {
+            "type": "image",
+            "settings": {
+              "offer-image": "shopify:\/\/shop_images\/image3_cc552c4a-f6ca-48d6-9e71-536fb01221f0.jpg"
+            }
+          },
+          "48448361-c2b8-4927-ad5d-e0d4b290afe2": {
+            "type": "image",
+            "settings": {
+              "offer-image": "shopify:\/\/shop_images\/image44_ae995b2c-56da-4aed-a954-9f4af77f975d.jpg"
+            }
+          },
+          "1dedf617-4ec5-4af2-b718-04978e23b413": {
+            "type": "image",
+            "settings": {
+              "offer-image": "shopify:\/\/shop_images\/image44-flip_bc1eb8d5-6e1d-480e-8c40-5e106e7f8ab6.jpg"
+            }
+          },
+          "1672b027-43f7-457e-b727-e812e5e68b31": {
+            "type": "image",
+            "settings": {
+              "offer-image": "shopify:\/\/shop_images\/image3-flip_875a1518-e916-4407-9895-fb1ba3545222.jpg"
+            }
+          },
+          "57f64ee5-1016-4bf2-bee6-777a446f99d0": {
+            "type": "image",
+            "settings": {
+              "offer-image": "shopify:\/\/shop_images\/image44-flip_bc1eb8d5-6e1d-480e-8c40-5e106e7f8ab6.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "c956e92d-f692-4237-8323-17543c48332f",
+          "48448361-c2b8-4927-ad5d-e0d4b290afe2",
+          "1dedf617-4ec5-4af2-b718-04978e23b413",
+          "1672b027-43f7-457e-b727-e812e5e68b31",
+          "57f64ee5-1016-4bf2-bee6-777a446f99d0"
+        ],
         "settings": {
           "heading": "What we offer…",
           "button-label": "Enquire Now"
