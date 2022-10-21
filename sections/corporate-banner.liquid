@@ -1,4 +1,4 @@
-<!-- page head --->
+{% comment %}<!-- page head --->
       <div id="page-head" class="page-head2 text-center pt-2">
         <div class="container">
           <div class="image mb-4">
@@ -17,7 +17,28 @@
           </footer>
         </div>
       </div>
-<!-- /page head --->
+<!-- /page head ---> {% endcomment %}
+
+<!-- page head --->
+<div id="page-head" class="page-head2 text-white text-center">
+	<div class="container">
+	  <div class="row justify-content-center text-md-start">
+		<div class="col-xl-5 col-md-6">
+		  <h1 class="display-1">Corporate gifting and EVENTS</h1>
+		</div>
+		<div class="col-xl-5 col-md-6">
+		  <p>We’ve got your back when it comes to your corporate gifting. Whether you need some of our indulgent bakes for employees working at home, hundreds of cookies for an event or regular cookie deliveries to your office.</p>
+		</div>
+	  </div>
+	  <footer>
+		<a href="#" class="btn btn-primary btn-xl">Enquire Now</a>
+	  </footer>
+	</div>
+	<figure class="figure1 cover-img">
+	  <img class="w-100" src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt }}" width="" height="" loading="lazy">
+	</figure>
+  </div>
+  <!-- /page head --->
 
 {% schema %}
   {
