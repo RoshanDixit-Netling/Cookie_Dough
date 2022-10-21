@@ -408,7 +408,7 @@ html.skrollr-mobile {
          -moz-font-feature-settings: "swsh" 1;
               font-feature-settings: "swsh" 1; }
     #page-head.page-head3 .cloud {
-      background: url("../images/cloud3.svg") no-repeat; }
+      background: url("cloud3.svg") no-repeat; }
     #page-head.page-head3 .cloud1 {
       background-size: 137px 84px; }
     #page-head.page-head3 .cloud2 {
@@ -1014,7 +1014,7 @@ a, .btn {
 .cloud {
   position: absolute;
   width: 100%;
-  background: url("../images/cloud1.svg") no-repeat;
+  background: url("cloud1.svg") no-repeat;
   background-size: auto 100%;
   -webkit-animation-duration: 120s;
   animation-duration: 120s;
@@ -1087,7 +1087,7 @@ a, .btn {
     color: #BC7751;
     border-color: #BC7751; }
     .peach-theme .custom-accordion .custom-card .custom-accordion-header:after {
-      background: url("../images/chevron-down-peach.svg"); }
+      background: url("chevron-down-peach.svg"); }
   .peach-theme .custom-accordion .list3 li {
     border-color: #BC7751; }
     .peach-theme .custom-accordion .list3 li span {
@@ -1133,7 +1133,7 @@ a, .btn {
     color: #6C9B91;
     border-color: #6C9B91; }
     .jade-theme .custom-accordion .custom-card .custom-accordion-header:after {
-      background: url("../images/chevron-down-jade.svg"); }
+      background: url("chevron-down-jade.svg"); }
   .jade-theme .custom-accordion .list3 li {
     border-color: #6C9B91; }
     .jade-theme .custom-accordion .list3 li span {
@@ -1214,10 +1214,10 @@ a, .btn {
     .carousel3 .owl-nav button span {
       display: none; }
   .carousel3 .owl-nav .owl-prev {
-    background: url("../images/left-arrow.svg") no-repeat !important;
+    background: url("left-arrow.svg") no-repeat !important;
     background-size: contain; }
   .carousel3 .owl-nav .owl-next {
-    background: url("../images/right-arrow.svg") no-repeat !important;
+    background: url("right-arrow.svg") no-repeat !important;
     background-size: contain; }
 
 .carousel3 .item {
@@ -1504,7 +1504,7 @@ a, .btn {
   min-height: 196px; }
 
 .form .calendar {
-  background-image: url("../images/calendar-icon.svg");
+  background-image: url("calendar-icon.svg");
   background-repeat: no-repeat;
   background-size: 22px 22px;
   background-position: center right 25px;
@@ -2046,7 +2046,7 @@ a, .btn {
     left: 0;
     height: 58px;
     width: 100%;
-    background: url("../images/wave1.svg") repeat-x center center;
+    background: url("wave1.svg") repeat-x center center;
     background-size: 780px 58px;
     -webkit-animation: wave 400s cubic-bezier(0.36, 0.36, 0.36, 0.36) infinite;
             animation: wave 400s cubic-bezier(0.36, 0.36, 0.36, 0.36) infinite; }
@@ -2057,7 +2057,7 @@ a, .btn {
     left: 0;
     height: 60px;
     width: 100%;
-    background: url("../images/wave2.svg") repeat-x center center;
+    background: url("wave2.svg") repeat-x center center;
     background-size: 780px 60px;
     -webkit-animation: wave-reverse 400s cubic-bezier(0.36, 0.36, 0.36, 0.36) infinite;
             animation: wave-reverse 400s cubic-bezier(0.36, 0.36, 0.36, 0.36) infinite; }
@@ -2126,7 +2126,7 @@ a, .btn {
     content: '';
     width: 19px;
     height: 10px;
-    background: url("../images/chevron-down.svg");
+    background: url("chevron-down.svg");
     position: absolute;
     right: 0px;
     top: 50%;
@@ -2315,7 +2315,7 @@ a, .btn {
     position: absolute;
     width: 100%;
     height: 47.78px;
-    background: url("../images/sign-up-before.svg");
+    background: url("sign-up-before.svg");
     background-repeat: repeat-x;
     background-size: 727px 67.48px;
     top: -42px;
@@ -2323,7 +2323,7 @@ a, .btn {
     -webkit-animation: wave 200s cubic-bezier(0.36, 0.36, 0.36, 0.36) infinite;
             animation: wave 200s cubic-bezier(0.36, 0.36, 0.36, 0.36) infinite; }
   .sign-up-section.alt:before {
-    background: url("../images/sign-up-before2.svg");
+    background: url("sign-up-before2.svg");
     background-size: 727px 67.48px; }
   .sign-up-section.alt .container .row {
     position: relative;
@@ -2332,7 +2332,7 @@ a, .btn {
     content: '';
     width: 254px;
     height: 250px;
-    background: url("../images/sweet-chocolate-cookies2.png") no-repeat;
+    background: url("sweet-chocolate-cookies2.png") no-repeat;
     position: absolute;
     left: -5%;
     bottom: 1px; }
@@ -2340,7 +2340,7 @@ a, .btn {
     content: '';
     width: 254px;
     height: 250px;
-    background: url("../images/sweet-chocolate-cookies2.png") no-repeat;
+    background: url("sweet-chocolate-cookies2.png") no-repeat;
     position: absolute;
     right: -5%;
     top: -18px; }
@@ -2373,7 +2373,7 @@ a, .btn {
       display: inline-block;
       width: 73px;
       height: 45px;
-      background: url("../images/cloud2.svg") no-repeat;
+      background: url("cloud2.svg") no-repeat;
       background-size: contain; }
 
 @media (max-width: 767px) {
@@ -2418,7 +2418,7 @@ a, .btn {
     position: absolute;
     width: 100%;
     height: 47.78px;
-    background: url("../images/sign-up-before.svg");
+    background: url("sign-up-before.svg");
     background-repeat: repeat-x;
     background-size: 727px 67.48px;
     top: -42px;
@@ -2623,7 +2623,7 @@ a, .btn {
       .single-product-section .side-content .product-price ul li:last-child {
         margin-right: 0; }
   .single-product-section .cloud {
-    background: url("../images/cloud3.svg") no-repeat; }
+    background: url("cloud3.svg") no-repeat; }
   .single-product-section .cloud1 {
     top: 134px;
     -webkit-animation-delay: -160.69230769s;
@@ -2797,12 +2797,12 @@ a, .btn {
   position: relative;
   z-index: 200; }
   .section2:before {
-    background: url("../images/wave4.svg");
+    background: url("wave4.svg");
     background-size: 737px 108px;
     height: 108px;
     top: -32px; }
   .section2:after {
-    background: url("../images/wave4.svg");
+    background: url("wave4.svg");
     background-size: 737px 108px;
     height: 108px;
     bottom: -32px; }
@@ -2849,7 +2849,7 @@ a, .btn {
 */
 .news:before {
   height: 47.78px;
-  background: url("../images/wave5.svg");
+  background: url("wave5.svg");
   background-size: 727px 67.48px;
   top: -42px; }
 
@@ -2879,7 +2879,7 @@ a, .btn {
 */
 .news-overview:before {
   height: 47.78px;
-  background: url("../images/wave5.svg");
+  background: url("wave5.svg");
   background-size: 727px 67.48px;
   top: -42px; }
 
