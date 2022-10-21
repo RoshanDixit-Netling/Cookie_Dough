@@ -752,6 +752,12 @@
           "heading": "What we offer…",
           "button-label": "Enquire Now"
         }
+      },
+      "home-banner": {
+        "type": "home-banner",
+        "settings": {
+          "banner-heading": "MyCookiedough<sup>r<\/sup><br> Stores"
+        }
       }
     },
     "content_for_index": [
