@@ -1707,7 +1707,7 @@ a, .btn {
       content: '';
       width: 26px;
       height: 16px;
-      background: url("../images/cloud-list.svg") no-repeat;
+      background: url("cloud-list.svg") no-repeat;
       position: absolute;
       top: 7px;
       left: 0; }
