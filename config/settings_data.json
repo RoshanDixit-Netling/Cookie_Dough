@@ -759,7 +759,58 @@
           "banner-heading": "MyCookiedough<sup>r<\/sup><br> Stores",
           "sub-heading": "Experience moments of pure joy at <br> our My Cookie Dough Stores.",
           "banner-button-label": "View all locations",
-          "button-url": "#"
+          "button-url": "\/all-locations"
+        }
+      },
+      "image-carousel-section": {
+        "type": "image-carousel-section",
+        "blocks": {
+          "c74e433d-eaae-4d25-89f1-1084e8057704": {
+            "type": "image-carousel",
+            "settings": {
+              "carousel-image": "shopify:\/\/shop_images\/slide-img1.jpg"
+            }
+          },
+          "ae46c072-d641-4aae-a249-01e4de5767c4": {
+            "type": "image-carousel",
+            "settings": {
+              "carousel-image": "shopify:\/\/shop_images\/slide-img2.jpg"
+            }
+          },
+          "83357464-f9db-4585-9b07-561852382d34": {
+            "type": "image-carousel",
+            "settings": {
+              "carousel-image": "shopify:\/\/shop_images\/slide-img3.jpg"
+            }
+          },
+          "c376f40b-0c30-4514-8263-c36bad4cac9e": {
+            "type": "image-carousel",
+            "settings": {
+              "carousel-image": "shopify:\/\/shop_images\/slide-img4.jpg"
+            }
+          },
+          "641b5e0d-6400-4654-8741-f69b8c14ebe0": {
+            "type": "image-carousel",
+            "settings": {
+              "carousel-image": "shopify:\/\/shop_images\/slide-img5.jpg"
+            }
+          },
+          "8bcc6810-14af-4588-a64c-90796e8a05a1": {
+            "type": "image-carousel",
+            "settings": {
+              "carousel-image": "shopify:\/\/shop_images\/slide-img6.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "c74e433d-eaae-4d25-89f1-1084e8057704",
+          "ae46c072-d641-4aae-a249-01e4de5767c4",
+          "83357464-f9db-4585-9b07-561852382d34",
+          "c376f40b-0c30-4514-8263-c36bad4cac9e",
+          "641b5e0d-6400-4654-8741-f69b8c14ebe0",
+          "8bcc6810-14af-4588-a64c-90796e8a05a1"
+        ],
+        "settings": {
         }
       }
     },
