@@ -756,7 +756,10 @@
       "home-banner": {
         "type": "home-banner",
         "settings": {
-          "banner-heading": "MyCookiedough<sup>r<\/sup><br> Stores"
+          "banner-heading": "MyCookiedough<sup>r<\/sup><br> Stores",
+          "sub-heading": "Experience moments of pure joy at <br> our My Cookie Dough Stores.",
+          "banner-button-label": "View all locations",
+          "button-url": "#"
         }
       }
     },
