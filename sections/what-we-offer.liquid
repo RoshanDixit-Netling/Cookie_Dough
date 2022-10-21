@@ -29,3 +29,43 @@
           </div>
         </div>
         <!-- /section -->
+
+{% schema %}
+  {
+    "name": "what We Offer",
+    "settings": [
+		{
+			"id": "heading",
+			"type": "text",
+			"label": "Heading",
+			"default": "What we offer…"
+		},
+        {
+			"id": "button-label",
+			"type": "text",
+			"label": "Button Label",
+			"default": "Enquire Now"
+		}
+	],
+	"blocks": [
+		{
+			"name": "Offer",
+			"type": "offer",
+			"settings": [
+				{
+                    "id": "offer-text",
+                    "type": "textarea",
+                    "label": "Content",
+                    "default": "Offer goes here"
+                }
+			]
+		}
+	],
+    "presets": [
+      {
+        "name": "What We Offer"
+      }
+    ]
+    
+  }
+{% endschema %}
