@@ -24,14 +24,14 @@
 	<div class="container">
 	  <div class="row justify-content-center text-md-start">
 		<div class="col-xl-5 col-md-6">
-		  <h1 class="display-1">Corporate gifting and EVENTS</h1>
+		  <h1 class="display-1">{{ section.settings.heading }}</h1>
 		</div>
 		<div class="col-xl-5 col-md-6">
 		  <p>We’ve got your back when it comes to your corporate gifting. Whether you need some of our indulgent bakes for employees working at home, hundreds of cookies for an event or regular cookie deliveries to your office.</p>
 		</div>
 	  </div>
 	  <footer>
-		<a href="#" class="btn btn-primary btn-xl">Enquire Now</a>
+		<a href="#" class="btn btn-primary btn-xl">{{ section.settings.button-label }}</a>
 	  </footer>
 	</div>
 	<figure class="figure1 cover-img">
@@ -52,21 +52,23 @@
 		{
 			"id": "heading",
 			"type": "text",
-			"label": "Heading",
-			"default": "Corporate gifting"
+			"label": "Heading"
 		},
 		{
 			"id": "content",
 			"type": "richtext",
-			"label": "Content",
-			"default": "<p>We’ve got your back when it comes to your corporate gifting. Whether you need some of our indulgent bakes for employees working at home, hundreds of cookies for an event or regular cookie deliveries to your office.</p>"
-		},
+			"label": "Content"
+        },
 		{
 			"id": "button-label",
 			"type": "text",
-			"label": "Button Label",
-			"default": "Enquire Now"
-		}
+			"label": "Button Label"
+		},
+      {
+        "id": "button-url",
+        "type": "text",
+        "label": "Button Url"
+      }
 	],
 	"presets": [
 		{
