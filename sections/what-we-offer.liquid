@@ -4,7 +4,13 @@
             <div class="row justify-content-center">
               <div class="col-xl-4 col-md-6 pe-lg-4 column mb-md-0">
                 <div class="gallery1">
-                  <img class="animation active" src="images/image3.jpg" alt="img">
+                  {% assign i = 1 %}
+                  {% for block in section.blocks %}
+                  {% case block.type %}
+                    {% when 'image' %}
+                  <img class="animation {% if i == 1 %} active {% assign i = i | plus: 1 %}{% endif %}" src="{{ block.settings.offer-image | image_url }}" alt="{{ block.settings.offer-image.alt }}">
+                    {% endcase %}
+                    {% endfor %}
                   <img class="animation" src="images/image44.jpg" alt="img">
                   <img class="animation" src="images/image44-flip.jpg" alt="img">
                   <img class="animation" src="images/image3-flip.jpg" alt="img">
