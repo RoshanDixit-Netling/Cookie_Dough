@@ -703,6 +703,36 @@
             "settings": {
               "offer-text": "Large orders for events at your offices or other locations"
             }
+          },
+          "5b517caa-e911-40a8-b86e-d8ebed11b856": {
+            "type": "offer",
+            "settings": {
+              "offer-text": "Birthday gifts for employees"
+            }
+          },
+          "aa52e895-4d66-44c5-89b9-a1b708c8b342": {
+            "type": "offer",
+            "settings": {
+              "offer-text": "Multi-address shipping for at home employees"
+            }
+          },
+          "82e29b80-334a-445e-9650-5be27dee1aa6": {
+            "type": "offer",
+            "settings": {
+              "offer-text": "Christmas and seasonal gifts"
+            }
+          },
+          "2d7d8164-09e3-4bd9-b6bf-b0a0805ea475": {
+            "type": "offer",
+            "settings": {
+              "offer-text": "Regular office cookie deliveries"
+            }
+          },
+          "755fb063-b32c-4d9c-8cce-7f0fe41080e4": {
+            "type": "offer",
+            "settings": {
+              "offer-text": "Co-branded gift cards\/notes (that we can support design and include in your gifts)"
+            }
           }
         },
         "block_order": [
@@ -711,7 +741,12 @@
           "1dedf617-4ec5-4af2-b718-04978e23b413",
           "1672b027-43f7-457e-b727-e812e5e68b31",
           "57f64ee5-1016-4bf2-bee6-777a446f99d0",
-          "7f091456-cfc9-42e5-b877-9331f45cd606"
+          "7f091456-cfc9-42e5-b877-9331f45cd606",
+          "5b517caa-e911-40a8-b86e-d8ebed11b856",
+          "aa52e895-4d66-44c5-89b9-a1b708c8b342",
+          "82e29b80-334a-445e-9650-5be27dee1aa6",
+          "2d7d8164-09e3-4bd9-b6bf-b0a0805ea475",
+          "755fb063-b32c-4d9c-8cce-7f0fe41080e4"
         ],
         "settings": {
           "heading": "What we offer…",
