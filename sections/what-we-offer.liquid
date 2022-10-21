@@ -1,51 +1,55 @@
-                <h2>{{ section.settings.heading }}</h2>
-                <ul class="list2">
-                  {% for block in section.blocks %}
-                    {% case block.type %}
-                      {% when 'offer' %}
-                        <li>{{ block.settings.offer-text }}</li>
-                    {% endcase %}
-                  {% endfor %}
-                </ul>
-                <footer>
-                  <a href="#" class="btn btn-primary btn-xl w-100">{{ section.settings.button-label }}</a>
-                </footer>
+<!-- section -->
+<div class="section we-offer alt hide-wave-t bg-primary-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-4 col-md-6 pe-lg-4 column mb-md-0">
+          <div class="gallery1">
+            <img class="animation active" src="images/image3.jpg" alt="img">
+            <img class="animation" src="images/image44.jpg" alt="img">
+            <img class="animation" src="images/image44-flip.jpg" alt="img">
+            <img class="animation" src="images/image3-flip.jpg" alt="img">
+            <img class="animation" src="images/image44-flip.jpg" alt="img">
+          </div>
+        </div>
+        <div class="col-xl-5 col-md-6 ps-lg-4">
+          <h2>What we offer…</h2>
+          <ul class="list2">
+            <li>Large orders for events at your offices or other locations</li>
+            <li>Birthday gifts for employees</li>
+            <li>Multi-address shipping for at home employees</li>
+            <li>Christmas and seasonal gifts</li>
+            <li>Regular office cookie deliveries</li>
+            <li>Co-branded gift cards/notes (that we can support design and include in your gifts)</li>
+          </ul>
+          <footer>
+            <a href="#" class="btn btn-primary btn-xl w-100">Enquire Now</a>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /section -->
 
-{% schema %}
+  {% schema %}
   {
-    "name": "What We Offer Content",
-	"class": "col-xl-5 col-md-6 ps-lg-4",
-    "settings": [
-		{
-			"id": "heading",
-			"type": "text",
-			"label": "Heading",
-			"default": "What we offer…"
-		},
-        {
-			"id": "button-label",
-			"type": "text",
-			"label": "Button Label",
-			"default": "Enquire Now"
-		}
-	],
+    "name": "What We Offer Section",
+    "settings": [],
 	"blocks": [
 		{
-			"name": "Offer",
-			"type": "offer",
-			"settings": [
-				{
-                    "id": "offer-text",
-                    "type": "textarea",
-                    "label": "Content",
-                    "default": "Offer goes here"
-                }
-			]
+			"name": "Image",
+			"type": "image",
+            "settings": [
+              {
+                "id": "offer-image",
+                "type": "image_picker",
+                "label": "Choose Image"
+              }
+            ]
 		}
 	],
 	"presets": [
 		{
-			"name": "What We Offer Content"
+			"name": "What We Offer"
 		}
 	]
   }
