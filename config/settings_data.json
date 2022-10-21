@@ -75,7 +75,7 @@
         "settings": {
           "image": "shopify:\/\/shop_images\/banner-img1.jpg",
           "heading": "Corporate gifting and EVENTS",
-          "content": "<p>We’ve got your back when it comes to your corporate gifting. Whether you need some of our indulgent bakes for employees working at home, hundreds of cookies for an event or regular cookie deliveries to your office.<\/p>",
+          "content": "<p>We’ve got your back when it comes to your corporate gifting. Whether you need some of our indulgent bakes for employees working at home, hundreds of cookies for an event or regular cookie deliveries to your office.  this is new<\/p>",
           "button-label": "Enquire Now"
         }
       },
@@ -731,7 +731,7 @@
           "755fb063-b32c-4d9c-8cce-7f0fe41080e4": {
             "type": "offer",
             "settings": {
-              "offer-text": "Co-branded gift cards\/notes (that we can support design and include in your gifts)"
+              "offer-text": ""
             }
           }
         },
