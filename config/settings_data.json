@@ -697,6 +697,12 @@
             "settings": {
               "offer-image": "shopify:\/\/shop_images\/image44-flip_bc1eb8d5-6e1d-480e-8c40-5e106e7f8ab6.jpg"
             }
+          },
+          "7f091456-cfc9-42e5-b877-9331f45cd606": {
+            "type": "offer",
+            "settings": {
+              "offer-text": "Large orders for events at your offices or other locations"
+            }
           }
         },
         "block_order": [
@@ -704,7 +710,8 @@
           "48448361-c2b8-4927-ad5d-e0d4b290afe2",
           "1dedf617-4ec5-4af2-b718-04978e23b413",
           "1672b027-43f7-457e-b727-e812e5e68b31",
-          "57f64ee5-1016-4bf2-bee6-777a446f99d0"
+          "57f64ee5-1016-4bf2-bee6-777a446f99d0",
+          "7f091456-cfc9-42e5-b877-9331f45cd606"
         ],
         "settings": {
           "heading": "What we offer…",
