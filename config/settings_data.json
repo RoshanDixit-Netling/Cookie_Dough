@@ -801,7 +801,7 @@
               "carousel-image": "shopify:\/\/shop_images\/slide-img6.jpg"
             }
           },
-          "d572e977-6d64-427b-871f-133793a4d63f": {
+          "820b37d8-f5dc-4e78-8e3b-e7495ab24390": {
             "type": "bottomText",
             "settings": {
               "text1": "Come find us!",
@@ -818,7 +818,7 @@
           "c376f40b-0c30-4514-8263-c36bad4cac9e",
           "641b5e0d-6400-4654-8741-f69b8c14ebe0",
           "8bcc6810-14af-4588-a64c-90796e8a05a1",
-          "d572e977-6d64-427b-871f-133793a4d63f"
+          "820b37d8-f5dc-4e78-8e3b-e7495ab24390"
         ],
         "settings": {
         }
@@ -833,6 +833,13 @@
               "store-image": "shopify:\/\/shop_images\/image1_99da6349-4b70-4448-9d13-d5c311f25e32.jpg",
               "store-description": "<p>Westfield London White City, First Floor (near Primark)<\/p>",
               "opening-times-btn": "OPENING TIMES",
+              "mon-timing": "9:00 AM - 6:00 PM",
+              "tues-timing": "9:00 AM - 6:00 PM",
+              "wed-timing": "9:00 AM - 6:00 PM",
+              "thurs-timing": "9:00 AM - 6:00 PM",
+              "fri-timing": "9:00 AM - 6:00 PM",
+              "sat-timing": "9:00 AM - 6:00 PM",
+              "sun-timing": "9:00 AM - 6:00 PM",
               "get-direction-btn-text": "Get Directions",
               "get-direction-btn-url": ""
             }
@@ -844,6 +851,13 @@
               "store-image": "shopify:\/\/shop_images\/image1_99da6349-4b70-4448-9d13-d5c311f25e32.jpg",
               "store-description": "<p>Westfield London White City, First Floor (near Primark)<\/p>",
               "opening-times-btn": "OPENING TIMES",
+              "mon-timing": "9:00 AM - 6:00 PM",
+              "tues-timing": "9:00 AM - 6:00 PM",
+              "wed-timing": "9:00 AM - 6:00 PM",
+              "thurs-timing": "9:00 AM - 6:00 PM",
+              "fri-timing": "9:00 AM - 6:00 PM",
+              "sat-timing": "9:00 AM - 6:00 PM",
+              "sun-timing": "9:00 AM - 6:00 PM",
               "get-direction-btn-text": "Get Directions",
               "get-direction-btn-url": ""
             }
@@ -855,6 +869,13 @@
               "store-image": "shopify:\/\/shop_images\/image1_99da6349-4b70-4448-9d13-d5c311f25e32.jpg",
               "store-description": "<p>Westfield London White City, First Floor (near Primark)<\/p>",
               "opening-times-btn": "OPENING TIMES",
+              "mon-timing": "9:00 AM - 6:00 PM",
+              "tues-timing": "9:00 AM - 6:00 PM",
+              "wed-timing": "9:00 AM - 6:00 PM",
+              "thurs-timing": "9:00 AM - 6:00 PM",
+              "fri-timing": "9:00 AM - 6:00 PM",
+              "sat-timing": "9:00 AM - 6:00 PM",
+              "sun-timing": "9:00 AM - 6:00 PM",
               "get-direction-btn-text": "Get Directions",
               "get-direction-btn-url": ""
             }
@@ -866,6 +887,13 @@
               "store-image": "shopify:\/\/shop_images\/image1_99da6349-4b70-4448-9d13-d5c311f25e32.jpg",
               "store-description": "<p>Bullring Shopping Centre, Lower Mall (Next to Burger King)<\/p>",
               "opening-times-btn": "OPENING TIMES",
+              "mon-timing": "9:00 AM - 6:00 PM",
+              "tues-timing": "9:00 AM - 6:00 PM",
+              "wed-timing": "9:00 AM - 6:00 PM",
+              "thurs-timing": "9:00 AM - 6:00 PM",
+              "fri-timing": "9:00 AM - 6:00 PM",
+              "sat-timing": "9:00 AM - 6:00 PM",
+              "sun-timing": "9:00 AM - 6:00 PM",
               "get-direction-btn-text": "Get Directions",
               "get-direction-btn-url": ""
             }
@@ -877,6 +905,13 @@
               "store-image": "shopify:\/\/shop_images\/image1_99da6349-4b70-4448-9d13-d5c311f25e32.jpg",
               "store-description": "<p>Bullring Shopping Centre, Lower Mall (Next to Burger King)<\/p>",
               "opening-times-btn": "OPENING TIMES",
+              "mon-timing": "9:00 AM - 6:00 PM",
+              "tues-timing": "9:00 AM - 6:00 PM",
+              "wed-timing": "9:00 AM - 6:00 PM",
+              "thurs-timing": "9:00 AM - 6:00 PM",
+              "fri-timing": "9:00 AM - 6:00 PM",
+              "sat-timing": "9:00 AM - 6:00 PM",
+              "sun-timing": "9:00 AM - 6:00 PM",
               "get-direction-btn-text": "Get Directions",
               "get-direction-btn-url": ""
             }
@@ -888,6 +923,13 @@
               "store-image": "shopify:\/\/shop_images\/image1_99da6349-4b70-4448-9d13-d5c311f25e32.jpg",
               "store-description": "<p>Bullring Shopping Centre, Lower Mall (Next to Burger King)<\/p>",
               "opening-times-btn": "OPENING TIMES",
+              "mon-timing": "9:00 AM - 6:00 PM",
+              "tues-timing": "9:00 AM - 6:00 PM",
+              "wed-timing": "9:00 AM - 6:00 PM",
+              "thurs-timing": "9:00 AM - 6:00 PM",
+              "fri-timing": "9:00 AM - 6:00 PM",
+              "sat-timing": "9:00 AM - 6:00 PM",
+              "sun-timing": "9:00 AM - 6:00 PM",
               "get-direction-btn-text": "Get Directions",
               "get-direction-btn-url": ""
             }
@@ -899,6 +941,13 @@
               "store-image": "shopify:\/\/shop_images\/image1_99da6349-4b70-4448-9d13-d5c311f25e32.jpg",
               "store-description": "<p>St Davids Shopping Centre, Mall 2, Floor 1 (towards Debenhams)<\/p>",
               "opening-times-btn": "OPENING TIMES",
+              "mon-timing": "9:00 AM - 6:00 PM",
+              "tues-timing": "9:00 AM - 6:00 PM",
+              "wed-timing": "9:00 AM - 6:00 PM",
+              "thurs-timing": "9:00 AM - 6:00 PM",
+              "fri-timing": "9:00 AM - 6:00 PM",
+              "sat-timing": "9:00 AM - 6:00 PM",
+              "sun-timing": "9:00 AM - 6:00 PM",
               "get-direction-btn-text": "Get Directions",
               "get-direction-btn-url": ""
             }
@@ -910,6 +959,13 @@
               "store-image": "shopify:\/\/shop_images\/image1_99da6349-4b70-4448-9d13-d5c311f25e32.jpg",
               "store-description": "<p>St Davids Shopping Centre, Mall 2, Floor 1 (towards Debenhams)<\/p>",
               "opening-times-btn": "OPENING TIMES",
+              "mon-timing": "9:00 AM - 6:00 PM",
+              "tues-timing": "9:00 AM - 6:00 PM",
+              "wed-timing": "9:00 AM - 6:00 PM",
+              "thurs-timing": "9:00 AM - 6:00 PM",
+              "fri-timing": "9:00 AM - 6:00 PM",
+              "sat-timing": "9:00 AM - 6:00 PM",
+              "sun-timing": "9:00 AM - 6:00 PM",
               "get-direction-btn-text": "Get Directions",
               "get-direction-btn-url": ""
             }
@@ -921,6 +977,13 @@
               "store-image": "shopify:\/\/shop_images\/image1_99da6349-4b70-4448-9d13-d5c311f25e32.jpg",
               "store-description": "<p>St Davids Shopping Centre, Mall 2, Floor 1 (towards Debenhams)<\/p>",
               "opening-times-btn": "OPENING TIMES",
+              "mon-timing": "9:00 AM - 6:00 PM",
+              "tues-timing": "9:00 AM - 6:00 PM",
+              "wed-timing": "9:00 AM - 6:00 PM",
+              "thurs-timing": "9:00 AM - 6:00 PM",
+              "fri-timing": "9:00 AM - 6:00 PM",
+              "sat-timing": "9:00 AM - 6:00 PM",
+              "sun-timing": "9:00 AM - 6:00 PM",
               "get-direction-btn-text": "Get Directions",
               "get-direction-btn-url": ""
             }
@@ -985,6 +1048,12 @@
         "settings": {
           "international-store-title": "International stores",
           "bottom-text": "More Stores opening soon including, Cyprus, Qatar, Belgium and more!"
+        }
+      },
+      "sign-up-form": {
+        "type": "sign-up-form",
+        "settings": {
+          "sign-up-title": "Sign up below to stay up to date on our latest store openings and promotions"
         }
       }
     },
