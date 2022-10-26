@@ -19,31 +19,31 @@
                 <tbody>
                   <tr>
                     <td class="week">MON:</td>
-                    <td>9:00 AM - 6:00 PM</td>
+                    <td>{{ block.settings.mon-timing }}</td>
                   </tr>
                   <tr>
                     <td class="week">TUE:</td>
-                    <td>9:00 AM - 6:00 PM</td>
+                    <td>{{ block.settings.tues-timing }}</td>
                   </tr>
                   <tr>
                     <td class="week">WED:</td>
-                    <td>9:00 AM - 6:00 PM</td>
+                    <td>{{ block.settings.wed-timing }}</td>
                   </tr>
                   <tr>
                     <td class="week">THU:</td>
-                    <td>9:00 AM - 6:00 PM</td>
+                    <td>{{ block.settings.thurs-timing }}</td>
                   </tr>
                   <tr>
                     <td class="week">FRI:</td>
-                    <td>9:00 AM - 6:00 PM</td>
+                    <td>{{ block.settings.fri-timing }}</td>
                   </tr>
                   <tr>
                     <td class="week">SAT:</td>
-                    <td>9:00 AM - 6:00 PM</td>
+                    <td>{{ block.settings.sat-timing }}</td>
                   </tr>
                   <tr>
                     <td class="week">SUN</td>
-                    <td>11:00 AM - 5:00 PM</td>
+                    <td>{{ block.settings.sun-timing }}</td>
                   </tr>
                 </tbody>
               </table>
@@ -91,6 +91,48 @@
         "id": "opening-times-btn",
         "label": "Opening Time Button Text",
         "default": "OPENING TIMES"
+      },
+      {
+        "id": "mon-timing",
+        "type": "text",
+        "label": "Monday Timming",
+        "default": "9:00 AM - 6:00 PM"
+      },
+      {
+        "id": "tues-timing",
+        "type": "text",
+        "label": "Tuesday Timming",
+        "default": "9:00 AM - 6:00 PM"
+      },
+      {
+        "id": "wed-timing",
+        "type": "text",
+        "label": "Wednesday Timming",
+        "default": "9:00 AM - 6:00 PM"
+      },
+      {
+        "id": "thurs-timing",
+        "type": "text",
+        "label": "Thursday Timming",
+        "default": "9:00 AM - 6:00 PM"
+      },
+      {
+        "id": "fri-timing",
+        "type": "text",
+        "label": "Friday Timming",
+        "default": "9:00 AM - 6:00 PM"
+      },
+      {
+        "id": "sat-timing",
+        "type": "text",
+        "label": "Saturday Timming",
+        "default": "9:00 AM - 6:00 PM"
+      },
+      {
+        "id": "sun-timing",
+        "type": "text",
+        "label": "Sunday Timming",
+        "default": "9:00 AM - 6:00 PM"
       },
       {
         "type": "text",

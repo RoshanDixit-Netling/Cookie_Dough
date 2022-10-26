@@ -1,0 +1,30 @@
+<!-- section -->
+<div class="section sign-up-section bg-primary-light">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 col-xl-7">
+        <h4 class="text-white">{{ section.settings.sign-up-title }}</h4>
+        <div class="form email-form">
+          <form action="#">
+            <input type="email" class="form-control" placeholder="Email">
+            <input type="submit" class="btn btn-primary" value="Submit">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /section -->
+{% schema %}
+{
+  "name": "Sign Up Form",
+  "settings": [
+    {
+      "type": "text",
+      "id": "sign-up-title",
+      "label": "Title",
+      "default": "Sign up below to stay up to date on our latest store openings and promotions"
+    }
+  ]
+}
+{% endschema %}
