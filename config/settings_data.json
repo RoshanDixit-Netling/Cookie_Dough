@@ -801,8 +801,17 @@
               "carousel-image": "shopify:\/\/shop_images\/slide-img6.jpg"
             }
           },
-          "820b37d8-f5dc-4e78-8e3b-e7495ab24390": {
-            "type": "bottomText",
+          "fd75b920-230b-42d7-82b3-6a1b6b610a48": {
+            "type": "CarouselbottomText",
+            "settings": {
+              "text1": "Come find us!",
+              "text2": "warm,",
+              "text3": "gooey,",
+              "text4": "freshly backed"
+            }
+          },
+          "a446296e-15c9-449e-af35-ac86817dbdff": {
+            "type": "CarouselbottomText",
             "settings": {
               "text1": "Come find us!",
               "text2": "warm,",
@@ -818,7 +827,8 @@
           "c376f40b-0c30-4514-8263-c36bad4cac9e",
           "641b5e0d-6400-4654-8741-f69b8c14ebe0",
           "8bcc6810-14af-4588-a64c-90796e8a05a1",
-          "820b37d8-f5dc-4e78-8e3b-e7495ab24390"
+          "fd75b920-230b-42d7-82b3-6a1b6b610a48",
+          "a446296e-15c9-449e-af35-ac86817dbdff"
         ],
         "settings": {
         }

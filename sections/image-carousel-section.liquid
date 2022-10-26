@@ -18,24 +18,21 @@
 <div class="section find-us bg-primary-light wave1 pb-md-4 pull-top overflow-x-initial">
   <div class="container-fluid px-0">
     <h2 class="display-1 text-white mb-0 skrollable skrollable-between position-relative" data-start="margin-left:-200px;" data-end="margin-left:700px;">
+    {% assign i = 1 %}
       {% for block in section.blocks %}
         {% case block.type %}
-          {% when 'CarouselBottomText' %}
+          {% when 'CarouselbottomText' %}
+            {% if i != 1 %}
+              <span class="cloud1"></span>
+            {% endif %}
             {{ block.settings.text1 }}
             <span class="cloud1"></span>
-            warm,
+            {{ block.settings.text2 }}
             <span class="cloud1"></span>
-            gooey,
+            {{ block.settings.text3 }}
             <span class="cloud1"></span>
-            freshly backed
-            <span class="cloud1"></span>
-            Come find us!
-            <span class="cloud1"></span>
-            warm,
-            <span class="cloud1"></span>
-            gooey,
-            <span class="cloud1"></span>
-            freshly backed
+            {{ block.settings.text4 }}
+            {% assign i = i | plus: 1 %}
         {% endcase %}
       {% endfor %}
     </h2>
@@ -58,8 +55,8 @@
             ]
         },
         {
-          "name": "Bottom Text",
-          "type": "bottomText",
+          "name": "Carousel Bottom Text",
+          "type": "CarouselbottomText",
           "settings": [
             {
               "type": "text",
