@@ -800,6 +800,15 @@
             "settings": {
               "carousel-image": "shopify:\/\/shop_images\/slide-img6.jpg"
             }
+          },
+          "d572e977-6d64-427b-871f-133793a4d63f": {
+            "type": "bottomText",
+            "settings": {
+              "text1": "Come find us!",
+              "text2": "warm,",
+              "text3": "gooey,",
+              "text4": "freshly backed"
+            }
           }
         },
         "block_order": [
@@ -808,9 +817,174 @@
           "83357464-f9db-4585-9b07-561852382d34",
           "c376f40b-0c30-4514-8263-c36bad4cac9e",
           "641b5e0d-6400-4654-8741-f69b8c14ebe0",
-          "8bcc6810-14af-4588-a64c-90796e8a05a1"
+          "8bcc6810-14af-4588-a64c-90796e8a05a1",
+          "d572e977-6d64-427b-871f-133793a4d63f"
         ],
         "settings": {
+        }
+      },
+      "home-our-stores": {
+        "type": "home-our-stores",
+        "blocks": {
+          "9af0620f-b2c0-4235-bcaa-68dcd530eee9": {
+            "type": "stores",
+            "settings": {
+              "store-location": "",
+              "store-image": "shopify:\/\/shop_images\/image1_99da6349-4b70-4448-9d13-d5c311f25e32.jpg",
+              "store-description": "<p>Westfield London White City, First Floor (near Primark)<\/p>",
+              "opening-times-btn": "OPENING TIMES",
+              "get-direction-btn-text": "Get Directions",
+              "get-direction-btn-url": ""
+            }
+          },
+          "de333e84-b75b-4746-94b0-49bc53809451": {
+            "type": "stores",
+            "settings": {
+              "store-location": "",
+              "store-image": "shopify:\/\/shop_images\/image1_99da6349-4b70-4448-9d13-d5c311f25e32.jpg",
+              "store-description": "<p>Westfield London White City, First Floor (near Primark)<\/p>",
+              "opening-times-btn": "OPENING TIMES",
+              "get-direction-btn-text": "Get Directions",
+              "get-direction-btn-url": ""
+            }
+          },
+          "c61eab14-686c-4097-8ebe-ee16bd6cb6db": {
+            "type": "stores",
+            "settings": {
+              "store-location": "",
+              "store-image": "shopify:\/\/shop_images\/image1_99da6349-4b70-4448-9d13-d5c311f25e32.jpg",
+              "store-description": "<p>Westfield London White City, First Floor (near Primark)<\/p>",
+              "opening-times-btn": "OPENING TIMES",
+              "get-direction-btn-text": "Get Directions",
+              "get-direction-btn-url": ""
+            }
+          },
+          "a03bfcf1-698c-4bb5-bd99-263d3a085b56": {
+            "type": "stores",
+            "settings": {
+              "store-location": "",
+              "store-image": "shopify:\/\/shop_images\/image1_99da6349-4b70-4448-9d13-d5c311f25e32.jpg",
+              "store-description": "<p>Bullring Shopping Centre, Lower Mall (Next to Burger King)<\/p>",
+              "opening-times-btn": "OPENING TIMES",
+              "get-direction-btn-text": "Get Directions",
+              "get-direction-btn-url": ""
+            }
+          },
+          "99ef2325-d815-4fa9-94be-fae3d2254a11": {
+            "type": "stores",
+            "settings": {
+              "store-location": "",
+              "store-image": "shopify:\/\/shop_images\/image1_99da6349-4b70-4448-9d13-d5c311f25e32.jpg",
+              "store-description": "<p>Bullring Shopping Centre, Lower Mall (Next to Burger King)<\/p>",
+              "opening-times-btn": "OPENING TIMES",
+              "get-direction-btn-text": "Get Directions",
+              "get-direction-btn-url": ""
+            }
+          },
+          "2e91020d-941a-419b-9710-3099c5a7ffc8": {
+            "type": "stores",
+            "settings": {
+              "store-location": "",
+              "store-image": "shopify:\/\/shop_images\/image1_99da6349-4b70-4448-9d13-d5c311f25e32.jpg",
+              "store-description": "<p>Bullring Shopping Centre, Lower Mall (Next to Burger King)<\/p>",
+              "opening-times-btn": "OPENING TIMES",
+              "get-direction-btn-text": "Get Directions",
+              "get-direction-btn-url": ""
+            }
+          },
+          "028fb11a-ed88-46e8-a085-58c51dcb3cc8": {
+            "type": "stores",
+            "settings": {
+              "store-location": "",
+              "store-image": "shopify:\/\/shop_images\/image1_99da6349-4b70-4448-9d13-d5c311f25e32.jpg",
+              "store-description": "<p>St Davids Shopping Centre, Mall 2, Floor 1 (towards Debenhams)<\/p>",
+              "opening-times-btn": "OPENING TIMES",
+              "get-direction-btn-text": "Get Directions",
+              "get-direction-btn-url": ""
+            }
+          },
+          "4982f14f-aef4-405a-b85d-dd777a71ad53": {
+            "type": "stores",
+            "settings": {
+              "store-location": "",
+              "store-image": "shopify:\/\/shop_images\/image1_99da6349-4b70-4448-9d13-d5c311f25e32.jpg",
+              "store-description": "<p>St Davids Shopping Centre, Mall 2, Floor 1 (towards Debenhams)<\/p>",
+              "opening-times-btn": "OPENING TIMES",
+              "get-direction-btn-text": "Get Directions",
+              "get-direction-btn-url": ""
+            }
+          },
+          "49015c7a-4ce1-4ea0-942a-e050a0176fd8": {
+            "type": "stores",
+            "settings": {
+              "store-location": "",
+              "store-image": "shopify:\/\/shop_images\/image1_99da6349-4b70-4448-9d13-d5c311f25e32.jpg",
+              "store-description": "<p>St Davids Shopping Centre, Mall 2, Floor 1 (towards Debenhams)<\/p>",
+              "opening-times-btn": "OPENING TIMES",
+              "get-direction-btn-text": "Get Directions",
+              "get-direction-btn-url": ""
+            }
+          }
+        },
+        "block_order": [
+          "9af0620f-b2c0-4235-bcaa-68dcd530eee9",
+          "de333e84-b75b-4746-94b0-49bc53809451",
+          "c61eab14-686c-4097-8ebe-ee16bd6cb6db",
+          "a03bfcf1-698c-4bb5-bd99-263d3a085b56",
+          "99ef2325-d815-4fa9-94be-fae3d2254a11",
+          "2e91020d-941a-419b-9710-3099c5a7ffc8",
+          "028fb11a-ed88-46e8-a085-58c51dcb3cc8",
+          "4982f14f-aef4-405a-b85d-dd777a71ad53",
+          "49015c7a-4ce1-4ea0-942a-e050a0176fd8"
+        ],
+        "settings": {
+          "bottom-text": "More UK Stores opening soon!"
+        }
+      },
+      "home-international-stores": {
+        "type": "home-international-stores",
+        "blocks": {
+          "71f8f2d0-fb18-45d1-8b6c-7aa5aa542c77": {
+            "type": "internationalStores",
+            "settings": {
+              "store-location": "Kuala Lumpur Malaysia"
+            }
+          },
+          "c645d6b0-5285-4a85-8184-14199215310c": {
+            "type": "internationalStores",
+            "settings": {
+              "store-location": "Muscat, Oman"
+            }
+          },
+          "d4ff5bf6-8ff1-487e-92fa-f97f50458f27": {
+            "type": "internationalStores",
+            "settings": {
+              "store-location": "Bahrain, Manama"
+            }
+          },
+          "b5ecf1d5-78eb-4816-913c-3d2504deda72": {
+            "type": "internationalStores",
+            "settings": {
+              "store-location": "Amman, Jordan"
+            }
+          },
+          "b49e08ff-2ff9-45fb-8d3b-d8991c926801": {
+            "type": "internationalStores",
+            "settings": {
+              "store-location": "Prague, Czech Republic test"
+            }
+          }
+        },
+        "block_order": [
+          "71f8f2d0-fb18-45d1-8b6c-7aa5aa542c77",
+          "c645d6b0-5285-4a85-8184-14199215310c",
+          "d4ff5bf6-8ff1-487e-92fa-f97f50458f27",
+          "b5ecf1d5-78eb-4816-913c-3d2504deda72",
+          "b49e08ff-2ff9-45fb-8d3b-d8991c926801"
+        ],
+        "settings": {
+          "international-store-title": "International stores",
+          "bottom-text": "More Stores opening soon including, Cyprus, Qatar, Belgium and more!"
         }
       }
     },

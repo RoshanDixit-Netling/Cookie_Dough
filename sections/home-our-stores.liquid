@@ -1,0 +1,119 @@
+<!-- section -->
+<div class="section our-stores">
+  <div class="container">
+    <div class="row">
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'stores'%}
+      <div class="col-lg-4 col-md-6 column">
+        <div class="box1">
+          <figure class="figure1">
+            <img class="w-100" src="{{ block.settings.store-image | image_url }}" alt="img">
+          </figure>
+          <div class="content">
+            <h2><a href="#">{{ block.settings.store-location }}</a></h2>
+            <p>{{ block.settings.store-description }}</p>
+            <div class="timings-chart">
+              <a href="#" class="toggle-btn"><span>{{ block.settings.opening-times-btn }}</span> <i class="icon"><img src="{{ 'down-arrow.svg' | asset_url }}" alt="arrow"></i></a>
+              <table class="custom-table1">
+                <tbody>
+                  <tr>
+                    <td class="week">MON:</td>
+                    <td>9:00 AM - 6:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td class="week">TUE:</td>
+                    <td>9:00 AM - 6:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td class="week">WED:</td>
+                    <td>9:00 AM - 6:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td class="week">THU:</td>
+                    <td>9:00 AM - 6:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td class="week">FRI:</td>
+                    <td>9:00 AM - 6:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td class="week">SAT:</td>
+                    <td>9:00 AM - 6:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td class="week">SUN</td>
+                    <td>11:00 AM - 5:00 PM</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <footer>
+            <a href="{{ block.settings.get-direction-btn-url }}" class="btn btn-primary bg-color1">{{ block.settings.get-direction-btn-text  }}</a>
+          </footer>
+        </div>
+      </div>
+      {% endcase %}
+      {% endfor %}
+    </div>
+    <footer class="text-center pt-4 pt-lg-5">
+      <span class="note">{{ section.settings.bottom-text }}</span>
+    </footer>
+  </div>
+</div>
+<!-- /section -->
+{% schema %}
+{
+"name": "Our Stores",
+"blocks": [
+  {
+    "name": "Stores",
+    "type": "stores",
+    "settings": [
+      {
+        "type": "text",
+        "id": "store-location",
+        "label": "Store location Name"
+      },
+      {
+        "type": "image_picker",
+        "id": "store-image",
+        "label": "Select Image"
+      },
+      {
+      "type": "richtext",
+      "id": "store-description",
+      "label": "Description"
+      },
+      {
+        "type": "text",
+        "id": "opening-times-btn",
+        "label": "Opening Time Button Text",
+        "default": "OPENING TIMES"
+      },
+      {
+        "type": "text",
+        "id": "get-direction-btn-text",
+        "label": "Get Direction Button Label",
+        "default": "Get Directions"
+      },
+      {
+        "type": "url",
+        "id": "get-direction-btn-url",
+        "label": "Get Direction Button Url"
+      } 
+    ]
+  }
+
+],
+"settings": [
+  {
+    "type": "text",
+    "id": "bottom-text",
+    "label": "Bottom Text",
+    "default": "More UK Stores opening soon!"
+  }
+]
+}
+{% endschema %}

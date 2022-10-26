@@ -1,0 +1,103 @@
+
+<!-- section -->
+<div class="section our-international-stores">
+  <div class="container">
+    <div class="box1 alt mb-5 mb-lg-5">
+      <h2>{{ section.settings.international-store-title }}</h2>
+      <div class="row pt-2">
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'internationalStores' %}
+        <div class="col-lg-4 col-md-6 column">
+          <h6>{{ block.settings.store-location }}</h6>
+          <ul class="list1">
+            <li>Pavilion KL Mall</li>
+          </ul>
+        </div>
+          {% endcase %}
+          {% endfor %}
+        {% comment %} <div class="col-lg-4 col-md-6 column">
+          <h6>Muscat, Oman</h6>
+          <ul class="list1">
+            <li>a) Souq Al Madina</li>
+            <li>b) Mall of Muscat</li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6 column">
+          <h6>Bahrain, Manama</h6>
+          <ul class="list1">
+            <li>Oasis Mall</li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6 column">
+          <h6>Amman, Jordan</h6>
+          <ul class="list1">
+            <li>a) Abdoun </li>
+            <li>b) Khalda </li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6 column">
+          <h6>Prague, Czech Republic</h6>
+          <ul class="list1">
+            <li>Westfield Chodov, Praha</li>
+          </ul>
+        </div> {% endcomment %}
+      </div>
+    </div>
+    <footer class="text-center pt-4 pt-lg-5">
+      <span class="note">{{ section.settings.bottom-text }}</span>
+    </footer>
+  </div>
+</div>
+<!-- /section -->
+<!-- section -->
+<div class="section sign-up-section bg-primary-light">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 col-xl-7">
+        <h4 class="text-white">Sign up below to stay up to date on our latest store openings and promotions </h4>
+        <div class="form email-form">
+          <form action="#">
+            <input type="email" class="form-control" placeholder="Email">
+            <input type="submit" class="btn btn-primary" value="Submit">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /section -->
+</div>
+<!-- /content -->
+{% schema %}
+{
+  "name": "Internation Store section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "international-store-title",
+      "label": "Section Heading",
+      "default": "International stores"
+    },
+    {
+      "type": "text",
+      "id": "bottom-text",
+      "label": "Bottom Text",
+      "default": "More Stores opening soon including, Cyprus, Qatar, Belgium and more!"
+    }
+  ],
+  "blocks": [
+    {
+    "name": "International Stores",
+    "type": "internationalStores",
+    "settings": [
+      {
+        "type": "text",
+        "id": "store-location",
+        "label": "Store Location Name"
+      }
+    ]
+  }
+  ]
+}
+{% endschema %}
