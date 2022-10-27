@@ -839,7 +839,7 @@
           "9af0620f-b2c0-4235-bcaa-68dcd530eee9": {
             "type": "stores",
             "settings": {
-              "store-location": "",
+              "store-location": "London",
               "store-image": "shopify:\/\/shop_images\/image1_99da6349-4b70-4448-9d13-d5c311f25e32.jpg",
               "store-description": "<p>Westfield London White City, First Floor (near Primark)<\/p>",
               "opening-times-btn": "OPENING TIMES",
@@ -857,7 +857,7 @@
           "de333e84-b75b-4746-94b0-49bc53809451": {
             "type": "stores",
             "settings": {
-              "store-location": "",
+              "store-location": "London",
               "store-image": "shopify:\/\/shop_images\/image1_99da6349-4b70-4448-9d13-d5c311f25e32.jpg",
               "store-description": "<p>Westfield London White City, First Floor (near Primark)<\/p>",
               "opening-times-btn": "OPENING TIMES",
@@ -875,7 +875,7 @@
           "c61eab14-686c-4097-8ebe-ee16bd6cb6db": {
             "type": "stores",
             "settings": {
-              "store-location": "",
+              "store-location": "London",
               "store-image": "shopify:\/\/shop_images\/image1_99da6349-4b70-4448-9d13-d5c311f25e32.jpg",
               "store-description": "<p>Westfield London White City, First Floor (near Primark)<\/p>",
               "opening-times-btn": "OPENING TIMES",
@@ -893,7 +893,7 @@
           "a03bfcf1-698c-4bb5-bd99-263d3a085b56": {
             "type": "stores",
             "settings": {
-              "store-location": "",
+              "store-location": "Birmingham",
               "store-image": "shopify:\/\/shop_images\/image1_99da6349-4b70-4448-9d13-d5c311f25e32.jpg",
               "store-description": "<p>Bullring Shopping Centre, Lower Mall (Next to Burger King)<\/p>",
               "opening-times-btn": "OPENING TIMES",
@@ -911,9 +911,9 @@
           "99ef2325-d815-4fa9-94be-fae3d2254a11": {
             "type": "stores",
             "settings": {
-              "store-location": "",
+              "store-location": "Cardiff",
               "store-image": "shopify:\/\/shop_images\/image1_99da6349-4b70-4448-9d13-d5c311f25e32.jpg",
-              "store-description": "<p>Bullring Shopping Centre, Lower Mall (Next to Burger King)<\/p>",
+              "store-description": "<p>St Davids Shopping Centre, Mall 2, Floor 1 (towards Debenhams)<\/p>",
               "opening-times-btn": "OPENING TIMES",
               "mon-timing": "9:00 AM - 6:00 PM",
               "tues-timing": "9:00 AM - 6:00 PM",
@@ -929,9 +929,9 @@
           "2e91020d-941a-419b-9710-3099c5a7ffc8": {
             "type": "stores",
             "settings": {
-              "store-location": "",
+              "store-location": "Manchester",
               "store-image": "shopify:\/\/shop_images\/image1_99da6349-4b70-4448-9d13-d5c311f25e32.jpg",
-              "store-description": "<p>Bullring Shopping Centre, Lower Mall (Next to Burger King)<\/p>",
+              "store-description": "<p>Intu Trafford Centre, Ground Floor (next to Footlocker)<\/p>",
               "opening-times-btn": "OPENING TIMES",
               "mon-timing": "9:00 AM - 6:00 PM",
               "tues-timing": "9:00 AM - 6:00 PM",
@@ -947,9 +947,9 @@
           "028fb11a-ed88-46e8-a085-58c51dcb3cc8": {
             "type": "stores",
             "settings": {
-              "store-location": "",
+              "store-location": "Leeds",
               "store-image": "shopify:\/\/shop_images\/image1_99da6349-4b70-4448-9d13-d5c311f25e32.jpg",
-              "store-description": "<p>St Davids Shopping Centre, Mall 2, Floor 1 (towards Debenhams)<\/p>",
+              "store-description": "<p>My Cookie Dough Cafe Flagship Store, 24 Albion Place, LS1 6JS<\/p>",
               "opening-times-btn": "OPENING TIMES",
               "mon-timing": "9:00 AM - 6:00 PM",
               "tues-timing": "9:00 AM - 6:00 PM",
@@ -965,9 +965,9 @@
           "4982f14f-aef4-405a-b85d-dd777a71ad53": {
             "type": "stores",
             "settings": {
-              "store-location": "",
+              "store-location": "Bluewater",
               "store-image": "shopify:\/\/shop_images\/image1_99da6349-4b70-4448-9d13-d5c311f25e32.jpg",
-              "store-description": "<p>St Davids Shopping Centre, Mall 2, Floor 1 (towards Debenhams)<\/p>",
+              "store-description": "<p>Bluewater Mall, Lower Rose Gallery<\/p>",
               "opening-times-btn": "OPENING TIMES",
               "mon-timing": "9:00 AM - 6:00 PM",
               "tues-timing": "9:00 AM - 6:00 PM",
@@ -983,9 +983,27 @@
           "49015c7a-4ce1-4ea0-942a-e050a0176fd8": {
             "type": "stores",
             "settings": {
-              "store-location": "",
+              "store-location": "Liverpool",
               "store-image": "shopify:\/\/shop_images\/image1_99da6349-4b70-4448-9d13-d5c311f25e32.jpg",
-              "store-description": "<p>St Davids Shopping Centre, Mall 2, Floor 1 (towards Debenhams)<\/p>",
+              "store-description": "<p>My Cookie Dough Cafe, Unit 88c, Liverpool One, 6 Wall Street <\/p>",
+              "opening-times-btn": "OPENING TIMES",
+              "mon-timing": "9:00 AM - 6:00 PM",
+              "tues-timing": "9:00 AM - 6:00 PM",
+              "wed-timing": "9:00 AM - 6:00 PM",
+              "thurs-timing": "9:00 AM - 6:00 PM",
+              "fri-timing": "9:00 AM - 6:00 PM",
+              "sat-timing": "9:00 AM - 6:00 PM",
+              "sun-timing": "9:00 AM - 6:00 PM",
+              "get-direction-btn-text": "Get Directions",
+              "get-direction-btn-url": ""
+            }
+          },
+          "14164868-5efd-4d28-9784-93fbfb9463fe": {
+            "type": "stores",
+            "settings": {
+              "store-location": "Gateshead",
+              "store-image": "shopify:\/\/shop_images\/image1_99da6349-4b70-4448-9d13-d5c311f25e32.jpg",
+              "store-description": "<p>Metro Centre, Lower platinum Mall (next to Game)<\/p>",
               "opening-times-btn": "OPENING TIMES",
               "mon-timing": "9:00 AM - 6:00 PM",
               "tues-timing": "9:00 AM - 6:00 PM",
@@ -1008,7 +1026,8 @@
           "2e91020d-941a-419b-9710-3099c5a7ffc8",
           "028fb11a-ed88-46e8-a085-58c51dcb3cc8",
           "4982f14f-aef4-405a-b85d-dd777a71ad53",
-          "49015c7a-4ce1-4ea0-942a-e050a0176fd8"
+          "49015c7a-4ce1-4ea0-942a-e050a0176fd8",
+          "14164868-5efd-4d28-9784-93fbfb9463fe"
         ],
         "settings": {
           "bottom-text": "More UK Stores opening soon!"
