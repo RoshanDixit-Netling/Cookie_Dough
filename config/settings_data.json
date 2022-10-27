@@ -1091,6 +1091,13 @@
           "get-in-touch-title": "GET IN TOUCH",
           "get-in-touch-content": "<p>We love to hear from our community! Drop us an email below 👇                  <\/p><p>For any queries relating to your online order please email <a href=\"#\" title=\"email\">orders@mycookiedough.com <\/a>along with your name and order number in the subject line. Your query will be responded to within 48 hours during the working week.&lt;\/p&gt;<\/p>"
         }
+      },
+      "instore-menu": {
+        "type": "instore-menu",
+        "settings": {
+          "instore-menu-title": "Instore Menu",
+          "Instore-menu-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.<\/p>"
+        }
       }
     },
     "content_for_index": [
