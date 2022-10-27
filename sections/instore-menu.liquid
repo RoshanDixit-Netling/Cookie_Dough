@@ -6,7 +6,7 @@
           <h1 class="display-1">{{  section.settings.instore-menu-title }}</h1>
         </div>
         <div class="col-xl-5 col-md-6">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+          {{ section.settings.instore-menu-content }}
         </div>
       </div>
     </div>
@@ -17,7 +17,7 @@
     <!-- section -->
     <div class="section instore-menu after-gradient py-0 text-center">
       <div class="container">
-        <img src="images/image27.png" alt="img" loading = "lazy" >
+        <img src="{{ section.settings.menu-image | image_url }}" alt="img" loading = "lazy" >
       </div>
     </div>
     <!-- /section -->
@@ -35,7 +35,7 @@
       },
       {
         "type": "richtext",
-        "id": "Instore-menu-content",
+        "id": "instore-menu-content",
         "label": "Content"
       }
     ]
