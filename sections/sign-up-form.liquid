@@ -7,7 +7,7 @@
         <div class="form email-form">
           <form action="#">
             <input type="email" class="form-control" placeholder="Email">
-            <input type="submit" class="btn btn-primary" value="Submit">
+            <input type="submit" class="btn btn-primary" value="{{ section.settings.sign-up-btn-label }}">
           </form>
         </div>
       </div>
@@ -24,6 +24,12 @@
       "id": "sign-up-title",
       "label": "Title",
       "default": "Sign up below to stay up to date on our latest store openings and promotions"
+    },
+    {
+      "type": "text",
+      "id": "sign-up-btn-label",
+      "label": "Button Label",
+      "default": "Submit"
     }
   ]
 }
