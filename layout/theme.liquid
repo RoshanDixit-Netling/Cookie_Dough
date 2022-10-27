@@ -25,7 +25,7 @@
     
     {{ content_for_header }}
   </head>
-    <body class="bg-color1 {% if request.path contains "corporate" %} layout1 {% endif %}" >
+    <body class="{% if request.path contains "store-menu" %} bg-primary-light {% else %} bg-color1 {% endif %}{% if request.path contains "corporate" %} layout1 {% endif %}" >
     <!-- container -->
     <div id="container">
        {% section 'header' %}
