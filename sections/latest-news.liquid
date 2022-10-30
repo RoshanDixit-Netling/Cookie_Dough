@@ -1,4 +1,6 @@
-<!-- section -->
+  {%  assign posts_displayed = section.settings.blog.articles_count %}
+      {{ posts_displayed }}
+      <!-- section -->
         <div class="section news-overview related wave1">
           <div class="container">
             <header class="text-center c-mb-4">
@@ -22,8 +24,7 @@
                 </article>
               </div>
               {%  endfor %}
-             {%  assign posts_displayed = section.settings.blog.articles_count %}
-             {{ posts_displayed }}
+
               <div class="col-lg-4 col-md-6 column">
                 <article class="post single-post">
                   <figure class="figure1">
