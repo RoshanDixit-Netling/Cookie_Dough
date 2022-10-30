@@ -15,7 +15,7 @@
                       <img class="w-100" src="images/image17.jpg" alt="img">
                     </figure>
                     <div class="content">
-                      <span class="post-date">{{ article.created_at | time_tag: format: 'date' }}</span>
+                      <span class="post-date">{{ article.created_at | date: "%a, %b %d, %y"  }}</span>
                       <h2><a href="#">{{ article.title }}</a></h2>
                       {% assign article_excerpt = article.excerpt %}
                         {% if article_excerpt != null and article_excerpt != '' %}
