@@ -8,7 +8,7 @@
             </header>
             <div class="row">
               {%- if section.settings.blog != blank and section.settings.blog.articles_count > 0 -%}
-                {% for article in section.settings.blog.articles %}
+                {% for article in section.settings.blog.articles limit:2 %}
                 <div class="col-lg-4 col-md-6 column">
                   <article class="post single-post">
                     <figure class="figure1">
