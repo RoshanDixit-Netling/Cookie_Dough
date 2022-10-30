@@ -18,7 +18,7 @@
                       <span class="post-date">{{ article.created_at | date: " %d %b %Y"  }}</span>
                       <h2><a href="#">{{ article.title }}</a></h2>
                         {% if article.excerpt_or_content != null and article.excerpt_or_content != "" %}
-                            <p> article goes here</p>
+                            {{ article.excerpt_or_content | truncate: 120 }}
                         {% endif %}
                     </div>
                     <footer>
