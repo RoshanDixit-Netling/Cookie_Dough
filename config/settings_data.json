@@ -1101,6 +1101,13 @@
           "instore-menu-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.<\/p>",
           "menu-image": "shopify:\/\/shop_images\/image27.png"
         }
+      },
+      "latest-news": {
+        "type": "latest-news",
+        "settings": {
+          "latest-news-title": "Latest News",
+          "blog": "news"
+        }
       }
     },
     "content_for_index": [
