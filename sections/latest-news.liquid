@@ -16,8 +16,13 @@
                     </figure>
                     <div class="content">
                       <span class="post-date">01 Jan 2022</span>
-                      <h2><a href="#">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</a></h2>
-                      <p>Since opening our first store in the UK, we have expanded to several countries around the world, and we are looking forward…</p>
+                      <h2><a href="#">{{ article.title }}</a></h2>
+                      {% assign article_excerpt = article.excerpt %}
+                        {% if article_excerpt != null and article_excerpt != '' %}
+                          <p>{{ article.excerpt }}</p>
+                          {%  else %}
+                          {{ article.content | truncate: 123 }}
+                          {% endif %}
                     </div>
                     <footer>
                       <a href="#" class="read-more-btn">Read More</a>
