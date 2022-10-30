@@ -57,7 +57,24 @@
 {% schema %}
   {
     "name": "Latest News",
-    "settings": []
+    "settings": [{
+      "type": "text",
+      "id": "latest-news-heading",
+      "label": "Title"
+    }],
+    "blocks": [
+      {
+        "name": "News",
+        "type": "news",
+        "settings": [
+          {
+            "type": "article",
+            "id": "news",
+            "label": "news"
+          }
+        ]
+      }
+    ]
   }
 {% endschema %}
 
