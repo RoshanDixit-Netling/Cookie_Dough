@@ -8,23 +8,25 @@
             </header>
             <div class="row">
               {%- if section.settings.blog != blank and section.settings.blog.articles_count > 0 -%}
-              <div class="col-lg-4 col-md-6 column">
-                <article class="post single-post">
-                  <figure class="figure1">
-                    <img class="w-100" src="images/image17.jpg" alt="img">
-                  </figure>
-                  <div class="content">
-                    <span class="post-date">01 Jan 2022</span>
-                    <h2><a href="#">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</a></h2>
-                    <p>Since opening our first store in the UK, we have expanded to several countries around the world, and we are looking forward…</p>
-                  </div>
-                  <footer>
-                    <a href="#" class="read-more-btn">Read More</a>
-                  </footer>
-                </article>
-              </div>
+                {% for article in section.settings.blog.articles %}
+                <div class="col-lg-4 col-md-6 column">
+                  <article class="post single-post">
+                    <figure class="figure1">
+                      <img class="w-100" src="images/image17.jpg" alt="img">
+                    </figure>
+                    <div class="content">
+                      <span class="post-date">01 Jan 2022</span>
+                      <h2><a href="#">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</a></h2>
+                      <p>Since opening our first store in the UK, we have expanded to several countries around the world, and we are looking forward…</p>
+                    </div>
+                    <footer>
+                      <a href="#" class="read-more-btn">Read More</a>
+                    </footer>
+                  </article>
+                </div>
+              {% endfor %}
               {% endif %}
-
+  
               <div class="col-lg-4 col-md-6 column">
                 <article class="post single-post">
                   <figure class="figure1">
