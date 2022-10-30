@@ -17,11 +17,7 @@
                     <div class="content">
                       <span class="post-date">{{ article.created_at | date: " %d %b %Y"  }}</span>
                       <h2><a href="#">{{ article.title }}</a></h2>
-                        {% if article.excerpt != null and article.excerpt != '' %}
-                          <p>{{ article.excerpt }}</p>
-                          {%  else %}
-                          {{ article.content | truncate: 123 }}
-                          {% endif %}
+                        {{ article.content }}
                     </div>
                     <footer>
                       <a href="#" class="read-more-btn">Read More</a>
