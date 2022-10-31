@@ -1,9 +1,22 @@
       <div id="content">
         <!-- section -->
-          {% section "section-how-to-bake-it-menu" %}
-          {%  section "section-how-to-bake-it-menu-content" %}
-          {%  section "section-how-to-bake-it-biy-packs" %}
-          {% section "section-how-to-bake-it-baking-tips" %}
+          <div class="section how-we-bake">
+            <div class="container">
+              <header>
+                <h2>{{ page_title }}</h2>
+              </header>
+              <div class="tabs1 alt media-group">
+                <div class="tab-header d-md-none">
+                  <span class="title"> Menu </span>
+                  <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+                  {% section "section-how-to-bake-it-menu" %}
+                  {%  section "section-how-to-bake-it-menu-content" %}
+                  {%  section "section-how-to-bake-it-biy-packs" %}
+                  {% section "section-how-to-bake-it-baking-tips" %}
+              </div>
+            </div>
+          </div>
         <!-- section -->
         <!-- section -->
           {% section 'section-faq' %}

@@ -1,31 +1,20 @@
-        <div class="section how-we-bake">
-          <div class="container">
-            <header>
-              <h2>{{ section.settings.how-to-bake-it-title }}</h2>
-            </header>
-            <div class="tabs1 alt media-group">
-              <div class="tab-header d-md-none">
-                <span class="title"> Menu </span>
-                <i class="fa fa-bars" aria-hidden="true"></i>
-              </div>
-              <ul class="nav nav-tabs" id="myTab" role="tablist">
-                {% for block in section.blocks %}
-                  {% case block.type %}
-                    {% when 'menu' %}
-                    {% assign menu_title = block.settings.menu-title %}
-                      {% assign menu_title = menu_title | downcase | replace: " ", "-" %}
-                      <li class="nav-item" role="presentation">
-                        <button class="active" id="{{ menu_title }}-tab" data-bs-toggle="tab" data-bs-target="#{{ menu_title }}" type="button" role="tab" aria-controls="{{ menu_title }}" aria-selected="true">{{ block.settings.menu-title }}</button>
-                      </li>
-                    {% endcase %}
-                  {% endfor %}
-              </ul>
-              {% section "how-to-bake-it-menu-content" %}
-              </div>
-            </div>
-          </div>
-        </div>
-        
+             <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="active" id="bake-it-yourself-tab" data-bs-toggle="tab" data-bs-target="#bake-it-yourself" type="button" role="tab" aria-controls="bake-it-yourself" aria-selected="true">Bake it yourself</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button id="scotch-egg-tab" data-bs-toggle="tab" data-bs-target="#scotch-egg" type="button" role="tab" aria-controls="scotch-egg" aria-selected="false">Scotch egg</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button id="Stackos-tab" data-bs-toggle="tab" data-bs-target="#Stackos" type="button" role="tab" aria-controls="Stackos" aria-selected="false">Stackos</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button id="skillets-tab" data-bs-toggle="tab" data-bs-target="#skillets" type="button" role="tab" aria-controls="skillets" aria-selected="false">SKILLETS</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button id="mississippi-mud-pie-tab" data-bs-toggle="tab" data-bs-target="#mississippi-mud-pie" type="button" role="tab" aria-controls="mississippi-mud-pie" aria-selected="false">Mississippi Love pie</button>
+                </li>
+              </ul>     
 {% schema %}
   {
     "name": "Bake it Menu",
