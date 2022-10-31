@@ -1204,28 +1204,32 @@
             "type": "download-biy-pack",
             "settings": {
               "menu-name": "Bake it yourself",
-              "pack-name": "The Famous Five Pack"
+              "pack-name": "The Famous Five Pack",
+              "pack-download-url": "#"
             }
           },
           "87c26336-bc8c-44ea-abd0-1074c8b65624": {
             "type": "download-biy-pack",
             "settings": {
               "menu-name": "Bake it yourself",
-              "pack-name": "The Special Edition Pack"
+              "pack-name": "The Special Edition Pack",
+              "pack-download-url": "#"
             }
           },
           "5687d8f8-2b6a-456e-b2c8-17c64fd82f25": {
             "type": "download-biy-pack",
             "settings": {
               "menu-name": "Bake it yourself",
-              "pack-name": "The Chocoholics Pack"
+              "pack-name": "The Chocoholics Pack",
+              "pack-download-url": "#"
             }
           },
           "e20f43a0-77e9-4418-8b65-38446ca162d0": {
             "type": "download-biy-pack",
             "settings": {
               "menu-name": "Bake it yourself",
-              "pack-name": "<p>The Vegan BIY Pack<\/p>"
+              "pack-name": "<p>The Vegan BIY Pack<\/p>",
+              "pack-download-url": "#"
             }
           },
           "03faffb4-b851-454f-98dc-0c07604fb6d3": {
