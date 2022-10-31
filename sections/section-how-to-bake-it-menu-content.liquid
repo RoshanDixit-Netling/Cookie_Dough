@@ -10,10 +10,22 @@
                               {{ block.settings.content }}
                           <p>{{ block.settings.download-pack-title }}</p>
                           <div class="download-options">
-                            <a class="btn btn-primary-color4 btn-xs rounded-btn" href="#"><span class="icon"><img src="images/download-icon.svg" alt="icon"></span> The Famous Five Pack</a>
-                            <a class="btn btn-primary-color4 btn-xs rounded-btn" href="#"><span class="icon"><img src="images/download-icon.svg" alt="icon"></span> The Special Edition Pack</a>
-                            <a class="btn btn-primary-color4 btn-xs rounded-btn" href="#"><span class="icon"><img src="images/download-icon.svg" alt="icon"></span> The Chocoholics Pack</a>
-                            <a class="btn btn-primary-color4 btn-xs rounded-btn" href="#"><span class="icon"><img src="images/download-icon.svg" alt="icon"></span> The Vegan BIY Pack</a>
+                            {% for block in section.blocks %}
+                              {% case block.type %}
+                                {% when "download-biy-pack" %}
+                                {% assign menu_title_biy = block.settings.menu-name %}
+                                  {% assign menu_title_biy = menu_title | downcase | replace: " ", "-"  %}
+                                    {% if menu_title_biy == menu_title %}
+                                      Yes
+                                    {% endif %}
+                                {% endcase %}
+                              {% endfor %}
+                                {% comment %}
+                                  <a class="btn btn-primary-color4 btn-xs rounded-btn" href="#"><span class="icon"><img src="images/download-icon.svg" alt="icon"></span> The Famous Five Pack</a>
+                                  <a class="btn btn-primary-color4 btn-xs rounded-btn" href="#"><span class="icon"><img src="images/download-icon.svg" alt="icon"></span> The Special Edition Pack</a>
+                                  <a class="btn btn-primary-color4 btn-xs rounded-btn" href="#"><span class="icon"><img src="images/download-icon.svg" alt="icon"></span> The Chocoholics Pack</a>
+                                  <a class="btn btn-primary-color4 btn-xs rounded-btn" href="#"><span class="icon"><img src="images/download-icon.svg" alt="icon"></span> The Vegan BIY Pack</a>
+                                {% endcomment %}
                           </div>
                           <h5>{{ block.settings.baking-tips }}</h5>
                           <ol class="list5">
