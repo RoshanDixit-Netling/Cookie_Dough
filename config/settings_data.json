@@ -1243,14 +1243,14 @@
             "type": "baking-tips",
             "settings": {
               "menu-name": "Bake it yourself",
-              "tip-content": "<p>Ensure your oven is completely preheated before beginning to bake<\/p>"
+              "tip-content": "Ensure your oven is completely preheated before beginning to bake"
             }
           },
           "a7218cbd-6f3a-4a5f-8f5f-0ed5f4228b24": {
             "type": "baking-tips",
             "settings": {
               "menu-name": "Bake it yourself",
-              "tip-content": "<p>It is a good idea to chill your baking tray before baking - your cookie dough should also be chilled<\/p>"
+              "tip-content": "It is a good idea to chill your baking tray before baking - your cookie dough should also be chilled"
             }
           },
           "6627fdc7-e267-447d-9a90-da99c6bd6fb2": {
