@@ -1204,7 +1204,7 @@
             "type": "download-biy-pack",
             "settings": {
               "menu-name": "Bake it yourself",
-              "pack-name": "<p>The Famous Five Pack<\/p>"
+              "pack-name": "The Famous Five Pack"
             }
           },
           "87c26336-bc8c-44ea-abd0-1074c8b65624": {
