@@ -1,35 +1,24 @@
              <ul class="nav nav-tabs" id="myTab" role="tablist">
+             {% for block in section.blocks %}
+              {% case block.type %}
+               {% when 'menu-item' %}
+                {% assign menu_title = block.settings.menu-title %}
+                {% assign menu_title = menu_title | downcase | replace: " ", "-"  %}
                 <li class="nav-item" role="presentation">
                   <button class="active" id="bake-it-yourself-tab" data-bs-toggle="tab" data-bs-target="#bake-it-yourself" type="button" role="tab" aria-controls="bake-it-yourself" aria-selected="true">Bake it yourself</button>
                 </li>
-                <li class="nav-item" role="presentation">
-                  <button id="scotch-egg-tab" data-bs-toggle="tab" data-bs-target="#scotch-egg" type="button" role="tab" aria-controls="scotch-egg" aria-selected="false">Scotch egg</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button id="Stackos-tab" data-bs-toggle="tab" data-bs-target="#Stackos" type="button" role="tab" aria-controls="Stackos" aria-selected="false">Stackos</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button id="skillets-tab" data-bs-toggle="tab" data-bs-target="#skillets" type="button" role="tab" aria-controls="skillets" aria-selected="false">SKILLETS</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button id="mississippi-mud-pie-tab" data-bs-toggle="tab" data-bs-target="#mississippi-mud-pie" type="button" role="tab" aria-controls="mississippi-mud-pie" aria-selected="false">Mississippi Love pie</button>
-                </li>
-              </ul>     
+               {% endcase %}
+             {% endfor %}
+              </ul>
+
 {% schema %}
   {
     "name": "Bake it Menu",
-    "settings": [
-      {
-        "type": "text",
-        "id": "how-to-bake-it-title",
-        "label": "Title",
-        "default": "How to bake it"
-      }
-    ],
+    "settings": [],
     "blocks": [
       {
-      "name": "Menu",
-      "type": "menu",
+      "name": "Menu Item",
+      "type": "menu-item",
       "settings": [
         {
         "type": "text",
