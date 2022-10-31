@@ -1,7 +1,7 @@
-<div class="section how-we-bake">
+        <div class="section how-we-bake">
           <div class="container">
             <header>
-              <h2>How to bake it</h2>
+              <h2>{{ section.settings.how-to-bake-it-title }}</h2>
             </header>
             <div class="tabs1 alt media-group">
               <div class="tab-header d-md-none">
@@ -9,9 +9,11 @@
                 <i class="fa fa-bars" aria-hidden="true"></i>
               </div>
               <ul class="nav nav-tabs" id="myTab" role="tablist">
+                
                 <li class="nav-item" role="presentation">
                   <button class="active" id="bake-it-yourself-tab" data-bs-toggle="tab" data-bs-target="#bake-it-yourself" type="button" role="tab" aria-controls="bake-it-yourself" aria-selected="true">Bake it yourself</button>
                 </li>
+                
                 <li class="nav-item" role="presentation">
                   <button id="scotch-egg-tab" data-bs-toggle="tab" data-bs-target="#scotch-egg" type="button" role="tab" aria-controls="scotch-egg" aria-selected="false">Scotch egg</button>
                 </li>
@@ -129,7 +131,14 @@
 {% schema %}
   {
     "name": "How To Bake It",
-    "settings": [],
+    "settings": [
+      {
+        "type": "text",
+        "id": "how-to-bake-it-title",
+        "label": "Title",
+        "default": "How to bake it"
+      }
+    ],
     "blocks": [
       {
       "name": "Menu",
