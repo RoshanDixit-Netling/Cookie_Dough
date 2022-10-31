@@ -1108,6 +1108,40 @@
           "latest-news-title": "Latest News",
           "blog": "news"
         }
+      },
+      "section-faq": {
+        "type": "section-faq",
+        "blocks": {
+          "8cd2dcb3-e37d-47aa-bf8b-57ddb76f283a": {
+            "type": "faq",
+            "settings": {
+              "faq-question": "<p>How can I store My Cookie Dough?<\/p>",
+              "faq-answer": "<p>If you are not using your Cookie Dough immediately, place in the fridge or freezer as soon as you have received your pack. It can be kept in the fridge for up to 10 days, or if stored in the freezer on the first day of receiving for up to 3 months. When you want to use your Cookie Dough remove from the freezer and store in the fridge for 4 hours before baking.<\/p>"
+            }
+          },
+          "5c2b3c63-3f07-4d58-a347-e95bad754a82": {
+            "type": "faq",
+            "settings": {
+              "faq-question": "<p>What is the allergen information?<\/p>",
+              "faq-answer": "<p>If you are not using your Cookie Dough immediately, place in the fridge or freezer as soon as you have received your pack. It can be kept in the fridge for up to 10 days, or if stored in the freezer on the first day of receiving for up to 3 months. When you want to use your Cookie Dough remove from the freezer and store in the fridge for 4 hours before baking.<\/p>"
+            }
+          },
+          "eb4a735c-0006-47e7-bcd5-ee93740648b3": {
+            "type": "faq",
+            "settings": {
+              "faq-question": "<p>Why is My Cookie Dough still soft after extra time in the oven?<\/p>",
+              "faq-answer": "<p>If you are not using your Cookie Dough immediately, place in the fridge or freezer as soon as you have received your pack. It can be kept in the fridge for up to 10 days, or if stored in the freezer on the first day of receiving for up to 3 months. When you want to use your Cookie Dough remove from the freezer and store in the fridge for 4 hours before baking.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "8cd2dcb3-e37d-47aa-bf8b-57ddb76f283a",
+          "5c2b3c63-3f07-4d58-a347-e95bad754a82",
+          "eb4a735c-0006-47e7-bcd5-ee93740648b3"
+        ],
+        "settings": {
+          "faq-title": "Frequently asked questions"
+        }
       }
     },
     "content_for_index": [
