@@ -6,7 +6,8 @@
                         {% assign menu_title = block.settings.content-for %}
                           {% assign menu_title = menu_title | downcase | replace: " ", "-"  %}
                        <div class="tab-pane fade show {% if i == 1 %} active {% endif %} {% increment i %}" id="{{ menu_title }}" role="tabpanel" aria-labelledby="{{ menu_title }}-tab">
-                          <h5>{{ block.settings.content-sub-heading }}</h5>
+                         {{ i }} 
+                         <h5>{{ block.settings.content-sub-heading }}</h5>
                               {{ block.settings.content }}
                           <p>{{ block.settings.download-pack-title }}</p>
                           <div class="download-options">
