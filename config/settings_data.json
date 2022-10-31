@@ -1204,28 +1204,63 @@
             "type": "download-biy-pack",
             "settings": {
               "menu-name": "Bake it yourself",
-              "pack-name": "The Famous Five Pack"
+              "pack-name": "<p>The Famous Five Pack<\/p>"
             }
           },
           "87c26336-bc8c-44ea-abd0-1074c8b65624": {
             "type": "download-biy-pack",
             "settings": {
               "menu-name": "Bake it yourself",
-              "pack-name": "The Special Edition Pack"
+              "pack-name": "<p>The Special Edition Pack<\/p>"
             }
           },
           "5687d8f8-2b6a-456e-b2c8-17c64fd82f25": {
             "type": "download-biy-pack",
             "settings": {
               "menu-name": "Bake it yourself",
-              "pack-name": "The Chocoholics Pack"
+              "pack-name": "<p>The Chocoholics Pack<\/p>"
             }
           },
           "e20f43a0-77e9-4418-8b65-38446ca162d0": {
             "type": "download-biy-pack",
             "settings": {
               "menu-name": "Bake it yourself",
-              "pack-name": "The Vegan BIY Pack"
+              "pack-name": "<p>The Vegan BIY Pack<\/p>"
+            }
+          },
+          "03faffb4-b851-454f-98dc-0c07604fb6d3": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "Bake it yourself",
+              "tip-content": "<p>Make sure you use baking paper when cooking<\/p>"
+            }
+          },
+          "a4d5bc49-e5b0-42ff-83d6-5ffafce4ff95": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "Bake it yourself",
+              "tip-content": "<p>Ensure your oven is completely preheated before beginning to bake<\/p>"
+            }
+          },
+          "a7218cbd-6f3a-4a5f-8f5f-0ed5f4228b24": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "Bake it yourself",
+              "tip-content": "<p>It is a good idea to chill your baking tray before baking - your cookie dough should also be chilled<\/p>"
+            }
+          },
+          "6627fdc7-e267-447d-9a90-da99c6bd6fb2": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "Bake it yourself",
+              "tip-content": "<p>Once the cookie dough is slightly golden brown (usually after 8-9 minutes), remove it from the oven. You can use a large spatula to push on the 4 sides to prevent it expanding too much, and to help it keep its ‘square shape’.<\/p>"
+            }
+          },
+          "395898c8-8848-41e2-8de7-a860b6433231": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "Bake it yourself",
+              "tip-content": "<p>Gently (very gently) wriggle the spatula completely under the cookie dough, before transferring to a plate to decorate & EAT!<\/p>"
             }
           },
           "b072f80a-422d-4fbf-8484-319894085b05": {
@@ -1237,41 +1272,6 @@
               "download-pack-title": "HERE ARE THE INSTRUCTIONAL LEAFLETS FOR OUR BIY PACKS:",
               "baking-tips": "Tips for baking MyCookieDough like a pro:"
             }
-          },
-          "03faffb4-b851-454f-98dc-0c07604fb6d3": {
-            "type": "baking-tips",
-            "settings": {
-              "menu-name": "Bake it yourself",
-              "tip-content": "Make sure you use baking paper when cooking"
-            }
-          },
-          "a4d5bc49-e5b0-42ff-83d6-5ffafce4ff95": {
-            "type": "baking-tips",
-            "settings": {
-              "menu-name": "Bake it yourself",
-              "tip-content": "Ensure your oven is completely preheated before beginning to bake"
-            }
-          },
-          "a7218cbd-6f3a-4a5f-8f5f-0ed5f4228b24": {
-            "type": "baking-tips",
-            "settings": {
-              "menu-name": "Bake it yourself",
-              "tip-content": "It is a good idea to chill your baking tray before baking - your cookie dough should also be chilled"
-            }
-          },
-          "6627fdc7-e267-447d-9a90-da99c6bd6fb2": {
-            "type": "baking-tips",
-            "settings": {
-              "menu-name": "Bake it yourself",
-              "tip-content": "Once the cookie dough is slightly golden brown (usually after 8-9 minutes), remove it from the oven. You can use a large spatula to push on the 4 sides to prevent it expanding too much, and to help it keep its ‘square shape’."
-            }
-          },
-          "395898c8-8848-41e2-8de7-a860b6433231": {
-            "type": "baking-tips",
-            "settings": {
-              "menu-name": "Bake it yourself",
-              "tip-content": "Gently (very gently) wriggle the spatula completely under the cookie dough, before transferring to a plate to decorate & EAT!"
-            }
           }
         },
         "block_order": [
@@ -1280,12 +1280,12 @@
           "87c26336-bc8c-44ea-abd0-1074c8b65624",
           "5687d8f8-2b6a-456e-b2c8-17c64fd82f25",
           "e20f43a0-77e9-4418-8b65-38446ca162d0",
-          "b072f80a-422d-4fbf-8484-319894085b05",
           "03faffb4-b851-454f-98dc-0c07604fb6d3",
           "a4d5bc49-e5b0-42ff-83d6-5ffafce4ff95",
           "a7218cbd-6f3a-4a5f-8f5f-0ed5f4228b24",
           "6627fdc7-e267-447d-9a90-da99c6bd6fb2",
-          "395898c8-8848-41e2-8de7-a860b6433231"
+          "395898c8-8848-41e2-8de7-a860b6433231",
+          "b072f80a-422d-4fbf-8484-319894085b05"
         ],
         "settings": {
         }
