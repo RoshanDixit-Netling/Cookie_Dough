@@ -27,8 +27,9 @@
                               {% case block.type %}
                                 {% when 'baking-tips' %}
                                 {% assign menu_title_tips = block.settings.menu-name %}
-                                  {% assign menu_title_tips = menu_title_biy | downcase | replace: " ", "-"  %}
+                                  {% assign menu_title_tips = menu_title_tips | downcase | replace: " ", "-"  %}
                                   {{ menu_title_tips }}
+                                {{  menu_title }}
                                     {% if menu_title_tips == menu_title %}
                                       <li>Make sure you use baking paper when cooking</li>
                                     {% comment %}<li>Ensure your oven is completely preheated before beginning to bake</li>
