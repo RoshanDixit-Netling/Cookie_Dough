@@ -12,8 +12,8 @@
                 {% for block in section.blocks %}
                   {% case block.type %}
                     {% when 'menu' %}
-                    {% assign menut_title = block.settings.menu-title %}
-                    {{ menu_title }}
+                    {% assign menu_title = block.settings.menu-title %}
+                      {{ menu-title }}
                       <li class="nav-item" role="presentation">
                         <button class="active" id="bake-it-yourself-tab" data-bs-toggle="tab" data-bs-target="#bake-it-yourself" type="button" role="tab" aria-controls="bake-it-yourself" aria-selected="true">{{ block.settings.menu-title }}</button>
                       </li>
