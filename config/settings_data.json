@@ -1237,6 +1237,20 @@
               "download-pack-title": "HERE ARE THE INSTRUCTIONAL LEAFLETS FOR OUR BIY PACKS:",
               "baking-tips": "Tips for baking MyCookieDough like a pro:"
             }
+          },
+          "03faffb4-b851-454f-98dc-0c07604fb6d3": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "Bake it yourself",
+              "tip-content": ""
+            }
+          },
+          "a4d5bc49-e5b0-42ff-83d6-5ffafce4ff95": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "Bake it yourself",
+              "tip-content": ""
+            }
           }
         },
         "block_order": [
@@ -1245,7 +1259,9 @@
           "87c26336-bc8c-44ea-abd0-1074c8b65624",
           "5687d8f8-2b6a-456e-b2c8-17c64fd82f25",
           "e20f43a0-77e9-4418-8b65-38446ca162d0",
-          "b072f80a-422d-4fbf-8484-319894085b05"
+          "b072f80a-422d-4fbf-8484-319894085b05",
+          "03faffb4-b851-454f-98dc-0c07604fb6d3",
+          "a4d5bc49-e5b0-42ff-83d6-5ffafce4ff95"
         ],
         "settings": {
         }
