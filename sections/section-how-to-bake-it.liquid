@@ -13,7 +13,7 @@
                   {% case block.type %}
                     {% when 'menu' %}
                     {% assign menu_title = block.settings.menu-title %}
-                      {% assign menu_title = menu_title  | replace: " ", "-" %}
+                      {% assign menu_title = menu_title | downcase | replace: " ", "-" %}
                         {{ menu_title }}
                       <li class="nav-item" role="presentation">
                         <button class="active" id="bake-it-yourself-tab" data-bs-toggle="tab" data-bs-target="#bake-it-yourself" type="button" role="tab" aria-controls="bake-it-yourself" aria-selected="true">{{ block.settings.menu-title }}</button>
