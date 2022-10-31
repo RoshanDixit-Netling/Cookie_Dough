@@ -30,11 +30,6 @@
                                   {% assign menu_title_tips = menu_title_tips | downcase | replace: " ", "-"  %}
                                     {% if menu_title_tips == menu_title %}
                                       <li>{{ block.settings.tip-content }}</li>
-                                    {% comment %}<li>Ensure your oven is completely preheated before beginning to bake</li>
-                                    <li>It is a good idea to chill your baking tray before baking - your cookie dough should also be chilled</li>
-                                    <li>Once the cookie dough is slightly golden brown (usually after 8-9 minutes), remove it from the oven. You can use a large spatula to push on the 4 sides to prevent it expanding too much, and to help it keep its ‘square shape’.</li>
-                                    <li>Gently (very gently) wriggle the spatula completely under the cookie dough, before transferring to a plate to decorate & EAT! </li>
-                                    {% endcomment %}
                                 {% endif %}
                               {% endcase %}
                             {% endfor %}
