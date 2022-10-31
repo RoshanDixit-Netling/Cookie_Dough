@@ -16,7 +16,7 @@
                                 {% assign menu_title_biy = block.settings.menu-name %}
                                   {% assign menu_title_biy = menu_title_biy | downcase | replace: " ", "-"  %}
                                     {% if menu_title_biy == menu_title %}
-                                      <a class="btn btn-primary-color4 btn-xs rounded-btn" href="#"><span class="icon"><img src="images/download-icon.svg" alt="icon"></span>{{ block.settings.pack-name }}</a>
+                                      <a class="btn btn-primary-color4 btn-xs rounded-btn" href="#"><span class="icon"><img src="{{ 'download-icon.svg' | asset_url }}" alt="icon"></span>{{ block.settings.pack-name }}</a>
                                     {% endif %}
                                 {% endcase %}
                               {% endfor %}
