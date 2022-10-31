@@ -1,15 +1,15 @@
              <ul class="nav nav-tabs" id="myTab" role="tablist">
                {% assign i =1 %}
-             {% for block in section.blocks %}
-              {% case block.type %}
-               {% when 'menu-item' %}
-                {% assign menu_title = block.settings.menu-title %}
-                {% assign menu_title = menu_title | downcase | replace: " ", "-"  %}
-                <li class="nav-item" role="presentation">
-                  <button class="{% if i == 1 %} active {% endif %} {% assign i = i | plus: 1 %}" id="{{ menu_title }}-tab" data-bs-toggle="tab" data-bs-target="#{{ menu_title }}" type="button" role="tab" aria-controls="{{ menu_title }}" aria-selected="true">{{ block.settings.menu-title }}</button>
-                </li>
-               {% endcase %}
-             {% endfor %}
+                 {% for block in section.blocks %}
+                  {% case block.type %}
+                   {% when 'menu-item' %}
+                    {% assign menu_title = block.settings.menu-title %}
+                    {% assign menu_title = menu_title | downcase | replace: " ", "-"  %}
+                    <li class="nav-item" role="presentation">
+                      <button class="{% if i == 1 %} active {% endif %} {% assign i = i | plus: 1 %}" id="{{ menu_title }}-tab" data-bs-toggle="tab" data-bs-target="#{{ menu_title }}" type="button" role="tab" aria-controls="{{ menu_title }}" aria-selected="true">{{ block.settings.menu-title }}</button>
+                    </li>
+                   {% endcase %}
+                 {% endfor %}
               </ul>
 
 {% schema %}
