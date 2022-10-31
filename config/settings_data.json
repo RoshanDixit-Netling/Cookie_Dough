@@ -1211,7 +1211,7 @@
             "type": "download-biy-pack",
             "settings": {
               "menu-name": "Bake it yourself",
-              "pack-name": "<p>The Special Edition Pack<\/p>"
+              "pack-name": "The Special Edition Pack"
             }
           },
           "5687d8f8-2b6a-456e-b2c8-17c64fd82f25": {
