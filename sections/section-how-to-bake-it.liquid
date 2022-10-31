@@ -15,7 +15,7 @@
                     {% assign menut_title = block.menu-title %}
                     {{ menu_title }}
                       <li class="nav-item" role="presentation">
-                        <button class="active" id="bake-it-yourself-tab" data-bs-toggle="tab" data-bs-target="#bake-it-yourself" type="button" role="tab" aria-controls="bake-it-yourself" aria-selected="true">Bake it yourself</button>
+                        <button class="active" id="bake-it-yourself-tab" data-bs-toggle="tab" data-bs-target="#bake-it-yourself" type="button" role="tab" aria-controls="bake-it-yourself" aria-selected="true">{{ block.menu-title }}</button>
                       </li>
                     {% endcase %}
                   {% endfor %}
