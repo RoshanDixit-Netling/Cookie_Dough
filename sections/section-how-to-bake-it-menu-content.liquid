@@ -14,9 +14,9 @@
                               {% case block.type %}
                                 {% when "download-biy-pack" %}
                                 {% assign menu_title_biy = block.settings.menu-name %}
-                                  {% assign menu_title_biy = menu_title | downcase | replace: " ", "-"  %}
+                                  {% assign menu_title_biy = menu_title_biy | downcase | replace: " ", "-"  %}
                                     {% if menu_title_biy == menu_title %}
-                                      Yes
+                                      <a class="btn btn-primary-color4 btn-xs rounded-btn" href="#"><span class="icon"><img src="images/download-icon.svg" alt="icon"></span>{{ block.settings.pack-name }}</a>
                                     {% endif %}
                                 {% endcase %}
                               {% endfor %}
