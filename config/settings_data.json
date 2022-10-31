@@ -1142,6 +1142,50 @@
         "settings": {
           "faq-title": "Frequently asked questions"
         }
+      },
+      "section-how-to-bake-it": {
+        "type": "section-how-to-bake-it",
+        "blocks": {
+          "6c3e4871-a22f-40b3-80b8-7801f1512f56": {
+            "type": "menu",
+            "settings": {
+              "menu-title": "Bake it yourself"
+            }
+          },
+          "ccb56554-31f3-489b-8907-8f8762d15ca3": {
+            "type": "menu",
+            "settings": {
+              "menu-title": "Scotch egg"
+            }
+          },
+          "fb92b1ec-a196-4f2f-b989-9152d28d7899": {
+            "type": "menu",
+            "settings": {
+              "menu-title": "Stackos"
+            }
+          },
+          "831c639d-0b80-4643-9dde-af558292a623": {
+            "type": "menu",
+            "settings": {
+              "menu-title": "SKILLETS"
+            }
+          },
+          "de631568-4eb0-4e10-b930-1090c3d0b528": {
+            "type": "menu",
+            "settings": {
+              "menu-title": "Mississippi Love pie"
+            }
+          }
+        },
+        "block_order": [
+          "6c3e4871-a22f-40b3-80b8-7801f1512f56",
+          "ccb56554-31f3-489b-8907-8f8762d15ca3",
+          "fb92b1ec-a196-4f2f-b989-9152d28d7899",
+          "831c639d-0b80-4643-9dde-af558292a623",
+          "de631568-4eb0-4e10-b930-1090c3d0b528"
+        ],
+        "settings": {
+        }
       }
     },
     "content_for_index": [
