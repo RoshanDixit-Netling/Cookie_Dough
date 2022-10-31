@@ -1228,7 +1228,7 @@
             "type": "download-biy-pack",
             "settings": {
               "menu-name": "Bake it yourself",
-              "pack-name": "<p>The Vegan BIY Pack<\/p>",
+              "pack-name": "The Vegan BIY Pack",
               "pack-download-url": "#"
             }
           },
@@ -1236,7 +1236,7 @@
             "type": "baking-tips",
             "settings": {
               "menu-name": "Bake it yourself",
-              "tip-content": "<p>Make sure you use baking paper when cooking<\/p>"
+              "tip-content": "Make sure you use baking paper when cooking"
             }
           },
           "a4d5bc49-e5b0-42ff-83d6-5ffafce4ff95": {
