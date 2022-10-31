@@ -1200,6 +1200,34 @@
               "baking-tips": "Tips for baking MyCookieDough like a pro:"
             }
           },
+          "abd2c2d4-6484-44eb-bcb2-d1be30620fee": {
+            "type": "download-biy-pack",
+            "settings": {
+              "menu-name": "Bake it yourself",
+              "pack-name": "The Famous Five Pack"
+            }
+          },
+          "87c26336-bc8c-44ea-abd0-1074c8b65624": {
+            "type": "download-biy-pack",
+            "settings": {
+              "menu-name": "Bake it yourself",
+              "pack-name": "The Special Edition Pack"
+            }
+          },
+          "5687d8f8-2b6a-456e-b2c8-17c64fd82f25": {
+            "type": "download-biy-pack",
+            "settings": {
+              "menu-name": "Bake it yourself",
+              "pack-name": "The Chocoholics Pack"
+            }
+          },
+          "e20f43a0-77e9-4418-8b65-38446ca162d0": {
+            "type": "download-biy-pack",
+            "settings": {
+              "menu-name": "Bake it yourself",
+              "pack-name": "The Vegan BIY Pack"
+            }
+          },
           "b072f80a-422d-4fbf-8484-319894085b05": {
             "type": "main-content-section",
             "settings": {
@@ -1213,6 +1241,10 @@
         },
         "block_order": [
           "c197142c-0bad-47e3-9a1b-154058d46b4a",
+          "abd2c2d4-6484-44eb-bcb2-d1be30620fee",
+          "87c26336-bc8c-44ea-abd0-1074c8b65624",
+          "5687d8f8-2b6a-456e-b2c8-17c64fd82f25",
+          "e20f43a0-77e9-4418-8b65-38446ca162d0",
           "b072f80a-422d-4fbf-8484-319894085b05"
         ],
         "settings": {
