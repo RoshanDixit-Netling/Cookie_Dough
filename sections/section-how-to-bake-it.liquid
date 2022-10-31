@@ -14,9 +14,8 @@
                     {% when 'menu' %}
                     {% assign menu_title = block.settings.menu-title %}
                       {% assign menu_title = menu_title | downcase | replace: " ", "-" %}
-                        {{ menu_title }}
                       <li class="nav-item" role="presentation">
-                        <button class="active" id="bake-it-yourself-tab" data-bs-toggle="tab" data-bs-target="#bake-it-yourself" type="button" role="tab" aria-controls="bake-it-yourself" aria-selected="true">{{ block.settings.menu-title }}</button>
+                        <button class="active" id="{{ menu_title }}-tab" data-bs-toggle="tab" data-bs-target="#{{ menu_title }}" type="button" role="tab" aria-controls="{{ menu_title }}" aria-selected="true">{{ block.settings.menu-title }}</button>
                       </li>
                     {% endcase %}
                   {% endfor %}
@@ -36,7 +35,7 @@
                 {% endcomment %}
               </ul>
               <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="bake-it-yourself" role="tabpanel" aria-labelledby="bake-it-yourself-tab">
+                <div class="tab-pane fade show active" id="{{ menu_title }}" role="tabpanel" aria-labelledby="{{ menu_title }}-tab">
                   <h5>Soft on the inside, crispy on the outside…</h5>
                   <p>Our Cookie Dough is made with the finest quality ingredients, a special recipe invented by our founders who know their food science! Although you need to bake the Cookie Dough, it always remains soft on the inside and crispy on the outside. They’re not Cookies, so get your spoons ready to indulge in the ultimate Cookie Dough treat 🥄🥄🥄</p>
                   <p>HERE ARE THE INSTRUCTIONAL LEAFLETS FOR OUR BIY PACKS:</p>
