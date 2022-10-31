@@ -5,7 +5,7 @@
                 {% assign menu_title = block.settings.menu-title %}
                 {% assign menu_title = menu_title | downcase | replace: " ", "-"  %}
                 <li class="nav-item" role="presentation">
-                  <button class="active" id="bake-it-yourself-tab" data-bs-toggle="tab" data-bs-target="#bake-it-yourself" type="button" role="tab" aria-controls="bake-it-yourself" aria-selected="true">{{ block.settings.menu-title }}</button>
+                  <button class="active" id="{{ menu_title }}-tab" data-bs-toggle="tab" data-bs-target="#{{ menu_title }}" type="button" role="tab" aria-controls="{{ menu_title }}" aria-selected="true">{{ block.settings.menu-title }}</button>
                 </li>
                {% endcase %}
              {% endfor %}
