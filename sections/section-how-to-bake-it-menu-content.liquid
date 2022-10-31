@@ -2,7 +2,9 @@
                 {% for block in section.blocks %}
                   {% case block.type %}
                     {% when 'main-content-section' %}
-                     <div class="tab-pane fade show active" id="bake-it-yourself" role="tabpanel" aria-labelledby="bake-it-yourself-tab">
+                      {% assign menu_title = block.settings.content-for %}
+                        {% assign menu_title = menu_title | downcase | replace: " ", "-"  %}
+                     <div class="tab-pane fade show active" id="{{ menu_title }}" role="tabpanel" aria-labelledby="{{ menu-title }}-tab">
                         <h5>{{ block.settings.content-sub-heading }}</h5>
                             {{ block.settings.content }}
                         <p>{{ block.settings.download-pack-title }}</p>
