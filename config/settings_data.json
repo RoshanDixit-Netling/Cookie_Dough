@@ -1309,6 +1309,41 @@
               "pack-download-url": "#"
             }
           },
+          "7bf88734-ad34-4b89-aa58-981de91c50da": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "Scotch egg",
+              "tip-content": "Make sure you use baking paper when cooking"
+            }
+          },
+          "e6ea6da7-c9f6-4f31-afa7-6f75e3e1d16a": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "Scotch egg",
+              "tip-content": "Ensure your oven is completely preheated before beginning to bake"
+            }
+          },
+          "4c4c3158-bf05-4f8a-b6ff-f83441a02b34": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "Scotch egg",
+              "tip-content": "It is a good idea to chill your baking tray before baking - your cookie dough should also be chilled"
+            }
+          },
+          "140854cf-113f-487f-b6b1-38094850fe45": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "Scotch egg",
+              "tip-content": "Once the cookie dough is slightly golden brown (usually after 8-9 minutes), remove it from the oven. You can use a large spatula to push on the 4 sides to prevent it expanding too much, and to help it keep its ‘square shape’."
+            }
+          },
+          "b2a9cd5b-39a4-4e37-b206-7721a974d2ad": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "Scotch egg",
+              "tip-content": "<p>Gently (very gently) wriggle the spatula completely under the cookie dough, before transferring to a plate to decorate & EAT!<\/p>"
+            }
+          },
           "4ce61b7b-add1-414e-b0b3-67f2c027db19": {
             "type": "main-content-section",
             "settings": {
@@ -1336,6 +1371,11 @@
           "b4b1450b-a72b-43ad-8fbb-926db3222037",
           "2a78243f-abc9-4247-8816-cbc07c78e172",
           "e052d32a-b988-47a1-bec6-cab90b8a8a74",
+          "7bf88734-ad34-4b89-aa58-981de91c50da",
+          "e6ea6da7-c9f6-4f31-afa7-6f75e3e1d16a",
+          "4c4c3158-bf05-4f8a-b6ff-f83441a02b34",
+          "140854cf-113f-487f-b6b1-38094850fe45",
+          "b2a9cd5b-39a4-4e37-b206-7721a974d2ad",
           "4ce61b7b-add1-414e-b0b3-67f2c027db19"
         ],
         "settings": {
