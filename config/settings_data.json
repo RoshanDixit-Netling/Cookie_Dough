@@ -1276,6 +1276,24 @@
               "download-pack-title": "HERE ARE THE INSTRUCTIONAL LEAFLETS FOR OUR BIY PACKS:",
               "baking-tips": "Tips for baking MyCookieDough like a pro:"
             }
+          },
+          "e21c8d39-7662-44b3-8a44-bc27c9a0f6ac": {
+            "type": "download-biy-pack",
+            "settings": {
+              "menu-name": "Scotch egg",
+              "pack-name": "The Famous Five Pack",
+              "pack-download-url": "#"
+            }
+          },
+          "4ce61b7b-add1-414e-b0b3-67f2c027db19": {
+            "type": "main-content-section",
+            "settings": {
+              "content-for": "Stackos",
+              "content-sub-heading": "Soft on the inside, crispy on the outside…",
+              "content": "<p>Our Cookie Dough is made with the finest quality ingredients, a special recipe invented by our founders who know their food science! Although you need to bake the Cookie Dough, it always remains soft on the inside and crispy on the outside. They’re not Cookies, so get your spoons ready to indulge in the ultimate Cookie Dough treat 🥄🥄🥄 <\/p>",
+              "download-pack-title": "HERE ARE THE INSTRUCTIONAL LEAFLETS FOR OUR BIY PACKS:",
+              "baking-tips": "Tips for baking MyCookieDough like a pro:"
+            }
           }
         },
         "block_order": [
@@ -1289,19 +1307,17 @@
           "a7218cbd-6f3a-4a5f-8f5f-0ed5f4228b24",
           "6627fdc7-e267-447d-9a90-da99c6bd6fb2",
           "395898c8-8848-41e2-8de7-a860b6433231",
-          "b072f80a-422d-4fbf-8484-319894085b05"
+          "b072f80a-422d-4fbf-8484-319894085b05",
+          "e21c8d39-7662-44b3-8a44-bc27c9a0f6ac",
+          "4ce61b7b-add1-414e-b0b3-67f2c027db19"
         ],
         "settings": {
         }
       },
-      "section-how-to-bake-it-biy-packs": {
-        "type": "section-how-to-bake-it-biy-packs",
+      "section-recipes-to-try": {
+        "type": "section-recipes-to-try",
         "settings": {
-        }
-      },
-      "section-how-to-bake-it-baking-tips": {
-        "type": "section-how-to-bake-it-baking-tips",
-        "settings": {
+          "title": "Recipes to try with your BIY"
         }
       }
     },
