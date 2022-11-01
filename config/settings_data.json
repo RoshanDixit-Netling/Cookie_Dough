@@ -1285,6 +1285,30 @@
               "pack-download-url": "#"
             }
           },
+          "b4b1450b-a72b-43ad-8fbb-926db3222037": {
+            "type": "download-biy-pack",
+            "settings": {
+              "menu-name": "Scotch egg",
+              "pack-name": "The Special Edition Pack",
+              "pack-download-url": "#"
+            }
+          },
+          "2a78243f-abc9-4247-8816-cbc07c78e172": {
+            "type": "download-biy-pack",
+            "settings": {
+              "menu-name": "Scotch egg",
+              "pack-name": "The Chocoholics Pack",
+              "pack-download-url": "#"
+            }
+          },
+          "e052d32a-b988-47a1-bec6-cab90b8a8a74": {
+            "type": "download-biy-pack",
+            "settings": {
+              "menu-name": "Scotch egg",
+              "pack-name": "The Vegan BIY Pack",
+              "pack-download-url": "#"
+            }
+          },
           "4ce61b7b-add1-414e-b0b3-67f2c027db19": {
             "type": "main-content-section",
             "settings": {
@@ -1309,6 +1333,9 @@
           "395898c8-8848-41e2-8de7-a860b6433231",
           "b072f80a-422d-4fbf-8484-319894085b05",
           "e21c8d39-7662-44b3-8a44-bc27c9a0f6ac",
+          "b4b1450b-a72b-43ad-8fbb-926db3222037",
+          "2a78243f-abc9-4247-8816-cbc07c78e172",
+          "e052d32a-b988-47a1-bec6-cab90b8a8a74",
           "4ce61b7b-add1-414e-b0b3-67f2c027db19"
         ],
         "settings": {
