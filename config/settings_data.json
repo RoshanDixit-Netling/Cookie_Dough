@@ -1390,7 +1390,7 @@
             "type": "baking-tips",
             "settings": {
               "menu-name": "Stackos",
-              "tip-content": "Make sure you use baking paper when cooking"
+              "tip-content": "Make sure you use baking paper when cooking Stackos"
             }
           },
           "81adc76d-453d-413f-a90b-8f1ac8e70612": {
@@ -1419,6 +1419,83 @@
             "settings": {
               "menu-name": "Stackos",
               "tip-content": "<p>Gently (very gently) wriggle the spatula completely under the cookie dough, before transferring to a plate to decorate & EAT!<\/p>"
+            }
+          },
+          "8c44ef30-49ff-4520-b73f-1603a49bafc0": {
+            "type": "main-content-section",
+            "settings": {
+              "content-for": "SKILLETS",
+              "content-sub-heading": "Soft on the inside, crispy on the outside…",
+              "content": "<p>Our Cookie Dough is made with the finest quality ingredients, a special recipe invented by our founders who know their food science! Although you need to bake the Cookie Dough, it always remains soft on the inside and crispy on the outside. They’re not Cookies, so get your spoons ready to indulge in the ultimate Cookie Dough treat 🥄🥄🥄 <\/p>",
+              "download-pack-title": "HERE ARE THE INSTRUCTIONAL LEAFLETS FOR OUR BIY PACKS:",
+              "baking-tips": "Tips for baking MyCookieDough like a pro:"
+            }
+          },
+          "ce87d791-2abf-4234-ad7a-a2c6ca436e63": {
+            "type": "download-biy-pack",
+            "settings": {
+              "menu-name": "SKILLETS",
+              "pack-name": "The Famous Five Pack",
+              "pack-download-url": "#"
+            }
+          },
+          "ff9eca6c-e047-43d7-999e-5cf43c4fc1cf": {
+            "type": "download-biy-pack",
+            "settings": {
+              "menu-name": "SKILLETS",
+              "pack-name": "The Special Edition Pack",
+              "pack-download-url": "#"
+            }
+          },
+          "fa5dec1a-bd95-4b44-a831-0321fcdf0806": {
+            "type": "download-biy-pack",
+            "settings": {
+              "menu-name": "SKILLETS",
+              "pack-name": "The Chocoholics Pack",
+              "pack-download-url": "#"
+            }
+          },
+          "4f99d6b2-cc25-4b99-8068-de8010e40bb8": {
+            "type": "download-biy-pack",
+            "settings": {
+              "menu-name": "SKILLETS",
+              "pack-name": "The Vegan BIY Pack",
+              "pack-download-url": "#"
+            }
+          },
+          "3783431a-7db7-402a-8414-0ec418fbc382": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "SKILLETS",
+              "tip-content": "Make sure you use baking paper when cooking"
+            }
+          },
+          "c7d307e0-ae82-46ff-95cd-6d78c00c3cff": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "SKILLETS",
+              "tip-content": ""
+            }
+          },
+          "b91831b1-8f2a-4c55-9712-d71a01f858df": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "SKILLETS",
+              "tip-content": ""
+            }
+          },
+          "0951288d-3e77-4b42-abb2-f4e0ef77471b": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "SKILLETS",
+              "tip-content": ""
+            }
+          },
+          "eed42d97-939f-40fb-8e82-7d50063a85b2": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "SKILLETS",
+              "tip-content": ""
             }
           }
         },
@@ -1452,7 +1529,17 @@
           "81adc76d-453d-413f-a90b-8f1ac8e70612",
           "d6e7f9d9-ed59-49b8-95d8-b7a627eb3c8a",
           "d59db729-38a2-407a-a120-4f6ad50d868f",
-          "c9e7978c-f28d-4b19-b98a-10af65a6145f"
+          "c9e7978c-f28d-4b19-b98a-10af65a6145f",
+          "8c44ef30-49ff-4520-b73f-1603a49bafc0",
+          "ce87d791-2abf-4234-ad7a-a2c6ca436e63",
+          "ff9eca6c-e047-43d7-999e-5cf43c4fc1cf",
+          "fa5dec1a-bd95-4b44-a831-0321fcdf0806",
+          "4f99d6b2-cc25-4b99-8068-de8010e40bb8",
+          "3783431a-7db7-402a-8414-0ec418fbc382",
+          "c7d307e0-ae82-46ff-95cd-6d78c00c3cff",
+          "b91831b1-8f2a-4c55-9712-d71a01f858df",
+          "0951288d-3e77-4b42-abb2-f4e0ef77471b",
+          "eed42d97-939f-40fb-8e82-7d50063a85b2"
         ],
         "settings": {
         }
