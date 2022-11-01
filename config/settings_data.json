@@ -1497,6 +1497,83 @@
               "menu-name": "SKILLETS",
               "tip-content": "Gently (very gently) wriggle the spatula completely under the cookie dough, before transferring to a plate to decorate & EAT!"
             }
+          },
+          "37be5c4b-89cd-465c-92cc-b417e861fca2": {
+            "type": "main-content-section",
+            "settings": {
+              "content-for": "Mississippi Love pie",
+              "content-sub-heading": "Soft on the inside, crispy on the outside…",
+              "content": "<p>Our Cookie Dough is made with the finest quality ingredients, a special recipe invented by our founders who know their food science! Although you need to bake the Cookie Dough, it always remains soft on the inside and crispy on the outside. They’re not Cookies, so get your spoons ready to indulge in the ultimate Cookie Dough treat 🥄🥄🥄 <\/p>",
+              "download-pack-title": "HERE ARE THE INSTRUCTIONAL LEAFLETS FOR OUR BIY PACKS:",
+              "baking-tips": "Tips for baking MyCookieDough like a pro:"
+            }
+          },
+          "b7bc154e-4e5b-4fb5-a1b3-b9e6c7487198": {
+            "type": "download-biy-pack",
+            "settings": {
+              "menu-name": "Mississippi Love pie",
+              "pack-name": "The Famous Five Pack",
+              "pack-download-url": "#"
+            }
+          },
+          "ebc59163-f1da-4e8a-8f5f-27bec546400f": {
+            "type": "download-biy-pack",
+            "settings": {
+              "menu-name": "Mississippi Love pie",
+              "pack-name": "The Special Edition Pack",
+              "pack-download-url": "#"
+            }
+          },
+          "dde19bb5-ed34-4876-80c1-da69772deb45": {
+            "type": "download-biy-pack",
+            "settings": {
+              "menu-name": "Mississippi Love pie",
+              "pack-name": "The Chocoholics Pack",
+              "pack-download-url": "#"
+            }
+          },
+          "3ccbb235-669a-46b6-b5db-0778974026d6": {
+            "type": "download-biy-pack",
+            "settings": {
+              "menu-name": "Mississippi Love pie",
+              "pack-name": "The Vegan BIY Pack",
+              "pack-download-url": "#"
+            }
+          },
+          "dc5b9c8e-50a4-45a0-af39-ef0f3333a052": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "Mississippi Love pie",
+              "tip-content": "Make sure you use baking paper when cooking"
+            }
+          },
+          "d79e8542-e4d6-4a28-b8ee-3c6352785819": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "Mississippi Love pie",
+              "tip-content": "Ensure your oven is completely preheated before beginning to bake"
+            }
+          },
+          "cacdee06-0599-4103-b613-16d43210f040": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "Mississippi Love pie",
+              "tip-content": "It is a good idea to chill your baking tray before baking - your cookie dough should also be chilled"
+            }
+          },
+          "d9a469a1-7121-4190-947a-656d86b317ec": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "Mississippi Love pie",
+              "tip-content": "Once the cookie dough is slightly golden brown (usually after 8-9 minutes), remove it from the oven. You can use a large spatula to push on the 4 sides to prevent it expanding too much, and to help it keep its ‘square shape’."
+            }
+          },
+          "1a122bca-6f39-47ab-abce-3a09ca7926d7": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "Mississippi Love pie",
+              "tip-content": "Gently (very gently) wriggle the spatula completely under the cookie dough, before transferring to a plate to decorate & EAT!"
+            }
           }
         },
         "block_order": [
@@ -1539,7 +1616,17 @@
           "c7d307e0-ae82-46ff-95cd-6d78c00c3cff",
           "b91831b1-8f2a-4c55-9712-d71a01f858df",
           "0951288d-3e77-4b42-abb2-f4e0ef77471b",
-          "eed42d97-939f-40fb-8e82-7d50063a85b2"
+          "eed42d97-939f-40fb-8e82-7d50063a85b2",
+          "37be5c4b-89cd-465c-92cc-b417e861fca2",
+          "b7bc154e-4e5b-4fb5-a1b3-b9e6c7487198",
+          "ebc59163-f1da-4e8a-8f5f-27bec546400f",
+          "dde19bb5-ed34-4876-80c1-da69772deb45",
+          "3ccbb235-669a-46b6-b5db-0778974026d6",
+          "dc5b9c8e-50a4-45a0-af39-ef0f3333a052",
+          "d79e8542-e4d6-4a28-b8ee-3c6352785819",
+          "cacdee06-0599-4103-b613-16d43210f040",
+          "d9a469a1-7121-4190-947a-656d86b317ec",
+          "1a122bca-6f39-47ab-abce-3a09ca7926d7"
         ],
         "settings": {
         }
