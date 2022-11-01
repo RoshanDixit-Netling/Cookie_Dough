@@ -1353,6 +1353,73 @@
               "download-pack-title": "HERE ARE THE INSTRUCTIONAL LEAFLETS FOR OUR BIY PACKS:",
               "baking-tips": "Tips for baking MyCookieDough like a pro:"
             }
+          },
+          "7d557d67-9c22-4010-860b-3702c5f9417e": {
+            "type": "download-biy-pack",
+            "settings": {
+              "menu-name": "Stackos",
+              "pack-name": "The Famous Five Pack",
+              "pack-download-url": "#"
+            }
+          },
+          "4c5abdbf-66c7-45a9-9230-a53035a10e7a": {
+            "type": "download-biy-pack",
+            "settings": {
+              "menu-name": "Stackos",
+              "pack-name": "The Special Edition Pack",
+              "pack-download-url": "#"
+            }
+          },
+          "ea580cb6-ddab-4766-b8d2-8cde4d7053df": {
+            "type": "download-biy-pack",
+            "settings": {
+              "menu-name": "Stackos",
+              "pack-name": "The Chocoholics Pack",
+              "pack-download-url": "#"
+            }
+          },
+          "d1ff2bbb-bcac-446a-a068-ea9db97a2a4c": {
+            "type": "download-biy-pack",
+            "settings": {
+              "menu-name": "Stackos",
+              "pack-name": "The Vegan BIY Pack",
+              "pack-download-url": "#"
+            }
+          },
+          "d86ac9e0-0f52-44fd-a6b7-c56eb20a2ff5": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "Stackos",
+              "tip-content": "Make sure you use baking paper when cooking"
+            }
+          },
+          "81adc76d-453d-413f-a90b-8f1ac8e70612": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "Stackos",
+              "tip-content": "Ensure your oven is completely preheated before beginning to bake"
+            }
+          },
+          "d6e7f9d9-ed59-49b8-95d8-b7a627eb3c8a": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "Stackos",
+              "tip-content": "It is a good idea to chill your baking tray before baking - your cookie dough should also be chilled"
+            }
+          },
+          "d59db729-38a2-407a-a120-4f6ad50d868f": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "Stackos",
+              "tip-content": "Once the cookie dough is slightly golden brown (usually after 8-9 minutes), remove it from the oven. You can use a large spatula to push on the 4 sides to prevent it expanding too much, and to help it keep its ‘square shape’."
+            }
+          },
+          "c9e7978c-f28d-4b19-b98a-10af65a6145f": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "Stackos",
+              "tip-content": "<p>Gently (very gently) wriggle the spatula completely under the cookie dough, before transferring to a plate to decorate & EAT!<\/p>"
+            }
           }
         },
         "block_order": [
@@ -1376,7 +1443,16 @@
           "4c4c3158-bf05-4f8a-b6ff-f83441a02b34",
           "140854cf-113f-487f-b6b1-38094850fe45",
           "b2a9cd5b-39a4-4e37-b206-7721a974d2ad",
-          "4ce61b7b-add1-414e-b0b3-67f2c027db19"
+          "4ce61b7b-add1-414e-b0b3-67f2c027db19",
+          "7d557d67-9c22-4010-860b-3702c5f9417e",
+          "4c5abdbf-66c7-45a9-9230-a53035a10e7a",
+          "ea580cb6-ddab-4766-b8d2-8cde4d7053df",
+          "d1ff2bbb-bcac-446a-a068-ea9db97a2a4c",
+          "d86ac9e0-0f52-44fd-a6b7-c56eb20a2ff5",
+          "81adc76d-453d-413f-a90b-8f1ac8e70612",
+          "d6e7f9d9-ed59-49b8-95d8-b7a627eb3c8a",
+          "d59db729-38a2-407a-a120-4f6ad50d868f",
+          "c9e7978c-f28d-4b19-b98a-10af65a6145f"
         ],
         "settings": {
         }
