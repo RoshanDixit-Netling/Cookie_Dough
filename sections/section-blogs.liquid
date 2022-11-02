@@ -1,13 +1,3 @@
-{% comment %}{%- paginate blog.articles by {{ section.settings.blogs-per-page }} -%}
-      {% for article in blog.articles %}
-      {% include 'news-card' %}
-      {% endfor %}
-
-    {%- if paginate.pages > 1 -%}
-      {%- render 'pagination', paginate: paginate -%}
-    {%- endif -%}
-  </div>
-{%- endpaginate -%} {% endcomment %}
         {% paginate blog.articles by section.settings.blogs-per-page %}
         <div class="section news-overview wave1 bg-color1">
           <div class="container">
