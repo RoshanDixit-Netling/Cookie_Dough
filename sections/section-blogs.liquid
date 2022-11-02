@@ -1,6 +1,14 @@
+{% for link in linklists.blogs.links %}
+  {% assign blog = link.object %}
+  {% for article in blog.articles %}
+    <h2><a href="{{ article.url }}">{{ article.title }}</a></h2>
+  {% endfor %} 
+{% endfor %}
+        
         <div class="section news-overview wave1 bg-color1">
           <div class="container">
             <div class="row">
+              
               <div class="col-lg-4 col-md-6 column">
                 <article class="post single-post">
                   <figure class="figure1">
@@ -16,6 +24,7 @@
                   </footer>
                 </article>
               </div>
+              
               <div class="col-lg-4 col-md-6 column">
                 <article class="post single-post">
                   <figure class="figure1">
