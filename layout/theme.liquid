@@ -31,7 +31,7 @@
     {% else %}
         {% assign body_class = body_class | append: 'bg-color1 ' %}
     {% endif %}
-    {% if template.suffix == 'news-archive' or template.suffix == 'corporate' %}
+    {% if template.suffix == 'news-archive' or template.suffix == 'corporate' or template == 'article'%}
       {% assign body_class = body_class | append: 'layout1' %}
     {% endif %}
     <body class="{{ body_class }}" >
