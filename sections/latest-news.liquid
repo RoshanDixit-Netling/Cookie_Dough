@@ -7,7 +7,7 @@
               <h2 class="heading1">{{ section.settings.latest-news-title }}</h2>
             </header>
             <div class="row">
-              {%- if section.settings.blog != blank and section.settings.blog.articles_count > 0 -%}
+              {% if section.settings.blog != blank and section.settings.blog.articles_count > 0 %}
                 {% for article in section.settings.blog.articles limit: 3 %}
                   {% include 'news-card' %}
                 {% endfor %}
