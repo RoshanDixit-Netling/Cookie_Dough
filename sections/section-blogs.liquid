@@ -13,6 +13,7 @@
                 {% for page_number in (1..paginate.pages) %}
                   {% endfor %}
                 {% for part in paginate.parts %}
+                  <li class="page-item"><a class="page-link" href="{{ part.url }}">{{ part.title }}</a></li>
                 <li class="page-item"><span class="page-link {% if part.title ==  paginate.current_page %} active {% endif %}">{{ part.title }}</span></li>
                 {% endfor %}
                 <li class="page-item next"><a class="page-link" href="{{ paginate.next.url }}"> > </a></li>
