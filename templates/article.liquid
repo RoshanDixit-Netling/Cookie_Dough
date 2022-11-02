@@ -84,8 +84,8 @@
         <div class="container">
           <div class="row">
             <div class="col-xl-8">
-              <span class="post-date">01 Jan 2022</span>
-              <h1 class="h4">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</h1>
+              <span class="post-date">{{ article.created_at | date: " %d %b %Y"  }}</span>
+              <h1 class="h4">{{ article.title }}</h1>
             </div>
           </div>
         </div>
