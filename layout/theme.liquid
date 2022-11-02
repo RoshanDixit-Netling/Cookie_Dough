@@ -25,16 +25,16 @@
     
     {{ content_for_header }}
   </head>
-    {%  assign bodyClass = '' %}
+    {%  assign body_class = '' %}
     {% if template.suffix == 'store-menu' %}
-      {% assign bodyClass = bodyClass | append: 'bg-primary-light ' %}
+      {% assign body_class = body_class | append: 'bg-primary-light ' %}
     {% else %}
-        {% assign bodyClass = bodyClass | append: 'bg-color1 ' %}
+        {% assign body_class = body_class | append: 'bg-color1 ' %}
     {% endif %}
     {% if template.suffix == 'news-archive' or template.suffix == 'corporate' %}
-      {% assign bodyClass = bodyClass | append: 'layout1' %}
+      {% assign body_class = body_class | append: 'layout1' %}
     {% endif %}
-    <body class="{{ bodyClass }}" >
+    <body class="{{ body_class }}" >
       <!-- container -->
     <div id="container">
        {% section 'header' %}
