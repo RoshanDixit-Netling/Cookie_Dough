@@ -12,7 +12,7 @@
             {% section 'section-blogs' %}
           {% endcapture %}
           {{ section_capture | replace: 'class="shopify-section section"', '' }}
-          {% section 'section-blogs' %}
+          {% comment %}{% section 'section-blogs' %}{% endcomment %}
         <!-- /section -->
       </div>
       <!-- /content -->
