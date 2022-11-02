@@ -1640,7 +1640,7 @@
       "section-blogs": {
         "type": "section-blogs",
         "settings": {
-          "blogs-per-page": 1
+          "blogs-per-page": 6
         }
       }
     },
