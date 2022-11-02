@@ -24,7 +24,7 @@
                 {% for page_number in (1..paginate.pages) %}
                 <li class="page-item"><span class="page-link {% if page_number == 1 %} active {% endif %}">{{ page_number }}</span></li>
                 {% endfor %}
-                <li class="page-item next"><a class="page-link" href="#"> > </a></li>
+                <li class="page-item next"><a class="page-link" href="{{ paginate.next.url }}"> > </a></li>
               </ul>
             </nav>
           {% endif %}
