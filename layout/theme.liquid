@@ -34,6 +34,7 @@
         {% assign bodyClass = bodyClass | concat: 'bg-color1' %}
     {% endif %}
     <body class="{% if request.path contains "store-menu" %} bg-primary-light {% else %} bg-color1 {% endif %}{% if request.path contains "corporate" %} layout1 {% endif %}" >
+      {{ template.suffix }}
       <!-- container -->
     <div id="container">
        {% section 'header' %}
