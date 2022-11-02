@@ -22,7 +22,7 @@
                 <li class="page-item prev"><a class="page-link" href="#">
                     < </a> </li>
                 {% for page_number in (1..paginate.pages) %}
-                <li class="page-item"><span class="page-link ">{{ page_number }}</span></li>
+                <li class="page-item"><span class="page-link {% if page_number == 1 %} active {% endif %}">{{ page_number }}</span></li>
                 {% endfor %}
                 <li class="page-item next"><a class="page-link" href="#"> > </a></li>
               </ul>
