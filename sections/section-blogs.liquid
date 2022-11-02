@@ -21,8 +21,9 @@
                   <li class="page-item"><a class="page-link" href="{{ part.url }}">{{ part.title }}</a></li>
                   {% endif %}
                 {% endfor %}
-                {{ paginate.pages }}
+                {% if paginate.current_page < paginate.pages %}
                 <li class="page-item next"><a class="page-link" href="{{ paginate.next.url }}"> > </a></li>
+                    {% endif %}
               </ul>
             </nav>
           {% endif %}
