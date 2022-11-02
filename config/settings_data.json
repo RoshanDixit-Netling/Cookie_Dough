@@ -39,6 +39,18 @@
             "settings": {
               "block-image": "shopify:\/\/shop_images\/menu-img2.jpg"
             }
+          },
+          "093915cb-7499-4bac-9603-0e5867383172": {
+            "type": "image",
+            "settings": {
+              "block-image": "shopify:\/\/shop_images\/image2_e1ce76bc-7520-4544-9910-9568eb68dd72.jpg"
+            }
+          },
+          "9a062796-3e7c-4ae1-a9b6-b3cc4c6bd853": {
+            "type": "image",
+            "settings": {
+              "block-image": "shopify:\/\/shop_images\/menu-img2.jpg"
+            }
           }
         },
         "block_order": [
@@ -47,7 +59,9 @@
           "53089880-26ff-4be8-a22a-5cc757b62b59",
           "32be2a32-ff4c-4a99-8255-ca1af6e5290b",
           "ac5cc38a-92bc-497d-b55c-12d8960672f0",
-          "fd8dd4e9-5407-4c48-9d31-c055307a357e"
+          "fd8dd4e9-5407-4c48-9d31-c055307a357e",
+          "093915cb-7499-4bac-9603-0e5867383172",
+          "9a062796-3e7c-4ae1-a9b6-b3cc4c6bd853"
         ],
         "settings": {
           "menu-heading": "<small>SHOP<\/small> MY COOKIE DOUGH <br> My COOKIES",
