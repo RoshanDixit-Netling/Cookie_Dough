@@ -35,6 +35,7 @@
       {% assign body_class = body_class | append: 'layout1' %}
     {% endif %}
     <body class="{{ body_class }}" >
+      {{ template.suffix }}
       <!-- container -->
     <div id="container">
        {% section 'header' %}
