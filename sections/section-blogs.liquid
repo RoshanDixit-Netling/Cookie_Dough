@@ -1,16 +1,16 @@
         {% paginate blog.articles by section.settings.blogs-per-page %}
-        <div class="section news-overview wave1 bg-color1">
-          <div class="container">
-            <div class="row">
-              {% for article in blog.articles %}
-              {% include 'news-card' %}
-              {% endfor %}
+          <div class="section news-overview wave1 bg-color1">
+            <div class="container">
+              <div class="row">
+                {% for article in blog.articles %}
+                {% include 'news-card' %}
+                {% endfor %}
+              </div>
+              {% if paginate.pages > 1 %}
+                {% include 'pagination' %}
+              {% endif %}
             </div>
-            {% if paginate.pages > 1 %}
-              {% include 'pagination' %}
-            {% endif %}
           </div>
-        </div>
       {% endpaginate %}
 {% schema %}
 {
