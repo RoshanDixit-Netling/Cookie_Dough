@@ -26,13 +26,12 @@
     {{ content_for_header }}
   </head>
     {%  assign bodyClass = '' %}
-    {% if template.name == 'store-menu' %}
+    {% if template.suffix == 'store-menu' %}
       {% assign bodyClass = bodyClass | concat: 'bg-primary-light' %}
     {% else %}
         {% assign bodyClass = bodyClass | concat: 'bg-color1' %}
     {% endif %}
     <body class="{% if request.path contains "store-menu" %} bg-primary-light {% else %} bg-color1 {% endif %}{% if request.path contains "corporate" %} layout1 {% endif %}" >
-      {{ template.suffix }}
       <!-- container -->
     <div id="container">
        {% section 'header' %}
