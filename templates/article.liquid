@@ -29,7 +29,9 @@
         </div>
         <!-- /section -->
         <!-- section -->
-        {% section 'latest-news' %}
+        {% unless page_title contains article.title %}
+         {% section 'latest-news' %}
+        {% endunless %}
         <!-- /section -->
       </div>
       <!-- /content -->
