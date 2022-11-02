@@ -17,7 +17,7 @@
               {% endfor %}
             </div>
             {% if paginate.pages > 1 %}
-              {% for i in paginate.pages %}
+              {% for i in (1..paginate.pages) %}
                 {{ i }}
                 {% endfor %}
             <nav aria-label="Page navigation">
