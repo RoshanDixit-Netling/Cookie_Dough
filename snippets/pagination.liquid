@@ -1,0 +1,19 @@
+            <nav aria-label="Page navigation">
+              <ul class="pagination justify-content-center ">
+                {% if paginate.current_page  != 1 %}
+                  <li class="page-item prev"><a class="page-link" href="{{ paginate.previous.url }}"> < </a> </li>
+                {% endif %}
+                {% for page_number in (1..paginate.pages) %}
+                  {% endfor %}
+                {% for part in paginate.parts %}
+                  {% if part.title ==  paginate.current_page %}
+                    <li class="page-item"><span class="page-link active">{{ part.title }}</span></li>
+                  {% else %}
+                  <li class="page-item"><a class="page-link" href="{{ part.url }}">{{ part.title }}</a></li>
+                  {% endif %}
+                {% endfor %}
+                {% if paginate.current_page < paginate.pages %}
+                <li class="page-item next"><a class="page-link" href="{{ paginate.next.url }}"> > </a></li>
+                {% endif %}
+              </ul>
+            </nav>
