@@ -23,3 +23,6 @@
   {% endpaginate %}
 </div>
 {% endcomment %}
+{% for collection in collections %}
+  {{ collection.title | escape }}
+{% endfor %}
