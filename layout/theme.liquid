@@ -27,11 +27,11 @@
   </head>
     {%  assign bodyClass = '' %}
     {% if template.suffix == 'store-menu' %}
-      {% assign bodyClass = bodyClass | concat: 'bg-primary-light' %}
+      {% assign bodyClass = bodyClass | append: 'bg-primary-light' %}
     {% elsif template.suffix == 'news-archive' %}
-      {% assign bodyClass = bodyClass | concat: 'layout1' %}
+      {% assign bodyClass = bodyClass | append: 'layout1' %}
     {% else %}
-        {% assign bodyClass = bodyClass | concat: 'bg-color1' %}
+        {% assign bodyClass = bodyClass | append: 'bg-color1' %}
     {% endif %}
     <body class="{% if request.path contains "store-menu" %} bg-primary-light {% else %} bg-color1 {% endif %}{% if request.path contains "corporate" %} layout1 {% endif %}" >
       {{ template.suffix }}
