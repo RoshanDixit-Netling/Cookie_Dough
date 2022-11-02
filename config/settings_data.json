@@ -1636,6 +1636,12 @@
         "settings": {
           "title": "Recipes to try with your BIY"
         }
+      },
+      "section-blogs": {
+        "type": "section-blogs",
+        "settings": {
+          "blogs-per-page": 1
+        }
       }
     },
     "content_for_index": [
