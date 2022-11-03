@@ -5,12 +5,10 @@
       <!-- /content --> {% endcomment %}
       <div class="form">
       {% form 'contact' %}
-        <form action="#">
           <div class="row">
             <div class="col-md-6 form-group">
               <input type="text" placeholder="Name" class="form-control" id="{{ formId }}-name" name="contact[name]" value="{% if from[name] %}{{ form[name] }}{% endif %}">
             </div>
-          </div>
-        </form>
+          </div>div
       {% endform %}
       </div>
