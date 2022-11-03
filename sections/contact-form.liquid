@@ -13,7 +13,7 @@
                     {%  assign formId = 'ContactForm' %}
                     {% form 'contact', id: formId %}
                      {% comment %} {% include 'form-status', form_id: fromId %} {% endcomment %}
-                    <form action="#">
+<!--                     <form action="#"> -->
                       <div class="row">
                         <div class="col-md-6 form-group">
                           <input type="text" placeholder="Name" class="form-control" id="{{ formId }}-name" name="contact[name]" value="{% if from[name] %}{{ form[name] }}{% endif %}">
@@ -37,7 +37,7 @@
                           <button type="button" class="btn btn-primary w-100">{{ section.settings.btn-label }}</button>
                         </div>
                       </div>
-                    </form>
+<!--                     </form> -->
                     {% endform %}
                   </div>
                 </div>
