@@ -12,7 +12,7 @@
                   <div class="form">
                     {%  assign formId = 'ContactForm' %}
                     {% form 'contact', id: formId %}
-                      {% include 'form-status', form_id: fromId %}
+                     {% comment %} {% include 'form-status', form_id: fromId %} {% endcomment %}
                     <form action="#">
                       <div class="row">
                         <div class="col-md-6 form-group">
