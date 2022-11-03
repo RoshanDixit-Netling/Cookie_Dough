@@ -12,7 +12,7 @@
                   <div class="form">
                     {%  assign formId = 'ContactForm' %}
                     {% form 'contact', id: formId %}
-                     {% comment %} {% include 'form-status', form_id: fromId %} {% endcomment %}
+                      {% include 'form-status', form_id: fromId %} 
                       <div class="row">
                         <div class="col-md-6 form-group">
                           <input type="text" placeholder="Name" class="form-control" id="{{ formId }}-name" name="contact[name]" value="{% if from[name] %}{{ form[name] }}{% endif %}">
