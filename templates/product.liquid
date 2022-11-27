@@ -1,5 +1,92 @@
+<!-- content -->
+<div id="content">
+  <!--  section -->
+  <div class="section single-product-section alt">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-md-12 order-lg-2 column mb-lg-0">
+          <div class="product-image-slider mb-4">
+            <div class="slideshow2 slick-slider">
+              {% for media in product.media %}
+              {%  case media.media_type %}
+              {% when 'video' %}
+              <div>
+                <div class="single-product">
+                  <div class="figure1 video mb-0">
+                    {{ media | video_tag: controls: false, autoplay: true, loop: true  }}
+                  </div>
+                </div>
+              </div>
+              {% endcase %}
+              {% endfor %}
+            </div>
+            <div class="slideshow2-nav slick-slider">
+              {% for media in product.media %}
+              {%  case media.media_type %}
+              {% when 'video' %}
+              <div class="slick-slide">
+                <span class="thumb-img">
+                  <img src="{{ media | img_url: '400x400'}}" alt="{{ media.alt }}">
+                </span>
+              </div>
+              {% endcase %}
+              {% endfor %}
+            </div>
+          </div>
+
+          {% section 'product-additional-information' %}
+
+        </div>
+        <div class="col-lg-7 col-md-12 pe-lg-5">
+          <div class="side-content">
+            <h1>{{ product.title }}</h1>
+            <p>{{ product.description }}</p>
+            <p class="p-price">{{ product.price | money }}</p>
+            <p class="p-offer">🚚 FREE Shipping on orders over £40 Tax included. Shipping calculated at checkout.</p>
+            <footer>
+              <div class="row">
+                <div class="col-lg-6">
+                  <a href="#" class="btn btn-outline-primary w-100 mb-3">Add to cart</a>
+                </div>
+                <div class="col-lg-6">
+                  <a href="#" class="btn btn-primary w-100 mb-3">Buy it now</a>
+                </div>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+    <span class="cloud cloud1">
+    </span>
+    <span class="cloud cloud2">
+    </span>
+    <span class="cloud cloud3">
+    </span>
+    <span class="cloud cloud4">
+    </span>
+    <span class="cloud cloud5">
+    </span>
+    <span class="cloud cloud6">
+    </span>
+    <span class="cloud cloud7">
+    </span>
+    <span class="cloud cloud8">
+    </span>
+  </div>
+  <!--  /section -->
+
+  <!-- section -->
+  {% section 'product-recommendations'%}
+  <!-- /section -->
+  
+</div>
+<!-- /content -->
+
+
+
+{% comment %} 
 {% section 'product-banner' %}
 {% section 'product-ingredients' %}
 {% section 'product-nutritional-information' %}
-
-{{ 'product-single-page' }}
+ {% endcomment %}

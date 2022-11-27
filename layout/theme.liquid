@@ -26,15 +26,21 @@
     {{ content_for_header }}
   </head>
     {%  assign body_class = '' %}
+
     {% if template.suffix == 'store-menu' %}
       {% assign body_class = body_class | append: 'bg-primary-light ' %}
+    {% elsif  template == 'product' %}
+     {% assign body_class = body_class | append: 'bg-color2 ' %}
     {% else %}
         {% assign body_class = body_class | append: 'bg-color1 ' %}
     {% endif %}
+
     {% if template.suffix == 'news-archive' or template.suffix == 'corporate' or template == 'article'%}
       {% assign body_class = body_class | append: 'layout1' %}
     {% endif %}
+
     <body class="{{ body_class }}" >
+     <!-- <h2>{{ template }}</h2> remove when dvelopment is done-->
       <!-- container -->
     <div id="container">
        {% section 'header' %}

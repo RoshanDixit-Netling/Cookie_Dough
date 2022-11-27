@@ -1,0 +1,170 @@
+{% liquid
+  assign heading_blocks = section.blocks | where: "type", "additional-info-heading" 
+  assign content_blocks = section.blocks | where: "type", "additional-info-content"
+%}
+
+{% if heading_blocks %}
+<div class="custom-accordion color2">
+{% assign i = 1 %}
+{% for block in section.blocks %}
+  {% case block.type %}
+    {% when 'additional-info-heading' %}
+    <div class="custom-card {% if i == 1 %} active {% endif %} {% assign i = i | plus: 1 %}">
+      <div class="custom-accordion-header"> {{ block.settings.heading }} </div>
+      <div class="custom-accordion-content">
+        <div class="inner-content">
+          {% assign id = block.settings.heading_id %}
+           <ul class="list2 color2">
+            {% for block in section.blocks %}
+              {% case block.type %}
+                {% when 'additional-info-content' %}
+                  {% if id == block.settings.content_id %}
+                    <li>{{ block.settings.content }}</li>
+                  {% endif %}
+                {% endcase %}
+              {% endfor %}
+           </ul>
+        </div>
+      </div>
+    </div>
+  {% endcase %}
+{% endfor %}
+{% comment %} 
+  <div class="custom-card">
+    <div class="custom-accordion-header"> What you need </div>
+    <div class="custom-accordion-content">
+      <div class="inner-content">
+        <ul class="list2 color2">
+          <li></li>
+          <li>2x White Choc Cookie Doughs</li>
+          <li>1x Biscoff Cookie Dough</li>
+          <li>1x Pot of Nutella</li>
+          <li>1x Pot of Biscoff Spread</li>
+          <li>1x Pot of Caramel Sauce</li>
+          <li>1 x Pot of Chocolate Sauce</li>
+          <li>2x Kinder Bars</li>
+          <li>2x Biscoff Biscuits</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="custom-card">
+    <div class="custom-accordion-header"> Allergen information </div>
+    <div class="custom-accordion-content">
+      <div class="inner-content">
+        <ul class="list2 color2">
+          <li>2x Original Milk Choc Cookie Doughs</li>
+          <li>2x White Choc Cookie Doughs</li>
+          <li>1x Biscoff Cookie Dough</li>
+          <li>1x Pot of Nutella</li>
+          <li>1x Pot of Biscoff Spread</li>
+          <li>1x Pot of Caramel Sauce</li>
+          <li>1 x Pot of Chocolate Sauce</li>
+          <li>2x Kinder Bars</li>
+          <li>2x Biscoff Biscuits</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="custom-card">
+    <div class="custom-accordion-header"> Storage </div>
+    <div class="custom-accordion-content">
+      <div class="inner-content">
+        <ul class="list2 color2">
+          <li>2x Original Milk Choc Cookie Doughs</li>
+          <li>2x White Choc Cookie Doughs</li>
+          <li>1x Biscoff Cookie Dough</li>
+          <li>1x Pot of Nutella</li>
+          <li>1x Pot of Biscoff Spread</li>
+          <li>1x Pot of Caramel Sauce</li>
+          <li>1 x Pot of Chocolate Sauce</li>
+          <li>2x Kinder Bars</li>
+          <li>2x Biscoff Biscuits</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="custom-card">
+    <div class="custom-accordion-header"> Shipping </div>
+    <div class="custom-accordion-content">
+      <div class="inner-content">
+        <ul class="list2 color2">
+          <li>2x Original Milk Choc Cookie Doughs</li>
+          <li>2x White Choc Cookie Doughs</li>
+          <li>1x Biscoff Cookie Dough</li>
+          <li>1x Pot of Nutella</li>
+          <li>1x Pot of Biscoff Spread</li>
+          <li>1x Pot of Caramel Sauce</li>
+          <li>1 x Pot of Chocolate Sauce</li>
+          <li>2x Kinder Bars</li>
+          <li>2x Biscoff Biscuits</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="custom-card">
+    <div class="custom-accordion-header"> How to bake it </div>
+    <div class="custom-accordion-content">
+      <div class="inner-content">
+        <ul class="list2 color2">
+          <li>2x Original Milk Choc Cookie Doughs</li>
+          <li>2x White Choc Cookie Doughs</li>
+          <li>1x Biscoff Cookie Dough</li>
+          <li>1x Pot of Nutella</li>
+          <li>1x Pot of Biscoff Spread</li>
+          <li>1x Pot of Caramel Sauce</li>
+          <li>1 x Pot of Chocolate Sauce</li>
+          <li>2x Kinder Bars</li>
+          <li>2x Biscoff Biscuits</li>
+        </ul>
+      </div>
+    </div>
+  </div> {% endcomment %}
+
+</div>
+{% endif %}
+{% schema %}
+{
+"name": "Additional Information",
+"settings": [],
+"blocks": [
+  {
+    "name": "Heading",
+    "type": "additional-info-heading",
+    "settings": [
+    {
+      "type": "text",
+      "id": "heading_id",
+      "label": "ID",
+      "info": "Please use this same ID for its content"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    }
+    ]
+  },
+  {
+  "name": "content",
+  "type": "additional-info-content",
+  "settings": [
+    {
+      "type": "text",
+      "id": "content_id",
+      "label": "ID",
+      "info": "Please use the same ID as used in Heading"
+    },
+    {
+      "type": "text",
+      "id": "content",
+      "label": "Content"
+    }
+    ]
+  }]
+}
+{% endschema %}

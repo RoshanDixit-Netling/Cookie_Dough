@@ -1656,6 +1656,147 @@
         "settings": {
           "blogs-per-page": 6
         }
+      },
+      "product-additional-information": {
+        "type": "product-additional-information",
+        "blocks": {
+          "8d5309c8-adb5-4219-9798-e9e7a53bdcb3": {
+            "type": "additional-info-heading",
+            "settings": {
+              "heading_id": "1",
+              "heading": "What’s in the pack"
+            }
+          },
+          "9be6f9b9-d26c-4d95-9bba-dadf178c605a": {
+            "type": "additional-info-content",
+            "settings": {
+              "content_id": "1",
+              "content": "2x Original Milk Choc Cookie Doughs"
+            }
+          },
+          "97231a2e-025e-4018-8eac-2284d91f2209": {
+            "type": "additional-info-content",
+            "settings": {
+              "content_id": "1",
+              "content": "1x Biscoff Cookie Dough"
+            }
+          },
+          "423d7bd5-a50e-441b-b737-3920da563140": {
+            "type": "additional-info-heading",
+            "settings": {
+              "heading_id": "2",
+              "heading": "What you need"
+            }
+          },
+          "c28c318e-6574-4acb-8af1-436dbb84cf50": {
+            "type": "additional-info-content",
+            "settings": {
+              "content_id": "2",
+              "content": "2x Original Milk Choc Cookie Doughs"
+            }
+          },
+          "49b4f149-9423-4c0d-8254-209793d57482": {
+            "type": "additional-info-heading",
+            "settings": {
+              "heading_id": "3",
+              "heading": "Allergen information"
+            }
+          },
+          "80ff3231-66dc-417e-b07f-aa6ee0ae766b": {
+            "type": "additional-info-content",
+            "settings": {
+              "content_id": "3",
+              "content": "2x Original Milk Choc Cookie Doughs"
+            }
+          },
+          "c7d1dc68-871c-4eed-a4d4-f38e96d77924": {
+            "type": "additional-info-content",
+            "settings": {
+              "content_id": "3",
+              "content": "1x Biscoff Cookie Dough"
+            }
+          },
+          "05907b28-4fc3-4734-a9aa-a53d99e4d1ce": {
+            "type": "additional-info-heading",
+            "settings": {
+              "heading_id": "4",
+              "heading": "Storage"
+            }
+          },
+          "0c50f239-8c04-4e54-a920-368f678ce0dc": {
+            "type": "additional-info-content",
+            "settings": {
+              "content_id": "4",
+              "content": "2x Original Milk Choc Cookie Doughs"
+            }
+          },
+          "35957dfa-2cfa-4936-b813-28a2eb73b06b": {
+            "type": "additional-info-heading",
+            "settings": {
+              "heading_id": "5",
+              "heading": "Shipping"
+            }
+          },
+          "307e6360-79b1-474d-89a5-726f59c04033": {
+            "type": "additional-info-content",
+            "settings": {
+              "content_id": "5",
+              "content": "2x Original Milk Choc Cookie Doughs"
+            }
+          },
+          "ca66af2a-b81e-49ce-8370-2a8e6afb9561": {
+            "type": "additional-info-heading",
+            "settings": {
+              "heading_id": "6",
+              "heading": "How to bake it"
+            }
+          },
+          "ae1f3a09-2285-41ff-a14e-74c61dfdf46e": {
+            "type": "additional-info-content",
+            "settings": {
+              "content_id": "6",
+              "content": "2x Original Milk Choc Cookie Doughs"
+            }
+          }
+        },
+        "block_order": [
+          "8d5309c8-adb5-4219-9798-e9e7a53bdcb3",
+          "9be6f9b9-d26c-4d95-9bba-dadf178c605a",
+          "97231a2e-025e-4018-8eac-2284d91f2209",
+          "423d7bd5-a50e-441b-b737-3920da563140",
+          "c28c318e-6574-4acb-8af1-436dbb84cf50",
+          "49b4f149-9423-4c0d-8254-209793d57482",
+          "80ff3231-66dc-417e-b07f-aa6ee0ae766b",
+          "c7d1dc68-871c-4eed-a4d4-f38e96d77924",
+          "05907b28-4fc3-4734-a9aa-a53d99e4d1ce",
+          "0c50f239-8c04-4e54-a920-368f678ce0dc",
+          "35957dfa-2cfa-4936-b813-28a2eb73b06b",
+          "307e6360-79b1-474d-89a5-726f59c04033",
+          "ca66af2a-b81e-49ce-8370-2a8e6afb9561",
+          "ae1f3a09-2285-41ff-a14e-74c61dfdf46e"
+        ],
+        "settings": {
+        }
+      },
+      "product-banner": {
+        "type": "product-banner",
+        "settings": {
+        }
+      },
+      "product-ingredients": {
+        "type": "product-ingredients",
+        "settings": {
+          "heading": "INGREDIENTS"
+        }
+      },
+      "product-nutritional-information": {
+        "type": "product-nutritional-information",
+        "settings": {
+          "heading": "NUTRITIONAL INFORMATION",
+          "summary-heading": "Nutrition Summary",
+          "allergen-heading": "Allergen Info",
+          "storage-heading": "Storage Details"
+        }
       }
     },
     "content_for_index": [
