@@ -1,29 +1,31 @@
-      <div id="content">
-        <!-- section -->
-          <div class="section how-we-bake">
-            <div class="container">
-              <header>
-                <h2>{{ page_title }}</h2>
-              </header>
-              <div class="tabs1 alt media-group">
-                <div class="tab-header d-md-none">
-                  <span class="title"> Menu </span>
-                  <i class="fa fa-bars" aria-hidden="true"></i>
-                </div>
-                  {% section "section-how-to-bake-it-menu" %}
-                  {%  section "section-how-to-bake-it-menu-content" %}
-              </div>
-            </div>
-          </div>
-        <!-- section -->
-        <!-- section -->
-          {% section 'section-faq' %}
-        <!-- /section -->
-        <!-- section -->
-        {% section 'section-recipes-to-try' %}
-        <!-- /section -->
-        <!-- section -->
-        {% section 'latest-news' %}
-        <!-- /section -->
+<div id="content">
+  <!-- section -->
+  <div class="section how-we-bake">
+    <div class="container">
+      <header>
+        <h2>{{ page_title }}</h2>
+      </header>
+      <div class="tabs1 alt media-group">
+        <div class="tab-header d-md-none">
+          <span class="title">
+            Menu
+          </span>
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        {% section "section-how-to-bake-it-menu" %}
+        {% section "section-how-to-bake-it-menu-content" %}
       </div>
-      <!-- /content -->
+    </div>
+  </div>
+  <!-- section -->
+  <!-- section -->
+  {% section 'section-faq' %}
+  <!-- /section -->
+  <!-- section -->
+  {% section 'section-recipes-to-try' %}
+  <!-- /section -->
+  <!-- section -->
+{% section 'latest-news' %}
+  <!-- /section -->
+</div>
+<!-- /content -->

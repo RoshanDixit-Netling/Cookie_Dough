@@ -1,58 +1,65 @@
 <!-- page head --->
 <div id="page-head" class="page-head2 text-white text-center">
-	<div class="container">
-	  <div class="row justify-content-center text-md-start">
-		<div class="col-xl-5 col-md-6">
-		  <h1 class="display-1">{{ section.settings.heading }}</h1>
-		</div>
-		<div class="col-xl-5 col-md-6">
-		  <p> {{ section.settings.content }} </p>
-		</div>
-	  </div>
-	  <footer>
-		<a href="{{ section.settings.button-url }}" class="btn btn-primary btn-xl">{{ section.settings.button-label }}</a>
-	  </footer>
-	</div>
-	<figure class="figure1 cover-img">
-	  <img class="w-100" src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt }}" width="" height="" loading="lazy">
-	</figure>
+  <div class="container">
+    <div class="row justify-content-center text-md-start">
+      <div class="col-xl-5 col-md-6">
+        <h1 class="display-1">{{ section.settings.heading }}</h1>
+      </div>
+      <div class="col-xl-5 col-md-6">
+        <p>
+          {{ section.settings.content }}
+        </p>
+      </div>
+    </div>
+    <footer>
+      <a href="{{ section.settings.button-url }}" class="btn btn-primary btn-xl">{{ section.settings.button-label }}</a>
+    </footer>
   </div>
-  <!-- /page head --->
+  <figure class="figure1 cover-img">
+    <img
+      class="w-100"
+      src="{{ section.settings.image | image_url }}"
+      alt="{{ section.settings.image.alt }}"
+      width=""
+      height=""
+      loading="lazy">
+  </figure>
+</div>
+<!-- /page head --->
 
 {% schema %}
   {
     "name": "Banner",
     "settings": [
-		{
-			"id": "image",
-			"type": "image_picker",
-			"label": "Image"
-		},
-		{
-			"id": "heading",
-			"type": "text",
-			"label": "Heading"
-		},
-		{
-			"id": "content",
-			"type": "richtext",
-			"label": "Content"
-        },
-		{
-			"id": "button-label",
-			"type": "text",
-			"label": "Button Label"
-		},
       {
+        "id": "image",
+        "type": "image_picker",
+        "label": "Image"
+      },
+      {
+        "id": "heading",
+        "type": "text",
+        "label": "Heading"
+      },
+      {
+        "id": "content",
+        "type": "richtext",
+        "label": "Content"
+      },
+      {
+        "id": "button-label",
+        "type": "text",
+        "label": "Button Label"
+      }, {
         "id": "button-url",
         "type": "text",
         "label": "Button Url"
       }
-	],
-	"presets": [
-		{
-			"name": "Banner"
-		}
-	]
+    ],
+    "presets": [
+      {
+        "name": "Banner"
+      }
+    ]
   }
 {% endschema %}

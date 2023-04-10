@@ -1,35 +1,38 @@
-    <!-- page head --->
-      <div id="page-head" class="page-head2 text-white pb-5 pb-lg-7">
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-8">
-              <span class="post-date">{{ article.created_at | date: " %d %b %Y"  }}</span>
-              <h1 class="h4">{{ article.title }}</h1>
-            </div>
-          </div>
-        </div>
-        <figure class="figure1 cover-img">
-          <img class="w-100" src="{{ article.image | image_url }}" alt="img">
-        </figure>
+<!-- page head --->
+<div id="page-head" class="page-head2 text-white pb-5 pb-lg-7">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-8">
+        <span class="post-date">{{ article.created_at | date: " %d %b %Y" }}</span>
+        <h1 class="h4">{{ article.title }}</h1>
       </div>
-      <!-- /page head --->
-      <!-- content -->
-      <div id="content">
-        <!-- section -->
-        <div class="section news wave1">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <article class="post">
-                  {{ article.content }}  
-                </article>
-              </div>
-            </div>
-          </div>
+    </div>
+  </div>
+  <figure class="figure1 cover-img">
+    <img
+      class="w-100"
+      src="{{ article.image | image_url }}"
+      alt="img">
+  </figure>
+</div>
+<!-- /page head --->
+<!-- content -->
+<div id="content">
+  <!-- section -->
+  <div class="section news wave1">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <article class="post">
+            {{ article.content }}
+          </article>
         </div>
-        <!-- /section -->
-        <!-- section -->
-         {% section 'latest-news' %}
-        <!-- /section -->
       </div>
-      <!-- /content -->
+    </div>
+  </div>
+  <!-- /section -->
+  <!-- section -->
+  {% section 'latest-news' %}
+  <!-- /section -->
+</div>
+<!-- /content -->

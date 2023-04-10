@@ -2,59 +2,67 @@
 <div class="section our-stores">
   <div class="container">
     <div class="row">
-    {% for block in section.blocks %}
-      {% case block.type %}
-        {% when 'stores'%}
-      <div class="col-lg-4 col-md-6 column">
-        <div class="box1">
-          <figure class="figure1">
-            <img class="w-100" src="{{ block.settings.store-image | image_url }}" alt="img">
-          </figure>
-          <div class="content">
-            <h2><a href="#">{{ block.settings.store-location }}</a></h2>
-            <p>{{ block.settings.store-description }}</p>
-            <div class="timings-chart">
-              <a href="#" class="toggle-btn"><span>{{ block.settings.opening-times-btn }}</span> <i class="icon"><img src="{{ 'down-arrow.svg' | asset_url }}" alt="arrow"></i></a>
-              <table class="custom-table1">
-                <tbody>
-                  <tr>
-                    <td class="week">MON:</td>
-                    <td>{{ block.settings.mon-timing }}</td>
-                  </tr>
-                  <tr>
-                    <td class="week">TUE:</td>
-                    <td>{{ block.settings.tues-timing }}</td>
-                  </tr>
-                  <tr>
-                    <td class="week">WED:</td>
-                    <td>{{ block.settings.wed-timing }}</td>
-                  </tr>
-                  <tr>
-                    <td class="week">THU:</td>
-                    <td>{{ block.settings.thurs-timing }}</td>
-                  </tr>
-                  <tr>
-                    <td class="week">FRI:</td>
-                    <td>{{ block.settings.fri-timing }}</td>
-                  </tr>
-                  <tr>
-                    <td class="week">SAT:</td>
-                    <td>{{ block.settings.sat-timing }}</td>
-                  </tr>
-                  <tr>
-                    <td class="week">SUN</td>
-                    <td>{{ block.settings.sun-timing }}</td>
-                  </tr>
-                </tbody>
-              </table>
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'stores' %}
+          <div class="col-lg-4 col-md-6 column">
+            <div class="box1">
+              <figure class="figure1">
+                <img
+                  class="w-100"
+                  src="{{ block.settings.store-image | image_url }}"
+                  alt="img">
+              </figure>
+              <div class="content">
+                <h2>
+                  <a href="#">{{ block.settings.store-location }}</a>
+                </h2>
+                <p>{{ block.settings.store-description }}</p>
+                <div class="timings-chart">
+                  <a href="#" class="toggle-btn">
+                    <span>{{ block.settings.opening-times-btn }}</span>
+                    <i class="icon"><img src="{{ 'down-arrow.svg' | asset_url }}" alt="arrow"></i>
+                  </a>
+                  <table class="custom-table1">
+                    <tbody>
+                      <tr>
+                        <td class="week">MON:</td>
+                        <td>{{ block.settings.mon-timing }}</td>
+                      </tr>
+                      <tr>
+                        <td class="week">TUE:</td>
+                        <td>{{ block.settings.tues-timing }}</td>
+                      </tr>
+                      <tr>
+                        <td class="week">WED:</td>
+                        <td>{{ block.settings.wed-timing }}</td>
+                      </tr>
+                      <tr>
+                        <td class="week">THU:</td>
+                        <td>{{ block.settings.thurs-timing }}</td>
+                      </tr>
+                      <tr>
+                        <td class="week">FRI:</td>
+                        <td>{{ block.settings.fri-timing }}</td>
+                      </tr>
+                      <tr>
+                        <td class="week">SAT:</td>
+                        <td>{{ block.settings.sat-timing }}</td>
+                      </tr>
+                      <tr>
+                        <td class="week">SUN</td>
+                        <td>{{ block.settings.sun-timing }}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <footer>
+                <a href="{{ block.settings.get-direction-btn-url }}" class="btn btn-primary bg-color1">{{ block.settings.get-direction-btn-text }}</a>
+              </footer>
             </div>
           </div>
-          <footer>
-            <a href="{{ block.settings.get-direction-btn-url }}" class="btn btn-primary bg-color1">{{ block.settings.get-direction-btn-text  }}</a>
-          </footer>
-        </div>
-      </div>
-      {% endcase %}
+        {% endcase %}
       {% endfor %}
     </div>
     <footer class="text-center pt-4 pt-lg-5">
@@ -64,98 +72,89 @@
 </div>
 <!-- /section -->
 {% schema %}
-{
-"name": "Our Stores",
-"blocks": [
   {
-    "name": "Stores",
-    "type": "stores",
+    "name": "Our Stores",
+    "blocks": [
+      {
+        "name": "Stores",
+        "type": "stores",
+        "settings": [
+          {
+            "type": "text",
+            "id": "store-location",
+            "label": "Store location Name"
+          },
+          {
+            "type": "image_picker",
+            "id": "store-image",
+            "label": "Select Image"
+          },
+          {
+            "type": "richtext",
+            "id": "store-description",
+            "label": "Description"
+          },
+          {
+            "type": "text",
+            "id": "opening-times-btn",
+            "label": "Opening Time Button Text",
+            "default": "OPENING TIMES"
+          }, {
+            "id": "mon-timing",
+            "type": "text",
+            "label": "Monday Timming",
+            "default": "9:00 AM - 6:00 PM"
+          }, {
+            "id": "tues-timing",
+            "type": "text",
+            "label": "Tuesday Timming",
+            "default": "9:00 AM - 6:00 PM"
+          }, {
+            "id": "wed-timing",
+            "type": "text",
+            "label": "Wednesday Timming",
+            "default": "9:00 AM - 6:00 PM"
+          }, {
+            "id": "thurs-timing",
+            "type": "text",
+            "label": "Thursday Timming",
+            "default": "9:00 AM - 6:00 PM"
+          }, {
+            "id": "fri-timing",
+            "type": "text",
+            "label": "Friday Timming",
+            "default": "9:00 AM - 6:00 PM"
+          }, {
+            "id": "sat-timing",
+            "type": "text",
+            "label": "Saturday Timming",
+            "default": "9:00 AM - 6:00 PM"
+          }, {
+            "id": "sun-timing",
+            "type": "text",
+            "label": "Sunday Timming",
+            "default": "9:00 AM - 6:00 PM"
+          }, {
+            "type": "text",
+            "id": "get-direction-btn-text",
+            "label": "Get Direction Button Label",
+            "default": "Get Directions"
+          }, {
+            "type": "url",
+            "id": "get-direction-btn-url",
+            "label": "Get Direction Button Url"
+          }
+        ]
+      }
+
+    ],
     "settings": [
       {
         "type": "text",
-        "id": "store-location",
-        "label": "Store location Name"
-      },
-      {
-        "type": "image_picker",
-        "id": "store-image",
-        "label": "Select Image"
-      },
-      {
-      "type": "richtext",
-      "id": "store-description",
-      "label": "Description"
-      },
-      {
-        "type": "text",
-        "id": "opening-times-btn",
-        "label": "Opening Time Button Text",
-        "default": "OPENING TIMES"
-      },
-      {
-        "id": "mon-timing",
-        "type": "text",
-        "label": "Monday Timming",
-        "default": "9:00 AM - 6:00 PM"
-      },
-      {
-        "id": "tues-timing",
-        "type": "text",
-        "label": "Tuesday Timming",
-        "default": "9:00 AM - 6:00 PM"
-      },
-      {
-        "id": "wed-timing",
-        "type": "text",
-        "label": "Wednesday Timming",
-        "default": "9:00 AM - 6:00 PM"
-      },
-      {
-        "id": "thurs-timing",
-        "type": "text",
-        "label": "Thursday Timming",
-        "default": "9:00 AM - 6:00 PM"
-      },
-      {
-        "id": "fri-timing",
-        "type": "text",
-        "label": "Friday Timming",
-        "default": "9:00 AM - 6:00 PM"
-      },
-      {
-        "id": "sat-timing",
-        "type": "text",
-        "label": "Saturday Timming",
-        "default": "9:00 AM - 6:00 PM"
-      },
-      {
-        "id": "sun-timing",
-        "type": "text",
-        "label": "Sunday Timming",
-        "default": "9:00 AM - 6:00 PM"
-      },
-      {
-        "type": "text",
-        "id": "get-direction-btn-text",
-        "label": "Get Direction Button Label",
-        "default": "Get Directions"
-      },
-      {
-        "type": "url",
-        "id": "get-direction-btn-url",
-        "label": "Get Direction Button Url"
-      } 
+        "id": "bottom-text",
+        "label": "Bottom Text",
+        "default": "More UK Stores opening soon!"
+      }
     ]
   }
-
-],
-"settings": [
-  {
-    "type": "text",
-    "id": "bottom-text",
-    "label": "Bottom Text",
-    "default": "More UK Stores opening soon!"
-  }
-]
-}
 {% endschema %}

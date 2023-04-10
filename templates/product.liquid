@@ -8,28 +8,28 @@
           <div class="product-image-slider mb-4">
             <div class="slideshow2 slick-slider">
               {% for media in product.media %}
-              {%  case media.media_type %}
-              {% when 'video' %}
-              <div>
-                <div class="single-product">
-                  <div class="figure1 video mb-0">
-                    {{ media | video_tag: controls: false, autoplay: true, loop: true  }}
+                {% case media.media_type %}
+                  {% when 'video' %}
+                  <div>
+                    <div class="single-product">
+                      <div class="figure1 video mb-0">
+                        {{ media | video_tag: controls: false, autoplay: true, loop: true }}
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              {% endcase %}
+                {% endcase %}
               {% endfor %}
             </div>
             <div class="slideshow2-nav slick-slider">
               {% for media in product.media %}
-              {%  case media.media_type %}
-              {% when 'video' %}
-              <div class="slick-slide">
-                <span class="thumb-img">
-                  <img src="{{ media | img_url: '400x400'}}" alt="{{ media.alt }}">
-                </span>
-              </div>
-              {% endcase %}
+                {% case media.media_type %}
+                  {% when 'video' %}
+                  <div class="slick-slide">
+                    <span class="thumb-img">
+                      <img src="{{ media | img_url: '400x400'}}" alt="{{ media.alt }}">
+                    </span>
+                  </div>
+                {% endcase %}
               {% endfor %}
             </div>
           </div>
@@ -57,29 +57,21 @@
         </div>
       </div>
     </div>
-    <span class="cloud cloud1">
-    </span>
-    <span class="cloud cloud2">
-    </span>
-    <span class="cloud cloud3">
-    </span>
-    <span class="cloud cloud4">
-    </span>
-    <span class="cloud cloud5">
-    </span>
-    <span class="cloud cloud6">
-    </span>
-    <span class="cloud cloud7">
-    </span>
-    <span class="cloud cloud8">
-    </span>
+    <span class="cloud cloud1"></span>
+    <span class="cloud cloud2"></span>
+    <span class="cloud cloud3"></span>
+    <span class="cloud cloud4"></span>
+    <span class="cloud cloud5"></span>
+    <span class="cloud cloud6"></span>
+    <span class="cloud cloud7"></span>
+    <span class="cloud cloud8"></span>
   </div>
   <!--  /section -->
 
   <!-- section -->
-  {% section 'product-recommendations'%}
+  {% section 'product-recommendations' %}
   <!-- /section -->
-  
+
 </div>
 <!-- /content -->
 
@@ -89,4 +81,4 @@
 {% section 'product-banner' %}
 {% section 'product-ingredients' %}
 {% section 'product-nutritional-information' %}
- {% endcomment %}
+{% endcomment %}

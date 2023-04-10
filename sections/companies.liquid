@@ -1,71 +1,75 @@
 {% comment %} <!-- section -->
-        <div class="section bg-primary-light">
-          <div class="container">
-            <header class="text-center mb-md-5">
-              <h4>{{ section.settings.heading }}</h4>
-            </header>
-            <div class="owl-carousel carousel2">
-              {% for block in section.blocks %}
-              	{% case block.type %}
-              	  {% when 'company' %}
-                    <div class="item">
-                      <img src="{{ block.settings.file-name }}" alt="logo" height="" width="" loading="lazy">
-                    </div>
-             	{% endcase %}
-              {% endfor %}
-            </div>
-          </div>
-        </div>
+<div class="section bg-primary-light">
+<div class="container">
+<header class="text-center mb-md-5">
+<h4>{{ section.settings.heading }}</h4>
+</header>
+<div class="owl-carousel carousel2">
+{% for block in section.blocks %}
+{% case block.type %}
+{% when 'company' %}
+<div class="item">
+<img src="{{ block.settings.file-name }}" alt="logo" height="" width="" loading="lazy">
+</div>
+{% endcase %}
+{% endfor %}
+</div>
+</div>
+</div>
 <!-- /section --> {% endcomment %}
 
 <!-- section -->
-<div class="section bg-primary-light">
-  <div class="container">
+  <div class="section bg-primary-light"> <div class="container">
     <header class="text-center mb-md-5">
       <h4>{{ section.settings.heading }}</h4>
     </header>
     <div class="owl-carousel carousel2">
-    {% for block in section.blocks %}
-     {% case block.type %}
-      {% when 'company' %}
-      <div class="item">
-        <img src="{{ block.settings.file-name }}" alt="logo" width="" height="" loading="lazy">
-      </div>
-     {% endcase %}
-    {% endfor %}
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'company' %}
+          <div class="item">
+            <img
+              src="{{ block.settings.file-name }}"
+              alt="logo"
+              width=""
+              height=""
+              loading="lazy">
+          </div>
+        {% endcase %}
+      {% endfor %}
     </div>
   </div>
 </div>
 <!-- /section -->
 
 {% schema %}
-{
-  "name": "Companies",
-  "settings": [
-    {
-      "id": "heading",
-      "type": "text",
-      "label": "Heading",
-      "default": "Companies we’ve worked with"
-    }
-  ],
-  "blocks": [
-    {
-      "name": "Company",
-      "type": "company",
-      "settings": [
-        {
-          "id": "file-name",
-          "type": "url",
-          "label": "File URL"
-        }
-      ]
-    }
-  ],
-  "presets": [
-    {
-      "name": "Companies"
-    }
-  ]
-}
+  {
+    "name": "Companies",
+    "settings": [
+      {
+        "id": "heading",
+        "type": "text",
+        "label": "Heading",
+        "default": "Companies we’ve worked with"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Company",
+        "type": "company",
+        "settings": [
+          {
+            "id": "file-name",
+            "type": "url",
+            "label": "File URL"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Companies"
+      }
+    ]
+  }
 {% endschema %}
