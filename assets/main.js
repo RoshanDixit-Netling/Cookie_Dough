@@ -195,6 +195,40 @@ $(window).resize(function() {
   $('.gallery1').height($('.gallery1 img').outerHeight());
 });
 
+//gourav
+$('.carousel4').owlCarousel({
+  loop:true,
+  autoplay:true,
+  autoplaySpeed: 2000,
+  autoplayHoverPause:true,
+  nav: false,
+  dots: false,
+  slideTransition: 'linear',
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  margin:16,
+  responsive:{
+    0: {
+      items:2
+    },768:{
+      items:3,
+     },992:{
+      items:5,
+      margin:35,
+    }
+  }
+});
+$('.carousel5').slick({
+  dots: true,
+  nav: false,
+  arrows: false,
+  autoplay:true,
+  infinite: true,
+  speed: 500,
+  fade: true,
+  cssEase: 'linear'
+});
+
 $(window).load(function() {
   objectFitImages();
 });
