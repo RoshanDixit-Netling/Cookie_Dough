@@ -9,16 +9,15 @@
             {% when 'faq_block' %}
             {% assign faq_id = block.settings.title_id | downcase | replace: " ", "-" %}
             {% if id == faq_id  %}
-              <div class="custom-card ">
-                {%  include 'faq-accordion-card' %}
-                <div class="custom-accordion-header">
-                  <a href="#" class="accordion-btn">{{ block.settings.faq_question }}</a>
-                </div>
-                <div class="custom-accordion-content">
-                  <p>
-                    {{ block.settings.faq_answer }}</p>
-                </div>
+            <div class="custom-card ">
+              <div class="custom-accordion-header">
+                <a href="#" class="accordion-btn">{{ block.settings.faq_question }}</a>
               </div>
+              <div class="custom-accordion-content">
+                <p>
+                  {{ block.settings.faq_answer }}</p>
+              </div>
+            </div>
             {% endif %}
           {% endcase %}
         {% endfor %}
