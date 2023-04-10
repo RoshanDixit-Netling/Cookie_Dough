@@ -1,43 +1,43 @@
-                <div class="tab-content" id="myTabContent">
-                  {% assign i = 1 %}
-                  {% for block in section.blocks %}
-                    {% case block.type %}
-                      {% when 'main-content-section' %}
-                        {% assign menu_title = block.settings.content-for %}
-                          {% assign menu_title = menu_title | downcase | replace: " ", "-"  %}
-                       <div class="tab-pane fade show {% if i == 1 %} active {% endif %} {% assign i = i | plus: 1 %}" id="{{ menu_title }}" role="tabpanel" aria-labelledby="{{ menu_title }}-tab">
-                         <h5>{{ block.settings.content-sub-heading }}</h5>
-                              {{ block.settings.content }}
-                          <p>{{ block.settings.download-pack-title }}</p>
-                          <div class="download-options">
-                            {% for block in section.blocks %}
-                              {% case block.type %}
-                                {% when "download-biy-pack" %}
-                                {% assign menu_title_biy = block.settings.menu-name %}
-                                  {% assign menu_title_biy = menu_title_biy | downcase | replace: " ", "-"  %}
-                                    {% if menu_title_biy == menu_title %}
-                                      <a class="btn btn-primary-color4 btn-xs rounded-btn" href="{{ block.settings.pack-download-url }}"><span class="icon"><img src="{{ 'download-icon.svg' | asset_url }}" alt="icon"></span>{{ block.settings.pack-name }}</a>
-                                    {% endif %}
-                                {% endcase %}
-                              {% endfor %}
-                          </div>
-                          <h5>{{ block.settings.baking-tips }}</h5>
-                          <ol class="list5">
-                            {% for block in section.blocks  %}
-                              {% case block.type %}
-                                {% when 'baking-tips' %}
-                                {% assign menu_title_tips = block.settings.menu-name %}
-                                  {% assign menu_title_tips = menu_title_tips | downcase | replace: " ", "-"  %}
-                                    {% if menu_title_tips == menu_title %}
-                                      <li>{{ block.settings.tip-content }}</li>
-                                {% endif %}
-                              {% endcase %}
-                            {% endfor %}
-                          </ol>
-                        </div> 
-                    {% endcase %}
-                {% endfor %}
-              </div>
+<div class="tab-content" id="myTabContent">
+  {% assign i = 1 %}
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'main-content-section' %}
+        {% assign menu_title = block.settings.content-for %}
+          {% assign menu_title = menu_title | downcase | replace: " ", "-"  %}
+        <div class="tab-pane fade show {% if i == 1 %} active {% endif %} {% assign i = i | plus: 1 %}" id="{{ menu_title }}" role="tabpanel" aria-labelledby="{{ menu_title }}-tab">
+          <h5>{{ block.settings.content-sub-heading }}</h5>
+              {{ block.settings.content }}
+          <p>{{ block.settings.download-pack-title }}</p>
+          <div class="download-options">
+            {% for block in section.blocks %}
+              {% case block.type %}
+                {% when "download-biy-pack" %}
+                {% assign menu_title_biy = block.settings.menu-name %}
+                  {% assign menu_title_biy = menu_title_biy | downcase | replace: " ", "-"  %}
+                    {% if menu_title_biy == menu_title %}
+                      <a class="btn btn-primary-color4 btn-xs rounded-btn" href="{{ block.settings.pack-download-url }}"><span class="icon"><img src="{{ 'download-icon.svg' | asset_url }}" alt="icon"></span>{{ block.settings.pack-name }}</a>
+                    {% endif %}
+                {% endcase %}
+              {% endfor %}
+          </div>
+          <h5>{{ block.settings.baking-tips }}</h5>
+          <ol class="list5">
+            {% for block in section.blocks  %}
+              {% case block.type %}
+                {% when 'baking-tips' %}
+                {% assign menu_title_tips = block.settings.menu-name %}
+                  {% assign menu_title_tips = menu_title_tips | downcase | replace: " ", "-"  %}
+                    {% if menu_title_tips == menu_title %}
+                      <li>{{ block.settings.tip-content }}</li>
+                {% endif %}
+              {% endcase %}
+            {% endfor %}
+          </ol>
+        </div> 
+    {% endcase %}
+{% endfor %}
+</div>
               
 {% schema %}
   {

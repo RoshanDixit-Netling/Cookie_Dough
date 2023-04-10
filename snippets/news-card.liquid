@@ -1,17 +1,22 @@
-                <div class="col-lg-4 col-md-6 column">
-                  <article class="post single-post">
-                    <figure class="figure1">
-                      <img class="w-100" src="{{ article.image | image_url }}" alt="img">
-                    </figure>
-                    <div class="content">
-                      <span class="post-date">{{ article.created_at | date: " %d %b %Y"  }}</span>
-                      <h2><a href="{{ article.url }}">{{ article.title }}</a></h2>
-                        {% if article.excerpt != null and article.excerpt != "" %}
-                            <p>{{ article.excerpt }}</p>
-                        {% endif %}
-                    </div>
-                    <footer>
-                      <a href="{{ article.url }}" class="read-more-btn">Read More</a>
-                    </footer>
-                  </article>
-                </div>
+<div class="col-lg-4 col-md-6 column">
+  <article class="post single-post">
+    <figure class="figure1">
+      <img
+        class="w-100"
+        src="{{ article.image | image_url }}"
+        alt="img">
+    </figure>
+    <div class="content">
+      <span class="post-date">{{ article.created_at | date: " %d %b %Y" }}</span>
+      <h2>
+        <a href="{{ article.url }}">{{ article.title }}</a>
+      </h2>
+      {% if article.excerpt != null and article.excerpt != "" %}
+        <p>{{ article.excerpt }}</p>
+      {% endif %}
+    </div>
+    <footer>
+      <a href="{{ article.url }}" class="read-more-btn">Read More</a>
+    </footer>
+  </article>
+</div>
