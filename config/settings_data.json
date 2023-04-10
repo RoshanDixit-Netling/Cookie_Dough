@@ -1105,8 +1105,7 @@
         "type": "contact-form",
         "settings": {
           "get-in-touch-title": "GET IN TOUCH",
-          "get-in-touch-content": "<p>We love to hear from our community! Drop us an email below 👇                  <\/p><p>For any queries relating to your online order please email <a href=\"#\" title=\"email\">orders@mycookiedough.com <\/a>along with your name and order number in the subject line. Your query will be responded to within 48 hours during the working week.<\/p>",
-          "btn-label": "Send Enquiry"
+          "get-in-touch-content": "<p>We love to hear from our community! Drop us an email below 👇                  <\/p><p>For any queries relating to your online order please email <a href=\"#\" title=\"email\">orders@mycookiedough.com <\/a>along with your name and order number in the subject line. Your query will be responded to within 48 hours during the working week.&lt;\/p&gt;<\/p>"
         }
       },
       "instore-menu": {
@@ -1127,7 +1126,6 @@
       "section-faq": {
         "type": "section-faq",
         "settings": {
-          "faq-title": "Frequently asked questions"
         }
       },
       "section-how-to-bake-it-menu": {
@@ -1769,6 +1767,11 @@
           "summary-heading": "Nutrition Summary",
           "allergen-heading": "Allergen Info",
           "storage-heading": "Storage Details"
+        }
+      },
+      "faq": {
+        "type": "faq",
+        "settings": {
         }
       }
     },
