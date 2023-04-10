@@ -1,56 +1,81 @@
-        <div class="section">
-          <div class="container">
-            <header class="text-center c-mb-4">
-              <h2 class="heading1">{{ section.settings.faq-title }}</h2>
-            </header>
-            <div class="custom-accordion accordion2 text-start mb-4">
-              {% for block in section.blocks %}
-                {% case block.type %}
-                  {% when 'faq' %}
-                  <div class="custom-card ">
-                    <div class="custom-accordion-header">
-                      <a href="#" class="accordion-btn">{{ block.settings.faq-question }}</a>
-                    </div>
-                    <div class="custom-accordion-content">
-                      <p>{{ block.settings.faq-answer }}</p>
-                    </div>
-                  </div>
-                  {% endcase %}
-                {% endfor %}
-            </div>
-          </div>
-        </div>
-
+<div class="custom-accordion accordion2 text-start mb-4">
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'faq_title_block' %}
+        <h2 class="h4 mb-4">{{ block.settings.faq_title }}</h2>
+        {% assign id = block.settings.id | downcase | replace: " ", "-" %}
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'faq_block' %}
+            {% assign faq_id = block.settings.title_id | downcase | replace: " ", "-" %}
+            {% if id == faq_id  %}
+              <div class="custom-card ">
+                {%  include 'faq-accordion-card' %}
+                <div class="custom-accordion-header">
+                  <a href="#" class="accordion-btn">{{ block.settings.faq_question }}</a>
+                </div>
+                <div class="custom-accordion-content">
+                  <p>
+                    {{ block.settings.faq_answer }}</p>
+                </div>
+              </div>
+            {% endif %}
+          {% endcase %}
+        {% endfor %}
+    {% endcase %}
+  {% endfor %}
+</div>
 {% schema %}
-  {
-    "name": "Faq Section",
-    "settings": [
-      {
-        "type": "text",
-        "id": "faq-title",
-        "label": "Title",
-        "default": "Frequently asked questions"
-      }
-    ],
-    "blocks": [
-      {
-        "name": "faq",
-        "type": "faq",
-        "settings": [
-          {
-            "type": "richtext",
-            "id": "faq-question",
-            "label": "Faq Question"
-          },
-          {
-            "type": "richtext",
-            "id": "faq-answer",
-            "label": "Faq Answer"
-          }
-        ]
-      }
-    ]
-  }
+{
+  "name": "Faq Section",
+  "tag": "section",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "faq_title_block",
+      "name": "Faq Title Block",
+      "settings": [
+        {
+          "type": "text",
+          "label": "ID",
+          "id": "id",
+          "info": "Enter the ID of block ( and use the same ID to link other Blocks under this title block )"
+        },
+        {
+          "type": "textarea",
+          "label": "Faq Title",
+          "id": "faq_title"
+        }
+      ]
+    },
+    {
+      "type": "faq_block",
+      "name": "Faq Block",
+      "settings": [
+        {
+          "type": "text",
+          "label": "Title ID ( ID of the title which this block Belong to)",
+          "id" : "title_id"
+        },
+        {
+          "type": "textarea",
+          "label": "Faq Question",
+          "id": "faq_question"
+        },
+        {
+          "type": "textarea",
+          "label": "Faq Answer",
+          "id": "faq_answer"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Faq Section"
+    }
+  ]
+}
 {% endschema %}
 
 {% stylesheet %}
