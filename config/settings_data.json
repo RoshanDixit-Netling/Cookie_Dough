@@ -1912,6 +1912,18 @@
         ],
         "settings": {
         }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "title": "You may also like",
+          "related_products": [
+            "kinder-nutella-oreo-skillet",
+            "milk-chocolate-chip-1",
+            "scotch-egg-biy-pack",
+            "the-chocoholics-pack"
+          ]
+        }
       }
     },
     "content_for_index": [
