@@ -771,10 +771,6 @@
       "home-banner": {
         "type": "home-banner",
         "settings": {
-          "banner-heading": "MyCookiedough<sup>r<\/sup><br> Stores",
-          "sub-heading": "Experience moments of pure joy at <br> our My Cookie Dough Stores.",
-          "banner-button-label": "View all locations",
-          "button-url": "\/all-locations"
         }
       },
       "image-carousel-section": {
@@ -1648,7 +1644,13 @@
       "section-recipes-to-try": {
         "type": "section-recipes-to-try",
         "settings": {
-          "title": "Recipes to try with your BIY"
+          "title": "Recipes to try with your BIY",
+          "select_products": [
+            "the-famous-5-pack",
+            "the-special-edition-pack",
+            "milk-chocolate-chip",
+            "kinder-nutella-oreo-skillet"
+          ]
         }
       },
       "section-blogs": {
@@ -1919,7 +1921,7 @@
           "title": "You may also like",
           "related_products": [
             "kinder-nutella-oreo-skillet",
-            "milk-chocolate-chip-1",
+            "milk-chocolate-chip",
             "scotch-egg-biy-pack",
             "the-chocoholics-pack"
           ]

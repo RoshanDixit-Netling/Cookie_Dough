@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Page Title -->
     {% if request.path == '/' %}
-    	<title>Home | My Cookie Dough</title>
+      <title>Home | My Cookie Dough</title>
     {% else %}
-    	<title>{{ page_title }} | My Cookie Dough</title>
-   	{% endif %}
+      <title>{{ page_title }} | My Cookie Dough</title>
+    {% endif %}
     <!-- Stylesheets -->
     {{ 'bootstrap.css' | asset_url | stylesheet_tag }}
     {{ 'owl.carousel-min.css' | asset_url | stylesheet_tag }}
@@ -22,34 +22,39 @@
     <!-- Javascript -->
     {{ 'head.core.js' | asset_url | script_tag }}
     {{ 'lt-ie-9.js' | asset_url | script_tag }}
-    
+
     {{ content_for_header }}
   </head>
-    {%  assign body_class = '' %}
-
-    {% if template.suffix == 'store-menu' %}
-      {% assign body_class = body_class | append: 'bg-primary-light ' %}
-    {% elsif  template == 'product' %}
-     {% assign body_class = body_class | append: 'bg-color2 ' %}
-    {% else %}
-        {% assign body_class = body_class | append: 'bg-color1 ' %}
-    {% endif %}
-
-    {% if template.suffix == 'news-archive' or template.suffix == 'corporate' or template == 'article'%}
-      {% assign body_class = body_class | append: 'layout1' %}
-    {% endif %}
-
-    <body class="{{ body_class }}" >
-     <!-- <h2>{{ template }}</h2> remove when dvelopment is done-->
-      <!-- container -->
-    <div id="container">
-       {% section 'header' %}
-       <div id="content">
-         {{ content_for_layout }}
-       </div>
-       {% section 'footer' %}
+  {% assign body_class = '' %}
+  {% comment %} use this to change bg related class {% endcomment %}
+  {% if template.suffix == 'store-menu' %}
+    {% assign body_class = body_class | append: 'bg-primary-light ' %}
+  {% elsif template == 'product' %}
+    {% assign body_class = body_class | append: 'bg-color2 ' %}
+  {% else %}
+    {% assign body_class = body_class | append: 'bg-color1 ' %}
+  {% endif %}
+  {% comment %} use this to change bg related class {% endcomment %}
+  {% comment %} use this to add extra class to body_class variable {% endcomment %}
+  {% if template == 'index' %}
+    {% assign body_class = body_class | append: 'home ' %}
+  {% endif %}
+  {% comment %} use this to add extra class to body_class variable {% endcomment %}
+  {% comment %} Use this to add/change layout related class {% endcomment %}
+  {% if template.suffix == 'news-archive' or template.suffix == 'corporate' or template == 'article' or template == 'index' %}
+    {% assign body_class = body_class | append: 'layout1' %}
+  {% endif %}
+  {% comment %} Use this to add/change layout related class {% endcomment %}
+  <body class="{{ body_class }}">
+    <!-- <h2>{{ template }}</h2> remove when dvelopment is done-->
+    <!-- container -->
+      <div id="container"> {% section 'header' %}
+      <div id="content">
+        {{ content_for_layout }}
+      </div>
+      {% section 'footer' %}
     </div>
-  
+
     <!-- Footer Javascript -->
     {{ 'jquery.js' | asset_url | script_tag }}
     {{ 'popper.js' | asset_url | script_tag }}

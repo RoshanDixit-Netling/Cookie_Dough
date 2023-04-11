@@ -17,6 +17,14 @@
                       </div>
                     </div>
                   </div>
+                  {% when 'image' %}
+                  <div>
+                    <div class="single-product">
+                      <div class="figure1 video mb-0">
+                        <img src="{{ media | img_url: '400x400'}}" alt="{{ media.alt }}">
+                      </div>
+                    </div>
+                  </div>
                 {% endcase %}
               {% endfor %}
             </div>
@@ -26,6 +34,12 @@
                   {% when 'video' %}
                   <div class="slick-slide">
                     <span class="thumb-img">
+                      {{ media | video_tag: image_size: '80x72', loop: true, autoplay: false, muted: true }}
+                    </span>
+                  </div>
+                  {% when 'image' %}
+                  <div class="slick-slide">
+                    <span class="thumb-img">
                       <img src="{{ media | img_url: '400x400'}}" alt="{{ media.alt }}">
                     </span>
                   </div>
@@ -33,9 +47,9 @@
               {% endfor %}
             </div>
           </div>
-
+          {% comment %} product additional information section  {% endcomment %}
           {% section 'product-additional-information' %}
-
+          {% comment %} product additional information section  {% endcomment %}
         </div>
         <div class="col-lg-7 col-md-12 pe-lg-5">
           <div class="side-content">
@@ -81,4 +95,8 @@
 {% section 'product-banner' %}
 {% section 'product-ingredients' %}
 {% section 'product-nutritional-information' %}
-{% endcomment %}
+{% endcomment %}<script>
+  console.log("before");
+  console.log(window.Shopify.routes.root);
+  console.log("after");
+</script>

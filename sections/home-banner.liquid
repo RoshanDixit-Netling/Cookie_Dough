@@ -1,57 +1,70 @@
 <!-- page head --->
-      <div id="page-head" class="text-center">
-        <div class="container">
-          <h1 class="display-1">{{ section.settings.banner-heading }}</h1>
-          <p>{{ section.settings.sub-heading }}</p>
-          <footer>
-            <a href="{{ section.settings.button-url }}" class="btn btn-primary btn-sm">{{ section.settings.banner-button-label }}</a>
-          </footer>
-        </div>
-        <span class="cloud cloud1">
-        </span>
-        <span class="cloud cloud2">
-        </span>
-        <span class="cloud cloud3">
-        </span>
-        <span class="cloud cloud4">
-        </span>
-        <span class="cloud cloud5">
-        </span>
-        <span class="cloud cloud6">
-        </span>
-        <span class="cloud cloud7">
-        </span>
-        <span class="cloud cloud8">
-        </span>
-      </div>
-      <!-- /page head --->
+<div id="page-head" class="page-head2 text-white text-center">
+  <div class="container">
+    <div class="owl-carousel carousel5">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'banner_slide_block' %}
+           <div class="item">
+            <img class="mx-auto" src="images/heading-text1.png" alt="text-image">
+            <p>Find your local MyCookieDough store and<br> experience moments of pure joy!</p>
+            <a href="#" class="btn btn-primary btn-xl">Our Stores</a>
+          </div>
+        {% endcase %}
+      {% endfor %}
+    </div>
+  </div>
+  <figure class="figure1 cover-img">
+    <img class="w-100" src="assets/banner-img3.jpg" alt="img" />
+  </figure>
+</div>
+<!-- /page head --->
 
 {% schema %}
-  {
-    "name": "Section Banner",
-    "settings": [
-      {
-      "id": "banner-heading",
-      "type": "text",
-      "label": "Banner Heading"
-    },
-      {
-      "id": "sub-heading",
-      "type": "text",
-      "label": "Sub Heading"
+{
+  "name": "Home Banner Section",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "label": "Banner Background Image",
+      "id": "banner_background_image"
     },
     {
-      "id": "banner-button-label",
       "type": "text",
-      "label": "Button Label"
+      "label": "Banner Button Label",
+      "id": "banner_button_label"
     },
     {
-      "id": "button-url",
       "type": "url",
-      "label": "Button Url"
+      "label": "Banner Button Link",
+      "id": "banner_button_link"
     }
-    ]
-  }
+  ],
+  "blocks": [
+    {
+      "type": "banner_slide_block",
+      "name": "Banner Slide Block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "label": "Slide Image",
+          "id": "slide_image"
+        },
+        {
+          "type": "textarea",
+          "label": "Silder Text",
+          "id": "silder_text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Home Banner Section"
+    }
+  ]
+}
 {% endschema %}
 
 {% stylesheet %}
