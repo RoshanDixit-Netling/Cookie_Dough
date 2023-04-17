@@ -2,23 +2,23 @@
         <div class="section pb-0">
           <div class="container">
             <div class="owl-carousel carousel1">
-              {% for block in section.blocks %}
-                {% case block.type %}
-                  {% when 'image' %}
+              {%- for block in section.blocks -%}
+                {%- case block.type -%}
+                  {%- when 'image' -%}
                     <div class="item">
                       <figure class="figure1">
                         <img class="w-100" src="{{ block.settings.slider-image | image_url }}" alt="{{ block.settings.slider-image.alt }}">
                       </figure>
                     </div>
-               {% endcase %}
-              {% endfor %}
+               {%- endcase -%}
+              {%- endfor -%}
             </div>
           </div>
         </div>
 <!-- /section -->
 
 
-{% schema %}
+{%- schema -%}
   {
     "name": "Image Slider",
     "settings": [],
@@ -41,10 +41,10 @@
 		}
 	]
   }
-{% endschema %}
+{%- endschema -%}
 
-{% stylesheet %}
-{% endstylesheet %}
+{%- stylesheet -%}
+{%- endstylesheet -%}
 
-{% javascript %}
-{% endjavascript %}
+{%- javascript -%}
+{%- endjavascript -%}

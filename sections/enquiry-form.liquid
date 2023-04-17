@@ -10,7 +10,7 @@
                   </div>
                 </div>
                 <div class="form">
-                  {% form 'contact' %}
+                  {%- form 'contact' -%}
                     <div class="row">
                       <div class="col-md-6 form-group">
                         <input type="text" name="contact[name]" placeholder="Name" class="form-control">
@@ -53,7 +53,7 @@
                         <button type="submit" class="btn btn-primary w-100">{{ section.settings.button-label }}</button>
                       </div>
                     </div>
-                  {% endform %}
+                  {%- endform -%}
                 </div>
               </div>
             </div>
@@ -70,7 +70,7 @@
 <!-- /section -->
 
 
-{% schema %}
+{%- schema -%}
   {
     "name": "Enquiry Form",
     "settings": [
@@ -99,9 +99,9 @@
 		}
 	]
   }
-{% endschema %}
+{%- endschema -%}
 
-{% javascript %}
+{%- javascript -%}
 
 let formFile = document.getElementById("formFile");
 let fileName = document.querySelector('.file-name');
@@ -114,4 +114,4 @@ formFile.addEventListener("change", function () {
 	}
 });
 
-{% endjavascript %}
+{%- endjavascript -%}

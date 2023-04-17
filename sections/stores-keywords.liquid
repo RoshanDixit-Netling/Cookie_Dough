@@ -1,18 +1,24 @@
 <div class="section find-us bg-primary-light wave1 pt-md-3 pb-md-0 pull-top overflow-x-initial">
   <div class="container-fluid px-0">
-    <h2 class="display-1 text-white mb-0 skrollable skrollable-between position-relative" data-start="margin-left:-200px;" data-end="margin-left:700px;">
-      {% for block in section.blocks %}
-        {% case block.type %}
-          {% when 'keyword' %}
-              <span> {{ block.settings.block-keyword }} </span><span class="cloud1"></span>
-        {% endcase %}
-      {% endfor %}
+    <h2
+      class="display-1 text-white mb-0 skrollable skrollable-between position-relative"
+      data-start="margin-left:-200px;"
+      data-end="margin-left:700px;">
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'keyword' -%}
+          <span>
+            {{ block.settings.block-keyword }}
+          </span>
+          <span class="cloud1"></span>
+        {%- endcase -%}
+      {%- endfor -%}
     </h2>
-    
+
   </div>
 </div>
 
-{% schema %}
+{%- schema -%}
   {
     "name": "Keywords",
     "settings": [],
@@ -21,14 +27,14 @@
         "name": "Keyword",
         "type": "keyword",
         "settings": [
-            {
-              "id": "block-keyword",
-              "type": "text",
-              "label": "Keyword",
-              "default": "Keyword goes here"
-            }
+          {
+            "id": "block-keyword",
+            "type": "text",
+            "label": "Keyword",
+            "default": "Keyword goes here"
+          }
         ]
       }
     ]
   }
-{% endschema %}
+{%- endschema -%}

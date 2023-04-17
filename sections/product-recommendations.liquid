@@ -4,14 +4,14 @@
       <h2 class="heading1">{{ section.settings.title }}</h2>
     </header>
     <div class="row row3">
-    {% for product in section.settings.related_products %}
-      {% include 'product-card' %}
-    {% endfor %}
+    {%- for product in section.settings.related_products -%}
+      {%- include 'product-card' -%}
+    {%- endfor -%}
     </div>
   </div>
 </div>
 
-{% schema %}
+{%- schema -%}
 {
   "name": "Product Recommendations",
   "tag": "section",
@@ -35,10 +35,10 @@
   }
   ]
 }
-{% endschema %}
+{%- endschema -%}
 
-{% stylesheet %}
-{% endstylesheet %}
+{%- stylesheet -%}
+{%- endstylesheet -%}
 
-{% javascript %}
-{% endjavascript %}
+{%- javascript -%}
+{%- endjavascript -%}

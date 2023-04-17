@@ -6,14 +6,14 @@
             </header>
             <div class="row">
  
-              {% for value in product.metafields.Image.image %}
+              {%- for value in product.metafields.Image.image -%}
                 <div class="col-md-4 column">
                     <div class="image">
                       <img src="{{ value }}" alt="icon">
                     </div>
                     <p>{{ product.metafields.Name.name[forloop.index0] }}</p>
                   </div>
-              {% endfor %}
+              {%- endfor -%}
 
             </div>
           </div>
@@ -22,7 +22,7 @@
 
 
 
-{% schema %}
+{%- schema -%}
   {
     "name": "Ingredients",
     "settings": [
@@ -34,4 +34,4 @@
       }
     ]
   }
-{% endschema %}
+{%- endschema -%}

@@ -770,9 +770,38 @@
       },
       "home-banner": {
         "type": "home-banner",
+        "blocks": {
+          "1e6b1741-101c-4a73-b3ad-6a3731d301bd": {
+            "type": "banner_slide_block",
+            "settings": {
+              "slide_image": "shopify:\/\/shop_images\/heading-text1.png",
+              "silder_text": "Find your local MyCookieDough store and<br> experience moments of pure joy!"
+            }
+          },
+          "8233e7c6-853a-4bcd-b164-b9a30cd33d6e": {
+            "type": "banner_slide_block",
+            "settings": {
+              "slide_image": "shopify:\/\/shop_images\/heading-text1.png",
+              "silder_text": "Find your local MyCookieDough store and<br> experience moments of pure joy!"
+            }
+          },
+          "56f52d94-7e0c-4b81-9d46-9c2e7448f6ca": {
+            "type": "banner_slide_block",
+            "settings": {
+              "slide_image": "shopify:\/\/shop_images\/heading-text1.png",
+              "silder_text": "Find your local MyCookieDough store and<br> experience moments of pure joy!"
+            }
+          }
+        },
+        "block_order": [
+          "1e6b1741-101c-4a73-b3ad-6a3731d301bd",
+          "8233e7c6-853a-4bcd-b164-b9a30cd33d6e",
+          "56f52d94-7e0c-4b81-9d46-9c2e7448f6ca"
+        ],
         "settings": {
-          "banner_button_label": "",
-          "banner_button_link": ""
+          "banner_background_image": "shopify:\/\/shop_images\/banner-img3.jpg",
+          "banner_button_label": "Our Stores",
+          "banner_button_link": "shopify:\/\/pages\/stores"
         }
       },
       "image-carousel-section": {
@@ -1103,8 +1132,7 @@
         "type": "contact-form",
         "settings": {
           "get-in-touch-title": "GET IN TOUCH",
-          "get-in-touch-content": "<p>We love to hear from our community! Drop us an email below 👇                  <\/p><p>For any queries relating to your online order please email <a href=\"#\" title=\"email\">orders@mycookiedough.com <\/a>along with your name and order number in the subject line. Your query will be responded to within 48 hours during the working week<\/p>",
-          "btn-label": "Send Enquiry"
+          "get-in-touch-content": "<p>We love to hear from our community! Drop us an email below 👇                  <\/p><p>For any queries relating to your online order please email <a href=\"#\" title=\"email\">orders@mycookiedough.com <\/a>along with your name and order number in the subject line. Your query will be responded to within 48 hours during the working week.&lt;\/p&gt;<\/p>"
         }
       },
       "instore-menu": {
@@ -1928,6 +1956,162 @@
             "scotch-egg-biy-pack",
             "the-chocoholics-pack"
           ]
+        }
+      },
+      "home-main-content": {
+        "type": "home-main-content",
+        "settings": {
+          "title": "Freshly baked<br> cookie dough",
+          "content": "<p>We are the experts in all things Cookie Dough. We serve warm, gooey Cookie Dough in an array of flavours, decorated with the best sauces and toppings like Kinder, Lotus Biscoff, Nutella and more…<\/p>",
+          "image": "shopify:\/\/shop_images\/image33.jpg",
+          "visit_us_button_label": "Visit Us",
+          "visit_us_button_url": "#",
+          "order_now_button_label": "Order Now",
+          "order_now_button_url": "#"
+        }
+      },
+      "review": {
+        "type": "review",
+        "blocks": {
+          "bd78181c-e32c-4e95-a4bc-d8c29fac75ca": {
+            "type": "review_block",
+            "settings": {
+              "reviewers_name": "Jane Smith",
+              "review": "<p>This is the Best Cookie Dough you can buy. It’s beyond amazing!<\/p>",
+              "reviewers_position": "Social Media Influencer",
+              "reviewers_image": "shopify:\/\/shop_images\/image29.jpg"
+            }
+          },
+          "2bd90e43-97e6-4f71-9e7c-f6083fd170a6": {
+            "type": "review_block",
+            "settings": {
+              "reviewers_name": "Jane Smith",
+              "review": "<p>This is the Best Cookie Dough you can buy. It’s beyond amazing!<\/p>",
+              "reviewers_position": "Social Media Influencer",
+              "reviewers_image": "shopify:\/\/shop_images\/image30.jpg"
+            }
+          },
+          "df4e4c44-367e-4fa5-ae04-ff37ac42b5f3": {
+            "type": "review_block",
+            "settings": {
+              "reviewers_name": "Jane Smith",
+              "review": "<p>This is the Best Cookie Dough you can buy. It’s beyond amazing!<\/p>",
+              "reviewers_position": "Social Media Influencer",
+              "reviewers_image": "shopify:\/\/shop_images\/image31.jpg"
+            }
+          },
+          "8334fc2d-b7e5-413a-bfc3-043c6038f38d": {
+            "type": "review_block",
+            "settings": {
+              "reviewers_name": "Jane Smith",
+              "review": "<p>This is the Best Cookie Dough you can buy. It’s beyond amazing!<\/p>",
+              "reviewers_position": "Social Media Influencer",
+              "reviewers_image": "shopify:\/\/shop_images\/image32.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "bd78181c-e32c-4e95-a4bc-d8c29fac75ca",
+          "2bd90e43-97e6-4f71-9e7c-f6083fd170a6",
+          "df4e4c44-367e-4fa5-ae04-ff37ac42b5f3",
+          "8334fc2d-b7e5-413a-bfc3-043c6038f38d"
+        ],
+        "settings": {
+        }
+      },
+      "fan-favourites": {
+        "type": "fan-favourites",
+        "settings": {
+          "section_title": "Fan favourites",
+          "favourite_products": [
+            "kinder-nutella-oreo-skillet",
+            "milk-chocolate-chip-1",
+            "the-famous-5-pack"
+          ]
+        }
+      },
+      "experience-moments": {
+        "type": "experience-moments",
+        "blocks": {
+          "e8087531-1a4c-4278-9982-bb9798d83945": {
+            "type": "image_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/image46.jpg"
+            }
+          },
+          "d85218f6-9efa-4015-b788-7b3049bece79": {
+            "type": "image_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/image47.jpg"
+            }
+          },
+          "4ef112bb-8606-404d-9953-36f1728b778d": {
+            "type": "image_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/image48.jpg"
+            }
+          },
+          "0cfe72af-6fa4-4a07-aa48-d1a682a3fd29": {
+            "type": "image_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/image49.jpg"
+            }
+          },
+          "e87383a7-58eb-487d-93d7-20eb85ff0c18": {
+            "type": "image_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/image50.jpg"
+            }
+          },
+          "b99061c6-0762-4eec-a3b1-b19200ffee54": {
+            "type": "image_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/image46.jpg"
+            }
+          },
+          "3731e5f0-0b82-4a32-8dac-da35e3c9a9bd": {
+            "type": "image_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/image47.jpg"
+            }
+          },
+          "35308bf8-2cbb-4126-a8b3-9f622ac849b6": {
+            "type": "image_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/image48.jpg"
+            }
+          },
+          "b17ac124-d70d-4c6d-8e19-81bf691ea2ca": {
+            "type": "image_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/image49.jpg"
+            }
+          },
+          "162cbea0-2f30-4bee-a412-56a9ce0d0ebc": {
+            "type": "image_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/image50.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "e8087531-1a4c-4278-9982-bb9798d83945",
+          "d85218f6-9efa-4015-b788-7b3049bece79",
+          "4ef112bb-8606-404d-9953-36f1728b778d",
+          "0cfe72af-6fa4-4a07-aa48-d1a682a3fd29",
+          "e87383a7-58eb-487d-93d7-20eb85ff0c18",
+          "b99061c6-0762-4eec-a3b1-b19200ffee54",
+          "3731e5f0-0b82-4a32-8dac-da35e3c9a9bd",
+          "35308bf8-2cbb-4126-a8b3-9f622ac849b6",
+          "b17ac124-d70d-4c6d-8e19-81bf691ea2ca",
+          "162cbea0-2f30-4bee-a412-56a9ce0d0ebc"
+        ],
+        "settings": {
+          "section_title": "Experience moments of pure joy at <br> our My Cookie Dough Stores",
+          "our_location_button_label": "Our Location",
+          "our_location_button_url": "shopify:\/\/pages\/stores",
+          "follow_us_button_label": "Follow Us",
+          "follow_us_button_url": "#"
         }
       }
     },

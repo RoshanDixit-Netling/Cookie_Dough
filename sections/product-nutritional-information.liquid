@@ -14,12 +14,12 @@
                       <div class="inner-content">
                         <ul class="list3">
 
-                              {% for label in product.metafields.Summary.label %}
+                              {%- for label in product.metafields.Summary.label -%}
                                 <li>
                                   <span class="data">{{ label }}</span>
                                   <span class="value">{{ product.metafields.Summary.value[forloop.index0] }}</span>
                                 </li>
-                              {% endfor %}
+                              {%- endfor -%}
                               
                         </ul>
                       </div>
@@ -32,12 +32,12 @@
                       <div class="inner-content">
                         <ul class="list3">
                          
-                          {% for label in product.metafields.Allergen.label %}
+                          {%- for label in product.metafields.Allergen.label -%}
                             <li>
                               <span class="data">{{ label }}</span>
                               <span class="value">{{ product.metafields.Allergen.value[forloop.index0] }}</span>
                             </li>
-                          {% endfor %}
+                          {%- endfor -%}
                           
                         </ul>
                       </div>
@@ -50,12 +50,12 @@
                       <div class="inner-content">
                         <ul class="list3">
 
-                           {% for label in product.metafields.Storage.label %}
+                           {%- for label in product.metafields.Storage.label -%}
                               <li>
                                 <span class="data">{{ label }}</span>
                                 <span class="value">{{ product.metafields.Storage.value[forloop.index0] }}</span>
                               </li>
-                           {% endfor %} 
+                           {%- endfor -%} 
                           
                       </div>
                     </div>
@@ -68,7 +68,7 @@
         <!-- /section -->
 
 
-{% schema %}
+{%- schema -%}
   {
     "name": "Nutritional Information",
     "settings": [
@@ -98,4 +98,4 @@
       }
     ]
   }
-{% endschema %}
+{%- endschema -%}

@@ -8,9 +8,9 @@
 <!-- content -->
 <div id="content">
   <!-- section -->
-  {% capture section_capture %}
-    {% section 'section-blogs' %}
-  {% endcapture %}
+  {%- capture section_capture -%}
+    {%- section 'section-blogs' -%}
+  {%- endcapture -%}
   {{ section_capture | replace: 'class="shopify-section section"', '' }}
   <!-- /section -->
 </div>

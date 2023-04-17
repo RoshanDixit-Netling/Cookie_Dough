@@ -2,9 +2,9 @@
 <div class="section our-stores">
   <div class="container">
     <div class="row">
-      {% for block in section.blocks %}
-        {% case block.type %}
-          {% when 'stores' %}
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'stores' -%}
           <div class="col-lg-4 col-md-6 column">
             <div class="box1">
               <figure class="figure1">
@@ -62,8 +62,8 @@
               </footer>
             </div>
           </div>
-        {% endcase %}
-      {% endfor %}
+        {%- endcase -%}
+      {%- endfor -%}
     </div>
     <footer class="text-center pt-4 pt-lg-5">
       <span class="note">{{ section.settings.bottom-text }}</span>
@@ -71,7 +71,7 @@
   </div>
 </div>
 <!-- /section -->
-{% schema %}
+{%- schema -%}
   {
     "name": "Our Stores",
     "blocks": [
@@ -157,4 +157,4 @@
       }
     ]
   }
-{% endschema %}
+{%- endschema -%}

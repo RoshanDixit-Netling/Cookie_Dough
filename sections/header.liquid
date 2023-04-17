@@ -1,4 +1,4 @@
-{% comment %}
+{%- comment -%}
       <!-- header -->
       <header id="header">
         <div class="container">
@@ -81,20 +81,20 @@
                 <h2 class="display-2">
                   {{ section.settings.menu-heading }} </h2>
                 <ul class="menu">
-                  {% assign i=1 %}
-                  {% for link in section.settings.menu.links %}
+                  {%- assign i=1 -%}
+                  {%- for link in section.settings.menu.links -%}
                     <li><a href="{{ link.url }}" data-tag="image{{ i }}">{{ link.title }}</a></li>
-                    {% assign i = i | plus: 1 %}
-                  {% endfor %}
+                    {%- assign i = i | plus: 1 -%}
+                  {%- endfor -%}
                 </ul>
               </div>
               <div class="col-md-5">
                 <div class="menu-images">
-                  {% assign i=1 %}
-                  {% for block in section.blocks %}
-                    {% case block.type %}
-                      {% when 'image' %}
-                        <div id="image{{ i }}" class="image {% if i==1 %}active{% else %}d-none{% endif %}">
+                  {%- assign i=1 -%}
+                  {%- for block in section.blocks -%}
+                    {%- case block.type -%}
+                      {%- when 'image' -%}
+                        <div id="image{{ i }}" class="image {%- if i==1 -%}active{%- else -%}d-none{%- endif -%}">
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1057 902" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <defs>
                               <pattern id="bias{{ i }}" height="100%" width="100%" patternContentUnits="objectBoundingBox" viewBox="0 0 1 1" preserveAspectRatio="xMidYMid slice">
@@ -110,9 +110,9 @@
                             </path>
                           </svg>
                         </div>
-                      {% assign i = i | plus: 1 %}
-                    {% endcase %}
-                  {% endfor %}
+                      {%- assign i = i | plus: 1 -%}
+                    {%- endcase -%}
+                  {%- endfor -%}
                 </div>
               </div>
             </div>
@@ -120,7 +120,7 @@
         </div>
       </nav>
 <!-- /navigation -->
-{% endcomment %}
+{%- endcomment -%}
 
 <!-- header -->
       <header id="header">
@@ -202,24 +202,24 @@
               <div class="col-md-7 column mb-md-0">
                 <h2 class="display-2 d-none">{{ section.settings.menu-heading }}</h2>
                 <ul class="menu">
-                  {% assign menu_item_number = 1 %}
-                  {% for link in section.settings.menu.links %}
-                    {% if menu_item_number < 3 %}
+                  {%- assign menu_item_number = 1 -%}
+                  {%- for link in section.settings.menu.links -%}
+                    {%- if menu_item_number < 3 -%}
                       <li class="m-important"><a href="{{ link.url }}" data-tag="image{{ menu_item_number }}">{{ link.title }}</a></li>
-                    {% else %}
+                    {%- else -%}
                       <li><a href="{{ link.url }}" data-tag="image{{ menu_item_number }}">{{ link.title }}</a></li>
-                      {% endif %}
-                      {% assign menu_item_number = menu_item_number | plus: 1 %}
-                    {% endfor %}
+                      {%- endif -%}
+                      {%- assign menu_item_number = menu_item_number | plus: 1 -%}
+                    {%- endfor -%}
                 </ul>
               </div>
               <div class="col-md-5">
                 <div class="menu-images">
-                  {% assign menu_item_number = 1%}
-                  {% for block in section.blocks %}
-                    {% case block.type %}
-                      {% when 'image' %}
-                        <div id="image{{ menu_item_number }}" class="image {% if menu_item_number == 1 %}active{% else %}d-none{% endif %}">
+                  {%- assign menu_item_number = 1-%}
+                  {%- for block in section.blocks -%}
+                    {%- case block.type -%}
+                      {%- when 'image' -%}
+                        <div id="image{{ menu_item_number }}" class="image {%- if menu_item_number == 1 -%}active{%- else -%}d-none{%- endif -%}">
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1057 902" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <defs>
                               <pattern id="bias{{ menu_item_number }}" height="100%" width="100%" patternContentUnits="objectBoundingBox" viewBox="0 0 1 1" preserveAspectRatio="xMidYMid slice">
@@ -235,9 +235,9 @@
                             </path>
                           </svg>
                         </div>
-                        {% assign menu_item_number = menu_item_number | plus: 1 %}
-                      {% endcase %}
-                    {% endfor %}
+                        {%- assign menu_item_number = menu_item_number | plus: 1 -%}
+                      {%- endcase -%}
+                    {%- endfor -%}
                 </div>
               </div>
             </div>
@@ -246,7 +246,7 @@
       </nav>
       <!-- /navigation -->
 
-{% schema %}
+{%- schema -%}
   {
     "name": "Header",
     "settings": [
@@ -280,10 +280,10 @@
       } 
     ]
   }
-{% endschema %}
+{%- endschema -%}
 
-{% stylesheet %}
-{% endstylesheet %}
+{%- stylesheet -%}
+{%- endstylesheet -%}
 
-{% javascript %}
-{% endjavascript %}
+{%- javascript -%}
+{%- endjavascript -%}

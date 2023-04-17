@@ -1,35 +1,35 @@
-{% liquid
+{%- liquid
   assign heading_blocks = section.blocks | where: "type", "additional-info-heading" 
   assign content_blocks = section.blocks | where: "type", "additional-info-content"
-%}
+-%}
 
-{% if heading_blocks %}
+{%- if heading_blocks -%}
 <div class="custom-accordion color2">
-{% assign i = 1 %}
-{% for block in section.blocks %}
-  {% case block.type %}
-    {% when 'additional-info-heading' %}
-    <div class="custom-card {% if i == 1 %} active {% endif %} {% assign i = i | plus: 1 %}">
+{%- assign i = 1 -%}
+{%- for block in section.blocks -%}
+  {%- case block.type -%}
+    {%- when 'additional-info-heading' -%}
+    <div class="custom-card {% if i == 1 %} active {%- endif -%} {%- assign i = i | plus: 1 -%}">
       <div class="custom-accordion-header"> {{ block.settings.heading }} </div>
       <div class="custom-accordion-content">
         <div class="inner-content">
-          {% assign id = block.settings.heading_id %}
+          {%- assign id = block.settings.heading_id -%}
            <ul class="list2 color2">
-            {% for block in section.blocks %}
-              {% case block.type %}
-                {% when 'additional-info-content' %}
-                  {% if id == block.settings.content_id %}
+            {%- for block in section.blocks -%}
+              {%- case block.type -%}
+                {%- when 'additional-info-content' -%}
+                  {%- if id == block.settings.content_id -%}
                     <li>{{ block.settings.content }}</li>
-                  {% endif %}
-                {% endcase %}
-              {% endfor %}
+                  {%- endif -%}
+                {%- endcase -%}
+              {%- endfor -%}
            </ul>
         </div>
       </div>
     </div>
-  {% endcase %}
-{% endfor %}
-{% comment %} 
+  {%- endcase -%}
+{%- endfor -%}
+{%- comment -%} 
   <div class="custom-card">
     <div class="custom-accordion-header"> What you need </div>
     <div class="custom-accordion-content">
@@ -123,11 +123,11 @@
         </ul>
       </div>
     </div>
-  </div> {% endcomment %}
+  </div> {%- endcomment -%}
 
 </div>
-{% endif %}
-{% schema %}
+{%- endif -%}
+{%- schema -%}
 {
 "name": "Additional Information",
 "settings": [],
@@ -167,4 +167,4 @@
     ]
   }]
 }
-{% endschema %}
+{%- endschema -%}

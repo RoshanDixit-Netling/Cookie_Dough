@@ -1,0 +1,87 @@
+<!-- section -->
+<div class="section freshly-baked wave1">
+  <div class="container">
+    <div class="row justify-content-around flex-row-reverse">
+      <div class="col-lg-5 col-md-6 mb-5 mb-md-0">
+        <figure>
+          <img class="rounded-3" src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt }}" loading="lazy"/>
+        </figure>
+      </div>
+      <div class="col-lg-5 col-md-6">
+        <header class="mb-3">
+          <h1 class="heading1 alt"> {{ section.settings.title }} </h1>
+        </header>
+        <p class="fw-light"> {{ section.settings.content | strip_html }}</p>
+        <footer>
+          <div class="row pt-3 pt-lg-4">
+            {%- if section.settings.visit_us_button_label and section.settings.visit_us_button_label != '' -%}
+            <div class="col-lg-6 mb-4 mb-lg-0">
+              <a href="{{ section.settings.visit_us_button_url }}" class="btn btn-primary w-100">{{ section.settings.visit_us_button_label }}</a>
+            </div>
+            {%- endif -%}
+            {%- if section.settings.order_now_button_label and section.settings.order_now_button_label != '' -%}
+            <div class="col-lg-6">
+              <a href="{{ section.settings.order_now_button_url }}" class="btn btn-primary bg-color1 w-100">{{ section.settings.order_now_button_label }}</a>
+            </div>
+          {%- endif -%}
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /section -->
+{%- schema -%}
+{
+  "name": "Main Content Section",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Title",
+      "id": "title"
+    },
+    {
+      "type": "richtext",
+      "label": "Content",
+      "id": "content"
+    },
+    {
+      "type": "image_picker",
+      "label": "Image",
+      "id": "image"
+    },
+    {
+      "type": "text",
+      "label": "Visit Us Button Label",
+      "id": "visit_us_button_label"
+    },
+    {
+      "type": "url",
+      "label": "Visit Us button Url",
+      "id": "visit_us_button_url"
+    },
+    {
+      "type": "text",
+      "label": "Order Now Button Label",
+      "id": "order_now_button_label"
+    },
+    {
+      "type": "url",
+      "label": "Order Now button Url",
+      "id": "order_now_button_url"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Main Content Section"
+    }
+  ]
+}
+{%- endschema -%}
+
+{%- stylesheet -%}
+{%- endstylesheet -%}
+
+{%- javascript -%}
+{%- endjavascript -%}

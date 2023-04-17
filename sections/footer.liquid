@@ -13,10 +13,10 @@
               </div>
               <h5>{{ section.settings.newsletter-heading }}</h5>
               <div class="form email-form">
-                {% form 'customer' %}
+                {%- form 'customer' -%}
                   <input type="email" name="contact[email]" class="form-control" placeholder="Email">
                   <input type="submit" class="btn btn-outline-primary" value="{{ section.settings.newsletter-button-label }}">
-                {% endform %}
+                {%- endform -%}
               </div>
             </div>
             <div class="col-xl-4 col-lg-5 col-md-8 ms-auto">
@@ -24,17 +24,17 @@
                 <div class="col-md-6 column">
                   <h6>SHOP</h6>
                   <ul class="footer-navigation">
-					{% for link in section.settings.shop-menu.links %}
+					{%- for link in section.settings.shop-menu.links -%}
                     	<li><a href="{{ link.url }}">{{ link.title }}</a></li>
-                    {% endfor %}
+                    {%- endfor -%}
                   </ul>
                 </div>
                 <div class="col-md-6 column">
                   <h6>CUSTOMER</h6>
                   <ul class="footer-navigation">
-					{% for link in section.settings.customer-menu.links %}
+					{%- for link in section.settings.customer-menu.links -%}
                     	<li><a href="{{ link.url }}">{{ link.title }}</a></li>
-                    {% endfor %}
+                    {%- endfor -%}
                   </ul>
                 </div>
               </div>
@@ -68,9 +68,9 @@
             <div class="row">
               <div class="col-lg-5 col-md-7 order-lg-2">
                 <ul class="policies">
-                  {% for link in section.settings.policies-menu.links %}
+                  {%- for link in section.settings.policies-menu.links -%}
                     	<li><a href="{{ link.url }}">{{ link.title }}</a></li>
-                  {% endfor %}
+                  {%- endfor -%}
                 </ul>
               </div>
               <div class="col-lg-5 col-md-5 order-lg-1">
@@ -86,7 +86,7 @@
 <!-- /footer -->
 
 
-{% schema %}
+{%- schema -%}
   {
     "name": "Footer",
     "settings": [
@@ -161,10 +161,10 @@
 		}
 	]
   }
-{% endschema %}
+{%- endschema -%}
 
-{% stylesheet %}
-{% endstylesheet %}
+{%- stylesheet -%}
+{%- endstylesheet -%}
 
-{% javascript %}
-{% endjavascript %}
+{%- javascript -%}
+{%- endjavascript -%}

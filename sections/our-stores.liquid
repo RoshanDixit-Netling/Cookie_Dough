@@ -2,9 +2,9 @@
         <div class="section our-stores">
           <div class="container">
             <div class="row">
-              {% for block in section.blocks %}
-                {% case block.type %}
-                  {% when 'store' %}
+              {%- for block in section.blocks -%}
+                {%- case block.type -%}
+                  {%- when 'store' -%}
                       <div class="col-lg-4 col-md-6 column">
                         <div class="box1">
                           <figure class="figure1">
@@ -54,8 +54,8 @@
                           </footer>
                         </div>
                       </div>
-                {% endcase %}
-              {% endfor %}
+                {%- endcase -%}
+              {%- endfor -%}
             </div>
             <footer class="text-center pt-4 pt-lg-5">
               <span class="note"> {{ section.settings.more-store-label }} </span>
@@ -65,7 +65,7 @@
 <!-- /section -->
 
 
-{% schema %}
+{%- schema -%}
   {
     "name": "Our Stores",
     "settings": [
@@ -170,10 +170,10 @@
 		}
 	]
   }
-{% endschema %}
+{%- endschema -%}
 
-{% stylesheet %}
-{% endstylesheet %}
+{%- stylesheet -%}
+{%- endstylesheet -%}
 
-{% javascript %}
-{% endjavascript %}
+{%- javascript -%}
+{%- endjavascript -%}

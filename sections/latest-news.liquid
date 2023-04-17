@@ -1,48 +1,47 @@
-  {%  assign posts_displayed = section.settings.blog.articles_count %}
-    {% if section.settings.blog.articles_count > 0 %}
-      <!-- section -->
-        <div class="section news-overview related wave1">
-          <div class="container">
-            <header class="text-center c-mb-4">
-              <h2 class="heading1">{{ section.settings.latest-news-title }}</h2>
-            </header>
-            <div class="row">
-              {% if section.settings.blog != blank and section.settings.blog.articles_count > 0 %}
-                {% for article in section.settings.blog.articles limit: 3 %}
-                  {% include 'news-card' %}
-                {% endfor %}
-              {% endif %}
-            </div>
-          </div>
-        </div>
-        <!-- /section -->
-      {%  endif %}
+{%- assign posts_displayed = section.settings.blog.articles_count -%}
+{%- if section.settings.blog.articles_count > 0 -%}
+  <!-- section -->
+  <div class="section news-overview related wave1">
+    <div class="container">
+      <header class="text-center c-mb-4">
+        <h2 class="heading1">{{ section.settings.latest-news-title }}</h2>
+      </header>
+      <div class="row">
+        {%- if section.settings.blog != blank and section.settings.blog.articles_count > 0 -%}
+          {%- for article in section.settings.blog.articles limit: 3 -%}
+            {%- include 'news-card' -%}
+          {%- endfor -%}
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+  <!-- /section -->
+{%- endif -%}
 
-{% schema %}
-{
-  "name": "Latest News Section",
-  "tag": "section",
-  "class": "section",
-  "settings": [
-    {
-      "type": "text",
-      "id": "latest-news-title",
-      "default": "Latest News",
-      "label" : "Title"
-    },
-    {
-      "type": "blog",
-      "id": "blog",
-      "label": "News"
-    }
-  ],
-  "presets": [
-    {
-      "name": "Latest News",
-      "settings": {
-        "blog": "News"
+{%- schema -%}
+  {
+    "name": "Latest News Section",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "latest-news-title",
+        "default": "Latest News",
+        "label": "Title"
+      }, {
+        "type": "blog",
+        "id": "blog",
+        "label": "News"
       }
-    }
-  ]
-}
-{% endschema %}
+    ],
+    "presets": [
+      {
+        "name": "Latest News",
+        "settings": {
+          "blog": "News"
+        }
+      }
+    ]
+  }
+{%- endschema -%}

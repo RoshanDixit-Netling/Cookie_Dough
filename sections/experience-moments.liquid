@@ -1,0 +1,98 @@
+<!-- section -->
+<div class="section stores-section">
+  <div class="container-fluid">
+    <header class="text-center c-mb-4">
+      <h4 class="heading1 alt">
+        {{ section.settings.section_title }}
+      </h4>
+    </header>
+    <div class="owl-carousel carousel4">
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+        {% when 'image_block' %}
+        <div class="item">
+          <figure class="figure1">
+            <img class="w-100" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt }}" loading="lazy"/>
+          </figure>
+        </div>
+        {% endcase %}
+      {% endfor %}
+    </div>
+    <footer>
+      <div class="row justify-content-center px-lg-5">
+        {%-  assign our_location_button_label = section.settings.our_location_button_label -%}
+        {%-  assign our_location_button_url = section.settings.our_location_button_url -%}
+        {%-  assign follow_us_button_label = section.settings.follow_us_button_label -%}
+        {%-  assign follow_us_button_url = section.settings.follow_us_button_link -%}
+        {%- if our_location_button_label != '' and  our_location_button_url != '' -%}
+        <div class="col-md-3 mb-4 mb-lg-0 text-center text-md-end">
+          <a href="{{ section.settings.our_location_button_url }}" class="btn btn-primary w-100">{{ section.settings.our_location_button_label }}</a>
+        </div>
+        {%- endif -%}
+        {%- if follow_us_button_label != '' and  follow_us_button_link != '' -%}
+        <div class="col-md-3 text-center text-md-start">
+          <a href="{{ section.settings.follow_us_button_url }}" class="btn btn-primary bg-color1 w-100">{{ section.settings.follow_us_button_label }}</a>
+        </div>
+        {%- endif -%}
+      </div>
+    </footer>
+  </div>
+</div>
+<!-- /section -->
+{% schema %}
+{
+  "name": "Moments Section",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Section Title",
+      "id": "section_title"
+    },
+    {
+      "type": "text",
+      "label": "Our Location Button Label",
+      "id": "our_location_button_label"
+    },
+    {
+      "type": "url",
+      "label": "Our Location Button Url",
+      "id": "our_location_button_url"
+    },
+    {
+      "type": "text",
+      "label": "Follow Us Button Label",
+      "id": "follow_us_button_label"
+    },
+    {
+      "type": "url",
+      "label": "Follow Us Button Link",
+      "id": "follow_us_button_url"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image_block",
+      "name": "Image Block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "label": "Select Image",
+          "id": "image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Moments Section"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

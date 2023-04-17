@@ -1,81 +1,84 @@
 <!-- section -->
-        <div class="section gifting-ideas">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-5 column pe-lg-5 pt-lg-5">
-                <h2>{{ section.settings.heading }}</h2>
-                {{ section.settings.content }}
-                <footer class="pt-lg-3">
-                  <a href="#" class="btn btn-primary btn-xl w-100">{{ section.settings.button-label }}</a>
-                </footer>
+<div class="section gifting-ideas">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 column pe-lg-5 pt-lg-5">
+        <h2>{{ section.settings.heading }}</h2>
+        {{ section.settings.content }}
+        <footer class="pt-lg-3">
+          <a href="#" class="btn btn-primary btn-xl w-100">{{ section.settings.button-label }}</a>
+        </footer>
+      </div>
+      <div class="col-lg-7 right-column">
+        <div class="row row1">
+          {%- for block in section.blocks -%}
+            {%- case block.type -%}
+              {%- when 'idea' -%}
+              <div class="col-md-6">
+                <figure class="image">
+                  <img
+                    class="w-100"
+                    src="{{ block.settings.idea-image | image_url }}"
+                    alt="{{ block.settings.idea-image.alt }}">
+                </figure>
+                <h4>
+                  <a href="#">{{ block.settings.idea-title }}
+                  </a>
+                </h4>
               </div>
-              <div class="col-lg-7 right-column">
-                <div class="row row1">
-                  {% for block in section.blocks %}
-                  	{% case block.type %}
-                  	  {% when 'idea' %}
-                        <div class="col-md-6">
-                          <figure class="image">
-                            <img class="w-100" src="{{ block.settings.idea-image | image_url }}" alt="{{ block.settings.idea-image.alt }}">
-                          </figure>
-                          <h4><a href="#">{{ block.settings.idea-title }} </a></h4>
-                        </div>
-                	{% endcase %}
-                  {% endfor %}
-                </div>
-              </div>
-            </div>
-          </div>
+            {%- endcase -%}
+          {%- endfor -%}
         </div>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- /section -->
 
 
-{% schema %}
+{%- schema -%}
   {
     "name": "Gifting Ideas",
     "settings": [
-		{
-			"id": "heading",
-			"type": "text",
-			"label": "Heading",
-			"default": "Gifting ideas"
-		},
-		{
-			"id": "content",
-			"type": "richtext",
-			"label": "Content",
-			"default": "<p>We’ve got your back when it comes to your corporate gifting. Whether you need some of our indulgent bakes for employees working at home, hundreds of cookies for an event or regular cookie deliveries to your office.</p>"
-		},
-		{
-			"id": "button-label",
-			"type": "text",
-			"label": "Button Label",
-			"default": "Enquire Now"
-		}
-	],
-	"blocks": [
-		{
-			"name": "Idea",
-			"type": "idea",
-			"settings": [
-				{
-                	"id": "idea-image",
-                    "type": "image_picker",
-                    "label": "Image"
-                },
-				{
-                	"id": "idea-title",
-                    "type": "textarea",
-                    "label": "Title",
-                    "default": "Title Goes Here"
-                }
-			]
-		}
-	],
-	"presets": [
-		{
-			"name": "Gifting Ideas"
-		}
-	]
+      {
+        "id": "heading",
+        "type": "text",
+        "label": "Heading",
+        "default": "Gifting ideas"
+      }, {
+        "id": "content",
+        "type": "richtext",
+        "label": "Content",
+        "default": "<p>We’ve got your back when it comes to your corporate gifting. Whether you need some of our indulgent bakes for employees working at home, hundreds of cookies for an event or regular cookie deliveries to your office.</p>"
+      }, {
+        "id": "button-label",
+        "type": "text",
+        "label": "Button Label",
+        "default": "Enquire Now"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Idea",
+        "type": "idea",
+        "settings": [
+          {
+            "id": "idea-image",
+            "type": "image_picker",
+            "label": "Image"
+          }, {
+            "id": "idea-title",
+            "type": "textarea",
+            "label": "Title",
+            "default": "Title Goes Here"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Gifting Ideas"
+      }
+    ]
   }
-{% endschema %}
+{%- endschema -%}

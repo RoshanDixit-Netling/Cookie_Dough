@@ -1,0 +1,74 @@
+<!-- section -->
+<div class="section bg-primary-light review-section">
+  <div class="container">
+    <div class="row">
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'review_block' -%}
+          <div class="col-lg-3 col-md-6 column">
+            <div class="avtar-card">
+              <figure>
+                <img src="{{ block.settings.reviewers_image | image_url }}" alt="{{ block.settings.reviewers_image.alt }}" loading="lazy" />
+              </figure>
+              <div class="description">
+                {%- assign review = block.settings.review | strip_html | prepend: '“' | append: '”' -%}
+                <p>{{ review }}</p>
+                <footer>
+                  <p class="name">{{ block.settings.reviewers_name }}</p>
+                  <p>{{ block.settings.reviewers_position }}</p>
+                </footer>
+              </div>
+            </div>
+          </div>
+        {%- endcase -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+<!-- /section -->
+{%- schema -%}
+{
+  "name": "Review Section",
+  "tag": "section",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "review_block",
+      "name": "Review Block",
+      "settings": [
+        {
+          "type": "text",
+          "label": "Reviewer's Name",
+          "id": "reviewers_name"
+        },
+        {
+          "type": "richtext",
+          "label": "Review",
+          "id": "review"
+        },
+        {
+          "type": "text",
+          "label": "Reviewer's Position",
+          "id": "reviewers_position"
+        },
+        {
+          "type": "image_picker",
+          "label": "Reviewer's Image",
+          "id": "reviewers_image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Review Section"
+    }
+  ]
+}
+{%- endschema -%}
+
+{%- stylesheet -%}
+{%- endstylesheet -%}
+
+{%- javascript -%}
+{%- endjavascript -%}

@@ -2,25 +2,25 @@
 <div id="page-head" class="page-head2 text-white text-center">
   <div class="container">
     <div class="owl-carousel carousel5">
-      {% for block in section.blocks %}
-        {% case block.type %}
-          {% when 'banner_slide_block' %}
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'banner_slide_block' -%}
            <div class="item">
-            <img class="mx-auto" src="images/heading-text1.png" alt="text-image">
-            <p>Find your local MyCookieDough store and<br> experience moments of pure joy!</p>
-            <a href="#" class="btn btn-primary btn-xl">Our Stores</a>
+            <img class="mx-auto" src="{{ block.settings.slide_image | image_url }}" alt="text-image">
+            <p>{{ block.settings.silder_text }}</p>
+            <a href="{{ section.settings.banner_button_link }}" class="btn btn-primary btn-xl">{{ section.settings.banner_button_label }}</a>
           </div>
-        {% endcase %}
-      {% endfor %}
+        {%- endcase -%}
+      {%- endfor -%}
     </div>
   </div>
   <figure class="figure1 cover-img">
-    <img class="w-100" src="assets/banner-img3.jpg" alt="img" />
+    <img class="w-100" src="{{ section.settings.banner_background_image | image_url }}" alt="{{ section.settings.banner_background_image.alt }}" />
   </figure>
 </div>
 <!-- /page head --->
 
-{% schema %}
+{%- schema -%}
 {
   "name": "Home Banner Section",
   "tag": "section",
@@ -65,10 +65,10 @@
     }
   ]
 }
-{% endschema %}
+{%- endschema -%}
 
-{% stylesheet %}
-{% endstylesheet %}
+{%- stylesheet -%}
+{%- endstylesheet -%}
 
-{% javascript %}
-{% endjavascript %}
+{%- javascript -%}
+{%- endjavascript -%}

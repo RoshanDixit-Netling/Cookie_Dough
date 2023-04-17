@@ -1,82 +1,84 @@
 <!-- section -->
-        <div class="section we-offer alt hide-wave-t bg-primary-light">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-xl-4 col-md-6 pe-lg-4 column mb-md-0">
-                <div class="gallery1">
-                  {% assign i = 1 %}
-                  {% for block in section.blocks %}
-                  {% case block.type %}
-                    {% when 'image' %}
-                    <img class="animation {% if i == 1 %} active {% assign i = i | plus: 1 %}{% endif %}" src="{{ block.settings.offer-image | image_url }}" alt="{{ block.settings.offer-image.alt }}" loading="lazy">
-                    {% endcase %}
-                    {% endfor %}
-                </div>
-              </div>
-              <div class="col-xl-5 col-md-6 ps-lg-4">
-                <h2>{{ section.settings.heading }}</h2>
-                <ul class="list2">
-                  {%  for block in section.blocks %}
-                    {% case block.type %}
-                      {% when 'offer' %}
-                      <li>{{ block.settings.offer-text }}</li>
-                      {% endcase %}
-                    {% endfor %}
-                </ul>
-                <footer>
-                  <a href="#" class="btn btn-primary btn-xl w-100">{{ section.settings.button-label }}</a>
-                </footer>
-              </div>
-            </div>
-          </div>
+<div class="section we-offer alt hide-wave-t bg-primary-light">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-xl-4 col-md-6 pe-lg-4 column mb-md-0">
+        <div class="gallery1">
+          {%- assign i = 1 -%}
+          {%- for block in section.blocks -%}
+            {%- case block.type -%}
+              {%- when 'image' -%}
+              <img
+                class="animation {%- if i == 1 -%} active {%- assign i = i | plus: 1 -%}{%- endif -%}"
+                src="{{ block.settings.offer-image | image_url }}"
+                alt="{{ block.settings.offer-image.alt }}"
+                loading="lazy">
+            {%- endcase -%}
+          {%- endfor -%}
         </div>
-        <!-- /section -->
-{% schema %}
+      </div>
+      <div class="col-xl-5 col-md-6 ps-lg-4">
+        <h2>{{ section.settings.heading }}</h2>
+        <ul class="list2">
+          {%- for block in section.blocks -%}
+            {%- case block.type -%}
+              {%- when 'offer' -%}
+              <li>{{ block.settings.offer-text }}</li>
+            {%- endcase -%}
+          {%- endfor -%}
+        </ul>
+        <footer>
+          <a href="#" class="btn btn-primary btn-xl w-100">{{ section.settings.button-label }}</a>
+        </footer>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /section -->
+{%- schema -%}
   {
     "name": "What we offer",
     "settings": [
-		{
-			"id": "heading",
-			"type": "text",
-			"label": "Heading",
-			"default": "What we offer…"
-		},
-        {
-			"id": "button-label",
-			"type": "text",
-			"label": "Button Label",
-			"default": "Enquire Now"
-		}
-	],
-	"blocks": [
-		{
-			"name": "Offer",
-			"type": "offer",
-			"settings": [
-				{
-          "id": "offer-text",
-          "type": "textarea",
-          "label": "Content"
-        }
-			]
-		},
       {
-			"name": "Image",
-			"type": "image",
-      "settings": [
-        {
-          "id": "offer-image",
-          "type": "image_picker",
-          "label": "Choose Image"
-        }
-      ]
-		}
-	],
+        "id": "heading",
+        "type": "text",
+        "label": "Heading",
+        "default": "What we offer…"
+      }, {
+        "id": "button-label",
+        "type": "text",
+        "label": "Button Label",
+        "default": "Enquire Now"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Offer",
+        "type": "offer",
+        "settings": [
+          {
+            "id": "offer-text",
+            "type": "textarea",
+            "label": "Content"
+          }
+        ]
+      }, {
+        "name": "Image",
+        "type": "image",
+        "settings": [
+          {
+            "id": "offer-image",
+            "type": "image_picker",
+            "label": "Choose Image"
+          }
+        ]
+      }
+    ],
     "presets": [
       {
         "name": "What we offer"
       }
     ]
-    
+
   }
-{% endschema %}
+{%- endschema -%}

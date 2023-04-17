@@ -5,19 +5,19 @@
       <h2>{{ section.settings.international-store-title }}</h2>
       <div class="row pt-2">
 
-        {% for block in section.blocks %}
-          {% case block.type %}
-            {% when 'internationalStores' %}
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'internationalStores' -%}
             <div class="col-lg-4 col-md-6 column">
               <h6>{{ block.settings.store-location }}</h6>
               <ul class="list1">
                 <li>Pavilion KL Mall</li>
               </ul>
             </div>
-            {% assign i = i | plus: 1 %}
-          {% endcase %}
-        {% endfor %}
-        {% comment %} <div class="col-lg-4 col-md-6 column">
+            {%- assign i = i | plus: 1 -%}
+          {%- endcase -%}
+        {%- endfor -%}
+        {%- comment -%} <div class="col-lg-4 col-md-6 column">
         <h6>Muscat, Oman</h6>
         <ul class="list1">
         <li>a) Souq Al Madina</li>
@@ -42,7 +42,7 @@
         <ul class="list1">
         <li>Westfield Chodov, Praha</li>
         </ul>
-        </div> {% endcomment %}
+        </div> {%- endcomment -%}
       </div>
     </div>
     <footer class="text-center pt-4 pt-lg-5">
@@ -51,7 +51,7 @@
   </div>
 </div>
 <!-- /section -->
-{% schema %}
+{%- schema -%}
   {
     "name": "Internation Store section",
     "settings": [
@@ -81,4 +81,4 @@
       }
     ]
   }
-{% endschema %}
+{%- endschema -%}

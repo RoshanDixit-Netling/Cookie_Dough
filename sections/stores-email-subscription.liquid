@@ -5,10 +5,10 @@
               <div class="col-lg-8 col-xl-7">
                 <h4 class="text-white"> {{ section.settings.heading }} </h4>
                 <div class="form email-form">
-                  {% form 'customer' %}
+                  {%- form 'customer' -%}
                     <input type="email" name="contact[email]" class="form-control" placeholder="Email">
                     <input type="submit" class="btn btn-primary" value="{{ section.settings.button-label }}">
-                  {% endform %}
+                  {%- endform -%}
                 </div>
               </div>
             </div>
@@ -16,7 +16,7 @@
         </div>
 <!-- /section -->
 
-{% schema %}
+{%- schema -%}
   {
     "name": "Email Subscription",
     "settings": [
@@ -39,10 +39,10 @@
 		}
 	]
   }
-{% endschema %}
+{%- endschema -%}
 
-{% stylesheet %}
-{% endstylesheet %}
+{%- stylesheet -%}
+{%- endstylesheet -%}
 
-{% javascript %}
-{% endjavascript %}
+{%- javascript -%}
+{%- endjavascript -%}

@@ -1,14 +1,14 @@
 <div class="custom-accordion accordion2 text-start mb-4">
-  {% for block in section.blocks %}
-    {% case block.type %}
-      {% when 'faq_title_block' %}
+  {%- for block in section.blocks -%}
+    {%- case block.type -%}
+      {%- when 'faq_title_block' -%}
         <h2 class="h4 mb-4">{{ block.settings.faq_title }}</h2>
-        {% assign id = block.settings.id | downcase | replace: " ", "-" %}
-        {% for block in section.blocks %}
-          {% case block.type %}
-            {% when 'faq_block' %}
-            {% assign faq_id = block.settings.title_id | downcase | replace: " ", "-" %}
-            {% if id == faq_id  %}
+        {%- assign id = block.settings.id | downcase | replace: " ", "-" -%}
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'faq_block' -%}
+            {%- assign faq_id = block.settings.title_id | downcase | replace: " ", "-" -%}
+            {%- if id == faq_id  -%}
             <div class="custom-card ">
               <div class="custom-accordion-header">
                 <a href="#" class="accordion-btn">{{ block.settings.faq_question }}</a>
@@ -18,13 +18,13 @@
                   {{ block.settings.faq_answer }}</p>
               </div>
             </div>
-            {% endif %}
-          {% endcase %}
-        {% endfor %}
-    {% endcase %}
-  {% endfor %}
+            {%- endif -%}
+          {%- endcase -%}
+        {%- endfor -%}
+    {%- endcase -%}
+  {%- endfor -%}
 </div>
-{% schema %}
+{%- schema -%}
 {
   "name": "Faq Section",
   "tag": "section",
@@ -75,10 +75,10 @@
     }
   ]
 }
-{% endschema %}
+{%- endschema -%}
 
-{% stylesheet %}
-{% endstylesheet %}
+{%- stylesheet -%}
+{%- endstylesheet -%}
 
-{% javascript %}
-{% endjavascript %}
+{%- javascript -%}
+{%- endjavascript -%}

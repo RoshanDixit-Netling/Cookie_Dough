@@ -1,0 +1,66 @@
+<!-- section -->
+<div class="section text-center fan-favourites">
+  <div class="container">
+    <header class="text-center mb-lg-5 mb-4">
+      <h2 class="heading1 alt">{{ section.settings.section_title }}</h2>
+    </header>
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="row">
+          {%- for product in section.settings.favourite_products -%}
+            <div class="col-lg-4 col-md-6 column single-product">
+            <div class="figure1 video">
+              {%- if product.featured_media.media_type == "video" -%}
+              <img class="w-100 video-overlay" src="{{ product.featured_media | img_url: '349x' }}" alt="img">
+              {{ product.featured_media | video_tag: controls: false, autoplay: true, loop: true }}
+              {%- else if product.featured_media.media_type == "image" -%}
+              <img class="w-100 video-overlay" src="{{ product.featured_media | img_url: '500x500' }}" alt="img">
+              {%- endif -%}
+              <span class="hover">
+                <a href="#" class="btn btn-outline-primary bg-color1 btn-sm">Add to cart</a>
+              </span>
+            </div>
+            <div class="content">
+              <h3 class="h4">
+                <a href="{{ product.url }}">{{ product.title }}</a>
+              </h3>
+              <p class="price">{{ product.price | money }}</p>
+            </div>
+          </div>
+          {%- endfor -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /section -->
+{% schema %}
+{
+  "name": "Fan Favourites Section",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Section Title",
+      "id": "section_title"
+    },
+    {
+      "type": "product_list",
+      "label": "Favourite Products",
+      "id": "favourite_products"
+    }
+  ],
+  "blocks": [],
+  "presets": [
+    {
+      "name": "Fan Favourites Section"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

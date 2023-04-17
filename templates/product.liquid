@@ -7,9 +7,9 @@
         <div class="col-lg-5 col-md-12 order-lg-2 column mb-lg-0">
           <div class="product-image-slider mb-4">
             <div class="slideshow2 slick-slider">
-              {% for media in product.media %}
-                {% case media.media_type %}
-                  {% when 'video' %}
+              {%- for media in product.media -%}
+                {%- case media.media_type -%}
+                  {%- when 'video' -%}
                   <div>
                     <div class="single-product">
                       <div class="figure1 video mb-0">
@@ -17,7 +17,7 @@
                       </div>
                     </div>
                   </div>
-                  {% when 'image' %}
+                  {%- when 'image' -%}
                   <div>
                     <div class="single-product">
                       <div class="figure1 video mb-0">
@@ -25,31 +25,31 @@
                       </div>
                     </div>
                   </div>
-                {% endcase %}
-              {% endfor %}
+                {%- endcase -%}
+              {%- endfor -%}
             </div>
             <div class="slideshow2-nav slick-slider">
-              {% for media in product.media %}
-                {% case media.media_type %}
-                  {% when 'video' %}
+              {%- for media in product.media -%}
+                {%- case media.media_type -%}
+                  {%- when 'video' -%}
                   <div class="slick-slide">
                     <span class="thumb-img">
                       {{ media | video_tag: image_size: '80x72', loop: true, autoplay: false, muted: true }}
                     </span>
                   </div>
-                  {% when 'image' %}
+                  {%- when 'image' -%}
                   <div class="slick-slide">
                     <span class="thumb-img">
                       <img src="{{ media | img_url: '400x400'}}" alt="{{ media.alt }}">
                     </span>
                   </div>
-                {% endcase %}
-              {% endfor %}
+                {%- endcase -%}
+              {%- endfor -%}
             </div>
           </div>
-          {% comment %} product additional information section  {% endcomment %}
-          {% section 'product-additional-information' %}
-          {% comment %} product additional information section  {% endcomment %}
+          {%- comment -%} product additional information section  {%- endcomment -%}
+          {%- section 'product-additional-information' -%}
+          {%- comment -%} product additional information section  {%- endcomment -%}
         </div>
         <div class="col-lg-7 col-md-12 pe-lg-5">
           <div class="side-content">
@@ -83,7 +83,7 @@
   <!--  /section -->
 
   <!-- section -->
-  {% section 'product-recommendations' %}
+  {%- section 'product-recommendations' -%}
   <!-- /section -->
 
 </div>
@@ -91,11 +91,11 @@
 
 
 
-{% comment %} 
-{% section 'product-banner' %}
-{% section 'product-ingredients' %}
-{% section 'product-nutritional-information' %}
-{% endcomment %}<script>
+{%- comment -%} 
+{%- section 'product-banner' -%}
+{%- section 'product-ingredients' -%}
+{%- section 'product-nutritional-information' -%}
+{%- endcomment -%}<script>
   console.log("before");
   console.log(window.Shopify.routes.root);
   console.log("after");
