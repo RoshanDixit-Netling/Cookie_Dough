@@ -1,19 +1,19 @@
 <!-- section -->
-        <div class="section sign-up-section bg-primary-light">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8 col-xl-7">
-                <h4 class="text-white"> {{ section.settings.heading }} </h4>
-                <div class="form email-form">
-                  {%- form 'customer' -%}
-                    <input type="email" name="contact[email]" class="form-control" placeholder="Email">
-                    <input type="submit" class="btn btn-primary" value="{{ section.settings.button-label }}">
-                  {%- endform -%}
-                </div>
-              </div>
-            </div>
-          </div>
+<div class="section sign-up-section hide-wave-t bg-primary-light">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 col-xl-7">
+        <h4 class="text-white">{{ section.settings.heading }}</h4>
+        <div class="form email-form">
+            {%- form 'customer' -%}
+            <input type="email" name="contact[email]" class="form-control" placeholder="Email">
+            <input type="submit" class="btn btn-primary" value="{{ section.settings.button-label }}">
+            {%- endform -%}
         </div>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- /section -->
 
 {%- schema -%}

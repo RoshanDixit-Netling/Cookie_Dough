@@ -4,46 +4,47 @@
     <div class="owl-carousel carousel1">
       {%- for block in section.blocks -%}
         {%- case block.type -%}
-          {%- when 'image_block' -%}
-          <div class="item">
-            <figure class="figure1">
-              <img class="w-100" src="images/slide-img1.jpg" alt="img">
-            </figure>
-          </div>
+          {%- when 'image' -%}
+            <div class="item">
+              <figure class="figure1">
+                <img class="w-100" src="{{ block.settings.slider-image | image_url }}" alt="{{ block.settings.slider-image.alt }}">
+              </figure>
+            </div>
         {%- endcase -%}
       {%- endfor -%}
     </div>
   </div>
 </div>
-<!-- section -->
-{% schema %}
-{
-  "name": "Stores Image Slider",
-  "tag": "section",
-  "settings": [],
-  "blocks": [
-    {
-      "type": "image_block",
-      "name": "Image Block",
-      "settings": [
-        {
-          "type": "image_picker",
-          "label": "Select Image",
-          "id": "select_image"
-        }
-      ]
-    }
-  ],
-  "presets": [
-    {
-      "name": "Stores Image Slider"
-    }
-  ]
-}
-{% endschema %}
+<!-- /section -->
 
-{% stylesheet %}
-{% endstylesheet %}
 
-{% javascript %}
-{% endjavascript %}
+{%- schema -%}
+  {
+    "name": "Image Slider",
+    "settings": [],
+    "blocks": [
+      {
+        "name": "Image",
+        "type": "image",
+        "settings": [
+          {
+            "id": "slider-image",
+            "type": "image_picker",
+            "label": "Upload Image"
+          }
+        ]
+      }
+    ],
+	"presets": [
+		{
+			"name": "Image Slider"
+		}
+	]
+  }
+{%- endschema -%}
+
+{%- stylesheet -%}
+{%- endstylesheet -%}
+
+{%- javascript -%}
+{%- endjavascript -%}

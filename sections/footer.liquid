@@ -24,7 +24,7 @@
           <div class="col-md-6 column">
             <h6>SHOP</h6>
             <ul class="footer-navigation">
-    {%- for link in section.settings.shop-menu.links -%}
+              {%- for link in section.settings.shop-menu.links -%}
                 <li><a href="{{ link.url }}">{{ link.title }}</a></li>
               {%- endfor -%}
             </ul>
@@ -32,7 +32,7 @@
           <div class="col-md-6 column">
             <h6>CUSTOMER</h6>
             <ul class="footer-navigation">
-    {%- for link in section.settings.customer-menu.links -%}
+              {%- for link in section.settings.customer-menu.links -%}
                 <li><a href="{{ link.url }}">{{ link.title }}</a></li>
               {%- endfor -%}
             </ul>
@@ -74,7 +74,7 @@
           </ul>
         </div>
         <div class="col-lg-5 col-md-5 order-lg-1">
-          <p class="copyright">{{ section.settings.copyright-title }}</p>
+          <p class="copyright">©{{ "now" | date:"%Y" }} {{ section.settings.copyright-title }}</p>
         </div>
         <div class="col-lg-2 col-md-12 order-lg-3 text-lg-end">
           <p>Site by <a href="#"><img src="{{ 'newphew-logo.svg' | asset_url }}" alt="logo"></a></p>
@@ -85,31 +85,30 @@
 </div>
 <!-- /footer -->
 
-
 {%- schema -%}
   {
     "name": "Footer",
     "settings": [
 		{
-          "type": "header",
-          "content": "Newsletter"
-        },
+      "type": "header",
+      "content": "Newsletter"
+    },
 		{
-          "id": "newsletter-heading",
-          "type": "text",
-          "label": "Heading",
-          "default": "Subscribe to our newsletter"
-      	},
-      	{
-          "id": "newsletter-button-label",
-          "type": "text",
-          "label": "Button Label",
-          "default": "Submit"
-      	},
+      "id": "newsletter-heading",
+      "type": "text",
+      "label": "Heading",
+      "default": "Subscribe to our newsletter"
+    },
+    {
+      "id": "newsletter-button-label",
+      "type": "text",
+      "label": "Button Label",
+      "default": "Submit"
+    },
 		{
-          "type": "header",
-          "content": "Menus"
-        },
+      "type": "header",
+      "content": "Menus"
+    },
 		{
 		  "id": "shop-menu",
 		   "type": "link_list",
@@ -126,38 +125,38 @@
 	 	   "label": "Policies"
 		},
 		{
-          "type": "header",
-          "content": "Social Links"
-        },
+      "type": "header",
+      "content": "Social Links"
+    },
 		{
-          "id": "facebook-url",
-          "type": "text",
-          "label": "Facebook"
-      	},
-      	{
-          "id": "twitter-url",
-          "type": "text",
-          "label": "Twitter"
-      	},
+      "id": "facebook-url",
+      "type": "text",
+      "label": "Facebook"
+    },
+    {
+      "id": "twitter-url",
+      "type": "text",
+      "label": "Twitter"
+    },
 		{
-          "id": "instagram-url",
-          "type": "text",
-          "label": "Instagram"
-      	},
-      	{
-          "id": "tiktok-url",
-          "type": "text",
-          "label": "Tik Tok"
-      	},
+      "id": "instagram-url",
+      "type": "text",
+      "label": "Instagram"
+    },
+    {
+      "id": "tiktok-url",
+      "type": "text",
+      "label": "Tik Tok"
+    },
 		{
-          "type": "header",
-          "content": "Copyright"
-        },
+      "type": "header",
+      "content": "Copyright"
+    },
 		{
 		  "id": "copyright-title",
 		  "type": "text",
-	  	  "label": "Title",
-		  "default": "© 2022, MyCookieDough. All rights reserved."
+	  	"label": "Title",
+		  "default": "MyCookieDough. All rights reserved."
 		}
 	]
   }

@@ -81,7 +81,7 @@
           "twitter-url": "https:\/\/www.twitter.com\/",
           "instagram-url": "https:\/\/www.instagram.com\/",
           "tiktok-url": "https:\/\/www.tiktok.com\/",
-          "copyright-title": "© 2022, MyCookieDough. All rights reserved."
+          "copyright-title": "MyCookieDough. All rights reserved."
         }
       },
       "corporate-banner": {
@@ -453,58 +453,9 @@
           "17fbb1f2-6639-4479-923f-a090e9093c4c"
         ],
         "settings": {
-          "more-store-label": "More UK Stores opening soon!"
-        }
-      },
-      "international-stores": {
-        "type": "international-stores",
-        "blocks": {
-          "61ab7f06-642e-4ea4-a17c-01515939b42e": {
-            "type": "store",
-            "settings": {
-              "city": "Kuala Lumpur Malaysia",
-              "location": "<li> Pavilion KL Mall <\/li>"
-            }
-          },
-          "d2f52b82-d32b-4cc4-9c2d-de543d968105": {
-            "type": "store",
-            "settings": {
-              "city": "Muscat, Oman",
-              "location": "<li> a) Souq Al Madina<\/li>       <li> b) Mall of Muscat<\/li>"
-            }
-          },
-          "9ed0b34e-1b3c-4feb-a2ac-9285406fcca2": {
-            "type": "store",
-            "settings": {
-              "city": "Bahrain, Manama",
-              "location": "<li> Oasis Mall<\/li>"
-            }
-          },
-          "e6e04df2-eae8-40d8-b409-d3f1ac780bd3": {
-            "type": "store",
-            "settings": {
-              "city": "Amman, Jordan",
-              "location": "<li> a) Abdoun<\/li>       <li> b) Khalda<\/li>"
-            }
-          },
-          "0b3cf2de-6de9-4339-8a3f-2429eface7fd": {
-            "type": "store",
-            "settings": {
-              "city": "Prague, Czech Republic",
-              "location": "<li> Westfield Chodov, Praha<\/li>"
-            }
-          }
-        },
-        "block_order": [
-          "61ab7f06-642e-4ea4-a17c-01515939b42e",
-          "d2f52b82-d32b-4cc4-9c2d-de543d968105",
-          "9ed0b34e-1b3c-4feb-a2ac-9285406fcca2",
-          "e6e04df2-eae8-40d8-b409-d3f1ac780bd3",
-          "0b3cf2de-6de9-4339-8a3f-2429eface7fd"
-        ],
-        "settings": {
-          "heading": "International stores",
-          "more-stores": "More Stores opening soon including, Cyprus, Qatar, Belgium and more!"
+          "more-store-label": "More UK Stores opening soon!",
+          "button_label": "Want to be a part of our Franchise?",
+          "button_url": "#"
         }
       },
       "stores-banner": {
@@ -774,21 +725,21 @@
           "1e6b1741-101c-4a73-b3ad-6a3731d301bd": {
             "type": "banner_slide_block",
             "settings": {
-              "slide_image": "shopify:\/\/shop_images\/heading-text1.png",
+              "slide_image": "shopify:\/\/shop_images\/heading-text1.svg",
               "silder_text": "Find your local MyCookieDough store and<br> experience moments of pure joy!"
             }
           },
           "8233e7c6-853a-4bcd-b164-b9a30cd33d6e": {
             "type": "banner_slide_block",
             "settings": {
-              "slide_image": "shopify:\/\/shop_images\/heading-text1.png",
+              "slide_image": "shopify:\/\/shop_images\/heading-text1.svg",
               "silder_text": "Find your local MyCookieDough store and<br> experience moments of pure joy!"
             }
           },
           "56f52d94-7e0c-4b81-9d46-9c2e7448f6ca": {
             "type": "banner_slide_block",
             "settings": {
-              "slide_image": "shopify:\/\/shop_images\/heading-text1.png",
+              "slide_image": "shopify:\/\/shop_images\/heading-text1.svg",
               "silder_text": "Find your local MyCookieDough store and<br> experience moments of pure joy!"
             }
           }
@@ -1132,7 +1083,8 @@
         "type": "contact-form",
         "settings": {
           "get-in-touch-title": "GET IN TOUCH",
-          "get-in-touch-content": "<p>We love to hear from our community! Drop us an email below 👇                  <\/p><p>For any queries relating to your online order please email <a href=\"#\" title=\"email\">orders@mycookiedough.com <\/a>along with your name and order number in the subject line. Your query will be responded to within 48 hours during the working week.&lt;\/p&gt;<\/p>"
+          "get-in-touch-content": "<p>We love to hear from our community! Drop us an email below 👇                  <\/p><p>For any queries relating to your online order please email <a href=\"#\" title=\"email\">orders@mycookiedough.com <\/a>along with your name and order number in the subject line. Your query will be responded to within 48 hours during the working week.&lt;\/p&gt;<\/p>",
+          "btn-label": "Send Enquiry"
         }
       },
       "instore-menu": {
@@ -2112,6 +2064,120 @@
           "our_location_button_url": "shopify:\/\/pages\/stores",
           "follow_us_button_label": "Follow Us",
           "follow_us_button_url": "#"
+        }
+      },
+      "newsletter": {
+        "type": "newsletter",
+        "settings": {
+        }
+      },
+      "our-story-banner": {
+        "type": "our-story-banner",
+        "settings": {
+          "banner_text": "OUR STORY",
+          "banner_image": "shopify:\/\/shop_images\/banner-img4.jpg"
+        }
+      },
+      "section-our-story": {
+        "type": "section-our-story",
+        "blocks": {
+          "b3a8c56b-87e7-4cc1-917f-b760c687c52b": {
+            "type": "tab_menu",
+            "settings": {
+              "tab_menu_label": "My Cookie Dough",
+              "tab_menu_id": "my-cookie-dough"
+            }
+          },
+          "f44a2d06-fabc-4901-9a98-1bf2b2699a1b": {
+            "type": "content",
+            "settings": {
+              "tab_menu_id": "my-cookie-dough",
+              "content": "<p>Our sweet-toothed founders met at university and instantly connected over their passion for all things food. One evening, after trying to find a delicious dessert for movie night, they found themself stumped. There was nothing available that would satisfy their desire for something warm, sweet and indulgent.<\/p>"
+            }
+          },
+          "2b730fec-2b54-4742-86e1-18df09f303bf": {
+            "type": "image_with_content",
+            "settings": {
+              "tab_menu_id": "my-cookie-dough",
+              "image": "shopify:\/\/shop_images\/image34.jpg",
+              "upper_content": "<p>They then began thinking up their dream dessert offering, and found they both had the knack and passion for creating delicious things, and so they set out to bless the world with something truly mouth-watering.<\/p>",
+              "bottom_content": "<p>Following weeks of testing, creating, tasting and perfecting like mad scientists they emerged, covered in crumbs and dusted with sugar, they had done it! The perfect cookie dough, which was nothing like the world had seen before. With a top secret recipe (hush hush!) and a one of a kind baking method, My Cookie Dough was born.<\/p>"
+            }
+          },
+          "5942257c-27f6-4c46-ac51-44bd001d7d2b": {
+            "type": "only_image",
+            "settings": {
+              "tab_menu_id": "my-cookie-dough",
+              "image": "shopify:\/\/shop_images\/image35.jpg"
+            }
+          },
+          "9f063ee9-9a7b-4a2b-9450-222f10661637": {
+            "type": "justified_content",
+            "settings": {
+              "tab_menu_id": "my-cookie-dough",
+              "content": "<p>Our cookie dough is freshly baked, soft, gooey and makes tastebuds squeal in delight. We’ve set out to play in the world of desserts, with the sole purple-wrapped mission of putting big smiles on faces. We bake our cookie dough with endless joy, so that your day can be just that little bit better.<\/p>",
+              "button_label": "Visit Our Stores",
+              "button_link": "shopify:\/\/pages\/stores"
+            }
+          },
+          "ed55418d-57f1-4d8f-86ed-6102ad3b53c9": {
+            "type": "tab_menu",
+            "settings": {
+              "tab_menu_label": "MyCookies",
+              "tab_menu_id": "mycookies"
+            }
+          },
+          "f90f2f39-84a3-4f62-bbed-1b7be86b3e30": {
+            "type": "content",
+            "settings": {
+              "tab_menu_id": "mycookies",
+              "content": "<p>Our sweet-toothed founders met at university and instantly connected over their passion for all things food. One evening, after trying to find a delicious dessert for movie night, they found themself stumped. There was nothing available that would satisfy their desire for something warm, sweet and indulgent.  mycookies<\/p>"
+            }
+          },
+          "bfbbcbc4-b9df-429a-8c6b-a3ec599ebbc2": {
+            "type": "image_with_content",
+            "settings": {
+              "tab_menu_id": "mycookies",
+              "image": "shopify:\/\/shop_images\/image34.jpg",
+              "upper_content": "<p>They then began thinking up their dream dessert offering, and found they both had the knack and passion for creating delicious things, and so they set out to bless the world with something truly mouth-watering.<\/p>",
+              "bottom_content": "<p>Following weeks of testing, creating, tasting and perfecting like mad scientists they emerged, covered in crumbs and dusted with sugar, they had done it! The perfect cookie dough, which was nothing like the world had seen before. With a top secret recipe (hush hush!) and a one of a kind baking method, My Cookie Dough was born.<\/p>"
+            }
+          },
+          "15d4acb9-72bf-41a2-bfc3-a26469d47134": {
+            "type": "only_image",
+            "settings": {
+              "tab_menu_id": "mycookies",
+              "image": "shopify:\/\/shop_images\/image35.jpg"
+            }
+          },
+          "a26a0fe4-2ecc-4320-b0a1-83d95c4b0d26": {
+            "type": "justified_content",
+            "settings": {
+              "tab_menu_id": "mycookies",
+              "content": "<p>Our cookie dough is freshly baked, soft, gooey and makes tastebuds squeal in delight. We’ve set out to play in the world of desserts, with the sole purple-wrapped mission of putting big smiles on faces. We bake our cookie dough with endless joy, so that your day can be just that little bit better.<\/p>",
+              "button_label": "Visit Our Stores",
+              "button_link": "shopify:\/\/pages\/stores"
+            }
+          }
+        },
+        "block_order": [
+          "b3a8c56b-87e7-4cc1-917f-b760c687c52b",
+          "f44a2d06-fabc-4901-9a98-1bf2b2699a1b",
+          "2b730fec-2b54-4742-86e1-18df09f303bf",
+          "5942257c-27f6-4c46-ac51-44bd001d7d2b",
+          "9f063ee9-9a7b-4a2b-9450-222f10661637",
+          "ed55418d-57f1-4d8f-86ed-6102ad3b53c9",
+          "f90f2f39-84a3-4f62-bbed-1b7be86b3e30",
+          "bfbbcbc4-b9df-429a-8c6b-a3ec599ebbc2",
+          "15d4acb9-72bf-41a2-bfc3-a26469d47134",
+          "a26a0fe4-2ecc-4320-b0a1-83d95c4b0d26"
+        ],
+        "settings": {
+        }
+      },
+      "stores-map": {
+        "type": "stores-map",
+        "settings": {
         }
       }
     },

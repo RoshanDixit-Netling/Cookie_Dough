@@ -1,67 +1,71 @@
 <!-- section -->
-        <div class="section our-stores">
-          <div class="container">
-            <div class="row">
-              {%- for block in section.blocks -%}
-                {%- case block.type -%}
-                  {%- when 'store' -%}
-                      <div class="col-lg-4 col-md-6 column">
-                        <div class="box1">
-                          <figure class="figure1">
-                            <img class="w-100" src="{{ block.settings.store-image | image_url }}" alt="{{ block.settings.store-image.alt }}">
-                          </figure>
-                          <div class="content">
-                            <h2><a href="#">{{ block.settings.store-location }} </a></h2>
-                            {{ block.settings.store-address }}
-                            <div class="timings-chart">
-                              <a href="#" class="toggle-btn"><span>{{ block.settings.timing-label }}</span> <i class="icon"><img src="{{ 'down-arrow.svg' | asset_url }}" alt="arrow"></i></a>
-                              <table class="custom-table1">
-                                <tbody>
-                                  <tr>
-                                    <td class="week">MON:</td>
-                                    <td> {{ block.settings.mon-timing }} </td>
-                                  </tr>
-                                  <tr>
-                                    <td class="week">TUE:</td>
-                                    <td> {{ block.settings.tue-timing }} </td>
-                                  </tr>
-                                  <tr>
-                                    <td class="week">WED:</td>
-                                    <td> {{ block.settings.wed-timing }} </td>
-                                  </tr>
-                                  <tr>
-                                    <td class="week">THU:</td>
-                                    <td> {{ block.settings.thu-timing }} </td>
-                                  </tr>
-                                  <tr>
-                                    <td class="week">FRI:</td>
-                                    <td> {{ block.settings.fri-timing }} </td>
-                                  </tr>
-                                  <tr>
-                                    <td class="week">SAT:</td>
-                                    <td> {{ block.settings.sat-timing }} </td>
-                                  </tr>
-                                  <tr>
-                                    <td class="week">SUN</td>
-                                    <td> {{ block.settings.sun-timing }} </td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
-                          </div>
-                          <footer>
-                            <a href="{{ block.settings.button-url }}" class="btn btn-primary bg-color1">{{ block.settings.button-label }}</a>
-                          </footer>
-                        </div>
-                      </div>
-                {%- endcase -%}
-              {%- endfor -%}
-            </div>
-            <footer class="text-center pt-4 pt-lg-5">
-              <span class="note"> {{ section.settings.more-store-label }} </span>
-            </footer>
-          </div>
-        </div>
+<div class="section our-stores">
+  <div class="container">
+    <div class="row">
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'store' -%}
+              <div class="col-lg-4 col-md-6 column">
+                <div class="box1">
+                  <figure class="figure1">
+                    <img class="w-100" src="{{ block.settings.store-image | image_url }}" alt="{{ block.settings.store-image.alt }}">
+                  </figure>
+                  <div class="content">
+                    <h2><a href="#">{{ block.settings.store-location }} </a></h2>
+                    {{ block.settings.store-address }}
+                    <div class="timings-chart">
+                      <a href="#" class="toggle-btn"><span>{{ block.settings.timing-label }}</span> <i class="icon"><img src="{{ 'down-arrow.svg' | asset_url }}" alt="arrow"></i></a>
+                      <table class="custom-table1">
+                        <tbody>
+                          <tr>
+                            <td class="week">MON:</td>
+                            <td> {{ block.settings.mon-timing }} </td>
+                          </tr>
+                          <tr>
+                            <td class="week">TUE:</td>
+                            <td> {{ block.settings.tue-timing }} </td>
+                          </tr>
+                          <tr>
+                            <td class="week">WED:</td>
+                            <td> {{ block.settings.wed-timing }} </td>
+                          </tr>
+                          <tr>
+                            <td class="week">THU:</td>
+                            <td> {{ block.settings.thu-timing }} </td>
+                          </tr>
+                          <tr>
+                            <td class="week">FRI:</td>
+                            <td> {{ block.settings.fri-timing }} </td>
+                          </tr>
+                          <tr>
+                            <td class="week">SAT:</td>
+                            <td> {{ block.settings.sat-timing }} </td>
+                          </tr>
+                          <tr>
+                            <td class="week">SUN</td>
+                            <td> {{ block.settings.sun-timing }} </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <footer>
+                    <a href="{{ block.settings.button-url }}" class="btn btn-primary bg-color1">{{ block.settings.button-label }}</a>
+                  </footer>
+                </div>
+              </div>
+        {%- endcase -%}
+      {%- endfor -%}
+    </div>
+    <footer class="text-center pt-4 pt-lg-5">
+      <span class="note mb-4">{{ section.settings.more-store-label }}</span>
+      {%- if section.settings.button_label and section.settings.button_url -%}
+      <br class="d-lg-none">
+      <a href="{{ section.settings.button_url }}" class="btn btn-primary ms-lg-4">{{ section.settings.button_label }}</a>
+      {%- endif -%}
+    </footer>
+  </div>
+</div>
 <!-- /section -->
 
 
@@ -74,6 +78,17 @@
         "type": "text",
         "label": "More Stores Opening Label",
         "default": "More UK Stores opening soon!"
+      },
+      {
+        "id": "button_label",
+        "type": "text",
+        "label": "Button Label",
+        "default": "Want to be a part of our Franchise?"
+      },
+      {
+        "id": "button_url",
+        "type": "url",
+        "label": "Button Url"
       }
     ],
     "blocks": [
