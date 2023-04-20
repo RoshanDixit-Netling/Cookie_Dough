@@ -5052,23 +5052,6 @@ gourav
 /*# sourceMappingURL=main.css.map */
 
 /*
-18-04-23
-*/
-.single-product div.figure1.has-image {
-  height: 359px;
-}
-
-#container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-#shopify-section-footer {
-  margin-top: auto;
-}
-
-/*
 gourav
 */
 .home.layout1 #page-head {
