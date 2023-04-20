@@ -8,13 +8,20 @@
       <div class="col-lg-10">
         <div class="row">
           {%- for product in section.settings.favourite_products -%}
+            {%- if product.featured_media.media_type == "video" -%}
+              {%- assign figure_classes = 'video ' -%}
+              {%- assign image_classes = 'video-overlay' -%}
+            {%- else if product.featured_media.media_type == "image" -%}
+              {%- assign figure_classes = 'has-image ' -%}
+              {%- assign image_classes = '' -%}
+            {%- endif -%}
             <div class="col-lg-4 col-md-6 column single-product">
-            <div class="figure1 video">
+            <div class="figure1 {{ figure_classes }}">
               {%- if product.featured_media.media_type == "video" -%}
-              <img class="w-100 video-overlay" src="{{ product.featured_media | img_url: '349x' }}" alt="img">
+              <img class="w-100 {{ image_classes }}" src="{{ product.featured_media | img_url: 'master' }}" alt="img">
               {{ product.featured_media | video_tag: controls: false, autoplay: true, loop: true }}
               {%- else if product.featured_media.media_type == "image" -%}
-              <img class="w-100 video-overlay" src="{{ product.featured_media | img_url: '500x500' }}" alt="img">
+              <img class="w-100 {{ image_classes }}" src="{{ product.featured_media | img_url: 'master' }}" alt="img">
               {%- endif -%}
               <span class="hover">
                 <a href="#" class="btn btn-outline-primary bg-color1 btn-sm">Add to cart</a>

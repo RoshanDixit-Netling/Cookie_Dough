@@ -1,4 +1,4 @@
-<!-- page head --->
+{% comment %} <!-- page head --->
 <div id="page-head" class="page-head2 text-white text-center">
   <div class="container">
     <div class="owl-carousel carousel5">
@@ -18,8 +18,61 @@
     <img class="w-100" src="{{ section.settings.banner_background_image | image_url }}" alt="{{ section.settings.banner_background_image.alt }}" />
   </figure>
 </div>
-<!-- /page head --->
+<!-- /page head ---> {% endcomment %}
+<!-- page head --->
+      <div id="page-head" class="page-head2 text-white text-center">
+        <div class="owl-carousel carousel5">
+          {%- for block in section.blocks -%}
+            {%- case block.type -%}
+              {%- when 'banner_slide_block' -%}
+                <div class="item">
+                  <div class="content-wrapper">
+                    <img class="mx-auto" src="{{ block.settings.slide_image | image_url }}" alt="{{ block.settings.slide_image.alt }}" />
+                    <p>{{ block.settings.silder_text }}</p>
+                    <a href="{{ section.settings.banner_button_link }}" class="btn btn-primary">{{ section.settings.banner_button_label }}</a>
+                  </div>
+                  <figure class="figure1 cover-img">
+                    <img class="w-100 h-100" src="{{ section.settings.banner_background_image | image_url }}" alt="{{ section.settings.banner_background_image.alt }}" />
+                  </figure>
+                </div>
+              {%- endcase -%}
+            {%- endfor -%}
 
+          {% comment %} <div class="item">
+            <div class="content-wrapper">
+              <img class="mx-auto" src="images/heading-text1.svg" alt="text-image" />
+              <p> Find your local MyCookieDough store and<br /> experience moments of pure joy! </p>
+              <a href="#" class="btn btn-primary">Our Stores</a>
+            </div>
+            <figure class="figure1 cover-img">
+              <img class="w-100 h-100" src="images/banner-img3.jpg" alt="img" />
+            </figure>
+          </div>
+          <div class="item">
+            <div class="content-wrapper">
+              <img class="mx-auto" src="images/heading-text1.svg" alt="text-image" />
+              <p> Find your local MyCookieDough store and<br /> experience moments of pure joy! </p>
+              <a href="#" class="btn btn-primary">Our Stores</a>
+            </div>
+            <figure class="figure1 cover-img">
+              <img class="w-100 h-100" src="images/banner-img3.jpg" alt="img" />
+            </figure>
+          </div> {% endcomment %}
+          <!-- <div class="item">
+          <img class="mx-auto" src="images/heading-text1.png" alt="text-image">
+        <p>Find your local MyCookieDough store and<br>
+          experience moments of pure joy!</p>
+          <a href="#" class="btn btn-primary btn-xl">Our Stores</a>
+      </div>
+      <div class="item">
+          <img class="mx-auto" src="images/heading-text1.png" alt="text-image">
+        <p>Find your local MyCookieDough store and<br>
+          experience moments of pure joy!</p>
+          <a href="#" class="btn btn-primary btn-xl">Our Stores</a>
+      </div> -->
+        </div>
+      </div>
+      <!-- /page head --->
 {%- schema -%}
 {
   "name": "Home Banner Section",

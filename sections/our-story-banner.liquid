@@ -1,0 +1,40 @@
+<!-- page head --->
+<div id="page-head" class="page-head4 text-white text-center">
+  <div class="container">
+    <h1 class="text-center">{{ section.settings.banner_text  }}</h1>
+  </div>
+  <figure
+    class="figure1 cover-img">
+    <img class="w-100" src="{{ section.settings.banner_image | image_url }}" alt="{{ section.settings.banner_image.alt }}" />
+  </figure>
+</div>
+<!-- /page head --->
+{% schema %}
+{
+  "name": "Banner",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Banner Text",
+      "id": "banner_text"
+    },
+    {
+      "type": "image_picker",
+      "label": "Banner Image",
+      "id": "banner_image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Banner"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

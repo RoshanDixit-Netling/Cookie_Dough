@@ -219,7 +219,7 @@
                   {%- for block in section.blocks -%}
                     {%- case block.type -%}
                       {%- when 'image' -%}
-                        <div id="image{{ menu_item_number }}" class="image {%- if menu_item_number == 1 -%}active{%- else -%}d-none{%- endif -%}">
+                        <div id="image{{ menu_item_number }}" class="image {% if menu_item_number == 1 %} active {% else %} d-none {% endif %}">
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1057 902" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <defs>
                               <pattern id="bias{{ menu_item_number }}" height="100%" width="100%" patternContentUnits="objectBoundingBox" viewBox="0 0 1 1" preserveAspectRatio="xMidYMid slice">

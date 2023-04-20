@@ -1,0 +1,269 @@
+<!-- section -->
+<div
+  class="section wave1 alt our-story">
+  <div class="container">
+    <div class="tabs1 media-group">
+      <div class="tab-header d-md-none">
+        <span class="title"> Menu </span>
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        {%-  assign menu_item_number = 1 -%}
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+          {%- when 'tab_menu' -%}
+            {%  assign tab_menu_id = block.settings.tab_menu_id | downcase | replace: ' ', '-' %} 
+            <li class="nav-item" role="presentation">
+              <button {% if menu_item_number == 1 %} class="active" {% endif %} {%  assign menu_item_number = menu_item_number | plus: 1  %}  id="shop-all-tab" data-bs-toggle="tab" data-bs-target="#{{ tab_menu_id }}" type="button" role="tab" aria-controls="{{ tab_menu_id }}" aria-selected="true">
+                {{ block.settings.tab_menu_label }}
+              </button>
+            </li>
+          {%- endcase -%}
+        {%- endfor -%}
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        {%-  assign menu_item_number = 1 -%}
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+          {%- when 'tab_menu' -%}
+            {%  assign tab_menu_id = block.settings.tab_menu_id | downcase | replace: ' ', '-' %}
+            {% comment %} {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %} {% endcomment %}
+            <div class="tab-pane fade {% cycle '', 'font-mohr-rounded' %} {%- if menu_item_number == 1 -%} show active {%- endif -%} {%  assign menu_item_number = menu_item_number | plus: 1  %}" id="{{ tab_menu_id }}" role="tabpanel" aria-labelledby="{{ tab_menu_id }}-tab">
+              {%- for block in section.blocks -%}
+                {%- case block.type -%}
+                {%- when 'content' -%}
+                  {%  assign block_menu_id = block.settings.tab_menu_id | downcase | replace: ' ', '-'  %}
+                  {% if tab_menu_id == block_menu_id %}
+                    <div class="row pb-4 pb-md-5 mb-md-4">
+                      <div class="col-lg-11">
+                        <p class="text2">{{ block.settings.content | strip_html }}</p>
+                      </div>
+                    </div>
+                  {%- endif -%}
+                {%- endcase -%}
+              {%- endfor -%}
+              {%- for block in section.blocks -%}
+                {%- case block.type -%}
+                {%- when 'image_with_content' -%}
+                  {%  assign block_menu_id = block.settings.tab_menu_id | downcase | replace: ' ', '-'  %}
+                  {% if tab_menu_id == block_menu_id %}
+                  <div class="row justify-content-end">
+                  {%- if block.settings.image -%}
+                    <div class="col-md-6 col-lg-5 mb-4 mb-md-0">
+                      <figure>
+                        <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt }}" />
+                      </figure>
+                    </div>
+                  {%- endif -%}
+                  {%- if block.settings.upper_content or block.settings.bottom_content -%}
+                    <div class="col-md-6 pe-lg-5 ps-lg-4">
+                      {%- if block.settings.upper_content -%}<p class="text2">{{ block.settings.upper_content | strip_html }}</p>{%- endif -%}
+                      {%- if block.settings.bottom_content -%}<p class="text1">{{ block.settings.bottom_content | strip_html }}</p>{%- endif -%}
+                    </div>
+                  {%- endif -%}
+                  </div>
+                {%- endif -%}
+                {%- endcase -%}
+              {%- endfor -%}
+              {%- for block in section.blocks -%}
+                {%- case block.type -%}
+                {%- when 'only_image' -%}
+                  {%  assign block_menu_id = block.settings.tab_menu_id | downcase | replace: ' ', '-'  %}
+                  {% if tab_menu_id == block_menu_id %}
+                    <div class="wrapper">
+                      <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt }}" />
+                    </div>
+                  {%- endif -%}
+                {%- endcase -%}
+              {%- endfor -%}
+              {%- for block in section.blocks -%}
+                {%- case block.type -%}
+                {%- when 'justified_content' -%}
+                  {%  assign block_menu_id = block.settings.tab_menu_id | downcase | replace: ' ', '-'  %}
+                  {% if tab_menu_id == block_menu_id %}
+                  <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                      <p class="text2">{{ block.settings.content | strip_html }}</p>
+                      <div class="text-center pt-4 pt-md-5">
+                        <a href="{{ block.settings.button_link }}" class="btn btn-primary">{{ block.settings.button_label }}</a>
+                      </div>
+                    </div>
+                  </div>
+                {%- endif -%}
+              {%- endcase -%}
+            {%- endfor -%}
+            </div>
+          {%- endcase -%}
+        {%- endfor -%}
+
+        {% comment %} <div class="tab-pane fade font-mohr-rounded" id="my-cookies" role="tabpanel" aria-labelledby="my-cookies-tab">
+          <div class="row pb-4 pb-md-5 mb-md-4">
+            <div class="col-lg-11">
+              <p class="text2">
+                After launching the UKs most successful cookie dough company My Cookie Dough was bombarded with requests for a baked cookie offering so customers could enjoy My Cookie Dough’s innovative and indulgent flavours anywhere at any time.
+              </p>
+            </div>
+          </div>
+          <div class="row justify-content-end">
+            <div class="col-md-6 col-lg-5 mb-4 mb-md-0">
+              <figure>
+                <img src="images/image36.jpg" alt="img" />
+              </figure>
+            </div>
+            <div
+              class="col-md-6 pe-lg-5 ps-lg-4">
+              <p class="text2">
+                So, we took our original secret cookie dough recipe and developed it to make the best tasting baked cookies on the market, alongside developing our brand new vegan dough!
+              </p>
+              <p class="text1">
+                My Cookies are the to go cookie brand for freshly baked cookies made with high quality ingredients that delivers on indulgence time and time again. Our revolving menu is based on seasonal flavours and reflect current trends and latest pastry techniques meaning that you will always have something new to try.
+              </p>
+            </div>
+          </div>
+          <div class="wrapper">
+            <img src="images/image37.jpg" alt="img" />
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-9">
+              <p class="text2"> Our cookies will never be bland and boring, you’ll always have something new and innovative to try. Want a flavour? Just request it. Drop us a line on Instagram or TikTok.</p>
+              <div class="text-center pt-4 pt-md-5">
+                <a href="#" class="btn btn-primary">Shop now</a>
+              </div>
+            </div>
+          </div>
+        </div> {% endcomment %}
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /section -->
+{% schema %}
+{
+  "name": "Our Story Content Section",
+  "tag": "section",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "tab_menu",
+      "name": "Tab Menu",
+      "settings": [
+        {
+          "type": "text",
+          "label": "Tab Menu Label",
+          "id": "tab_menu_label"
+        },
+        {
+          "type": "text",
+          "label": "Tab menu ID",
+          "id": "tab_menu_id"
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "name": "Content",
+      "settings": [
+        {
+          "type": "text",
+          "label": "Tab Menu ID",
+          "id": "tab_menu_id",
+          "info": "ID of the Menu which the Content Belongs ( Please check menu id correctly to work )"
+        },
+        {
+          "type": "richtext",
+          "label": "Content",
+          "id": "content"
+        }
+      ]
+    },
+    {
+      "type": "image_with_content",
+      "name": "Image with Content",
+      "settings": [
+        {
+          "type": "text",
+          "label": "Tab Menu ID",
+          "id": "tab_menu_id",
+          "info": "ID of the Menu which the Content Belongs ( Please check menu id correctly to work )"
+        },
+        {
+          "type": "image_picker",
+          "label": "Image",
+          "id": "image",
+          "info": "Image will be shown on the Left Side of the section"
+        },
+        {
+          "type": "richtext",
+          "label": "Upper Content",
+          "id": "upper_content",
+          "info": "Text inside this field will be shown Right side at upper position"
+        },
+        {
+          "type": "richtext",
+          "label": "Bottom Content",
+          "id": "bottom_content",
+          "info": "Text inside this field will be shown Right side at bottom position unless upper content doesn't have any content"
+        }
+      ]
+    },
+    {
+      "type": "only_image",
+      "name": "Only Image",
+      "settings": [
+        {
+          "type": "text",
+          "label": "Tab Menu ID",
+          "id": "tab_menu_id",
+          "info": "ID of the Menu which the Content Belongs ( Please check menu id correctly to work )"
+        },
+        {
+          "type": "image_picker",
+          "label": "Image",
+          "id": "image",
+          "info": "This field will show big image only"
+        }
+      ]
+    },
+    {
+      "type": "justified_content",
+      "name": "Justified Content",
+      "settings": [
+        {
+          "type": "text",
+          "label": "Tab Menu ID",
+          "id": "tab_menu_id",
+          "info": "ID of the Menu which the Content Belongs ( Please check menu id correctly to work )"
+        },
+        {
+          "type": "richtext",
+          "label": "Content",
+          "id": "content",
+          "info": "This field will show content with conter justified"
+        },
+        {
+          "type": "text",
+          "label": "Button Label",
+          "id": "button_label"
+        },
+        {
+          "type": "url",
+          "label": "Button Link",
+          "id": "button_link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Our Story Content Section"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
