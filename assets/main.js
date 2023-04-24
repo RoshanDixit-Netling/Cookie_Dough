@@ -232,3 +232,14 @@ $('.carousel5').slick({
 $(window).load(function () {
   objectFitImages();
 });
+
+
+$(".map-popup .icon").on("click", function () {
+  $(".map-popup").hide();
+});
+function showModal(popup_id) {
+  $("#" + popup_id).show();
+  $(this).on("mouseleave", function () {
+    $("#" + popup_id).hide();
+  });
+}

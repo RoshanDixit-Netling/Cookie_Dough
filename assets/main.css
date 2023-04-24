@@ -5742,3 +5742,64 @@ gourav
 #shopify-section-footer {
   margin-top: auto;
 }
+
+/* map */
+.map {
+  position: relative;
+}
+
+.map .map-popup {
+  max-width: 320px;
+  position: absolute;
+  left: 50%;
+  top: 12%;
+  -webkit-transform: translate(-50%, -12%);
+  -ms-transform: translate(-50%, -12%);
+  transform: translate(-50%, -12%);
+  padding: 12px 40px 13px 28px;
+  background-color: #fff;
+  border: 2px solid #672567;
+  border-radius: 10px;
+  display: none;
+}
+
+.map .map-popup .icon {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 39px;
+  font-weight: lighter;
+  position: absolute;
+  right: 12px;
+  top: 13px;
+  height: 15px;
+}
+
+.map .map-popup p {
+  margin-bottom: 0;
+  font-size: 1.375rem;
+  font-weight: bold;
+  line-height: calc(28 / 22);
+}
+
+.map .map-popup p.place-name {
+  font-weight: 400;
+  color: #8D8D8D;
+}
+
+@media (max-width: 767px) {
+  .map .map-popup {
+    max-width: unset;
+    width: 100%;
+    padding: 12px;
+    padding-right: 26px;
+  }
+
+  .map .map-popup p {
+    font-size: 1.125rem;
+    line-height: calc(22 / 18);
+  }
+}
