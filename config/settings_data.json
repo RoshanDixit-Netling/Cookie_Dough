@@ -1742,7 +1742,7 @@
           "e3446a3a-485b-49bf-8aa5-edfa220039cc": {
             "type": "download-biy-pack",
             "settings": {
-              "menu-name": "",
+              "menu-name": "bake it yourself",
               "pack-name": "",
               "pack-download-url": "#"
             }
