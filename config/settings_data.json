@@ -1660,105 +1660,16 @@
       },
       "how-to-bake-it-menu": {
         "type": "how-to-bake-it-menu",
-        "blocks": {
-          "8c7243e6-c891-4197-a938-518c740cf293": {
-            "type": "menu-item",
-            "settings": {
-              "menu-title": "menu1"
-            }
-          },
-          "2bbd09b2-78eb-46dc-a794-28083cc401d3": {
-            "type": "menu-item",
-            "settings": {
-              "menu-title": "menu2"
-            }
-          },
-          "4c6a5bdc-9fa1-4197-b480-a28017cfa94c": {
-            "type": "menu-item",
-            "settings": {
-              "menu-title": ""
-            }
-          },
-          "8458f573-352b-49f4-9f92-9340cc0cdf65": {
-            "type": "menu-item",
-            "settings": {
-              "menu-title": ""
-            }
-          },
-          "bf57d28b-1254-46e3-8972-c10cde91b540": {
-            "type": "menu-item",
-            "settings": {
-              "menu-title": ""
-            }
-          },
-          "19c18265-5cd8-4351-a410-a1bdd3dcb043": {
-            "type": "menu-item",
-            "settings": {
-              "menu-title": ""
-            }
-          }
-        },
-        "block_order": [
-          "8c7243e6-c891-4197-a938-518c740cf293",
-          "2bbd09b2-78eb-46dc-a794-28083cc401d3",
-          "4c6a5bdc-9fa1-4197-b480-a28017cfa94c",
-          "8458f573-352b-49f4-9f92-9340cc0cdf65",
-          "bf57d28b-1254-46e3-8972-c10cde91b540",
-          "19c18265-5cd8-4351-a410-a1bdd3dcb043"
-        ],
         "settings": {
         }
       },
       "how-to-bake-it-menu-content": {
         "type": "how-to-bake-it-menu-content",
-        "blocks": {
-          "451c4e65-7a54-47cd-87e1-fdc157e5b4d1": {
-            "type": "main-content-section",
-            "settings": {
-              "content-for": "menu1",
-              "content-sub-heading": "Soft on the inside, crispy on the outside…",
-              "content": "<p>Our Cookie Dough is made with the finest quality ingredients, a special recipe invented by our founders who know their food science! Although you need to bake the Cookie Dough, it always remains soft on the inside and crispy on the outside. They’re not Cookies, so get your spoons ready to indulge in the ultimate Cookie Dough treat 🥄🥄🥄 <\/p>",
-              "download-pack-title": "HERE ARE THE INSTRUCTIONAL LEAFLETS FOR OUR BIY PACKS:",
-              "baking-tips": "Tips for baking MyCookieDough like a pro:"
-            }
-          }
-        },
-        "block_order": [
-          "451c4e65-7a54-47cd-87e1-fdc157e5b4d1"
-        ],
         "settings": {
         }
       },
       "how-to-bake-faq": {
         "type": "how-to-bake-faq",
-        "blocks": {
-          "e3bbf3e1-d5ca-4df7-8fc0-e28e3fbfff67": {
-            "type": "faq_block",
-            "settings": {
-              "faq_question": "",
-              "faq_answer": ""
-            }
-          },
-          "ddca2834-ef00-4510-af39-c11ccc637568": {
-            "type": "faq_block",
-            "settings": {
-              "faq_question": "",
-              "faq_answer": ""
-            }
-          },
-          "3cb3d286-7af2-423c-a409-a22a08ec2a18": {
-            "type": "faq_block",
-            "settings": {
-              "faq_question": "",
-              "faq_answer": ""
-            }
-          }
-        },
-        "block_order": [
-          "e3bbf3e1-d5ca-4df7-8fc0-e28e3fbfff67",
-          "ddca2834-ef00-4510-af39-c11ccc637568",
-          "3cb3d286-7af2-423c-a409-a22a08ec2a18"
-        ],
         "settings": {
           "faq_title": ""
         }
