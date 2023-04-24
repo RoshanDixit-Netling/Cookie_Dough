@@ -1750,8 +1750,36 @@
           "cbd068ff-1b66-448d-a7ae-17b7950b57ff": {
             "type": "baking-tips",
             "settings": {
-              "menu-name": "how to bake",
+              "menu-name": "bake it yourself",
               "tip-content": "Make sure you use baking paper when cooking"
+            }
+          },
+          "f2cf62a8-472c-43db-95fb-7acfe07a4322": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "bake it yourself",
+              "tip-content": "Ensure your oven is completely preheated before beginning to bake"
+            }
+          },
+          "a420f423-f2f2-491e-af8a-535e49b900bd": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "bake it yourself",
+              "tip-content": "It is a good idea to chill your baking tray before baking - your cookie dough should also be chilled"
+            }
+          },
+          "9f487160-fd11-41be-b7e6-de9fff42baeb": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "",
+              "tip-content": ""
+            }
+          },
+          "bd0d96e4-8271-4799-833a-cd845f3ea795": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "",
+              "tip-content": ""
             }
           }
         },
@@ -1761,7 +1789,11 @@
           "f701fbd6-a95d-4922-a208-966f1bcedcbc",
           "19abf100-c7ca-48a1-8d6a-b6b9ed41691d",
           "e3446a3a-485b-49bf-8aa5-edfa220039cc",
-          "cbd068ff-1b66-448d-a7ae-17b7950b57ff"
+          "cbd068ff-1b66-448d-a7ae-17b7950b57ff",
+          "f2cf62a8-472c-43db-95fb-7acfe07a4322",
+          "a420f423-f2f2-491e-af8a-535e49b900bd",
+          "9f487160-fd11-41be-b7e6-de9fff42baeb",
+          "bd0d96e4-8271-4799-833a-cd845f3ea795"
         ],
         "settings": {
         }
