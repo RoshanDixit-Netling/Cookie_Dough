@@ -1726,7 +1726,7 @@
           "f701fbd6-a95d-4922-a208-966f1bcedcbc": {
             "type": "download-biy-pack",
             "settings": {
-              "menu-name": "",
+              "menu-name": "bake it yourself",
               "pack-name": "The Special Edition Pack",
               "pack-download-url": "#"
             }
@@ -1734,7 +1734,7 @@
           "19abf100-c7ca-48a1-8d6a-b6b9ed41691d": {
             "type": "download-biy-pack",
             "settings": {
-              "menu-name": "",
+              "menu-name": "bake it yourself",
               "pack-name": "",
               "pack-download-url": "#"
             }
