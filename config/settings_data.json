@@ -1901,6 +1901,13 @@
               "pack-download-url": "#"
             }
           },
+          "cbd068ff-1b66-448d-a7ae-17b7950b57ff": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "stackos",
+              "tip-content": "Make sure you use baking paper when cooking"
+            }
+          },
           "39528c1e-24fe-404c-a32a-f159c0fb86d0": {
             "type": "baking-tips",
             "settings": {
@@ -1927,13 +1934,6 @@
             "settings": {
               "menu-name": "stackos",
               "tip-content": "Gently (very gently) wriggle the spatula completely under the cookie dough, before transferring to a plate to decorate & EAT!"
-            }
-          },
-          "cbd068ff-1b66-448d-a7ae-17b7950b57ff": {
-            "type": "baking-tips",
-            "settings": {
-              "menu-name": "stackos",
-              "tip-content": "Make sure you use baking paper when cooking"
             }
           },
           "40b7aa5a-f516-468d-8e0c-f85cf3592a2d": {
@@ -2145,11 +2145,11 @@
           "6fd25392-127a-471e-80c5-98e63f7c2418",
           "4e1f84a6-2d50-45fd-91dc-247ae0c63b31",
           "01aa9214-bdce-44d8-85a0-49f4057ebb84",
+          "cbd068ff-1b66-448d-a7ae-17b7950b57ff",
           "39528c1e-24fe-404c-a32a-f159c0fb86d0",
           "91a1dec2-98b4-42db-becf-912aa79ce07f",
           "e4d974e7-26d7-4f53-b14c-01c4b5ec8343",
           "5e1008cf-d98b-460e-8df7-3cfb9d4bdcf3",
-          "cbd068ff-1b66-448d-a7ae-17b7950b57ff",
           "40b7aa5a-f516-468d-8e0c-f85cf3592a2d",
           "c486fbf7-3fd0-4ab3-b4e4-f99552ef613e",
           "b166cba2-7fc4-40cd-8e07-7fc3442dff22",
