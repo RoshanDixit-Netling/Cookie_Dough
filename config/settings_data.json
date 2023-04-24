@@ -1943,6 +1943,20 @@
               "tip-content": "It is a good idea to chill your baking tray before baking - your cookie dough should also be chilled"
             }
           },
+          "6b9a786a-7f5c-4104-b953-15b7a5928f43": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "skillets",
+              "tip-content": "Once the cookie dough is slightly golden brown (usually after 8-9 minutes), remove it from the oven. You can use a large spatula to push on the 4 sides to prevent it expanding too much, and to help it keep its ‘square shape’."
+            }
+          },
+          "53319de8-8773-4960-888f-b513ecfa401b": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "skillets",
+              "tip-content": "Gently (very gently) wriggle the spatula completely under the cookie dough, before transferring to a plate to decorate & EAT!"
+            }
+          },
           "9e4e364f-c4e4-4d20-a5eb-670fefd40b71": {
             "type": "main-content-section",
             "settings": {
@@ -2019,20 +2033,6 @@
               "menu-name": "mississippi love pie",
               "tip-content": "Gently (very gently) wriggle the spatula completely under the cookie dough, before transferring to a plate to decorate & EAT!"
             }
-          },
-          "6b9a786a-7f5c-4104-b953-15b7a5928f43": {
-            "type": "baking-tips",
-            "settings": {
-              "menu-name": "skillets",
-              "tip-content": "Once the cookie dough is slightly golden brown (usually after 8-9 minutes), remove it from the oven. You can use a large spatula to push on the 4 sides to prevent it expanding too much, and to help it keep its ‘square shape’."
-            }
-          },
-          "53319de8-8773-4960-888f-b513ecfa401b": {
-            "type": "baking-tips",
-            "settings": {
-              "menu-name": "skillets",
-              "tip-content": "Gently (very gently) wriggle the spatula completely under the cookie dough, before transferring to a plate to decorate & EAT!"
-            }
           }
         },
         "block_order": [
@@ -2066,6 +2066,8 @@
           "ecae04b0-561d-43ab-8496-9610606db577",
           "22d21634-2391-4efa-9443-55b4d0d0b066",
           "566f0a98-e401-46e7-90d9-d191a386b470",
+          "6b9a786a-7f5c-4104-b953-15b7a5928f43",
+          "53319de8-8773-4960-888f-b513ecfa401b",
           "9e4e364f-c4e4-4d20-a5eb-670fefd40b71",
           "04d34dab-5c68-4cff-9a89-f3df874acfa2",
           "91e6c7e4-9a3a-4360-afc9-cd220898ca00",
@@ -2075,9 +2077,7 @@
           "9089a78b-cc69-4f4b-bef9-6d73474c09d4",
           "c68eb54d-8f1f-4423-ba0f-112f52268c65",
           "164d3af1-0114-4c6a-84d7-513dbf49f597",
-          "a5dade06-ab02-402c-baa5-a85b8c356382",
-          "6b9a786a-7f5c-4104-b953-15b7a5928f43",
-          "53319de8-8773-4960-888f-b513ecfa401b"
+          "a5dade06-ab02-402c-baa5-a85b8c356382"
         ],
         "settings": {
         }
