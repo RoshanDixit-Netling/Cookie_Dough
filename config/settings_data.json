@@ -1660,6 +1660,24 @@
       },
       "how-to-bake-it-menu": {
         "type": "how-to-bake-it-menu",
+        "blocks": {
+          "4c74da32-4010-4df7-b024-91cddd195be5": {
+            "type": "menu-item",
+            "settings": {
+              "menu-title": "Menu1"
+            }
+          },
+          "b6f52638-f33e-4a53-aefd-3eaf91d4528c": {
+            "type": "menu-item",
+            "settings": {
+              "menu-title": "Menu2"
+            }
+          }
+        },
+        "block_order": [
+          "4c74da32-4010-4df7-b024-91cddd195be5",
+          "b6f52638-f33e-4a53-aefd-3eaf91d4528c"
+        ],
         "settings": {
         }
       },
