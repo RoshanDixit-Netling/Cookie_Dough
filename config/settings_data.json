@@ -1107,10 +1107,10 @@
         "settings": {
           "title": "Recipes to try with your BIY",
           "select_products": [
-            "the-famous-5-pack",
-            "the-special-edition-pack",
             "milk-chocolate-chip",
-            "kinder-nutella-oreo-skillet"
+            "kinder-nutella-oreo-skillet",
+            "scotch-egg-biy-pack",
+            "the-special-edition-pack"
           ]
         }
       },
@@ -1656,6 +1656,22 @@
       "stores-map": {
         "type": "stores-map",
         "settings": {
+        }
+      },
+      "how-to-bake-it-menu": {
+        "type": "how-to-bake-it-menu",
+        "settings": {
+        }
+      },
+      "how-to-bake-it-menu-content": {
+        "type": "how-to-bake-it-menu-content",
+        "settings": {
+        }
+      },
+      "how-to-bake-faq": {
+        "type": "how-to-bake-faq",
+        "settings": {
+          "faq_title": ""
         }
       }
     },
