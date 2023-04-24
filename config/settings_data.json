@@ -1824,13 +1824,6 @@
               "pack-download-url": "#"
             }
           },
-          "4620ea89-81c8-472f-82c7-afb474414a73": {
-            "type": "baking-tips",
-            "settings": {
-              "menu-name": "scotch egg",
-              "tip-content": "Make sure you use baking paper when cooking"
-            }
-          },
           "a420f423-f2f2-491e-af8a-535e49b900bd": {
             "type": "baking-tips",
             "settings": {
@@ -1857,6 +1850,13 @@
             "settings": {
               "menu-name": "scotch egg",
               "tip-content": "Ensure your oven is completely preheated before beginning to bake"
+            }
+          },
+          "4620ea89-81c8-472f-82c7-afb474414a73": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "scotch egg",
+              "tip-content": "Make sure you use baking paper when cooking"
             }
           },
           "22e05b6e-a36c-4121-8ff4-61c9e8643c9a": {
@@ -2135,11 +2135,11 @@
           "f701fbd6-a95d-4922-a208-966f1bcedcbc",
           "19abf100-c7ca-48a1-8d6a-b6b9ed41691d",
           "4dab6efe-c689-4cce-ad28-dd2e9107f787",
-          "4620ea89-81c8-472f-82c7-afb474414a73",
           "a420f423-f2f2-491e-af8a-535e49b900bd",
           "165e1121-eaa2-46e0-a4b8-207f55d3abce",
           "bd0d96e4-8271-4799-833a-cd845f3ea795",
           "f2cf62a8-472c-43db-95fb-7acfe07a4322",
+          "4620ea89-81c8-472f-82c7-afb474414a73",
           "22e05b6e-a36c-4121-8ff4-61c9e8643c9a",
           "fd02ddd5-d9e5-465c-b86b-be7a5f4993cb",
           "6fd25392-127a-471e-80c5-98e63f7c2418",
