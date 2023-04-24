@@ -229,17 +229,26 @@ $('.carousel5').slick({
   cssEase: 'linear'
 });
 
+//image mapping
+$(document).ready(function (e) {
+  $('img[usemap]').rwdImageMaps();
+});
+//map-popup
+function showModal(example_id) {
+  $("#" + example_id).show();
+  $(this).on("mouseleave", function () {
+    $("#" + example_id).hide();
+  });
+}
+// $(document).on("ready",function () {
+//   $(".pin").on("click",function () {
+//     $('#exampleModal').show();
+//     console.log("hii");
+//   });
+// });
+
 $(window).load(function () {
   objectFitImages();
 });
 
 
-$(".map-popup .icon").on("click", function () {
-  $(".map-popup").hide();
-});
-function showModal(popup_id) {
-  $("#" + popup_id).show();
-  $(this).on("mouseleave", function () {
-    $("#" + popup_id).hide();
-  });
-}
