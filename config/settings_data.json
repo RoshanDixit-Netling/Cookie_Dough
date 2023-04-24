@@ -1708,12 +1708,43 @@
               "menu-name": "Menu1",
               "tip-content": ""
             }
+          },
+          "f3ce4b6c-d15d-442e-8ea3-c34109db85a5": {
+            "type": "main-content-section",
+            "settings": {
+              "content-for": "",
+              "content-sub-heading": "Soft on the inside, crispy on the outside…",
+              "content": "<p>Our Cookie Dough is made with the finest quality ingredients, a special recipe invented by our founders who know their food science! Although you need to bake the Cookie Dough, it always remains soft on the inside and crispy on the outside. They’re not Cookies, so get your spoons ready to indulge in the ultimate Cookie Dough treat 🥄🥄🥄 <\/p>",
+              "download-pack-title": "HERE ARE THE INSTRUCTIONAL LEAFLETS FOR OUR BIY PACKS:",
+              "baking-tips": "Tips for baking MyCookieDough like a pro:"
+            }
+          },
+          "d7d35256-0d50-40c2-b4f3-4c1e9c625af0": {
+            "type": "main-content-section",
+            "settings": {
+              "content-for": "",
+              "content-sub-heading": "Soft on the inside, crispy on the outside…",
+              "content": "<p>Our Cookie Dough is made with the finest quality ingredients, a special recipe invented by our founders who know their food science! Although you need to bake the Cookie Dough, it always remains soft on the inside and crispy on the outside. They’re not Cookies, so get your spoons ready to indulge in the ultimate Cookie Dough treat 🥄🥄🥄 <\/p>",
+              "download-pack-title": "HERE ARE THE INSTRUCTIONAL LEAFLETS FOR OUR BIY PACKS:",
+              "baking-tips": "Tips for baking MyCookieDough like a pro:"
+            }
+          },
+          "336c46ff-93fe-4c29-8061-55e8fd77d5f7": {
+            "type": "download-biy-pack",
+            "settings": {
+              "menu-name": "",
+              "pack-name": "",
+              "pack-download-url": "#"
+            }
           }
         },
         "block_order": [
           "8c230f74-8301-4d17-bd86-83c5784f0aad",
           "264c59bb-d6b0-44c9-9871-f77633cd3465",
-          "ba5e87ac-3c00-492e-8163-5b5a00005440"
+          "ba5e87ac-3c00-492e-8163-5b5a00005440",
+          "f3ce4b6c-d15d-442e-8ea3-c34109db85a5",
+          "d7d35256-0d50-40c2-b4f3-4c1e9c625af0",
+          "336c46ff-93fe-4c29-8061-55e8fd77d5f7"
         ],
         "settings": {
         }
