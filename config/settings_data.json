@@ -1102,528 +1102,6 @@
           "blog": "news"
         }
       },
-      "section-faq": {
-        "type": "section-faq",
-        "blocks": {
-          "f0b3e313-bbe1-4bc3-ab15-4cc93f1a0777": {
-            "type": "faq_block",
-            "settings": {
-              "faq_question": "How can I store My Cookie Dough?",
-              "faq_answer": "If you are not using your Cookie Dough immediately, place in the fridge or freezer as soon as you have received your pack. It can be kept in the fridge for up to 10 days, or if stored in the freezer on the first day of receiving for up to 3 months. When you want to use your Cookie Dough remove from the freezer and store in the fridge for 4 hours before baking."
-            }
-          },
-          "9658b092-4fba-4758-9451-020319917c41": {
-            "type": "faq_block",
-            "settings": {
-              "faq_question": "What is the allergen information?",
-              "faq_answer": "If you are not using your Cookie Dough immediately, place in the fridge or freezer as soon as you have received your pack. It can be kept in the fridge for up to 10 days, or if stored in the freezer on the first day of receiving for up to 3 months. When you want to use your Cookie Dough remove from the freezer and store in the fridge for 4 hours before baking."
-            }
-          },
-          "2a754bff-e5a9-46be-9165-dbb0a67deebf": {
-            "type": "faq_block",
-            "settings": {
-              "faq_question": "Why is My Cookie Dough still soft after extra time in the oven?",
-              "faq_answer": "If you are not using your Cookie Dough immediately, place in the fridge or freezer as soon as you have received your pack. It can be kept in the fridge for up to 10 days, or if stored in the freezer on the first day of receiving for up to 3 months. When you want to use your Cookie Dough remove from the freezer and store in the fridge for 4 hours before baking."
-            }
-          }
-        },
-        "block_order": [
-          "f0b3e313-bbe1-4bc3-ab15-4cc93f1a0777",
-          "9658b092-4fba-4758-9451-020319917c41",
-          "2a754bff-e5a9-46be-9165-dbb0a67deebf"
-        ],
-        "settings": {
-          "faq_title": "Frequently asked questions"
-        }
-      },
-      "section-how-to-bake-it-menu": {
-        "type": "section-how-to-bake-it-menu",
-        "blocks": {
-          "47aa43e1-56bd-49fc-a211-a3c007c30479": {
-            "type": "menu-item",
-            "settings": {
-              "menu-title": "Bake it yourself"
-            }
-          },
-          "aa83754f-e0d4-423e-9934-f6ec0dcdfa81": {
-            "type": "menu-item",
-            "settings": {
-              "menu-title": "Scotch egg"
-            }
-          },
-          "36b6bc0f-56ab-4dc4-aea6-b6af995b4a73": {
-            "type": "menu-item",
-            "settings": {
-              "menu-title": "Stackos"
-            }
-          },
-          "2bf86759-9e58-4003-a099-1f597c296626": {
-            "type": "menu-item",
-            "settings": {
-              "menu-title": "SKILLETS"
-            }
-          },
-          "0ed52d3b-3613-4fa1-81b8-0eddd6a1539d": {
-            "type": "menu-item",
-            "settings": {
-              "menu-title": "Mississippi Love pie"
-            }
-          }
-        },
-        "block_order": [
-          "47aa43e1-56bd-49fc-a211-a3c007c30479",
-          "aa83754f-e0d4-423e-9934-f6ec0dcdfa81",
-          "36b6bc0f-56ab-4dc4-aea6-b6af995b4a73",
-          "2bf86759-9e58-4003-a099-1f597c296626",
-          "0ed52d3b-3613-4fa1-81b8-0eddd6a1539d"
-        ],
-        "settings": {
-        }
-      },
-      "section-how-to-bake-it-menu-content": {
-        "type": "section-how-to-bake-it-menu-content",
-        "blocks": {
-          "c197142c-0bad-47e3-9a1b-154058d46b4a": {
-            "type": "main-content-section",
-            "settings": {
-              "content-for": "Bake it yourself",
-              "content-sub-heading": "Soft on the inside, crispy on the outside…",
-              "content": "<p>Our Cookie Dough is made with the finest quality ingredients, a special recipe invented by our founders who know their food science! Although you need to bake the Cookie Dough, it always remains soft on the inside and crispy on the outside. They’re not Cookies, so get your spoons ready to indulge in the ultimate Cookie Dough treat 🥄🥄🥄 <\/p>",
-              "download-pack-title": "HERE ARE THE INSTRUCTIONAL LEAFLETS FOR OUR BIY PACKS:",
-              "baking-tips": "Tips for baking MyCookieDough like a pro:"
-            }
-          },
-          "abd2c2d4-6484-44eb-bcb2-d1be30620fee": {
-            "type": "download-biy-pack",
-            "settings": {
-              "menu-name": "Bake it yourself",
-              "pack-name": "The Famous Five Pack",
-              "pack-download-url": "#"
-            }
-          },
-          "87c26336-bc8c-44ea-abd0-1074c8b65624": {
-            "type": "download-biy-pack",
-            "settings": {
-              "menu-name": "Bake it yourself",
-              "pack-name": "The Special Edition Pack",
-              "pack-download-url": "#"
-            }
-          },
-          "5687d8f8-2b6a-456e-b2c8-17c64fd82f25": {
-            "type": "download-biy-pack",
-            "settings": {
-              "menu-name": "Bake it yourself",
-              "pack-name": "The Chocoholics Pack",
-              "pack-download-url": "#"
-            }
-          },
-          "e20f43a0-77e9-4418-8b65-38446ca162d0": {
-            "type": "download-biy-pack",
-            "settings": {
-              "menu-name": "Bake it yourself",
-              "pack-name": "The Vegan BIY Pack",
-              "pack-download-url": "#"
-            }
-          },
-          "03faffb4-b851-454f-98dc-0c07604fb6d3": {
-            "type": "baking-tips",
-            "settings": {
-              "menu-name": "Bake it yourself",
-              "tip-content": "Make sure you use baking paper when cooking"
-            }
-          },
-          "a4d5bc49-e5b0-42ff-83d6-5ffafce4ff95": {
-            "type": "baking-tips",
-            "settings": {
-              "menu-name": "Bake it yourself",
-              "tip-content": "Ensure your oven is completely preheated before beginning to bake"
-            }
-          },
-          "a7218cbd-6f3a-4a5f-8f5f-0ed5f4228b24": {
-            "type": "baking-tips",
-            "settings": {
-              "menu-name": "Bake it yourself",
-              "tip-content": "It is a good idea to chill your baking tray before baking - your cookie dough should also be chilled"
-            }
-          },
-          "6627fdc7-e267-447d-9a90-da99c6bd6fb2": {
-            "type": "baking-tips",
-            "settings": {
-              "menu-name": "Bake it yourself",
-              "tip-content": "Once the cookie dough is slightly golden brown (usually after 8-9 minutes), remove it from the oven. You can use a large spatula to push on the 4 sides to prevent it expanding too much, and to help it keep its ‘square shape’."
-            }
-          },
-          "395898c8-8848-41e2-8de7-a860b6433231": {
-            "type": "baking-tips",
-            "settings": {
-              "menu-name": "Bake it yourself",
-              "tip-content": "Gently (very gently) wriggle the spatula completely under the cookie dough, before transferring to a plate to decorate & EAT!"
-            }
-          },
-          "b072f80a-422d-4fbf-8484-319894085b05": {
-            "type": "main-content-section",
-            "settings": {
-              "content-for": "Scotch egg",
-              "content-sub-heading": "Soft on the inside, crispy on the outside…",
-              "content": "<p>Our Cookie Dough is made with the finest quality ingredients, a special recipe invented by our founders who know their food science! Although you need to bake the Cookie Dough, it always remains soft on the inside and crispy on the outside. They’re not Cookies, so get your spoons ready to indulge in the ultimate Cookie Dough treat 🥄🥄🥄 <\/p>",
-              "download-pack-title": "HERE ARE THE INSTRUCTIONAL LEAFLETS FOR OUR BIY PACKS:",
-              "baking-tips": "Tips for baking MyCookieDough like a pro:"
-            }
-          },
-          "e21c8d39-7662-44b3-8a44-bc27c9a0f6ac": {
-            "type": "download-biy-pack",
-            "settings": {
-              "menu-name": "Scotch egg",
-              "pack-name": "The Famous Five Pack",
-              "pack-download-url": "#"
-            }
-          },
-          "b4b1450b-a72b-43ad-8fbb-926db3222037": {
-            "type": "download-biy-pack",
-            "settings": {
-              "menu-name": "Scotch egg",
-              "pack-name": "The Special Edition Pack",
-              "pack-download-url": "#"
-            }
-          },
-          "2a78243f-abc9-4247-8816-cbc07c78e172": {
-            "type": "download-biy-pack",
-            "settings": {
-              "menu-name": "Scotch egg",
-              "pack-name": "The Chocoholics Pack",
-              "pack-download-url": "#"
-            }
-          },
-          "e052d32a-b988-47a1-bec6-cab90b8a8a74": {
-            "type": "download-biy-pack",
-            "settings": {
-              "menu-name": "Scotch egg",
-              "pack-name": "The Vegan BIY Pack",
-              "pack-download-url": "#"
-            }
-          },
-          "7bf88734-ad34-4b89-aa58-981de91c50da": {
-            "type": "baking-tips",
-            "settings": {
-              "menu-name": "Scotch egg",
-              "tip-content": "Make sure you use baking paper when cooking"
-            }
-          },
-          "e6ea6da7-c9f6-4f31-afa7-6f75e3e1d16a": {
-            "type": "baking-tips",
-            "settings": {
-              "menu-name": "Scotch egg",
-              "tip-content": "Ensure your oven is completely preheated before beginning to bake"
-            }
-          },
-          "4c4c3158-bf05-4f8a-b6ff-f83441a02b34": {
-            "type": "baking-tips",
-            "settings": {
-              "menu-name": "Scotch egg",
-              "tip-content": "It is a good idea to chill your baking tray before baking - your cookie dough should also be chilled"
-            }
-          },
-          "140854cf-113f-487f-b6b1-38094850fe45": {
-            "type": "baking-tips",
-            "settings": {
-              "menu-name": "Scotch egg",
-              "tip-content": "Once the cookie dough is slightly golden brown (usually after 8-9 minutes), remove it from the oven. You can use a large spatula to push on the 4 sides to prevent it expanding too much, and to help it keep its ‘square shape’."
-            }
-          },
-          "b2a9cd5b-39a4-4e37-b206-7721a974d2ad": {
-            "type": "baking-tips",
-            "settings": {
-              "menu-name": "Scotch egg",
-              "tip-content": "Gently (very gently) wriggle the spatula completely under the cookie dough, before transferring to a plate to decorate & EAT!"
-            }
-          },
-          "4ce61b7b-add1-414e-b0b3-67f2c027db19": {
-            "type": "main-content-section",
-            "settings": {
-              "content-for": "Stackos",
-              "content-sub-heading": "Soft on the inside, crispy on the outside…",
-              "content": "<p>Our Cookie Dough is made with the finest quality ingredients, a special recipe invented by our founders who know their food science! Although you need to bake the Cookie Dough, it always remains soft on the inside and crispy on the outside. They’re not Cookies, so get your spoons ready to indulge in the ultimate Cookie Dough treat 🥄🥄🥄 <\/p>",
-              "download-pack-title": "HERE ARE THE INSTRUCTIONAL LEAFLETS FOR OUR BIY PACKS:",
-              "baking-tips": "Tips for baking MyCookieDough like a pro:"
-            }
-          },
-          "7d557d67-9c22-4010-860b-3702c5f9417e": {
-            "type": "download-biy-pack",
-            "settings": {
-              "menu-name": "Stackos",
-              "pack-name": "The Famous Five Pack",
-              "pack-download-url": "#"
-            }
-          },
-          "4c5abdbf-66c7-45a9-9230-a53035a10e7a": {
-            "type": "download-biy-pack",
-            "settings": {
-              "menu-name": "Stackos",
-              "pack-name": "The Special Edition Pack",
-              "pack-download-url": "#"
-            }
-          },
-          "ea580cb6-ddab-4766-b8d2-8cde4d7053df": {
-            "type": "download-biy-pack",
-            "settings": {
-              "menu-name": "Stackos",
-              "pack-name": "The Chocoholics Pack",
-              "pack-download-url": "#"
-            }
-          },
-          "d1ff2bbb-bcac-446a-a068-ea9db97a2a4c": {
-            "type": "download-biy-pack",
-            "settings": {
-              "menu-name": "Stackos",
-              "pack-name": "The Vegan BIY Pack",
-              "pack-download-url": "#"
-            }
-          },
-          "d86ac9e0-0f52-44fd-a6b7-c56eb20a2ff5": {
-            "type": "baking-tips",
-            "settings": {
-              "menu-name": "Stackos",
-              "tip-content": "Make sure you use baking paper when cooking"
-            }
-          },
-          "81adc76d-453d-413f-a90b-8f1ac8e70612": {
-            "type": "baking-tips",
-            "settings": {
-              "menu-name": "Stackos",
-              "tip-content": "Ensure your oven is completely preheated before beginning to bake"
-            }
-          },
-          "d6e7f9d9-ed59-49b8-95d8-b7a627eb3c8a": {
-            "type": "baking-tips",
-            "settings": {
-              "menu-name": "Stackos",
-              "tip-content": "It is a good idea to chill your baking tray before baking - your cookie dough should also be chilled"
-            }
-          },
-          "d59db729-38a2-407a-a120-4f6ad50d868f": {
-            "type": "baking-tips",
-            "settings": {
-              "menu-name": "Stackos",
-              "tip-content": "Once the cookie dough is slightly golden brown (usually after 8-9 minutes), remove it from the oven. You can use a large spatula to push on the 4 sides to prevent it expanding too much, and to help it keep its ‘square shape’."
-            }
-          },
-          "c9e7978c-f28d-4b19-b98a-10af65a6145f": {
-            "type": "baking-tips",
-            "settings": {
-              "menu-name": "Stackos",
-              "tip-content": "Gently (very gently) wriggle the spatula completely under the cookie dough, before transferring to a plate to decorate & EAT!"
-            }
-          },
-          "8c44ef30-49ff-4520-b73f-1603a49bafc0": {
-            "type": "main-content-section",
-            "settings": {
-              "content-for": "SKILLETS",
-              "content-sub-heading": "Soft on the inside, crispy on the outside…",
-              "content": "<p>Our Cookie Dough is made with the finest quality ingredients, a special recipe invented by our founders who know their food science! Although you need to bake the Cookie Dough, it always remains soft on the inside and crispy on the outside. They’re not Cookies, so get your spoons ready to indulge in the ultimate Cookie Dough treat 🥄🥄🥄 <\/p>",
-              "download-pack-title": "HERE ARE THE INSTRUCTIONAL LEAFLETS FOR OUR BIY PACKS:",
-              "baking-tips": "Tips for baking MyCookieDough like a pro:"
-            }
-          },
-          "ce87d791-2abf-4234-ad7a-a2c6ca436e63": {
-            "type": "download-biy-pack",
-            "settings": {
-              "menu-name": "SKILLETS",
-              "pack-name": "The Famous Five Pack",
-              "pack-download-url": "#"
-            }
-          },
-          "ff9eca6c-e047-43d7-999e-5cf43c4fc1cf": {
-            "type": "download-biy-pack",
-            "settings": {
-              "menu-name": "SKILLETS",
-              "pack-name": "The Special Edition Pack",
-              "pack-download-url": "#"
-            }
-          },
-          "fa5dec1a-bd95-4b44-a831-0321fcdf0806": {
-            "type": "download-biy-pack",
-            "settings": {
-              "menu-name": "SKILLETS",
-              "pack-name": "The Chocoholics Pack",
-              "pack-download-url": "#"
-            }
-          },
-          "4f99d6b2-cc25-4b99-8068-de8010e40bb8": {
-            "type": "download-biy-pack",
-            "settings": {
-              "menu-name": "SKILLETS",
-              "pack-name": "The Vegan BIY Pack",
-              "pack-download-url": "#"
-            }
-          },
-          "3783431a-7db7-402a-8414-0ec418fbc382": {
-            "type": "baking-tips",
-            "settings": {
-              "menu-name": "SKILLETS",
-              "tip-content": "Make sure you use baking paper when cooking"
-            }
-          },
-          "c7d307e0-ae82-46ff-95cd-6d78c00c3cff": {
-            "type": "baking-tips",
-            "settings": {
-              "menu-name": "SKILLETS",
-              "tip-content": "Ensure your oven is completely preheated before beginning to bake"
-            }
-          },
-          "b91831b1-8f2a-4c55-9712-d71a01f858df": {
-            "type": "baking-tips",
-            "settings": {
-              "menu-name": "SKILLETS",
-              "tip-content": "It is a good idea to chill your baking tray before baking - your cookie dough should also be chilled"
-            }
-          },
-          "0951288d-3e77-4b42-abb2-f4e0ef77471b": {
-            "type": "baking-tips",
-            "settings": {
-              "menu-name": "SKILLETS",
-              "tip-content": "Once the cookie dough is slightly golden brown (usually after 8-9 minutes), remove it from the oven. You can use a large spatula to push on the 4 sides to prevent it expanding too much, and to help it keep its ‘square shape’."
-            }
-          },
-          "eed42d97-939f-40fb-8e82-7d50063a85b2": {
-            "type": "baking-tips",
-            "settings": {
-              "menu-name": "SKILLETS",
-              "tip-content": "Gently (very gently) wriggle the spatula completely under the cookie dough, before transferring to a plate to decorate & EAT!"
-            }
-          },
-          "37be5c4b-89cd-465c-92cc-b417e861fca2": {
-            "type": "main-content-section",
-            "settings": {
-              "content-for": "Mississippi Love pie",
-              "content-sub-heading": "Soft on the inside, crispy on the outside…",
-              "content": "<p>Our Cookie Dough is made with the finest quality ingredients, a special recipe invented by our founders who know their food science! Although you need to bake the Cookie Dough, it always remains soft on the inside and crispy on the outside. They’re not Cookies, so get your spoons ready to indulge in the ultimate Cookie Dough treat 🥄🥄🥄 <\/p>",
-              "download-pack-title": "HERE ARE THE INSTRUCTIONAL LEAFLETS FOR OUR BIY PACKS:",
-              "baking-tips": "Tips for baking MyCookieDough like a pro:"
-            }
-          },
-          "b7bc154e-4e5b-4fb5-a1b3-b9e6c7487198": {
-            "type": "download-biy-pack",
-            "settings": {
-              "menu-name": "Mississippi Love pie",
-              "pack-name": "The Famous Five Pack",
-              "pack-download-url": "#"
-            }
-          },
-          "ebc59163-f1da-4e8a-8f5f-27bec546400f": {
-            "type": "download-biy-pack",
-            "settings": {
-              "menu-name": "Mississippi Love pie",
-              "pack-name": "The Special Edition Pack",
-              "pack-download-url": "#"
-            }
-          },
-          "dde19bb5-ed34-4876-80c1-da69772deb45": {
-            "type": "download-biy-pack",
-            "settings": {
-              "menu-name": "Mississippi Love pie",
-              "pack-name": "The Chocoholics Pack",
-              "pack-download-url": "#"
-            }
-          },
-          "3ccbb235-669a-46b6-b5db-0778974026d6": {
-            "type": "download-biy-pack",
-            "settings": {
-              "menu-name": "Mississippi Love pie",
-              "pack-name": "The Vegan BIY Pack",
-              "pack-download-url": "#"
-            }
-          },
-          "dc5b9c8e-50a4-45a0-af39-ef0f3333a052": {
-            "type": "baking-tips",
-            "settings": {
-              "menu-name": "Mississippi Love pie",
-              "tip-content": "Make sure you use baking paper when cooking"
-            }
-          },
-          "d79e8542-e4d6-4a28-b8ee-3c6352785819": {
-            "type": "baking-tips",
-            "settings": {
-              "menu-name": "Mississippi Love pie",
-              "tip-content": "Ensure your oven is completely preheated before beginning to bake"
-            }
-          },
-          "cacdee06-0599-4103-b613-16d43210f040": {
-            "type": "baking-tips",
-            "settings": {
-              "menu-name": "Mississippi Love pie",
-              "tip-content": "It is a good idea to chill your baking tray before baking - your cookie dough should also be chilled"
-            }
-          },
-          "d9a469a1-7121-4190-947a-656d86b317ec": {
-            "type": "baking-tips",
-            "settings": {
-              "menu-name": "Mississippi Love pie",
-              "tip-content": "Once the cookie dough is slightly golden brown (usually after 8-9 minutes), remove it from the oven. You can use a large spatula to push on the 4 sides to prevent it expanding too much, and to help it keep its ‘square shape’."
-            }
-          },
-          "1a122bca-6f39-47ab-abce-3a09ca7926d7": {
-            "type": "baking-tips",
-            "settings": {
-              "menu-name": "Mississippi Love pie",
-              "tip-content": "Gently (very gently) wriggle the spatula completely under the cookie dough, before transferring to a plate to decorate & EAT!"
-            }
-          }
-        },
-        "block_order": [
-          "c197142c-0bad-47e3-9a1b-154058d46b4a",
-          "abd2c2d4-6484-44eb-bcb2-d1be30620fee",
-          "87c26336-bc8c-44ea-abd0-1074c8b65624",
-          "5687d8f8-2b6a-456e-b2c8-17c64fd82f25",
-          "e20f43a0-77e9-4418-8b65-38446ca162d0",
-          "03faffb4-b851-454f-98dc-0c07604fb6d3",
-          "a4d5bc49-e5b0-42ff-83d6-5ffafce4ff95",
-          "a7218cbd-6f3a-4a5f-8f5f-0ed5f4228b24",
-          "6627fdc7-e267-447d-9a90-da99c6bd6fb2",
-          "395898c8-8848-41e2-8de7-a860b6433231",
-          "b072f80a-422d-4fbf-8484-319894085b05",
-          "e21c8d39-7662-44b3-8a44-bc27c9a0f6ac",
-          "b4b1450b-a72b-43ad-8fbb-926db3222037",
-          "2a78243f-abc9-4247-8816-cbc07c78e172",
-          "e052d32a-b988-47a1-bec6-cab90b8a8a74",
-          "7bf88734-ad34-4b89-aa58-981de91c50da",
-          "e6ea6da7-c9f6-4f31-afa7-6f75e3e1d16a",
-          "4c4c3158-bf05-4f8a-b6ff-f83441a02b34",
-          "140854cf-113f-487f-b6b1-38094850fe45",
-          "b2a9cd5b-39a4-4e37-b206-7721a974d2ad",
-          "4ce61b7b-add1-414e-b0b3-67f2c027db19",
-          "7d557d67-9c22-4010-860b-3702c5f9417e",
-          "4c5abdbf-66c7-45a9-9230-a53035a10e7a",
-          "ea580cb6-ddab-4766-b8d2-8cde4d7053df",
-          "d1ff2bbb-bcac-446a-a068-ea9db97a2a4c",
-          "d86ac9e0-0f52-44fd-a6b7-c56eb20a2ff5",
-          "81adc76d-453d-413f-a90b-8f1ac8e70612",
-          "d6e7f9d9-ed59-49b8-95d8-b7a627eb3c8a",
-          "d59db729-38a2-407a-a120-4f6ad50d868f",
-          "c9e7978c-f28d-4b19-b98a-10af65a6145f",
-          "8c44ef30-49ff-4520-b73f-1603a49bafc0",
-          "ce87d791-2abf-4234-ad7a-a2c6ca436e63",
-          "ff9eca6c-e047-43d7-999e-5cf43c4fc1cf",
-          "fa5dec1a-bd95-4b44-a831-0321fcdf0806",
-          "4f99d6b2-cc25-4b99-8068-de8010e40bb8",
-          "3783431a-7db7-402a-8414-0ec418fbc382",
-          "c7d307e0-ae82-46ff-95cd-6d78c00c3cff",
-          "b91831b1-8f2a-4c55-9712-d71a01f858df",
-          "0951288d-3e77-4b42-abb2-f4e0ef77471b",
-          "eed42d97-939f-40fb-8e82-7d50063a85b2",
-          "37be5c4b-89cd-465c-92cc-b417e861fca2",
-          "b7bc154e-4e5b-4fb5-a1b3-b9e6c7487198",
-          "ebc59163-f1da-4e8a-8f5f-27bec546400f",
-          "dde19bb5-ed34-4876-80c1-da69772deb45",
-          "3ccbb235-669a-46b6-b5db-0778974026d6",
-          "dc5b9c8e-50a4-45a0-af39-ef0f3333a052",
-          "d79e8542-e4d6-4a28-b8ee-3c6352785819",
-          "cacdee06-0599-4103-b613-16d43210f040",
-          "d9a469a1-7121-4190-947a-656d86b317ec",
-          "1a122bca-6f39-47ab-abce-3a09ca7926d7"
-        ],
-        "settings": {
-        }
-      },
       "section-recipes-to-try": {
         "type": "section-recipes-to-try",
         "settings": {
@@ -2178,6 +1656,111 @@
       "stores-map": {
         "type": "stores-map",
         "settings": {
+        }
+      },
+      "how-to-bake-it-menu": {
+        "type": "how-to-bake-it-menu",
+        "blocks": {
+          "8c7243e6-c891-4197-a938-518c740cf293": {
+            "type": "menu-item",
+            "settings": {
+              "menu-title": "menu1"
+            }
+          },
+          "2bbd09b2-78eb-46dc-a794-28083cc401d3": {
+            "type": "menu-item",
+            "settings": {
+              "menu-title": "menu2"
+            }
+          },
+          "4c6a5bdc-9fa1-4197-b480-a28017cfa94c": {
+            "type": "menu-item",
+            "settings": {
+              "menu-title": ""
+            }
+          },
+          "8458f573-352b-49f4-9f92-9340cc0cdf65": {
+            "type": "menu-item",
+            "settings": {
+              "menu-title": ""
+            }
+          },
+          "bf57d28b-1254-46e3-8972-c10cde91b540": {
+            "type": "menu-item",
+            "settings": {
+              "menu-title": ""
+            }
+          },
+          "19c18265-5cd8-4351-a410-a1bdd3dcb043": {
+            "type": "menu-item",
+            "settings": {
+              "menu-title": ""
+            }
+          }
+        },
+        "block_order": [
+          "8c7243e6-c891-4197-a938-518c740cf293",
+          "2bbd09b2-78eb-46dc-a794-28083cc401d3",
+          "4c6a5bdc-9fa1-4197-b480-a28017cfa94c",
+          "8458f573-352b-49f4-9f92-9340cc0cdf65",
+          "bf57d28b-1254-46e3-8972-c10cde91b540",
+          "19c18265-5cd8-4351-a410-a1bdd3dcb043"
+        ],
+        "settings": {
+        }
+      },
+      "how-to-bake-it-menu-content": {
+        "type": "how-to-bake-it-menu-content",
+        "blocks": {
+          "451c4e65-7a54-47cd-87e1-fdc157e5b4d1": {
+            "type": "main-content-section",
+            "settings": {
+              "content-for": "menu1",
+              "content-sub-heading": "Soft on the inside, crispy on the outside…",
+              "content": "<p>Our Cookie Dough is made with the finest quality ingredients, a special recipe invented by our founders who know their food science! Although you need to bake the Cookie Dough, it always remains soft on the inside and crispy on the outside. They’re not Cookies, so get your spoons ready to indulge in the ultimate Cookie Dough treat 🥄🥄🥄 <\/p>",
+              "download-pack-title": "HERE ARE THE INSTRUCTIONAL LEAFLETS FOR OUR BIY PACKS:",
+              "baking-tips": "Tips for baking MyCookieDough like a pro:"
+            }
+          }
+        },
+        "block_order": [
+          "451c4e65-7a54-47cd-87e1-fdc157e5b4d1"
+        ],
+        "settings": {
+        }
+      },
+      "how-to-bake-faq": {
+        "type": "how-to-bake-faq",
+        "blocks": {
+          "e3bbf3e1-d5ca-4df7-8fc0-e28e3fbfff67": {
+            "type": "faq_block",
+            "settings": {
+              "faq_question": "",
+              "faq_answer": ""
+            }
+          },
+          "ddca2834-ef00-4510-af39-c11ccc637568": {
+            "type": "faq_block",
+            "settings": {
+              "faq_question": "",
+              "faq_answer": ""
+            }
+          },
+          "3cb3d286-7af2-423c-a409-a22a08ec2a18": {
+            "type": "faq_block",
+            "settings": {
+              "faq_question": "",
+              "faq_answer": ""
+            }
+          }
+        },
+        "block_order": [
+          "e3bbf3e1-d5ca-4df7-8fc0-e28e3fbfff67",
+          "ddca2834-ef00-4510-af39-c11ccc637568",
+          "3cb3d286-7af2-423c-a409-a22a08ec2a18"
+        ],
+        "settings": {
+          "faq_title": ""
         }
       }
     },
