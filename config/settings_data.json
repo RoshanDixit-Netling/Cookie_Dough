@@ -1714,10 +1714,19 @@
               "download-pack-title": "HERE ARE THE INSTRUCTIONAL LEAFLETS FOR OUR BIY PACKS:",
               "baking-tips": "Tips for baking MyCookieDough like a pro:"
             }
+          },
+          "bbfb4187-be66-447c-a625-54710f1f45a7": {
+            "type": "download-biy-pack",
+            "settings": {
+              "menu-name": "bake it yourself",
+              "pack-name": "The Famous Five Pack",
+              "pack-download-url": "#"
+            }
           }
         },
         "block_order": [
-          "10ecb52f-4991-4b4b-9b5b-53cdf8f2a04d"
+          "10ecb52f-4991-4b4b-9b5b-53cdf8f2a04d",
+          "bbfb4187-be66-447c-a625-54710f1f45a7"
         ],
         "settings": {
         }
