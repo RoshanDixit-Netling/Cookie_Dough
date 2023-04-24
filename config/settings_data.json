@@ -1754,14 +1754,14 @@
               "tip-content": "Make sure you use baking paper when cooking"
             }
           },
-          "f2cf62a8-472c-43db-95fb-7acfe07a4322": {
+          "4558d91a-16a8-4be1-8224-34714c3391d3": {
             "type": "baking-tips",
             "settings": {
               "menu-name": "bake it yourself",
               "tip-content": "Ensure your oven is completely preheated before beginning to bake"
             }
           },
-          "a420f423-f2f2-491e-af8a-535e49b900bd": {
+          "cf13caf8-40f5-4498-bec1-368cb52b212e": {
             "type": "baking-tips",
             "settings": {
               "menu-name": "bake it yourself",
@@ -1775,10 +1775,10 @@
               "tip-content": "Once the cookie dough is slightly golden brown (usually after 8-9 minutes), remove it from the oven. You can use a large spatula to push on the 4 sides to prevent it expanding too much, and to help it keep its ‘square shape’."
             }
           },
-          "bd0d96e4-8271-4799-833a-cd845f3ea795": {
+          "77988768-365c-4e86-a152-cd9799a7acb7": {
             "type": "baking-tips",
             "settings": {
-              "menu-name": "bake it yourself",
+              "menu-name": "scotch egg",
               "tip-content": "Gently (very gently) wriggle the spatula completely under the cookie dough, before transferring to a plate to decorate & EAT!"
             }
           },
@@ -1829,6 +1829,34 @@
             "settings": {
               "menu-name": "scotch egg",
               "tip-content": "Make sure you use baking paper when cooking"
+            }
+          },
+          "f2cf62a8-472c-43db-95fb-7acfe07a4322": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "skillets",
+              "tip-content": "Ensure your oven is completely preheated before beginning to bake"
+            }
+          },
+          "a420f423-f2f2-491e-af8a-535e49b900bd": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "scotch egg",
+              "tip-content": "It is a good idea to chill your baking tray before baking - your cookie dough should also be chilled"
+            }
+          },
+          "165e1121-eaa2-46e0-a4b8-207f55d3abce": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "scotch egg",
+              "tip-content": "Once the cookie dough is slightly golden brown (usually after 8-9 minutes), remove it from the oven. You can use a large spatula to push on the 4 sides to prevent it expanding too much, and to help it keep its ‘square shape’."
+            }
+          },
+          "bd0d96e4-8271-4799-833a-cd845f3ea795": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "bake it yourself",
+              "tip-content": "Gently (very gently) wriggle the spatula completely under the cookie dough, before transferring to a plate to decorate & EAT!"
             }
           },
           "22e05b6e-a36c-4121-8ff4-61c9e8643c9a": {
@@ -2098,16 +2126,20 @@
           "a4d0f418-edd7-4c47-a1b1-d85628348d70",
           "e3446a3a-485b-49bf-8aa5-edfa220039cc",
           "37477866-cf10-49bc-8407-9f1583339b37",
-          "f2cf62a8-472c-43db-95fb-7acfe07a4322",
-          "a420f423-f2f2-491e-af8a-535e49b900bd",
+          "4558d91a-16a8-4be1-8224-34714c3391d3",
+          "cf13caf8-40f5-4498-bec1-368cb52b212e",
           "9f487160-fd11-41be-b7e6-de9fff42baeb",
-          "bd0d96e4-8271-4799-833a-cd845f3ea795",
+          "77988768-365c-4e86-a152-cd9799a7acb7",
           "8772902e-0595-416b-8551-60c09d0d2657",
           "bbfb4187-be66-447c-a625-54710f1f45a7",
           "f701fbd6-a95d-4922-a208-966f1bcedcbc",
           "19abf100-c7ca-48a1-8d6a-b6b9ed41691d",
           "4dab6efe-c689-4cce-ad28-dd2e9107f787",
           "4620ea89-81c8-472f-82c7-afb474414a73",
+          "f2cf62a8-472c-43db-95fb-7acfe07a4322",
+          "a420f423-f2f2-491e-af8a-535e49b900bd",
+          "165e1121-eaa2-46e0-a4b8-207f55d3abce",
+          "bd0d96e4-8271-4799-833a-cd845f3ea795",
           "22e05b6e-a36c-4121-8ff4-61c9e8643c9a",
           "fd02ddd5-d9e5-465c-b86b-be7a5f4993cb",
           "6fd25392-127a-471e-80c5-98e63f7c2418",
