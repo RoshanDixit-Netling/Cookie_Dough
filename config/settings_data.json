@@ -1880,6 +1880,34 @@
               "tip-content": "Make sure you use baking paper when cooking"
             }
           },
+          "39528c1e-24fe-404c-a32a-f159c0fb86d0": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "stackos",
+              "tip-content": "Ensure your oven is completely preheated before beginning to bake"
+            }
+          },
+          "91a1dec2-98b4-42db-becf-912aa79ce07f": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "stackos",
+              "tip-content": "It is a good idea to chill your baking tray before baking - your cookie dough should also be chilled"
+            }
+          },
+          "e4d974e7-26d7-4f53-b14c-01c4b5ec8343": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "stackos",
+              "tip-content": "Once the cookie dough is slightly golden brown (usually after 8-9 minutes), remove it from the oven. You can use a large spatula to push on the 4 sides to prevent it expanding too much, and to help it keep its ‘square shape’."
+            }
+          },
+          "5e1008cf-d98b-460e-8df7-3cfb9d4bdcf3": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "stackos",
+              "tip-content": "Gently (very gently) wriggle the spatula completely under the cookie dough, before transferring to a plate to decorate & EAT!"
+            }
+          },
           "40b7aa5a-f516-468d-8e0c-f85cf3592a2d": {
             "type": "main-content-section",
             "settings": {
@@ -2033,6 +2061,34 @@
               "menu-name": "mississippi love pie",
               "tip-content": "Gently (very gently) wriggle the spatula completely under the cookie dough, before transferring to a plate to decorate & EAT!"
             }
+          },
+          "0dd4df78-8049-4d4a-ac35-a1fe30494bb8": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "",
+              "tip-content": ""
+            }
+          },
+          "ba14391d-13fa-4d4e-a051-7eeed1017f81": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "",
+              "tip-content": ""
+            }
+          },
+          "6eaaeee7-700a-45eb-b899-c7ea427f702b": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "",
+              "tip-content": ""
+            }
+          },
+          "9d4ec888-198a-42f7-b5cb-e440ab6f28ec": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "",
+              "tip-content": ""
+            }
           }
         },
         "block_order": [
@@ -2058,6 +2114,10 @@
           "4e1f84a6-2d50-45fd-91dc-247ae0c63b31",
           "01aa9214-bdce-44d8-85a0-49f4057ebb84",
           "cbd068ff-1b66-448d-a7ae-17b7950b57ff",
+          "39528c1e-24fe-404c-a32a-f159c0fb86d0",
+          "91a1dec2-98b4-42db-becf-912aa79ce07f",
+          "e4d974e7-26d7-4f53-b14c-01c4b5ec8343",
+          "5e1008cf-d98b-460e-8df7-3cfb9d4bdcf3",
           "40b7aa5a-f516-468d-8e0c-f85cf3592a2d",
           "c486fbf7-3fd0-4ab3-b4e4-f99552ef613e",
           "b166cba2-7fc4-40cd-8e07-7fc3442dff22",
@@ -2077,7 +2137,11 @@
           "9089a78b-cc69-4f4b-bef9-6d73474c09d4",
           "c68eb54d-8f1f-4423-ba0f-112f52268c65",
           "164d3af1-0114-4c6a-84d7-513dbf49f597",
-          "a5dade06-ab02-402c-baa5-a85b8c356382"
+          "a5dade06-ab02-402c-baa5-a85b8c356382",
+          "0dd4df78-8049-4d4a-ac35-a1fe30494bb8",
+          "ba14391d-13fa-4d4e-a051-7eeed1017f81",
+          "6eaaeee7-700a-45eb-b899-c7ea427f702b",
+          "9d4ec888-198a-42f7-b5cb-e440ab6f28ec"
         ],
         "settings": {
         }
