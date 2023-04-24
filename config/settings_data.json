@@ -1735,7 +1735,7 @@
             "type": "download-biy-pack",
             "settings": {
               "menu-name": "bake it yourself",
-              "pack-name": "",
+              "pack-name": "The Chocoholics Pack",
               "pack-download-url": "#"
             }
           },
