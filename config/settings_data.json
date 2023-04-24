@@ -2089,34 +2089,6 @@
               "menu-name": "mississippi love pie",
               "tip-content": "Gently (very gently) wriggle the spatula completely under the cookie dough, before transferring to a plate to decorate & EAT!"
             }
-          },
-          "0dd4df78-8049-4d4a-ac35-a1fe30494bb8": {
-            "type": "baking-tips",
-            "settings": {
-              "menu-name": "",
-              "tip-content": ""
-            }
-          },
-          "ba14391d-13fa-4d4e-a051-7eeed1017f81": {
-            "type": "baking-tips",
-            "settings": {
-              "menu-name": "",
-              "tip-content": ""
-            }
-          },
-          "6eaaeee7-700a-45eb-b899-c7ea427f702b": {
-            "type": "baking-tips",
-            "settings": {
-              "menu-name": "",
-              "tip-content": ""
-            }
-          },
-          "9d4ec888-198a-42f7-b5cb-e440ab6f28ec": {
-            "type": "baking-tips",
-            "settings": {
-              "menu-name": "",
-              "tip-content": ""
-            }
           }
         },
         "block_order": [
@@ -2169,11 +2141,7 @@
           "9089a78b-cc69-4f4b-bef9-6d73474c09d4",
           "c68eb54d-8f1f-4423-ba0f-112f52268c65",
           "164d3af1-0114-4c6a-84d7-513dbf49f597",
-          "a5dade06-ab02-402c-baa5-a85b8c356382",
-          "0dd4df78-8049-4d4a-ac35-a1fe30494bb8",
-          "ba14391d-13fa-4d4e-a051-7eeed1017f81",
-          "6eaaeee7-700a-45eb-b899-c7ea427f702b",
-          "9d4ec888-198a-42f7-b5cb-e440ab6f28ec"
+          "a5dade06-ab02-402c-baa5-a85b8c356382"
         ],
         "settings": {
         }
