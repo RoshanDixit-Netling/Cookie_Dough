@@ -51,7 +51,7 @@
                   {%- if block.settings.image -%}
                     <div class="col-md-6 col-lg-5 mb-4 mb-md-0">
                       <figure>
-                        <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt }}" />
+                        <img class="rounded-3" src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt }}" />
                       </figure>
                     </div>
                   {%- endif -%}
