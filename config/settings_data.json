@@ -1146,6 +1146,13 @@
               "content": "1x Biscoff Cookie Dough"
             }
           },
+          "87cfd341-5377-4ef1-8919-1b71ffeae9cb": {
+            "type": "additional-info-content",
+            "settings": {
+              "content_id": "3",
+              "content": "1x Biscoff Cookie Dough"
+            }
+          },
           "423d7bd5-a50e-441b-b737-3920da563140": {
             "type": "additional-info-heading",
             "settings": {
@@ -1222,12 +1229,55 @@
               "content_id": "6",
               "content": "2x Original Milk Choc Cookie Doughs"
             }
+          },
+          "503db7cc-b997-4357-bd0b-7c8b0d21d092": {
+            "type": "additional-info-content",
+            "settings": {
+              "content_id": "",
+              "content": ""
+            }
+          },
+          "758181ac-d52f-45f8-85dc-1d3c9c45bd64": {
+            "type": "additional-info-content",
+            "settings": {
+              "content_id": "",
+              "content": ""
+            }
+          },
+          "27c99eaf-558a-4495-a0e3-19e3b225ce3f": {
+            "type": "additional-info-content",
+            "settings": {
+              "content_id": "",
+              "content": ""
+            }
+          },
+          "d70ad078-75e2-488f-86d5-62fdb40b8477": {
+            "type": "additional-info-content",
+            "settings": {
+              "content_id": "",
+              "content": ""
+            }
+          },
+          "a1725193-e5e4-481e-8676-f76a8084a64f": {
+            "type": "additional-info-content",
+            "settings": {
+              "content_id": "",
+              "content": ""
+            }
+          },
+          "a3f0e150-1cf5-4e2c-ad42-79817b45d2ea": {
+            "type": "additional-info-content",
+            "settings": {
+              "content_id": "",
+              "content": ""
+            }
           }
         },
         "block_order": [
           "8d5309c8-adb5-4219-9798-e9e7a53bdcb3",
           "9be6f9b9-d26c-4d95-9bba-dadf178c605a",
           "97231a2e-025e-4018-8eac-2284d91f2209",
+          "87cfd341-5377-4ef1-8919-1b71ffeae9cb",
           "423d7bd5-a50e-441b-b737-3920da563140",
           "c28c318e-6574-4acb-8af1-436dbb84cf50",
           "49b4f149-9423-4c0d-8254-209793d57482",
@@ -1238,7 +1288,13 @@
           "35957dfa-2cfa-4936-b813-28a2eb73b06b",
           "307e6360-79b1-474d-89a5-726f59c04033",
           "ca66af2a-b81e-49ce-8370-2a8e6afb9561",
-          "ae1f3a09-2285-41ff-a14e-74c61dfdf46e"
+          "ae1f3a09-2285-41ff-a14e-74c61dfdf46e",
+          "503db7cc-b997-4357-bd0b-7c8b0d21d092",
+          "758181ac-d52f-45f8-85dc-1d3c9c45bd64",
+          "27c99eaf-558a-4495-a0e3-19e3b225ce3f",
+          "d70ad078-75e2-488f-86d5-62fdb40b8477",
+          "a1725193-e5e4-481e-8676-f76a8084a64f",
+          "a3f0e150-1cf5-4e2c-ad42-79817b45d2ea"
         ],
         "settings": {
         }
