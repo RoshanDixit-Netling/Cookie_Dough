@@ -1132,7 +1132,7 @@
               "heading": "What’s in the pack"
             }
           },
-          "9be6f9b9-d26c-4d95-9bba-dadf178c605a": {
+          "4b0f66f4-e7cc-446a-8b10-af700bdc45b4": {
             "type": "additional-info-content",
             "settings": {
               "content_id": "1",
@@ -1202,7 +1202,7 @@
               "heading": "What you need"
             }
           },
-          "c28c318e-6574-4acb-8af1-436dbb84cf50": {
+          "9be6f9b9-d26c-4d95-9bba-dadf178c605a": {
             "type": "additional-info-content",
             "settings": {
               "content_id": "2",
@@ -1296,7 +1296,7 @@
         },
         "block_order": [
           "8d5309c8-adb5-4219-9798-e9e7a53bdcb3",
-          "9be6f9b9-d26c-4d95-9bba-dadf178c605a",
+          "4b0f66f4-e7cc-446a-8b10-af700bdc45b4",
           "97231a2e-025e-4018-8eac-2284d91f2209",
           "87cfd341-5377-4ef1-8919-1b71ffeae9cb",
           "503db7cc-b997-4357-bd0b-7c8b0d21d092",
@@ -1306,7 +1306,7 @@
           "afac8471-390f-4209-a1f0-4645d6a4cc97",
           "27c99eaf-558a-4495-a0e3-19e3b225ce3f",
           "423d7bd5-a50e-441b-b737-3920da563140",
-          "c28c318e-6574-4acb-8af1-436dbb84cf50",
+          "9be6f9b9-d26c-4d95-9bba-dadf178c605a",
           "49b4f149-9423-4c0d-8254-209793d57482",
           "80ff3231-66dc-417e-b07f-aa6ee0ae766b",
           "c7d1dc68-871c-4eed-a4d4-f38e96d77924",
