@@ -71,7 +71,7 @@
                   {%  assign block_menu_id = block.settings.tab_menu_id | downcase | replace: ' ', '-'  %}
                   {% if tab_menu_id == block_menu_id %}
                     <div class="wrapper">
-                      <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt }}" />
+                      <img class="rounded-3 w-100"  src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt }}" />
                     </div>
                   {%- endif -%}
                 {%- endcase -%}
