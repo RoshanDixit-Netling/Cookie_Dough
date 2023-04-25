@@ -1223,6 +1223,13 @@
               "content": "2x Original Milk Choc Cookie Doughs"
             }
           },
+          "7f74b425-f52a-4f52-b231-facfe95a0087": {
+            "type": "additional-info-content",
+            "settings": {
+              "content_id": "3",
+              "content": "2x White Choc Cookie Doughs"
+            }
+          },
           "c7d1dc68-871c-4eed-a4d4-f38e96d77924": {
             "type": "additional-info-content",
             "settings": {
@@ -1309,6 +1316,7 @@
           "9be6f9b9-d26c-4d95-9bba-dadf178c605a",
           "49b4f149-9423-4c0d-8254-209793d57482",
           "80ff3231-66dc-417e-b07f-aa6ee0ae766b",
+          "7f74b425-f52a-4f52-b231-facfe95a0087",
           "c7d1dc68-871c-4eed-a4d4-f38e96d77924",
           "05907b28-4fc3-4734-a9aa-a53d99e4d1ce",
           "0c50f239-8c04-4e54-a920-368f678ce0dc",
