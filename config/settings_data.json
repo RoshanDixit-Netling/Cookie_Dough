@@ -1230,13 +1230,6 @@
               "content": "1x Pot of Nutella"
             }
           },
-          "a29a418e-a8d5-4e1e-8565-73a390fb5348": {
-            "type": "additional-info-content",
-            "settings": {
-              "content_id": "2",
-              "content": "2x Original Milk Choc Cookie Doughs"
-            }
-          },
           "e39f2294-5414-4a16-96bf-70a22f8f2a9a": {
             "type": "additional-info-content",
             "settings": {
@@ -1249,6 +1242,13 @@
             "settings": {
               "content_id": "2",
               "content": "1x Pot of Caramel Sauce"
+            }
+          },
+          "a29a418e-a8d5-4e1e-8565-73a390fb5348": {
+            "type": "additional-info-content",
+            "settings": {
+              "content_id": "2",
+              "content": "2x Original Milk Choc Cookie Doughs"
             }
           },
           "49b4f149-9423-4c0d-8254-209793d57482": {
@@ -1359,9 +1359,9 @@
           "169eb81c-e9a2-49ed-af9e-c4ede1a111a0",
           "7065eab9-9358-4f33-93b1-3563c9aa4f1f",
           "4770e3ba-a3aa-4a3d-9a37-cdc475c5099f",
-          "a29a418e-a8d5-4e1e-8565-73a390fb5348",
           "e39f2294-5414-4a16-96bf-70a22f8f2a9a",
           "1474566b-ee83-4904-b6ea-501f43ad7e77",
+          "a29a418e-a8d5-4e1e-8565-73a390fb5348",
           "49b4f149-9423-4c0d-8254-209793d57482",
           "80ff3231-66dc-417e-b07f-aa6ee0ae766b",
           "7f74b425-f52a-4f52-b231-facfe95a0087",
