@@ -1160,18 +1160,18 @@
               "content": "1x Pot of Nutella"
             }
           },
-          "709d062a-a417-4b59-a9d8-c066aa54f3e5": {
-            "type": "additional-info-content",
-            "settings": {
-              "content_id": "1",
-              "content": "1 x Pot of Chocolate Sauce"
-            }
-          },
           "758181ac-d52f-45f8-85dc-1d3c9c45bd64": {
             "type": "additional-info-content",
             "settings": {
               "content_id": "1",
               "content": "1x Pot of Biscoff Spread"
+            }
+          },
+          "709d062a-a417-4b59-a9d8-c066aa54f3e5": {
+            "type": "additional-info-content",
+            "settings": {
+              "content_id": "1",
+              "content": "1 x Pot of Chocolate Sauce"
             }
           },
           "afac8471-390f-4209-a1f0-4645d6a4cc97": {
@@ -1300,8 +1300,8 @@
           "97231a2e-025e-4018-8eac-2284d91f2209",
           "87cfd341-5377-4ef1-8919-1b71ffeae9cb",
           "503db7cc-b997-4357-bd0b-7c8b0d21d092",
-          "709d062a-a417-4b59-a9d8-c066aa54f3e5",
           "758181ac-d52f-45f8-85dc-1d3c9c45bd64",
+          "709d062a-a417-4b59-a9d8-c066aa54f3e5",
           "afac8471-390f-4209-a1f0-4645d6a4cc97",
           "27c99eaf-558a-4495-a0e3-19e3b225ce3f",
           "47968d80-215b-4700-86a6-a9d26a6a4fb7",
