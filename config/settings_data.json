@@ -1085,7 +1085,7 @@
         "type": "contact-form",
         "settings": {
           "get-in-touch-title": "GET IN TOUCH",
-          "get-in-touch-content": "<p>We love to hear from our community! Drop us an email below 👇                  <\/p><p>For any queries relating to your online order please email <a href=\"#\" title=\"email\">orders@mycookiedough.com <\/a>along with your name and order number in the subject line. Your query will be responded to within 48 hours during the working week.<\/p>",
+          "get-in-touch-content": "<p>We love to hear from our community! Drop us an email below 👇                  <\/p><p>For any queries relating to your online order please email <a href=\"mailto:#orders@mycookiedough.com\" title=\"mailto:#orders@mycookiedough.com\">orders@mycookiedough.com <\/a>along with your name and order number in the subject line. Your query will be responded to within 48 hours during the working week.<\/p>",
           "btn-label": "Send Enquiry"
         }
       },
