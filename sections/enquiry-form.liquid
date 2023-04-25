@@ -50,7 +50,7 @@
                     </div>
                     <div class="row">
                       <div class="col-md-12 form-group">
-                        <button type="submit" class="btn btn-primary w-100">{{ section.settings.button-label }}</button>
+                        <button type="submit" href="{{ section.settings.button_Url}}" class="btn btn-primary w-100">{{ section.settings.button-label }}</button>
                       </div>
                     </div>
                   {%- endform -%}
@@ -91,7 +91,12 @@
 			"type": "text",
 			"label": "Send Button Label",
 			"default": "Send Enquiry"
-		}
+		},
+        {
+            "type": "url",
+            "label": "Button Url",
+            "id": "button_url"
+        }
 	],
 	"presets": [
 		{
