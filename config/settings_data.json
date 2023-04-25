@@ -1107,10 +1107,10 @@
         "settings": {
           "title": "Recipes to try with your BIY",
           "select_products": [
+            "the-famous-5-pack",
+            "the-special-edition-pack",
             "milk-chocolate-chip",
-            "kinder-nutella-oreo-skillet",
-            "scotch-egg-biy-pack",
-            "the-special-edition-pack"
+            "kinder-nutella-oreo-skillet"
           ]
         }
       },
