@@ -716,7 +716,8 @@
         ],
         "settings": {
           "heading": "What we offer…",
-          "button-label": "Enquire Now"
+          "button-label": "Enquire Now",
+          "button-url": "#enquiry-form"
         }
       },
       "home-banner": {
