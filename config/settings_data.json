@@ -1913,6 +1913,82 @@
       },
       "stores-map": {
         "type": "stores-map",
+        "blocks": {
+          "bc14d3e1-bead-4e9d-b229-59e672781cd2": {
+            "type": "map_pin",
+            "settings": {
+              "store_name": "Prague, Czech Republic",
+              "place_name": "Westfield Chodov, Praha",
+              "coords": "608,201,615,203,619,206,619,215,614,220,613,235,610,236,607,218,601,212,604,206,615,203,620,207"
+            }
+          },
+          "8b051c92-9acb-4c00-b085-95097c595cc4": {
+            "type": "map_pin",
+            "settings": {
+              "store_name": "Prague, Czech Republic 2",
+              "place_name": "Westfield Chodov, Praha",
+              "coords": "656,201,663,205,663,213,657,220,656,237,653,238,650,221,646,213,648,203,659,202"
+            }
+          },
+          "69e253b9-d138-4b4b-8707-73ddac29973d": {
+            "type": "map_pin",
+            "settings": {
+              "store_name": "Prague, Czech Republic 3",
+              "place_name": "Westfield Chodov, Praha",
+              "coords": "705,269,716,273,717,280,711,287,708,310,705,287,698,280"
+            }
+          },
+          "8b102716-607a-41f0-b79a-2b94231867b0": {
+            "type": "map_pin",
+            "settings": {
+              "store_name": "Prague, Czech Republic 4",
+              "place_name": "Westfield Chodov, Praha",
+              "coords": "714,296,719,288,729,291,729,302,722,308,723,321,720,320,716,303"
+            }
+          },
+          "e879e867-5ef5-4870-adef-7db01a1070f3": {
+            "type": "map_pin",
+            "settings": {
+              "store_name": "Prague, Czech Republic 5",
+              "place_name": "Westfield Chodov, Praha",
+              "coords": "775,312,770,317,769,324,768,339,761,323,757,313,760,306,769,305"
+            }
+          },
+          "4966e9ea-765c-46b0-a4f8-f10f6ab1c664": {
+            "type": "map_pin",
+            "settings": {
+              "store_name": "Prague, Czech Republic 6",
+              "place_name": "Westfield Chodov, Praha",
+              "coords": "771,329,771,318,777,313,782,318,782,326,777,331,772,347,768,324"
+            }
+          },
+          "a40e42eb-3d8c-4a7c-b7d8-587a087aca29": {
+            "type": "map_pin",
+            "settings": {
+              "store_name": "Prague, Czech Republic 7",
+              "place_name": "Westfield Chodov, Praha",
+              "coords": "777,341,781,332,791,332,796,339,793,346,789,351,787,372,783,351,777,343"
+            }
+          },
+          "a469c80d-ad06-4432-a6f8-65e7d6fae25a": {
+            "type": "map_pin",
+            "settings": {
+              "store_name": "Prague, Czech Republic 8",
+              "place_name": "Westfield Chodov, Praha",
+              "coords": "978,387,990,385,992,395,989,402,985,422,979,405,975,397"
+            }
+          }
+        },
+        "block_order": [
+          "bc14d3e1-bead-4e9d-b229-59e672781cd2",
+          "8b051c92-9acb-4c00-b085-95097c595cc4",
+          "69e253b9-d138-4b4b-8707-73ddac29973d",
+          "8b102716-607a-41f0-b79a-2b94231867b0",
+          "e879e867-5ef5-4870-adef-7db01a1070f3",
+          "4966e9ea-765c-46b0-a4f8-f10f6ab1c664",
+          "a40e42eb-3d8c-4a7c-b7d8-587a087aca29",
+          "a469c80d-ad06-4432-a6f8-65e7d6fae25a"
+        ],
         "settings": {
         }
       },
@@ -2441,6 +2517,167 @@
       "404": {
         "type": "404",
         "settings": {
+        }
+      },
+      "franchises-faq": {
+        "type": "franchises-faq",
+        "blocks": {
+          "47f1bbf3-b774-44da-a755-b2f03741efa7": {
+            "type": "faq_block",
+            "settings": {
+              "faq_question": "What does the franchise program include?",
+              "faq_answer": "The MY COOKIE DOUGH franchise programme includes the use of the MY COOKIE DOUGH brand name, as well as our business model, raw materials specifications, products, production methods, recipes, operational standards and procedures, and store design."
+            }
+          },
+          "440a6e4b-815a-48d3-a41e-d042ef100052": {
+            "type": "faq_block",
+            "settings": {
+              "faq_question": "What support is provided?",
+              "faq_answer": "If you are not using your Cookie Dough immediately, place in the fridge or freezer as soon as you have received your pack. It can be kept in the fridge for up to 10 days, or if stored in the freezer on the first day of receiving for up to 3 months. When you want to use your Cookie Dough remove from the freezer and store in the fridge for 4 hours before baking."
+            }
+          },
+          "6bf296a8-3b55-4bb8-bf55-cdc0d564a1da": {
+            "type": "faq_block",
+            "settings": {
+              "faq_question": "What training can I expect to receive?",
+              "faq_answer": "If you are not using your Cookie Dough immediately, place in the fridge or freezer as soon as you have received your pack. It can be kept in the fridge for up to 10 days, or if stored in the freezer on the first day of receiving for up to 3 months. When you want to use your Cookie Dough remove from the freezer and store in the fridge for 4 hours before baking."
+            }
+          },
+          "b937b7ec-3603-4537-81f2-99a30e192545": {
+            "type": "faq_block",
+            "settings": {
+              "faq_question": "How long will the whole process take?",
+              "faq_answer": "If you are not using your Cookie Dough immediately, place in the fridge or freezer as soon as you have received your pack. It can be kept in the fridge for up to 10 days, or if stored in the freezer on the first day of receiving for up to 3 months. When you want to use your Cookie Dough remove from the freezer and store in the fridge for 4 hours before baking."
+            }
+          },
+          "7c8457f1-d246-4d7b-a1a5-0053cabc7176": {
+            "type": "faq_block",
+            "settings": {
+              "faq_question": "Do I need to work in the business full-time?",
+              "faq_answer": "If you are not using your Cookie Dough immediately, place in the fridge or freezer as soon as you have received your pack. It can be kept in the fridge for up to 10 days, or if stored in the freezer on the first day of receiving for up to 3 months. When you want to use your Cookie Dough remove from the freezer and store in the fridge for 4 hours before baking."
+            }
+          }
+        },
+        "block_order": [
+          "47f1bbf3-b774-44da-a755-b2f03741efa7",
+          "440a6e4b-815a-48d3-a41e-d042ef100052",
+          "6bf296a8-3b55-4bb8-bf55-cdc0d564a1da",
+          "b937b7ec-3603-4537-81f2-99a30e192545",
+          "7c8457f1-d246-4d7b-a1a5-0053cabc7176"
+        ],
+        "settings": {
+          "faq_title": "Frequently asked questions"
+        }
+      },
+      "franchises-banner": {
+        "type": "franchises-banner",
+        "settings": {
+          "banner_heading": "FRANCHISING WITH<br> MY COOKIE DOUGH",
+          "button_label": "Request a discovery call",
+          "button_url": "#shopify-section-franchises-discovery-call",
+          "image": "shopify:\/\/shop_images\/image38.jpg"
+        }
+      },
+      "franchises-map": {
+        "type": "franchises-map",
+        "blocks": {
+          "d3d064d8-a4c1-462f-a7b3-0feb69e22313": {
+            "type": "map_pin",
+            "settings": {
+              "store_name": "",
+              "place_name": "",
+              "coords": ""
+            }
+          },
+          "1401c4b1-9a78-4fab-89bd-1ec9356d050b": {
+            "type": "map_pin",
+            "settings": {
+              "store_name": "",
+              "place_name": "",
+              "coords": ""
+            }
+          },
+          "4976457f-2fcd-4c78-aa9e-aeea00085c4d": {
+            "type": "map_pin",
+            "settings": {
+              "store_name": "",
+              "place_name": "",
+              "coords": ""
+            }
+          },
+          "a82dc6a1-b3b3-40b4-9d07-4bd755e3418f": {
+            "type": "map_pin",
+            "settings": {
+              "store_name": "",
+              "place_name": "",
+              "coords": ""
+            }
+          },
+          "c26ff0f7-e207-4bf1-96c1-b2af082c8038": {
+            "type": "map_pin",
+            "settings": {
+              "store_name": "",
+              "place_name": "",
+              "coords": ""
+            }
+          },
+          "a4877fee-cbda-4bc3-be14-a0df522e095c": {
+            "type": "map_pin",
+            "settings": {
+              "store_name": "",
+              "place_name": "",
+              "coords": ""
+            }
+          },
+          "9584247c-5f7c-4712-8878-6ce7a0f5bc9c": {
+            "type": "map_pin",
+            "settings": {
+              "store_name": "",
+              "place_name": "",
+              "coords": ""
+            }
+          },
+          "2353f213-fc17-46e7-9798-090228c9a149": {
+            "type": "map_pin",
+            "settings": {
+              "store_name": "",
+              "place_name": "",
+              "coords": ""
+            }
+          }
+        },
+        "block_order": [
+          "d3d064d8-a4c1-462f-a7b3-0feb69e22313",
+          "1401c4b1-9a78-4fab-89bd-1ec9356d050b",
+          "4976457f-2fcd-4c78-aa9e-aeea00085c4d",
+          "a82dc6a1-b3b3-40b4-9d07-4bd755e3418f",
+          "c26ff0f7-e207-4bf1-96c1-b2af082c8038",
+          "a4877fee-cbda-4bc3-be14-a0df522e095c",
+          "9584247c-5f7c-4712-8878-6ce7a0f5bc9c",
+          "2353f213-fc17-46e7-9798-090228c9a149"
+        ],
+        "settings": {
+          "heading": "My Cookie Dough Around The World",
+          "left_content": "<p> Since opening our first store in the UK, we have expanded to several countries around the world, and we are looking forward to adding more countries and territories to our ever-growing portfolio next year. <\/p>",
+          "button_label": "Request a Discovery Call",
+          "button_url": "#shopify-section-franchises-discovery-call",
+          "right_content": "<p>Although we are growing fast, we will always strive to fulfil our mission, which is to serve moments of pure joy in everyone’s day. Our products generate a feeling of great pleasure, and our service helps to spread the happiness. We want to change people’s day and put a smile on their face, which we believe is something extremely special.<\/p><p>We want to spread this joy & happiness to all corners of the Earth, in a way that is ethically good, socially responsible & sustainable to the world around us.<\/p>"
+        }
+      },
+      "franchises-testimonial": {
+        "type": "franchises-testimonial",
+        "settings": {
+          "reviewers_name": "Jane Smith",
+          "reviewers_position": "Social Media Influencer",
+          "image": "shopify:\/\/shop_images\/image39.jpg",
+          "review": "<p> “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat” <\/p>"
+        }
+      },
+      "franchises-discovery-call": {
+        "type": "franchises-discovery-call",
+        "settings": {
+          "heading": "Book a discovery call",
+          "sub_heading": "Want to become part of the My Cookie Dough family?"
         }
       }
     },

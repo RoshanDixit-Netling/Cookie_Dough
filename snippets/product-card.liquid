@@ -48,7 +48,7 @@ name="add">Add to cart</button>
         class="w-100 {{ image_classes }}"
         src="{{ product.featured_media | img_url: 'master' }}"
         alt="img">
-      {{ product.featured_media | video_tag: controls: false, autoplay: true, loop: true }}
+      {{ product.featured_media | video_tag: controls: false, autoplay: true, loop: true, class: 'w-100' }}
     {%- else if product.featured_media.media_type == "image" -%}
       <img
         class="w-100 {{ image_classes }}"

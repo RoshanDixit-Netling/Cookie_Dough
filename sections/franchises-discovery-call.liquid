@@ -1,0 +1,123 @@
+<!-- section -->
+<div class="section">
+  <div class="container">
+    <header class="text-center">
+      <h2 class="heading1">{{ section.settings.heading }}</h2>
+    </header>
+    <p class="text-center">
+      {{ section.settings.sub_heading }}
+    </p>
+    <div class="row justify-content-center pt-4 pt-lg-5">
+      <div class="col-lg-10">
+        <div class="form">
+          {%- assign formId = 'discovery-call' -%}
+          {%- form 'contact', id: formId -%}
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <input
+                  type="text"
+                  placeholder="Name"
+                  class="form-control" 
+                  name="contact[first_name]"
+                  value="{%- if from[first_name] -%}{{ form[first_name] }}{%- endif -%}" 
+                  />
+              </div>
+              <div class="col-md-6 form-group">
+                <input
+                  type="text"
+                  placeholder="Last Name"
+                  class="form-control"
+                  name="contact[last_name]" 
+                  value="{%- if from[last_name] -%}{{ form[last_name] }}{%- endif -%}"
+                  />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 form-group">
+                <input
+                  type="email"
+                  placeholder="Email"
+                  class="form-control"
+                  name="contact[email]" 
+                  value="{%- if from[email] -%}{{ form[email] }}{%- endif -%}"
+                  />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 form-group">
+                <input
+                  type="tel"
+                  placeholder="Phone Number"
+                  class="form-control"
+                  name="contact[phone]" 
+                  value="{%- if from[phone] -%}{{ form[phone] }}{%- endif -%}"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 form-group">
+                <input
+                  type="text"
+                  placeholder="Home Address"
+                  class="form-control"
+                  name="contact[address]" 
+                  value="{%- if from[address] -%}{{ form[address] }}{%- endif -%}"
+                  />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 form-group">
+                <input
+                  type="text"
+                  placeholder="What region/country are you interested in?"
+                  class="form-control"
+                  name="contact[region]" 
+                  value="{%- if from[region] -%}{{ form[region] }}{%- endif -%}"
+                  />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 form-group mb-0">
+                <button type="submit" class="btn btn-primary w-100">
+                  Submit
+                </button>
+              </div>
+            </div>
+          {%- endform -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /section -->
+
+{% schema %}
+{
+  "name": "Discovery Call Form",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Heading",
+      "id": "heading"
+    },
+    {
+      "type": "text",
+      "label": "Sub Heading",
+      "id": "sub_heading"
+    }
+  ],
+  "blocks": [],
+  "presets": [
+    {
+      "name": "Discovery Call Form"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

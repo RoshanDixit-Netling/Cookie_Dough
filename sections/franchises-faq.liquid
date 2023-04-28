@@ -1,18 +1,26 @@
-<div class="section">
+<!-- section -->
+<div class="section pb-0">
   <div class="container">
+    {%- if section.settings.faq_title != '' -%}
     <header class="text-center c-mb-4">
       <h2 class="heading1">{{ section.settings.faq_title }}</h2>
     </header>
-    <div class="custom-accordion accordion2 text-start mb-4">
-      {%- for block in section.blocks -%}
-        {%- case block.type -%}
-        {%-  when 'faq_block' -%}
-          {% include 'faq-card' %} 
-      {%- endcase -%}
-      {%- endfor -%}
+    {%- endif -%}
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="custom-accordion accordion2 text-start mb-4">
+          {%- for block in section.blocks -%}
+            {%- case block.type -%}
+            {%-  when 'faq_block' -%}
+              {% include 'faq-card' %} 
+            {%- endcase -%}
+          {%- endfor -%}
+        </div>
+      </div>
     </div>
   </div>
 </div>
+<!-- /section -->
 
 {%- schema -%}
 {

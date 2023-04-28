@@ -1,15 +1,10 @@
 <!doctype html>
-<html
-  class="">
+<html class="">
   <head>
     <!-- Meta Tags -->
-    <meta
-      charset="utf-8">
-    <meta
-      http-equiv="X-UA-Compatible"
-      content="IE=edge">
-    <meta name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Page Title -->
     {%- if request.path == '/' -%}
       <title>Home | My Cookie Dough</title>
@@ -46,18 +41,15 @@
   {%- endif - -%}
   {%- comment -%} use this to add extra class to body_class variable {%- endcomment -%}
   {%- comment -%} Use this to add/change layout related class {%- endcomment -%}
-  {%- if template.suffix == 'news-archive' or template.suffix == 'corporate' or template == 'article' or template == 'index' or template.suffix == 'our-story' -%}
+  {%- if template == 'blog' or template.suffix == 'corporate' or template == 'article' or template == 'index' or template.suffix == 'our-story' -%}
     {%- assign body_class = body_class | append: 'layout1' -%}
   {%- endif -%}
   {%- comment -%} Use this to add/change layout related class {%- endcomment -%}
   <body class="{{ body_class }}">
     <!-- <h2>{{ template }}</h2> remove when dvelopment is done-->
     <!-- container -->
-      <div
-      id="container">
-      {%- section 'header' -%}
-      <div
-        id="content">
+      <div id="container"> {%- section 'header' -%}
+      <div id="content">
         {{ content_for_layout }}
       </div>
       {%- section 'footer' -%}

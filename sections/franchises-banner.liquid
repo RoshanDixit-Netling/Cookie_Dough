@@ -1,0 +1,70 @@
+<!-- section -->
+<div class="section pb-3">
+  <div class="container pt-4 pt-lg-5">
+    {%- if section.settings.banner_heading -%}
+      <header class="text-center mb-3 mb-lg-4"> 
+        <h1 class="heading1 alt">
+          {{ section.settings.banner_heading }}
+        </h1>
+      </header>
+    {%- endif -%}
+    {%- if section.settings.button_label != '' and section.settings.button_url -%}
+    <div class="text-center">
+      <a href="{{ section.settings.button_url }}" class="btn btn-primary px-lg-5">{{ section.settings.button_label }}</a>
+    </div>
+    {% endif %}
+  </div>
+</div>
+<!-- /section -->
+{%- if section.settings.image -%}
+<!-- section -->
+<div class="section pb-3">
+  <div class="container">
+    <img
+      src="{{ section.settings.image | img_url: 'master' }}"
+      alt="img"
+      class="rounded-3" />
+  </div>
+</div>
+<!-- /section -->
+{%- endif -%}
+{% schema %}
+{
+  "name": "Banner",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Banner Heading",
+      "id": "banner_heading"
+    },
+    {
+      "type": "text",
+      "label": "Button Label",
+      "id": "button_label",
+      "default": "Request a discovery call"
+    },
+    {
+      "type": "url",
+      "label": "Button Url",
+      "id": "button_url"
+    },
+    {
+      "type": "image_picker",
+      "label": "Image",
+      "id": "image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Banner"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

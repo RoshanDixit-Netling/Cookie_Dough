@@ -1,0 +1,69 @@
+<!-- section -->
+<div class="section bg-primary-light after-gradient wave1 testimonial">
+  <div class="container">
+    <div class="row justify-content-between align-items-center">
+      {%- if section.settings.image -%}
+      <div class="col-md-6 col-lg-5 pe-xl-5 mb-4 mb-md-0">
+        <img src="{{ section.settings.image | img_url: 'master' }}" alt="{{ section.settings.image.alt }}" class="rounded-3 w-100" />
+      </div>
+      {%- endif -%}
+      <div class="col-md-6">
+        {%- if section.settings.review != '' -%}
+        <div class="blockquote text-center text-white">
+          <p class="text2 mb-4 mb-md-5">
+            {{ section.settings.review | strip_html }}  
+          </p>
+          {%- if section.settings.reviewers_name !='' -%}
+          <p class="name">{{ section.settings.reviewers_name }}</p>
+          {% endif %}
+          {%- if section.settings.reviewers_position !='' -%}
+          <p>{{ section.settings.reviewers_position }}</p>
+          {%- endif -%}
+        </div>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /section -->
+
+{% schema %}
+{
+  "name": "Review",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Reviewer's Name",
+      "id": "reviewers_name"
+    },
+    {
+      "type": "text",
+      "label": "Reviewer's Position",
+      "id": "reviewers_position"
+    },
+    {
+      "type": "image_picker",
+      "label": "Image",
+      "id": "image"
+    },
+    {
+      "type": "richtext",
+      "label": "Review",
+      "id": "review"
+    }
+  ],
+  "blocks": [],
+  "presets": [
+    {
+      "name": "Review"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

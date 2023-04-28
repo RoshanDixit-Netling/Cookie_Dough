@@ -13,41 +13,45 @@
         <div class="form">
           {%- assign formId = 'get-in-touch' -%}
           {%- form 'contact', id: formId -%}
-          <div class="row">
-            <div class="col-md-6 form-group">
-              <input
-                type="text"
-                placeholder="Name"
-                class="form-control"
-                id="{{ formId }}-name"
-                name="contact[name]"
-                value="{%- if from[name] -%}{{ form[name] }}{%- endif -%}">
+            {{ form.errors | default_errors }}
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <input
+                  type="text"
+                  placeholder="Name"
+                  class="form-control"
+                  id="{{ formId }}-name"
+                  name="contact[name]"
+                  value="{%- if from[name] -%}{{ form[name] }}{%- endif -%}">
+              </div>
+              <div class="col-md-6 form-group">
+                <input
+                  type="text"
+                  placeholder="Business Name"
+                  class="form-control">
+              </div>
             </div>
-            <div class="col-md-6 form-group">
-              <input
-                type="text"
-                placeholder="Business Name"
-                class="form-control">
+            <div class="row">
+              <div class="col-md-12 form-group">
+                <input
+                  type="tel"
+                  placeholder="Phone Number"
+                  class="form-control">
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12 form-group">
-              <input
-                type="tel"
-                placeholder="Phone Number"
-                class="form-control">
+            <div class="row">
+              <div class="col-md-12 form-group">
+                <textarea
+                  placeholder="Message"
+                  class="form-control"
+                  name="contact[body]"></textarea>
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12 form-group">
-              <textarea placeholder="Message" class="form-control"></textarea>
+            <div class="row">
+              <div class="col-md-12 form-group">
+                <button type="submit" class="btn btn-primary w-100">{{ section.settings.btn-label }}</button>
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12 form-group">
-              <button type="submit" class="btn btn-primary w-100">{{ section.settings.btn-label }}</button>
-            </div>
-          </div>
           {%- endform -%}
         </div>
       </div>
