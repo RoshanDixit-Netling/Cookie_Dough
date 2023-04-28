@@ -1,27 +1,63 @@
-{%- comment -%}
-<div id="collections-listing">
-{%- paginate collections by 10 -%}
-
-{%- if collections.size > 0 -%}
-
-<h2>Product Collections</h2>
-
-<ul>
-{%- for collection in collections -%}
-<li class="{{ collection.handle }}-collection">
-<strong><a href="{{ collection.url }}">{{ collection.title | escape }}</a></strong>
-<small class="hint">{{ collection.products_count | pluralize: 'product', 'products' }}</small>
-</li>
-{%- endfor -%}
-</ul>
-
-<div id="pagination">{{ paginate | default_pagination }}</div>
-
-{%- else -%}
-<p>No Collections found...</p>
-{%- endif -%}
-{%- endpaginate -%}
+<!-- content -->
+<div id="content">
+  <!-- section -->
+  <div class="section my-products text-center">
+    <div class="container">
+      <div class="tabs1 media-group">
+        <div class="tab-header d-md-none">
+          <span class="title">
+            Menu
+          </span>
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <ul
+          class="nav nav-tabs"
+          id="myTab"
+          role="tablist">
+          {% assign collections = collections | sort: 'published_at' %}
+          {% assign menu_item = 1 %}
+          {%- for collection in collections -%}
+            {% assign menu_id = collection.handle | downcase | replace: ' ', '-' %}
+            <li class="nav-item" role="presentation">
+              <button
+                class="{%- if menu_item == 1 -%}{{ 'active' }}{% endif %}{%  assign menu_item = menu_item | plus: 1  %}"
+                id="shop-all-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#{{ menu_id }}"
+                type="button"
+                role="tab"
+                aria-controls="shop-all"
+                aria-selected="true">{{ collection.title }}</button>
+            </li>
+          {%- endfor -%}
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          {% assign menu_item = 1 %}
+          {% for collection in collections %}
+            {% assign menu_id = collection.handle | downcase | replace: ' ', '-' %}
+            <div
+              class="tab-pane fade {%- if menu_item == 1 -%}{{ ' show active' }}{% endif %}{%  assign menu_item = menu_item | plus: 1  %}"
+              id="{{ menu_id }}"
+              role="tabpanel"
+              aria-labelledby="shop-all-tab">
+              <header>
+                <div class="row justify-content-center">
+                  <div class="col-lg-8 col-md-10">
+                    <p>{{ collection.description | strip_html }}</p>
+                  </div>
+                </div>
+              </header>
+              <div class="row row2">
+                {% for product in collection.products %}
+                  {%- include 'large-product-card' -%}
+                {% endfor %}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /section -->
 </div>
-{%- endcomment -%}
-{%- for collection in collections -%}{%- endfor -%}
-{{ 'collection-list' }}
+<!-- /content -->

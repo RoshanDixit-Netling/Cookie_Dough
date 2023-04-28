@@ -8,7 +8,8 @@
       <div class="col-lg-10">
         <div class="row">
           {%- for product in section.settings.favourite_products -%}
-            {%- if product.featured_media.media_type == "video" -%}
+            {%- include 'large-product-card' -%}
+            {% comment %} {%- if product.featured_media.media_type == "video" -%}
               {%- assign figure_classes = 'video ' -%}
               {%- assign image_classes = 'video-overlay' -%}
             {%- else if product.featured_media.media_type == "image" -%}
@@ -33,7 +34,7 @@
               </h3>
               <p class="price">{{ product.price | money }}</p>
             </div>
-          </div>
+          </div> {% endcomment %}
           {%- endfor -%}
         </div>
       </div>

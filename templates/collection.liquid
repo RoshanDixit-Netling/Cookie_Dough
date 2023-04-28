@@ -1,4 +1,412 @@
-{%- for collection in collections -%}
-  {{ collection }}
-{%- endfor -%}
-{{ 'collection' }}
+{%- for product in collections.handle.skillets -%}
+  {% include 'large-product-card' %}{% endfor %}
+<!-- content -->
+<div id="content">
+  <!-- section -->
+  <div class="section my-products text-center">
+    <div class="container">
+      <div class="tabs1 media-group">
+        <div class="tab-header d-md-none">
+          <span class="title">
+            Menu
+          </span>
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <ul
+          class="nav nav-tabs"
+          id="myTab"
+          role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="active"
+              id="shop-all-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#shop-all"
+              type="button"
+              role="tab"
+              aria-controls="shop-all"
+              aria-selected="true">SHOP ALL</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              id="cookie-dough-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#cookie-dough"
+              type="button"
+              role="tab"
+              aria-controls="cookie-dough"
+              aria-selected="false">COOKIE DOUGH</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              id="skillets-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#skillets"
+              type="button"
+              role="tab"
+              aria-controls="skillets"
+              aria-selected="false">SKILLETS</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="shop-all"
+            role="tabpanel"
+            aria-labelledby="shop-all-tab">
+            <header>
+              <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10">
+                  <p>Our Bake It Yourself Cookie Dough is made with the finest quality ingredients, a special recipe invented by our founders who know their food science!
+                  </p>
+                </div>
+              </div>
+            </header>
+            <div class="row row2">
+              {% for product in collection.products %}
+                {%- include 'large-product-card' -%}
+              {% endfor %}
+
+
+              {% comment %} 
+              <div class="col-lg-4 col-md-6 column single-product">
+              <div class="figure1 video">
+              <img
+              class="w-100 video-overlay"
+              src="images/image21.jpg"
+              alt="img">
+              <video
+              class="w-100 "
+              src="videos/choc-dcorating-dough.mp4"
+              loop
+              muted
+              autoplay></video>
+              <span class="hover">
+              <a href="#" class="btn btn-outline-primary bg-color1 btn-sm">Add to cart</a>
+              </span>
+              </div>
+              <div class="content">
+              <h4>
+              <a href="#">The famous 5 pack</a>
+              </h4>
+              <p class="price">£22</p>
+              </div>
+              </div>
+              <div class="col-lg-4 col-md-6 column single-product">
+              <div class="figure1">
+              <img
+              class="w-100 video-overlay"
+              src="images/image22.jpg"
+              alt="img">
+              <video
+              class="w-100 "
+              src="videos/choc-dcorating-dough.mp4"
+              loop
+              muted
+              autoplay></video>
+              <span class="hover">
+              <a href="#" class="btn btn-outline-primary bg-color1 btn-sm">Add to cart</a>
+              </span>
+              </div>
+              <div class="content">
+              <h4>
+              <a href="#">THE SPECIAL EDITION PACK</a>
+              </h4>
+              <p class="price">£22</p>
+              </div>
+              </div>
+              <div class="col-lg-4 col-md-6 column single-product">
+              <div class="figure1">
+              <img
+              class="w-100 video-overlay"
+              src="images/image23.jpg"
+              alt="img">
+              <video
+              class="w-100 "
+              src="videos/choc-dcorating-dough.mp4"
+              loop
+              muted
+              autoplay></video>
+              <span class="hover">
+              <a href="#" class="btn btn-outline-primary bg-color1 btn-sm">Add to cart</a>
+              </span>
+              </div>
+              <div class="content">
+              <h4>
+              <a href="#">THE CHOCOhOLICS Pack</a>
+              </h4>
+              <p class="price">£22</p>
+              </div>
+              </div>
+              <div class="col-lg-4 col-md-6 column single-product">
+              <div class="figure1">
+              <img
+              class="w-100 video-overlay"
+              src="images/image24.jpg"
+              alt="img">
+              <video
+              class="w-100 "
+              src="videos/choc-dcorating-dough.mp4"
+              loop
+              muted
+              autoplay></video>
+              <span class="hover">
+              <a href="#" class="btn btn-outline-primary bg-color1 btn-sm">Add to cart</a>
+              </span>
+              </div>
+              <div class="content">
+              <h4>
+              <a href="#">Kinder, Nutella & Oreo Skillet</a>
+              </h4>
+              <p class="price">£22</p>
+              <span class="badge bg-primary-color4">
+              <i class="icon"><img src="images/skillet.svg" alt="icon"></i>Includes Skillet</span>
+              </div>
+              </div>
+              <div class="col-lg-4 col-md-6 column single-product">
+              <div class="figure1">
+              <img
+              class="w-100 video-overlay"
+              src="images/image25.jpg"
+              alt="img">
+              <video
+              class="w-100 "
+              src="videos/choc-dcorating-dough.mp4"
+              loop
+              muted
+              autoplay></video>
+              <span class="hover">
+              <a href="#" class="btn btn-outline-primary bg-color1 btn-sm">Add to cart</a>
+              </span>
+              </div>
+              <div class="content">
+              <h4>
+              <a href="#">THE SPECIAL EDITION PACK</a>
+              </h4>
+              <p class="price">£22</p>
+              </div>
+              </div>
+              <div class="col-lg-4 col-md-6 column single-product">
+              <div class="figure1">
+              <img
+              class="w-100 video-overlay"
+              src="images/image26.jpg"
+              alt="img">
+              <video
+              class="w-100 "
+              src="videos/choc-dcorating-dough.mp4"
+              loop
+              muted
+              autoplay></video>
+              <span class="hover">
+              <a href="#" class="btn btn-outline-primary bg-color1 btn-sm">Add to cart</a>
+              </span>
+              </div>
+              <div class="content">
+              <h4>
+              <a href="#">Scotch Egg BIY Pack</a>
+              </h4>
+              <p class="price">£22</p>
+              <span class="badge bg-primary-color4">
+              <i class="icon"><img src="images/skillet.svg" alt="icon"></i>Includes Skillet</span>
+              </div>
+              </div> {% endcomment %}
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="cookie-dough"
+            role="tabpanel"
+            aria-labelledby="cookie-dough-tab">
+            <header>
+              <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10">
+                  <p>Our Bake It Yourself Cookie Dough is made with the finest quality ingredients, a special recipe invented by our founders who know their food science!
+                  </p>
+                </div>
+              </div>
+            </header>
+            <div class="row row2">
+              {% for collection in collections %}
+                {% if collection.handle == "cookie-dough" %}
+                  {% for product in collection.products %}
+                    {% include 'large-product-card' %}
+                  {% endfor %}
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="skillets"
+            role="tabpanel"
+            aria-labelledby="skillets-tab">
+            <header>
+              <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10">
+                  <p>Our Bake It Yourself Cookie Dough is made with the finest quality ingredients, a special recipe invented by our founders who know their food science!
+                  </p>
+                </div>
+              </div>
+            </header>
+            <div class="row row2">
+              {% for collection in collections %}
+                {% if collection.handle == "skillets" %}
+                  {% for product in collection.products %}
+                    {% include 'large-product-card' %}
+                  {% endfor %}
+                {% endif %}
+              {% endfor %}
+              {% comment %} 
+              <div class="col-lg-4 col-md-6 column single-product">
+              <div class="figure1 video">
+              <img
+              class="w-100 video-overlay"
+              src="images/image21.jpg"
+              alt="img">
+              <video
+              class="w-100 "
+              src="videos/choc-dcorating-dough.mp4"
+              loop
+              muted
+              autoplay></video>
+              <span class="hover">
+              <a href="#" class="btn btn-outline-primary bg-color1 btn-sm">Add to cart</a>
+              </span>
+              </div>
+              <div class="content">
+              <h4>
+              <a href="#">The famous 5 pack</a>
+              </h4>
+              <p class="price">£22</p>
+              </div>
+              </div>
+              <div class="col-lg-4 col-md-6 column single-product">
+              <div class="figure1">
+              <img
+              class="w-100 video-overlay"
+              src="images/image22.jpg"
+              alt="img">
+              <video
+              class="w-100 "
+              src="videos/choc-dcorating-dough.mp4"
+              loop
+              muted
+              autoplay></video>
+              <span class="hover">
+              <a href="#" class="btn btn-outline-primary bg-color1 btn-sm">Add to cart</a>
+              </span>
+              </div>
+              <div class="content">
+              <h4>
+              <a href="#">THE SPECIAL EDITION PACK</a>
+              </h4>
+              <p class="price">£22</p>
+              </div>
+              </div>
+              <div class="col-lg-4 col-md-6 column single-product">
+              <div class="figure1">
+              <img
+              class="w-100 video-overlay"
+              src="images/image23.jpg"
+              alt="img">
+              <video
+              class="w-100 "
+              src="videos/choc-dcorating-dough.mp4"
+              loop
+              muted
+              autoplay></video>
+              <span class="hover">
+              <a href="#" class="btn btn-outline-primary bg-color1 btn-sm">Add to cart</a>
+              </span>
+              </div>
+              <div class="content">
+              <h4>
+              <a href="#">THE CHOCOhOLICS Pack</a>
+              </h4>
+              <p class="price">£22</p>
+              </div>
+              </div>
+              <div class="col-lg-4 col-md-6 column single-product">
+              <div class="figure1">
+              <img
+              class="w-100 video-overlay"
+              src="images/image24.jpg"
+              alt="img">
+              <video
+              class="w-100 "
+              src="videos/choc-dcorating-dough.mp4"
+              loop
+              muted
+              autoplay></video>
+              <span class="hover">
+              <a href="#" class="btn btn-outline-primary bg-color1 btn-sm">Add to cart</a>
+              </span>
+              </div>
+              <div class="content">
+              <h4>
+              <a href="#">Kinder, Nutella & Oreo Skillet</a>
+              </h4>
+              <p class="price">£22</p>
+              <span class="badge bg-primary-color4">
+              <i class="icon"><img src="images/skillet.svg" alt="icon"></i>Includes Skillet</span>
+              </div>
+              </div>
+              <div class="col-lg-4 col-md-6 column single-product">
+              <div class="figure1">
+              <img
+              class="w-100 video-overlay"
+              src="images/image25.jpg"
+              alt="img">
+              <video
+              class="w-100 "
+              src="videos/choc-dcorating-dough.mp4"
+              loop
+              muted
+              autoplay></video>
+              <span class="hover">
+              <a href="#" class="btn btn-outline-primary bg-color1 btn-sm">Add to cart</a>
+              </span>
+              </div>
+              <div class="content">
+              <h4>
+              <a href="#">THE SPECIAL EDITION PACK</a>
+              </h4>
+              <p class="price">£22</p>
+              </div>
+              </div>
+              <div class="col-lg-4 col-md-6 column single-product">
+              <div class="figure1">
+              <img
+              class="w-100 video-overlay"
+              src="images/image26.jpg"
+              alt="img">
+              <video
+              class="w-100 "
+              src="videos/choc-dcorating-dough.mp4"
+              loop
+              muted
+              autoplay></video>
+              <span class="hover">
+              <a href="#" class="btn btn-outline-primary bg-color1 btn-sm">Add to cart</a>
+              </span>
+              </div>
+              <div class="content">
+              <h4>
+              <a href="#">Scotch Egg BIY Pack</a>
+              </h4>
+              <p class="price">£22</p>
+              <span class="badge bg-primary-color4">
+              <i class="icon"><img src="images/skillet.svg" alt="icon"></i>Includes Skillet</span>
+              </div>
+              </div> {% endcomment %}
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /section -->
+</div>
+<!-- /content -->
