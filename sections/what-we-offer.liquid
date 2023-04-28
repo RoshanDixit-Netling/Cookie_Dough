@@ -8,10 +8,7 @@
           {%- for block in section.blocks -%}
             {%- case block.type -%}
               {%- when 'image' -%}
-              <img
-                class="animation {%- if i == 1 -%} active {%- assign i = i | plus: 1 -%}{%- endif -%}"
-                src="{{ block.settings.offer-image | image_url }}"
-                alt="{{ block.settings.offer-image.alt }}" loading="eager">
+              <img class="animation {%- if i == 1 -%} active {%- assign i = i | plus: 1 -%}{%- endif -%}" src="{{ block.settings.offer-image | image_url }}" alt="{{ block.settings.offer-image.alt }}" loading="eager">
             {%- endcase -%}
           {%- endfor -%}
         </div>
