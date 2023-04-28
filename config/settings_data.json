@@ -2584,65 +2584,65 @@
           "d3d064d8-a4c1-462f-a7b3-0feb69e22313": {
             "type": "map_pin",
             "settings": {
-              "store_name": "",
-              "place_name": "",
-              "coords": ""
+              "store_name": "Prague, Czech Republic",
+              "place_name": "Westfield Chodov, Praha",
+              "coords": "608,201,615,203,619,206,619,215,614,220,613,235,610,236,607,218,601,212,604,206,615,203,620,207"
             }
           },
           "1401c4b1-9a78-4fab-89bd-1ec9356d050b": {
             "type": "map_pin",
             "settings": {
-              "store_name": "",
-              "place_name": "",
-              "coords": ""
+              "store_name": "Prague, Czech Republic-2",
+              "place_name": "Westfield Chodov, Praha-2",
+              "coords": "656,201,663,205,663,213,657,220,656,237,653,238,650,221,646,213,648,203,659,202"
             }
           },
           "4976457f-2fcd-4c78-aa9e-aeea00085c4d": {
             "type": "map_pin",
             "settings": {
-              "store_name": "",
-              "place_name": "",
-              "coords": ""
+              "store_name": "Prague, Czech Republic-3",
+              "place_name": "Westfield Chodov, Praha-3",
+              "coords": "705,269,716,273,717,280,711,287,708,310,705,287,698,280"
             }
           },
           "a82dc6a1-b3b3-40b4-9d07-4bd755e3418f": {
             "type": "map_pin",
             "settings": {
-              "store_name": "",
-              "place_name": "",
-              "coords": ""
+              "store_name": "Prague, Czech Republic-4",
+              "place_name": "Westfield Chodov, Praha-4",
+              "coords": "714,296,719,288,729,291,729,302,722,308,723,321,720,320,716,303"
             }
           },
           "c26ff0f7-e207-4bf1-96c1-b2af082c8038": {
             "type": "map_pin",
             "settings": {
-              "store_name": "",
-              "place_name": "",
-              "coords": ""
+              "store_name": "Prague, Czech Republic-5",
+              "place_name": "Westfield Chodov, Praha-5",
+              "coords": "775,312,770,317,769,324,768,339,761,323,757,313,760,306,769,305"
             }
           },
           "a4877fee-cbda-4bc3-be14-a0df522e095c": {
             "type": "map_pin",
             "settings": {
-              "store_name": "",
-              "place_name": "",
-              "coords": ""
+              "store_name": "Prague, Czech Republic-6",
+              "place_name": "Westfield Chodov, Praha-6",
+              "coords": "771,329,771,318,777,313,782,318,782,326,777,331,772,347,768,324"
             }
           },
           "9584247c-5f7c-4712-8878-6ce7a0f5bc9c": {
             "type": "map_pin",
             "settings": {
-              "store_name": "",
-              "place_name": "",
-              "coords": ""
+              "store_name": "Prague, Czech Republic-7",
+              "place_name": "Westfield Chodov, Praha-7",
+              "coords": "777,341,781,332,791,332,796,339,793,346,789,351,787,372,783,351,777,343"
             }
           },
           "2353f213-fc17-46e7-9798-090228c9a149": {
             "type": "map_pin",
             "settings": {
-              "store_name": "",
-              "place_name": "",
-              "coords": ""
+              "store_name": "Prague, Czech Republic-8",
+              "place_name": "Westfield Chodov, Praha-8",
+              "coords": "978,387,990,385,992,395,989,402,985,422,979,405,975,397"
             }
           }
         },
