@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  updateCartCount();
+  updateCartCount(); // update cart count on load
   $(".add-to-cart").click(function (event) {
     event.preventDefault();
     var productId = $(this).attr("data-product-id");
@@ -16,28 +16,7 @@ $(document).ready(function () {
     addToCart(productId, quantity, buynow);
   });
 });
-
-function buyNow(productId, quantity, buynow) {
-  var data = {
-    'id': productId,
-    'quantity': quantity
-  };
-  $.ajax({
-    type: 'POST',
-    url: '/cart/add.js',
-    data: data,
-    dataType: 'json',
-    success: function (data) {
-      updateCartCount();
-      window.location.href = '/checkout/';
-    },
-    error: function (XMLHttpRequest, textStatus) {
-      console.log(XMLHttpRequest.responseText);
-      alert('Error adding product to cart: ' + textStatus);
-    }
-  });
-}
-
+/* to add product to cart */
 function addToCart(productId, quantity, buynow) {
   var data = {
     'id': productId,
@@ -51,17 +30,21 @@ function addToCart(productId, quantity, buynow) {
     success: function () {
       updateCartCount();
       if (true === buynow) {
-        Window.location.href = '/checkout/';
+        window.location.href = '/checkout/';
+      } else {
+        $('div#success').addClass('active');
+        hidePopup();
       }
     },
     error: function (XMLHttpRequest, textStatus) {
-      console.log(XMLHttpRequest.responseText);
-      alert('Error adding product to cart: ' + textStatus);
+      $('div#error').html('<p>' + JSON.parse(XMLHttpRequest.responseText).description + '</p>');
+      $('div#error').addClass('active');
+      hidePopup();
     }
   });
-
 }
-
+/* !to add product to cart */
+/* to update the cart item count */
 function updateCartCount() {
   var cartCount = $(".cart-count");
   $.ajax({
@@ -71,9 +54,17 @@ function updateCartCount() {
     contentType: "application/json",
     success: function (response) {
       $(".cart-item-counter").html(response.item_count);
-      // alert(response.item_count);
       cartCount.text(response.item_count);
     }
   });
 }
-
+/* !to update the cart item count */
+/* to auto hide successfull and error popup */
+function hidePopup() {
+  if ($(".popup1").hasClass("active")) {
+    setTimeout(function () {
+      $(".popup1").removeClass("active");
+    }, 4000);
+  }
+}
+/* !to auto hide successfull and error popup */
