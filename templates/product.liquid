@@ -60,10 +60,19 @@
             <footer>
               <div class="row">
                 <div class="col-lg-6">
-                  <a href="#" class="btn btn-outline-primary w-100 mb-3">Add to cart</a>
+                  {% comment %} <form method="post" action="/cart/add"> {% endcomment %}
+                  <button
+                    type="submit"
+                    class="btn btn-outline-primary w-100 mb-3 add-to-cart"
+                    data-product-id="{{product.variants.first.id }}">Add to cart</button>
+                  {% comment %} </form> {% endcomment %}
                 </div>
                 <div class="col-lg-6">
-                  <a href="#" class="btn btn-primary w-100 mb-3">Buy it now</a>
+                  <a
+                    href="#"
+                    class="btn btn-primary w-100 mb-3"
+                    id="buy-now-button"
+                    data-product-id="{{ product.variants.first.id }}">Buy it now</a>
                 </div>
               </div>
             </footer>
@@ -93,8 +102,4 @@
 {%- section 'product-banner' -%}
 {%- section 'product-ingredients' -%}
 {%- section 'product-nutritional-information' -%}
-{%- endcomment -%}<script>
-  console.log("before");
-  console.log(window.Shopify.routes.root);
-  console.log("after");
-</script>
+{%- endcomment -%}

@@ -5172,6 +5172,27 @@ map
   margin-top: auto;
 }
 
+/* 28-04-23 */
+
+@media (max-width: 767px) {
+  .layout3 #page-head.page-head5 .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1199px) {
+  .layout3 #page-head.page-head5 .wrapper figure.image1 {
+    order: -2;
+  }
+
+  .layout3 #page-head.page-head5 .wrapper figure.image2 {
+    order: -1;
+  }
+}
+
+
+/* 28-04-23 */
 
 /*  ==========================================================================
 	Vendor

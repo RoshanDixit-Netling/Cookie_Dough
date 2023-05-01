@@ -22,7 +22,6 @@
     <!-- Javascript -->
     {{ 'head.core.js' | asset_url | script_tag }}
     {{ 'lt-ie-9.js' | asset_url | script_tag }}
-
     {{ content_for_header }}
   </head>
   {%- assign body_class = '' -%}
@@ -50,22 +49,27 @@
     <!-- container -->
       <div id="container"> {%- section 'header' -%}
       <div id="content">
-        {{ content_for_layout }}
+        {% if request.path == '/policies/refund-policy' %}
+          {%- section 'policies' -%}
+        {% else %}
+          {{ content_for_layout }}
+        {% endif %}
+        </div>
+        {%- section 'footer' -%}
       </div>
-      {%- section 'footer' -%}
-    </div>
 
-    <!-- Footer Javascript -->
-    {{ 'jquery.js' | asset_url | script_tag }}
-    {{ 'popper.js' | asset_url | script_tag }}
-    {{ 'bootstrap.js' | asset_url | script_tag }}
-    {{ 'ofi.browser.js' | asset_url | script_tag }}
-    {{ 'rwd-image-maps.js' | asset_url | script_tag }}
-    {{ 'owl.carousel-min.js' | asset_url | script_tag }}
-    {{ 'slick.min.js' | asset_url | script_tag }}
-    {{ 'skrollr.js' | asset_url | script_tag }}
-    {{ 'jquery-ui.js' | asset_url | script_tag }}
-    {{ 'circletype.js' | asset_url | script_tag }}
-    {{ 'main.js' | asset_url | script_tag }}
+      <!-- Footer Javascript -->
+      {{ 'jquery.js' | asset_url | script_tag }}
+      {{ 'popper.js' | asset_url | script_tag }}
+      {{ 'bootstrap.js' | asset_url | script_tag }}
+      {{ 'ofi.browser.js' | asset_url | script_tag }}
+      {{ 'rwd-image-maps.js' | asset_url | script_tag }}
+      {{ 'owl.carousel-min.js' | asset_url | script_tag }}
+      {{ 'slick.min.js' | asset_url | script_tag }}
+      {{ 'skrollr.js' | asset_url | script_tag }}
+      {{ 'jquery-ui.js' | asset_url | script_tag }}
+      {{ 'circletype.js' | asset_url | script_tag }}
+      {{ 'add-to-cart.js' | asset_url | script_tag }}
+      {{ 'main.js' | asset_url | script_tag }}</body>
   </body>
 </html>

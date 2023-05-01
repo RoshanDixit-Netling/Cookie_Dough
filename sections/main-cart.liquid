@@ -1,4 +1,4 @@
-<cart-items class="page-width section-template--15492802019562__cart-items-padding">
+{% comment %} <cart-items class="page-width section-template--15492802019562__cart-items-padding">
   <div class="title-wrapper-with-link">
     <h1 class="title title--primary">Your cart</h1>
     <a href="/collections/all" class="underlined-link">Continue shopping</a>
@@ -117,4 +117,25 @@
     <p class="visually-hidden" id="cart-live-region-text" aria-live="polite" role="status"></p>
     <p class="visually-hidden" id="shopping-cart-line-item-status" aria-live="polite" aria-hidden="true" role="status">Loading...</p>
   </form>
-</cart-items>
+</cart-items> {% endcomment %}
+  <h2>Your Cart</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>Quantity</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in cart.items %}
+        <tr>
+          <td>{{ item.title }}</td>
+          <td>{{ item.quantity }}</td>
+          <td>{{ item.price | money }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <p>Subtotal: {{ cart.total_price | money }}</p>
+  <a href="/checkout" class="button">Proceed to Checkout</a>

@@ -32,8 +32,8 @@
         <div>
           <button
             type="submit"
-            class="btn btn-outline-primary bg-color1 btn-sm"
-            name="add">Add to cart</button>
+            class="btn btn-outline-primary bg-color1 btn-sm add-to-cart"
+            name="add" data-product-id="{{ product.variants.first.id }}">Add to cart</button>
         </div>
       </form>
       {% comment %} <a href="#" class="btn btn-outline-primary bg-color1 btn-sm">Add to cart</a> {% endcomment %}

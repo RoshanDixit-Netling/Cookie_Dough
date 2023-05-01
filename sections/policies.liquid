@@ -1,0 +1,17 @@
+{% comment %} <!-- section -->
+<div class="section">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-8">
+<h1 class="text-center fw-bold mb-4 mb-lg-5">
+{% assign policy = 'refund_policy' %}
+{{ shop.policy.title }}</h1>
+{{ shop.refund_policy.body }}
+</div>
+</div>
+</div>
+</div>
+<!-- /section --> {% endcomment %}
+{% for block in section.blocks %}
+  <figure></figure>
+{% endfor %}
