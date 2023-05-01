@@ -42,6 +42,8 @@
   {%- comment -%} Use this to add/change layout related class {%- endcomment -%}
   {%- if template == 'blog' or template.suffix == 'corporate' or template == 'article' or template == 'index' or template.suffix == 'our-story' -%}
     {%- assign body_class = body_class | append: 'layout1' -%}
+  {% else if template.suffix == 'jobs' %}
+    {%- assign body_class = body_class | append: 'layout3' -%}
   {%- endif -%}
   {%- comment -%} Use this to add/change layout related class {%- endcomment -%}
   <body class="{{ body_class }}">

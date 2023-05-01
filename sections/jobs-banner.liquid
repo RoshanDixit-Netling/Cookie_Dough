@@ -1,0 +1,77 @@
+<!-- page head -->
+<div id="page-head" class="page-head5 wave1">
+  <div class="container">
+    <div class="wrapper">
+      <div class="inner-box">
+        <header>
+          <h1 class="heading1 alt">{{ section.settings.heading }}</h1>
+        </header>
+        {{ section.settings.content }}
+        <a href="{{ section.settings.button_url }}" class="btn btn-primary mt-4 mt-md-5">{{ section.settings.button_label }}</a>
+      </div>
+      {%  assign i = 1 %}
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+        {%- when 'image' -%}
+          <figure class="image{{ i }}{%  assign i = i | plus: 1  %}">
+            <img src="{{ block.settings.select_image | img_url: 'master' }}" alt="{{ block.settings.select_image.alt }}" />
+          </figure>
+        {%- endcase -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+<!-- /page head -->
+{% schema %}
+{
+  "name": "Banner",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Heading",
+      "id": "heading"
+    },
+    {
+      "type": "richtext",
+      "label": "Content",
+      "id": "content"
+    },
+    {
+      "type": "text",
+      "label": "Button Label",
+      "id": "button_label"
+    },
+    {
+      "type": "url",
+      "label": "Button Url",
+      "id": "button_url"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "limit": 4,
+      "settings": [
+        {
+          "type": "image_picker",
+          "label": "Select Image",
+          "id": "select_image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Banner"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -139,50 +139,6 @@
           "button_url": "\/pages\/corporate\/#enquiry-form"
         }
       },
-      "what-we-offer-image": {
-        "type": "what-we-offer-image",
-        "blocks": {
-          "aac0eaaa-4870-43a0-ab01-0a81f66c9a86": {
-            "type": "image",
-            "settings": {
-              "offer-image": "shopify:\/\/shop_images\/image3.jpg"
-            }
-          },
-          "a7afdb73-229f-4c9a-8302-c0c11121cd9b": {
-            "type": "image",
-            "settings": {
-              "offer-image": "shopify:\/\/shop_images\/image44.jpg"
-            }
-          },
-          "0318ae67-3c73-435e-bbb8-e4ffe8e2fe94": {
-            "type": "image",
-            "settings": {
-              "offer-image": "shopify:\/\/shop_images\/image44-flip.jpg"
-            }
-          },
-          "04aaf780-46b4-489a-afc1-93921b77028a": {
-            "type": "image",
-            "settings": {
-              "offer-image": "shopify:\/\/shop_images\/image3-flip.jpg"
-            }
-          },
-          "54c767a1-13a2-4ed4-ad02-602f293ba21a": {
-            "type": "image",
-            "settings": {
-              "offer-image": "shopify:\/\/shop_images\/image44-flip.jpg"
-            }
-          }
-        },
-        "block_order": [
-          "aac0eaaa-4870-43a0-ab01-0a81f66c9a86",
-          "a7afdb73-229f-4c9a-8302-c0c11121cd9b",
-          "0318ae67-3c73-435e-bbb8-e4ffe8e2fe94",
-          "04aaf780-46b4-489a-afc1-93921b77028a",
-          "54c767a1-13a2-4ed4-ad02-602f293ba21a"
-        ],
-        "settings": {
-        }
-      },
       "companies": {
         "type": "companies",
         "blocks": {
@@ -2678,6 +2634,101 @@
         "settings": {
           "heading": "Book a discovery call",
           "sub_heading": "Want to become part of the My Cookie Dough family?"
+        }
+      },
+      "jobs-banner": {
+        "type": "jobs-banner",
+        "blocks": {
+          "7add86b5-f260-459f-afd9-ca2e428cc1da": {
+            "type": "image",
+            "settings": {
+              "select_image": "shopify:\/\/shop_images\/image40.png"
+            }
+          },
+          "9bb0a489-78bb-4c99-af94-a2d27b981f99": {
+            "type": "image",
+            "settings": {
+              "select_image": "shopify:\/\/shop_images\/image41.png"
+            }
+          },
+          "aaf36679-ffb8-423f-ae3d-92a58fdd8a8e": {
+            "type": "image",
+            "settings": {
+              "select_image": "shopify:\/\/shop_images\/image42.png"
+            }
+          },
+          "bfdc9d57-7dd3-42f8-853e-5198a02d5b5b": {
+            "type": "image",
+            "settings": {
+              "select_image": "shopify:\/\/shop_images\/image43.png"
+            }
+          }
+        },
+        "block_order": [
+          "7add86b5-f260-459f-afd9-ca2e428cc1da",
+          "9bb0a489-78bb-4c99-af94-a2d27b981f99",
+          "aaf36679-ffb8-423f-ae3d-92a58fdd8a8e",
+          "bfdc9d57-7dd3-42f8-853e-5198a02d5b5b"
+        ],
+        "settings": {
+          "heading": "Join Our Team",
+          "content": "<p>Interested in joining our team? If you’re fun, driven and have a sweet tooth we’d love to hear from you!<\/p><p>Email us your CV and a Cover Letter explaining why you want the job to <a href=\"mailto:info@mycookiedough.com\" title=\"mailto:info@mycookiedough.com\">info@mycookiedough.com<\/a><\/p>",
+          "button_label": "View Open Positions",
+          "button_url": "#"
+        }
+      },
+      "jobs-main-section": {
+        "type": "jobs-main-section",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/image45.jpg",
+          "heading": "Why work at my<br> cookie dough?",
+          "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation   ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>"
+        }
+      },
+      "jobs-listing": {
+        "type": "jobs-listing",
+        "blocks": {
+          "ff5e3142-6be4-4c8a-80c4-b3d11688dd5f": {
+            "type": "job",
+            "settings": {
+              "job_title": "Cookie Maker",
+              "job_type": "Part-Time",
+              "short_description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation                ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>",
+              "full_description": "",
+              "button_label": "Read the job description",
+              "button_url": "#"
+            }
+          },
+          "345d7e4e-9665-4464-8e47-c9b169198167": {
+            "type": "job",
+            "settings": {
+              "job_title": "Sales Assistant",
+              "job_type": "Full-Time",
+              "short_description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation                ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>",
+              "full_description": "",
+              "button_label": "Read the job description",
+              "button_url": "#"
+            }
+          },
+          "d6b63923-8f20-4d9a-8e3e-c4191f38964f": {
+            "type": "job",
+            "settings": {
+              "job_title": "Sales Assistant",
+              "job_type": "Full-Time",
+              "short_description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation                ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>",
+              "full_description": "",
+              "button_label": "Read the job description",
+              "button_url": "#"
+            }
+          }
+        },
+        "block_order": [
+          "ff5e3142-6be4-4c8a-80c4-b3d11688dd5f",
+          "345d7e4e-9665-4464-8e47-c9b169198167",
+          "d6b63923-8f20-4d9a-8e3e-c4191f38964f"
+        ],
+        "settings": {
+          "heading": "AVAILABLE POSITIONS"
         }
       }
     },

@@ -1,0 +1,64 @@
+<!-- section -->
+{%- if section.settings.image -%}
+<div class="section py-0">
+  <img class="w-100 object-cover" src="{{ section.settings.image | img_url: 'master' }}" alt="{{ section.settings.image.alt }}" />
+</div>
+{%- endif -%}
+<!-- /section -->
+<!-- section -->
+<div class="section pb-lg-6">
+  <div class="container pt-lg-4">
+    <div class="row justify-content-center">
+      <div class="col-lg-7 col-xl-6">
+        <header class="text-center mb-2">
+          {%- if section.settings.heading != '' -%}
+          <h2 class="heading1 alt">
+            {{ section.settings.heading }}
+          </h2>
+          {%- endif -%}
+        </header>
+        {%- if section.settings.content != '' -%}
+        <p class="text1 text-center">
+          {{ section.settings.content | strip_html }}
+        </p>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /section -->
+{% schema %}
+{
+  "name": "Main Section",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "label": "Image",
+      "id": "image"
+    },
+    {
+      "type": "text",
+      "label": "Heading",
+      "id": "heading"
+    },
+    {
+      "type": "richtext",
+      "label": "Content",
+      "id": "content"
+    }
+  ],
+  "blocks": [],
+  "presets": [
+    {
+      "name": "Main Section"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,95 @@
+<!-- section -->
+<div class="section after-gradient bg-primary-light text-white available-positions">
+  <div class="container">
+    <div class="row justify-content-end">
+      <div class="col-lg-11">
+        <h3 class="h4 mb-4 mb-lg-5">{{ section.settings.heading }}</h3>
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'job' -%}
+            {% if block.settings.job_title != '' and block.settings.short_description != '' %}
+              <div class="row wrapper"> 
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                {%- if block.settings.job_title != '' -%}<p class="text2 mb-0">{{ block.settings.job_title }}</p> {%- endif -%}
+                {%- if block.settings.job_type != '' -%} <p class="text1">{{ block.settings.job_type }}</p> {%- endif -%}
+                </div>
+                <div class="col-lg-7">
+                  <div class="description">
+                    {%- if block.settings.short_description != '' -%}
+                      <p class="text1"> {{ block.settings.short_description }} </p>
+                    {%- endif -%}
+                    {%- if block.settings.button_url != '' and block.settings.button_label != '' -%}
+                      <footer>
+                        <a href="{{ block.settings.button_url }}" class="btn btn-primary">{{ block.settings.button_label }}</a>
+                      </footer>
+                    {% endif %}
+                  </div>
+                </div>
+              </div>
+            {% endif %}
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /section -->
+
+{% schema %}{
+  "name": "Jobs Listing Section",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Heading",
+      "id": "heading"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "job",
+      "name": "Job",
+      "settings": [
+        {
+          "type": "text",
+          "label": "Job Title",
+          "id": "job_title"
+        },
+        {
+          "type": "text",
+          "label": "Job Type",
+          "id": "job_type"
+        },
+        {
+          "type": "richtext",
+          "label": "Short Description",
+          "id": "short_description"
+        },
+        {
+          "type": "richtext",
+          "label": "Full Description",
+          "id": "full_description",
+          "info": "Not in use currently"
+        }, {
+          "type": "text",
+          "label": "Button Label",
+          "id": "button_label"
+        }, {
+          "type": "url",
+          "label": "Button Url",
+          "id": "button_url"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Jobs Listing Section"
+    }
+  ]
+}
+{% endschema %}
+{% stylesheet %}
+{% endstylesheet %}
+{% javascript %}
+{% endjavascript %}
