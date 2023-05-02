@@ -1848,7 +1848,7 @@
               "tab_menu_id": "mycookies",
               "content": "<p>Our cookies will never be bland and boring, you’ll always have something new and innovative to try. Want a flavour? Just request it. Drop us a line on Instagram or TikTok.<\/p>",
               "button_label": "Shop now",
-              "button_link": "shopify:\/\/pages\/stores"
+              "button_link": "shopify:\/\/collections"
             }
           }
         },
@@ -2729,6 +2729,11 @@
         ],
         "settings": {
           "heading": "AVAILABLE POSITIONS"
+        }
+      },
+      "main-cart": {
+        "type": "main-cart",
+        "settings": {
         }
       }
     },
