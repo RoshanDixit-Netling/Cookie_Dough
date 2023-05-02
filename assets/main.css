@@ -5227,6 +5227,146 @@ map
   margin-bottom: 0;
 }
 
+/* 1-05-2023 */
+
+.continue-shopping {
+  text-decoration: underline;
+}
+
+.continue-shopping:hover {
+  text-decoration: none;
+}
+
+.cart-heading {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.cart-items-wrapper {
+  border-top: 1px solid #672567;
+  border-bottom: 1px solid #672567;
+  margin-bottom: 40px;
+}
+
+.cart-item {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.cart-item p {
+  font-size: 22px;
+  margin-bottom: 0px;
+  line-height: calc(22 / 20);
+}
+
+.cart-item .error {
+  color: #dd1d1d;
+  font-size: 16px;
+  padding: 10px 0;
+}
+
+.cart-item span {
+  font-size: 18px;
+}
+
+.cart-item .cart-media img {
+  width: 100%;
+  border-radius: 20px;
+  border: 2px solid #672567;
+  margin-right: 30px;
+}
+
+.cart-item .quantity {
+  display: flex;
+  margin-left: -10px;
+}
+
+.cart-item .quantity .remove-cart svg {
+  width: 20px;
+  cursor: pointer;
+}
+
+.cart-item .quantity .counter {
+  display: flex;
+  border: 2px solid #672567;
+  box-shadow: 5px 7px 0 #672567;
+  border-radius: 10px;
+  width: fit-content;
+  margin-right: 20px;
+  padding: 0 5px;
+
+}
+
+.cart-item .quantity input {
+  border: none;
+  max-width: 50px;
+  background-color: transparent;
+  text-align: center;
+  color: #672567;
+}
+
+/* sub-total */
+.cart-footer label {
+  font-size: 22px;
+}
+
+.cart-footer textarea {
+  border: 2px solid #672567;
+  box-shadow: 5px 7px 0 #672567;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #672567;
+  padding: 10px;
+  width: 100%;
+}
+
+.cart-footer .cart-blocks {
+  font-size: 16px;
+}
+
+.cart-footer .cart-blocks span {
+  font-size: 22px;
+  font-family: "MohrRounded", sans-serif, Arial;
+}
+
+.cart-footer .cart-blocks .sub-total {
+  font-weight: bold;
+  margin-right: 20px;
+  font-family: "Buenos Aires", sans-serif, Arial;
+}
+
+.cart-footer .cart-blocks button {
+  max-width: 350px;
+  width: 100%;
+}
+
+@media (max-width:767px) {
+  .continue-shopping {
+    font-size: 18px;
+  }
+
+  .cart-item p {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .cart-item .quantity input {
+    max-width: 40px;
+  }
+
+  .cart-footer label {
+    font-size: 18px;
+  }
+
+  .cart-footer .cart-blocks button {
+    max-width: unset;
+  }
+
+  .cart-item .error {
+    font-size: 15px;
+  }
+}
+
 /*  ==========================================================================
 	Vendor
     ========================================================================== */
