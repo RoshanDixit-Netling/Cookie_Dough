@@ -9,7 +9,7 @@
           {%- case block.type -%}
           {%- when 'map_pin' -%}
             {%- assign map_id = block.settings.store_name | downcase | replace: ' ', '-' | replace: ',', ''  -%}
-            <area alt="pin1" class="pin" onmouseenter="showModal('{{ map_id }}')" onclick="showModal({{  map_id }})" coords="{{ block.settings.coords }}" shape="poly" />
+            <area alt="pin1" class="pin" onmouseenter="showModal('{{ map_id }}')" onclick="showModal('{{  map_id }}')" coords="{{ block.settings.coords }}" shape="poly" />
           {%- endcase -%}
         {%- endfor -%}
       </map>

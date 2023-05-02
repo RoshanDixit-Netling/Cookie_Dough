@@ -91,7 +91,7 @@
           "heading": "Corporate gifting and EVENTS",
           "content": "<p>We’ve got your back when it comes to your corporate gifting. Whether you need some of our indulgent bakes for employees working at home, hundreds of cookies for an event or regular cookie deliveries to your office. <\/p>",
           "button-label": "Enquire Now",
-          "button-url": "https:\/\/netling-digital.myshopify.com\/pages\/corporate\/#enquiry-form"
+          "button-url": "#enquiry-form"
         }
       },
       "gifting-ideas": {
@@ -674,7 +674,7 @@
         "settings": {
           "heading": "What we offer…",
           "button-label": "Enquire Now",
-          "button-url": "#enquiry-form"
+          "button-url": "https:\/\/netling-digital.myshopify.com\/pages\/corporate\/#enquiry-form"
         }
       },
       "home-banner": {
@@ -2530,7 +2530,7 @@
         "settings": {
           "banner_heading": "FRANCHISING WITH<br> MY COOKIE DOUGH",
           "button_label": "Request a discovery call",
-          "button_url": "#shopify-section-franchises-discovery-call",
+          "button_url": "#section-my-section",
           "image": "shopify:\/\/shop_images\/image38.jpg"
         }
       },

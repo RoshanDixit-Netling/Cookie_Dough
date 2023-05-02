@@ -70,9 +70,18 @@
   <!-- section -->
   <div class="section">
     <div class="container">
+      {%- if cart.empty? -%}
+      <!-- empty cart -->
+      <div class="cart-warning text-center">
+        <h1 class="mb-4">Your cart is empty.</h1>
+        <a href="/collections" class="btn btn-primary">Continue shopping</a>
+      </div>
+      <!-- empty cart -->
+      {%- else -%}
+      <div class="cart-warpper">
       <div class="d-sm-flex justify-content-between align-items-end mb-4 mb-lg-5">
-        <h1 class="mb-0">Your cart</h1>
-        <a href="#" class="continue-shopping">Continue shopping</a>
+        <h2 class="mb-0 h1">Your cart</h2>
+        <a href="/collections" class="continue-shopping">Continue shopping</a>
       </div>
       <form action="#">
         <div class="row cart-heading">
@@ -165,6 +174,8 @@
         </div>
 
       </div>
+      </div>
+      {%- endif -%}
     </div>
   </div>
 <!-- /section -->

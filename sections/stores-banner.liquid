@@ -4,7 +4,7 @@
     <h1 class="display-1">{{ section.settings.heading }}</h1>
     {{ section.settings.text }}
     <footer>
-      <a href="#" class="btn btn-primary btn-sm">{{ section.settings.button-label }}</a>
+      <a href="{{ section.settings.button_url }}" class="btn btn-primary btn-sm">{{ section.settings.button-label }}</a>
     </footer>
   </div>
   <span class="cloud cloud1">
@@ -47,7 +47,12 @@
         "id": "button-label",
         "type": "text",
         "label": "Button Label",
-		"default": "View all locations"
+		    "default": "View all locations"
+      },
+      {
+        "id": "button_url",
+        "type": "url",
+        "label": "Button Url"
       }
     ],
 	"presets": [
