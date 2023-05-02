@@ -1611,7 +1611,7 @@
           "visit_us_button_label": "Visit Us",
           "visit_us_button_url": "https:\/\/netling-digital.myshopify.com\/pages\/stores",
           "order_now_button_label": "Order Now",
-          "order_now_button_url": "#"
+          "order_now_button_url": "shopify:\/\/collections\/all"
         }
       },
       "review": {
