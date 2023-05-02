@@ -234,12 +234,17 @@ $(document).ready(function (e) {
   $('img[usemap]').rwdImageMaps();
 });
 //map-popup
+$(".map-popup .icon").on("click", function () {
+  $(".map-popup").hide();
+});
+
 function showModal(example_id) {
   $("#" + example_id).show();
   $(this).on("mouseleave", function () {
     $("#" + example_id).hide();
   });
 }
+
 // $(document).on("ready",function () {
 //   $(".pin").on("click",function () {
 //     $('#exampleModal').show();
