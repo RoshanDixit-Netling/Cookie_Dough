@@ -28,7 +28,7 @@
   {%- comment -%} use this to change bg related class {%- endcomment -%}
   {%- if template.suffix == 'store-menu' -%}
     {%- assign body_class = body_class | append: 'bg-primary-light ' -%}
-  {%- elsif template == 'product' -%}
+  {%- elsif template == 'product' or template == 'cart' -%}
     {%- assign body_class = body_class | append: 'bg-color2 ' -%}
   {%- else -%}
     {%- assign body_class = body_class | append: 'bg-color1 ' -%}
@@ -42,8 +42,10 @@
   {%- comment -%} Use this to add/change layout related class {%- endcomment -%}
   {%- if template == 'blog' or template.suffix == 'corporate' or template == 'article' or template == 'index' or template.suffix == 'our-story' -%}
     {%- assign body_class = body_class | append: 'layout1' -%}
-  {% else if template.suffix == 'jobs' %}
+  {% elsif template.suffix == 'jobs' %}
     {%- assign body_class = body_class | append: 'layout3' -%}
+    {% else %}
+    {%- assign body_class = body_class | append: '' -%}
   {%- endif -%}
   {%- comment -%} Use this to add/change layout related class {%- endcomment -%}
   <body class="{{ body_class }}">
@@ -51,11 +53,7 @@
     <!-- container -->
       <div id="container"> {%- section 'header' -%}
       <div id="content">
-        {% if request.path == '/policies/refund-policy' %}
-          {%- section 'policies' -%}
-        {% else %}
           {{ content_for_layout }}
-        {% endif %}
         </div>
         {%- section 'footer' -%}
       </div>
