@@ -1,6 +1,7 @@
 {
   "current": {
     "checkout_sidebar_background_color": "#fff4f6",
+    "checkout_accent_color": "#672567",
     "checkout_button_color": "#672567",
     "sections": {
       "header": {
