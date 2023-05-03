@@ -15,7 +15,10 @@ $(document).ready(function () {
 
   $('#buy-now-button').on('click', function (event) {
     event.preventDefault();
+
     $(this).html(`<div class="spinner-border text-primary" role="status"></div>`);
+    $(this).addClass("buy-now-clicked");
+
     var productId = $(this).attr("data-product-id");
     var quantity = 1;
     var buynow = true;
@@ -42,6 +45,25 @@ $(document).ready(function () {
     data.updates[productId] = quantity;
     updateCart(data);
   });
+
+  $('.checkout-btn').click(function (event) {
+    var instruction = $('.cart-instruction').val();
+    $.ajax({
+      type: 'POST',
+      url: '/cart/update.js',
+      dataType: 'json',
+      data: {
+        note: instruction
+      },
+      success: function (cart) {
+        window.location.href = '/checkout/';
+      },
+      error: function (XMLHttpRequest, textStatus) {
+        console.log("Error updating cart note: " + textStatus);
+      }
+    });
+  });
+
 });
 
 /* to add product to cart */
@@ -115,6 +137,7 @@ function hidePopup() {
       $(".popup1").removeClass("active");
       $('.add-to-cart').removeClass('pe-none');
       $(".currently-clicked").html("Add to cart");
+      $(".buy-now-clicked").html("Buy it Now");
       $(".spinner-border").addClass("d-none");
     }, 4000);
   }

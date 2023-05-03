@@ -164,13 +164,13 @@
       <div class="cart-footer row">
         <div class="col-md-5">
           <label for="textarea">Order special instruction</label>
-          <textarea name="text-field" id="textarea" cols="42" rows="3"></textarea>
+          <textarea name="text-field" id="textarea" cols="42" rows="3" class="cart-instruction"></textarea>
         </div>
         <div class="cart-blocks col-md-7 text-center text-lg-end">
           <span class="sub-total">Sub total</span>
           <span>{{ cart.total_price | money }}</span>
           <p>Taxes and shipping calculated at checkout</p>
-        <button type="submit" class="btn btn-primary" {% if disable_cart_btn %}{{ 'disabled' }}{% endif %}>Check out</button>
+        <button type="submit" class="btn btn-primary checkout-btn" {% if disable_cart_btn %}{{ 'disabled' }}{% endif %}>Check out</button>
         </div>
 
       </div>
