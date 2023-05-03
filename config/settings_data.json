@@ -2675,7 +2675,7 @@
           "heading": "Join Our Team",
           "content": "<p>Interested in joining our team? If you’re fun, driven and have a sweet tooth we’d love to hear from you!<\/p><p>Email us your CV and a Cover Letter explaining why you want the job to <a href=\"mailto:info@mycookiedough.com\" title=\"mailto:info@mycookiedough.com\">info@mycookiedough.com<\/a><\/p>",
           "button_label": "View Open Positions",
-          "button_url": "shopify:\/\/pages\/jobs"
+          "button_url": "#shopify-section-jobs-listing"
         }
       },
       "jobs-main-section": {
