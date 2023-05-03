@@ -1,7 +1,12 @@
+var isLoading = false;
 $(document).ready(function () {
   updateCartCount(); // update cart count on load
   $(".add-to-cart").click(function (event) {
     event.preventDefault();
+
+    $(this).html(`<div class="spinner-border text-primary" role="status"></div>`);
+    $(this).addClass("currently-clicked");
+
     var productId = $(this).attr("data-product-id");
     var quantity = 1;
     var buynow = false;
@@ -10,6 +15,7 @@ $(document).ready(function () {
 
   $('#buy-now-button').on('click', function (event) {
     event.preventDefault();
+    $(this).html(`<div class="spinner-border text-primary" role="status"></div>`);
     var productId = $(this).attr("data-product-id");
     var quantity = 1;
     var buynow = true;
@@ -17,7 +23,11 @@ $(document).ready(function () {
   });
 
   $('.qty').change(function (event) {
-    console.log("changed");
+    /* disabled all three fields */
+    $('.qty').attr('disabled', 'true');
+    $('.plus').attr('disabled', 'true');
+    $('.minus').attr('disabled', 'true');
+    /* disabled all three fields */
     var productId = $(this).attr("data-product-id");
     var quantity = $(this).val();
     var data = { updates: {} };
@@ -33,6 +43,7 @@ $(document).ready(function () {
     updateCart(data);
   });
 });
+
 /* to add product to cart */
 function addToCart(productId, quantity, buynow) {
   var data = {
@@ -72,6 +83,10 @@ function updateCart(data) {
       window.location.href = '/cart/';
     },
     error: function (XMLHttpRequest, textStatus) {
+      $('.qty').attr('disabled', 'false');
+      $('.plus').attr('disabled', 'false');
+      $('.minus').attr('disabled', 'false');
+      alert("Failed to Update Cart");
       console.log(XMLHttpRequest.responseText);
     }
   });
@@ -95,8 +110,12 @@ function updateCartCount() {
 /* to auto hide successfull and error popup */
 function hidePopup() {
   if ($(".popup1").hasClass("active")) {
+    $('.add-to-cart').addClass('pe-none');
     setTimeout(function () {
       $(".popup1").removeClass("active");
+      $('.add-to-cart').removeClass('pe-none');
+      $(".currently-clicked").html("Add to cart");
+      $(".spinner-border").addClass("d-none");
     }, 4000);
   }
 }

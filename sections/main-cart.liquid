@@ -117,9 +117,9 @@
               {% if item.product.available == false %}<p class="error">Sold Out </p>{% endif %}
               <div class="quantity d-md-none">
                 <div class="counter">
-                  <input type="button" value="-" class="minus" onclick="removeItem()">
-                  <input type="text" value="{{ item.quantity }}" min="0" class="qty" data-product-id="{{ item.key}}">
-                  <input type="button" value="+" class="plus" onclick="addItem()">
+                  <input type="button" value="-" class="minus">
+                  <input type="text" value="{{ item.quantity }}" min="0" class="qty" data-product-id="{{ item.key}}" max="100">
+                  <input type="button" value="+" class="plus">
                 </div>
                 <i class="remove-cart">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" focusable="false"
@@ -137,11 +137,11 @@
             <div class="col-lg-2 col-md-3 d-md-block d-none">
               <div class="quantity">
                 <div class="counter">
-                  <input type="button" value="-" class="minus" onclick="removeItem()">
+                  <input type="button" value="-" class="minus">
                   <input type="text" value="{{ item.quantity }}" min="0" class="qty" data-product-id="{{ item.key }}">
-                  <input type="button" value="+" class="plus" onclick="addItem()">
+                  <input type="button" value="+" class="plus">
                 </div>
-                <i class="remove-cart" onclick="deleteItem()" data-product-id="{{ item.key }}">
+                <i class="remove-cart" data-product-id="{{ item.key }}">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" focusable="false"
                     role="presentation" class="icon icon-remove">
                     <path
