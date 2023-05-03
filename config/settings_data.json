@@ -1,7 +1,5 @@
 {
   "current": {
-    "checkout_sidebar_background_color": "#fff4f6",
-    "checkout_button_color": "#672567",
     "sections": {
       "header": {
         "type": "header",
@@ -2741,11 +2739,6 @@
       }
     },
     "content_for_index": [
-
-    ]
-  },
-  "platform_customizations": {
-    "custom_css": [
 
     ]
   }

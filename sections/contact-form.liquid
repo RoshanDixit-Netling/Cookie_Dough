@@ -26,9 +26,11 @@
               </div>
               <div class="col-md-6 form-group">
                 <input
-                  type="text"
-                  placeholder="Business Name"
-                  class="form-control">
+                  type="email"
+                  placeholder="Email"
+                  class="form-control"
+                  name="contact[email]"
+                  value="{%- if from[email] -%}{{ form[email] }}{%- endif -%}">
               </div>
             </div>
             <div class="row">
@@ -36,7 +38,9 @@
                 <input
                   type="tel"
                   placeholder="Phone Number"
-                  class="form-control">
+                  class="form-control"
+                  name="contact[phone]"
+                  value="{%- if from[phone] -%}{{ form[phone] }}{%- endif -%}">
               </div>
             </div>
             <div class="row">
