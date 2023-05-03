@@ -1610,7 +1610,7 @@
           "content": "<p>We are the experts in all things Cookie Dough. We serve warm, gooey Cookie Dough in an array of flavours, decorated with the best sauces and toppings like Kinder, Lotus Biscoff, Nutella and more…<\/p>",
           "image": "shopify:\/\/shop_images\/image33.jpg",
           "visit_us_button_label": "Visit Us",
-          "visit_us_button_url": "shopify:\/\/collections",
+          "visit_us_button_url": "shopify:\/\/collections\/products",
           "order_now_button_label": "Order Now",
           "order_now_button_url": "shopify:\/\/collections\/all"
         }
