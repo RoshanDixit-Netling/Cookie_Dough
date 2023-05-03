@@ -2011,7 +2011,7 @@
             "settings": {
               "menu-name": "bake it yourself",
               "pack-name": "The Famous Five Pack",
-              "pack-download-url": "#"
+              "pack-download-url": ""
             }
           },
           "bfd34581-8c62-47a5-900c-3b9feb02c34a": {
@@ -2531,7 +2531,7 @@
         "settings": {
           "banner_heading": "FRANCHISING WITH<br> MY COOKIE DOUGH",
           "button_label": "Request a discovery call",
-          "button_url": "#section-my-section",
+          "button_url": "#shopify-section-franchises-discovery-call",
           "image": "shopify:\/\/shop_images\/image38.jpg"
         }
       },
