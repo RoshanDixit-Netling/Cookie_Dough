@@ -1,5 +1,6 @@
 {
   "current": {
+    "checkout_sidebar_background_color": "#dd1d1d",
     "sections": {
       "header": {
         "type": "header",
