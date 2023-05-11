@@ -687,26 +687,10 @@
               "slide_image": "shopify:\/\/shop_images\/dough-it-your-way-svg.svg",
               "silder_text": "Visit a My Cookie Dough store and experience freshly baked cookie dough and handmade speciality cookies"
             }
-          },
-          "8233e7c6-853a-4bcd-b164-b9a30cd33d6e": {
-            "type": "banner_slide_block",
-            "settings": {
-              "slide_image": "shopify:\/\/shop_images\/dough-it-your-way-svg.svg",
-              "silder_text": "Find your local MyCookieDough store and<br> experience moments of pure joy!"
-            }
-          },
-          "56f52d94-7e0c-4b81-9d46-9c2e7448f6ca": {
-            "type": "banner_slide_block",
-            "settings": {
-              "slide_image": "shopify:\/\/shop_images\/dough-it-your-way-svg.svg",
-              "silder_text": "Find your local MyCookieDough store and<br> experience moments of pure joy!"
-            }
           }
         },
         "block_order": [
-          "1e6b1741-101c-4a73-b3ad-6a3731d301bd",
-          "8233e7c6-853a-4bcd-b164-b9a30cd33d6e",
-          "56f52d94-7e0c-4b81-9d46-9c2e7448f6ca"
+          "1e6b1741-101c-4a73-b3ad-6a3731d301bd"
         ],
         "settings": {
           "banner_background_image": "shopify:\/\/shop_images\/banner-img3.jpg",
