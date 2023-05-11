@@ -2725,5 +2725,10 @@
     "content_for_index": [
 
     ]
+  },
+  "platform_customizations": {
+    "custom_css": [
+      "#page-head .carousel5 .item p {margin-top: 48px;}"
+    ]
   }
 }
