@@ -275,7 +275,7 @@
             "settings": {
               "store-image": "shopify:\/\/shop_images\/image1.jpg",
               "store-location": "Manchester",
-              "store-address": "<p>Intu Trafford Centre, Ground Floor (next to Footlocker)<\/p>",
+              "store-address": "<p>The Trafford Centre, Ground Floor (next to Footlocker)<\/p>",
               "timing-label": "OPENING TIMES",
               "mon-timing": "9:00 AM - 6:00 PM",
               "tue-timing": "9:00 AM - 6:00 PM",
@@ -285,7 +285,7 @@
               "sat-timing": "9:00 AM - 6:00 PM",
               "sun-timing": "11:00 AM - 5:00 PM",
               "button-label": "Get Directions",
-              "button-url": ""
+              "button-url": "https:\/\/www.google.co.uk\/maps\/dir\/\/The+Trafford+Centre,+Trafford+Park,+Stretford,+Manchester+M17+8AA\/@53.4660839,-2.3511538,17z\/data=!3m1!5s0x487bae97cc9fc511:0x64dca853b97750f0!4m9!4m8!1m0!1m5!1m1!1s0x487baebca18ac2ad:0xdd3fb0bab680f840!2m2!1d-2.3485735!2d53.4660807!3e0?hl=en"
             }
           },
           "f6f687d6-4499-4b67-81a8-477446f319b6": {
