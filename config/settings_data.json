@@ -142,64 +142,29 @@
       "companies": {
         "type": "companies",
         "blocks": {
-          "7a360f61-e3bf-4336-b486-d5f666a725d4": {
+          "5bc81bc8-7256-4d90-b115-c0ded40bb9dc": {
             "type": "company",
             "settings": {
-              "file-name": "https:\/\/cdn.shopify.com\/s\/files\/1\/0620\/4879\/6911\/files\/logo3.svg?v=1658388033"
+              "file-name": "https:\/\/cdn.shopify.com\/s\/files\/1\/0620\/4879\/6911\/files\/monoprix.svg?v=1683813312"
             }
           },
-          "83e41a49-e759-4746-903b-21596e9a18cb": {
+          "4b15632b-e905-4a45-b64c-081cdd44c65c": {
             "type": "company",
             "settings": {
-              "file-name": "https:\/\/cdn.shopify.com\/s\/files\/1\/0620\/4879\/6911\/files\/logo4.svg?v=1658388033"
+              "file-name": "https:\/\/cdn.shopify.com\/s\/files\/1\/0620\/4879\/6911\/files\/topshop.svg?v=1683813312"
             }
           },
-          "451e99f3-27e0-4ddd-99a2-55eed7dadeb5": {
+          "e1b0ebc3-bfae-4994-b893-22e84421c50d": {
             "type": "company",
             "settings": {
-              "file-name": "https:\/\/cdn.shopify.com\/s\/files\/1\/0620\/4879\/6911\/files\/logo5.svg?v=1658388033"
-            }
-          },
-          "8d5d7244-4a18-446c-9b30-0bcdb5c2025a": {
-            "type": "company",
-            "settings": {
-              "file-name": "https:\/\/cdn.shopify.com\/s\/files\/1\/0620\/4879\/6911\/files\/logo6.svg?v=1658388033"
-            }
-          },
-          "4750dbae-79ba-4a3e-ade4-43a35f3ceef6": {
-            "type": "company",
-            "settings": {
-              "file-name": "https:\/\/cdn.shopify.com\/s\/files\/1\/0620\/4879\/6911\/files\/logo7.svg?v=1658388033"
-            }
-          },
-          "0c46d62f-54ed-4e0f-9497-6926ee9a2652": {
-            "type": "company",
-            "settings": {
-              "file-name": "https:\/\/cdn.shopify.com\/s\/files\/1\/0620\/4879\/6911\/files\/logo8.svg?v=1658388033"
-            }
-          },
-          "c19683b2-4a30-4af1-a7d0-073b4bab2c58": {
-            "type": "company",
-            "settings": {
-              "file-name": "https:\/\/cdn.shopify.com\/s\/files\/1\/0620\/4879\/6911\/files\/logo9.svg?v=1658388033"
-            }
-          },
-          "1d4b036d-70b1-4e1b-837e-15fb0a097bb3": {
-            "type": "company",
-            "settings": {
-              "file-name": "https:\/\/cdn.shopify.com\/s\/files\/1\/0620\/4879\/6911\/files\/logo10.svg?v=1658388033"
+              "file-name": "https:\/\/cdn.shopify.com\/s\/files\/1\/0620\/4879\/6911\/files\/logo10_8a3dcb34-7ab3-46e4-bfaf-740d7be0c838.svg?v=1681207620"
             }
           }
         },
         "block_order": [
-          "7a360f61-e3bf-4336-b486-d5f666a725d4",
-          "83e41a49-e759-4746-903b-21596e9a18cb",
-          "451e99f3-27e0-4ddd-99a2-55eed7dadeb5",
-          "8d5d7244-4a18-446c-9b30-0bcdb5c2025a",
-          "4750dbae-79ba-4a3e-ade4-43a35f3ceef6",
-          "0c46d62f-54ed-4e0f-9497-6926ee9a2652",
-          "c19683b2-4a30-4af1-a7d0-073b4bab2c58",
-          "1d4b036d-70b1-4e1b-837e-15fb0a097bb3"
+          "5bc81bc8-7256-4d90-b115-c0ded40bb9dc",
+          "4b15632b-e905-4a45-b64c-081cdd44c65c",
+          "e1b0ebc3-bfae-4994-b893-22e84421c50d"
         ],
         "settings": {
           "heading": "Companies we’ve worked with"
