@@ -231,7 +231,7 @@
               "sat-timing": "9:00 AM - 6:00 PM",
               "sun-timing": "11:00 AM - 5:00 PM",
               "button-label": "Get Directions",
-              "button-url": ""
+              "button-url": "https:\/\/www.google.com\/maps\/dir\/\/First+Floor,+MyCookieDough+Westfield+London+(Shepherd's+Bush),+My+Cookie+Dough,+Westfield+London+Shopping+Centre+Ariel+Way,+Kiosk+2204,+London+W12+7HT\/@51.5089036,-0.2473829,14.62z\/data=!3m1!5s0x48760fd07c4faf0d:0x55f0c588f4d12046!4m9!4m8!1m0!1m5!1m1!1s0x48760f6ca24c99bf:0x26d9ea2533eca428!2m2!1d-0.2218485!2d51.509084!3e0"
             }
           },
           "19e78024-c4ca-43d6-81a8-b1f811c6784c": {
@@ -419,7 +419,7 @@
         "type": "stores-banner",
         "settings": {
           "heading": "MyCookiedough<sup>r<\/sup><br> Stores",
-          "text": "<p>Experience moments of pure joy at<br\/>our My Cookie Dough Stores.<\/p>",
+          "text": "<p>Indulge in the moment at our <br\/> My Cookie Dough Stores<\/p>",
           "button-label": "View all locations",
           "button_url": "#shopify-section-our-stores"
         }
