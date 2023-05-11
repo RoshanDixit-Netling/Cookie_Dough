@@ -2601,9 +2601,9 @@
       "jobs-main-section": {
         "type": "jobs-main-section",
         "settings": {
-          "image": "shopify:\/\/shop_images\/image45.jpg",
+          "image": "shopify:\/\/shop_images\/jobs-banner.jpg",
           "heading": "Why work at my<br> cookie dough?",
-          "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation   ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>"
+          "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation   ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>"
         }
       },
       "jobs-listing": {
