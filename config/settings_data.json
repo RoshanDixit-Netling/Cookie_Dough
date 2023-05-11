@@ -87,7 +87,7 @@
       "corporate-banner": {
         "type": "corporate-banner",
         "settings": {
-          "image": "shopify:\/\/shop_images\/banner-img1.jpg",
+          "image": "shopify:\/\/shop_images\/corporate-banner.jpg",
           "heading": "Corporate gifting and EVENTS",
           "content": "<p>We’ve got your back when it comes to your corporate gifting. Whether you need some of our indulgent bakes for employees working at home, hundreds of cookies for an event or regular cookie deliveries to your office. <\/p>",
           "button-label": "Enquire Now",
@@ -531,19 +531,19 @@
           "c956e92d-f692-4237-8323-17543c48332f": {
             "type": "image",
             "settings": {
-              "offer-image": "shopify:\/\/shop_images\/image3_cc552c4a-f6ca-48d6-9e71-536fb01221f0.jpg"
-            }
-          },
-          "48448361-c2b8-4927-ad5d-e0d4b290afe2": {
-            "type": "image",
-            "settings": {
-              "offer-image": "shopify:\/\/shop_images\/image44_ae995b2c-56da-4aed-a954-9f4af77f975d.jpg"
+              "offer-image": "shopify:\/\/shop_images\/corporate-1.jpg"
             }
           },
           "1dedf617-4ec5-4af2-b718-04978e23b413": {
             "type": "image",
             "settings": {
               "offer-image": "shopify:\/\/shop_images\/image44-flip_bc1eb8d5-6e1d-480e-8c40-5e106e7f8ab6.jpg"
+            }
+          },
+          "48448361-c2b8-4927-ad5d-e0d4b290afe2": {
+            "type": "image",
+            "settings": {
+              "offer-image": "shopify:\/\/shop_images\/corporate-2.jpg"
             }
           },
           "1672b027-43f7-457e-b727-e812e5e68b31": {
@@ -555,7 +555,7 @@
           "57f64ee5-1016-4bf2-bee6-777a446f99d0": {
             "type": "image",
             "settings": {
-              "offer-image": "shopify:\/\/shop_images\/image44-flip_bc1eb8d5-6e1d-480e-8c40-5e106e7f8ab6.jpg"
+              "offer-image": "shopify:\/\/shop_images\/corporate-3.jpg"
             }
           },
           "7f091456-cfc9-42e5-b877-9331f45cd606": {
@@ -597,8 +597,8 @@
         },
         "block_order": [
           "c956e92d-f692-4237-8323-17543c48332f",
-          "48448361-c2b8-4927-ad5d-e0d4b290afe2",
           "1dedf617-4ec5-4af2-b718-04978e23b413",
+          "48448361-c2b8-4927-ad5d-e0d4b290afe2",
           "1672b027-43f7-457e-b727-e812e5e68b31",
           "57f64ee5-1016-4bf2-bee6-777a446f99d0",
           "7f091456-cfc9-42e5-b877-9331f45cd606",
