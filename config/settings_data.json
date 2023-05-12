@@ -1712,7 +1712,7 @@
             "type": "image_with_content",
             "settings": {
               "tab_menu_id": "my-cookie-dough",
-              "image": "shopify:\/\/shop_images\/image34.jpg",
+              "image": "shopify:\/\/shop_images\/story-cookie-dough.jpg",
               "upper_content": "<p>They then began thinking up their dream dessert offering, and found they both had the knack and passion for creating delicious things, and so they set out to bless the world with something truly mouth-watering.<\/p>",
               "bottom_content": "<p>Following weeks of testing, creating, tasting and perfecting like mad scientists they emerged, covered in crumbs and dusted with sugar, they had done it! The perfect cookie dough, which was nothing like the world had seen before. With a top secret recipe (hush hush!) and a one of a kind baking method, My Cookie Dough was born.<\/p>"
             }
@@ -1751,7 +1751,7 @@
             "type": "image_with_content",
             "settings": {
               "tab_menu_id": "mycookies",
-              "image": "shopify:\/\/shop_images\/image36.jpg",
+              "image": "shopify:\/\/shop_images\/mycookies-story.jpg",
               "upper_content": "<p>So, we took our original secret cookie dough recipe and developed it to make the best tasting baked cookies on the market, alongside developing our brand new vegan dough!<\/p>",
               "bottom_content": "<p>My Cookies are the to go cookie brand for freshly baked cookies made with high quality ingredients that delivers on indulgence time and time again. Our revolving menu is based on seasonal flavours and reflect current trends and latest pastry techniques meaning that you will always have something new to try.<\/p>"
             }
@@ -1760,7 +1760,7 @@
             "type": "only_image",
             "settings": {
               "tab_menu_id": "mycookies",
-              "image": "shopify:\/\/shop_images\/image5.jpg"
+              "image": "shopify:\/\/shop_images\/cookies.jpg"
             }
           },
           "a26a0fe4-2ecc-4320-b0a1-83d95c4b0d26": {
