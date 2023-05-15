@@ -121,7 +121,7 @@
                 </p>
               {%- endif %}
               <p>
-                <a href="#" onclick="toggle_form('edit_address')" data-address={{ address.id }}>Edit </a> | <a href="#"> Delete</a>
+                <a href="#" onclick="toggle_form('edit_address_{{ address.id }}')">Edit </a> | <a href="#"> Delete</a>
               </p>
               <div class="form mb-4" id="EditAddress_{{ address.id }}">
                 <h2 class="h4 fs-6 mb-2">Edit Address</h2>
