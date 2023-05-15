@@ -128,30 +128,30 @@
                 {% form 'customer_address', address %}
                   <div class="row">
                     <div class="col-md-6 form-group">
-                      <input type="text" placeholder="First Name" class="form-control" value={{ customer.first_name }}>
+                      <input type="text" placeholder="First Name" name="address[first_name]" class="form-control" value={{ address.first_name }}>
                     </div>
                     <div class="col-md-6 form-group">
-                      <input type="text" placeholder="Last Name" class="form-control"  value="{{ customer.last_name }}">
+                      <input type="text" placeholder="Last Name" name="address[last_name]" class="form-control"  value="{{ address.last_name }}">
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-md-12 form-group">
-                      <input type="text" placeholder="Company" class="form-control" value={{ address.company }}>
+                      <input type="text" placeholder="Company" name="address[company]" class="form-control" value={{ address.company }}>
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-md-12 form-group">
-                      <input type="text" placeholder="Address1" class="form-control" value={{ address.address1 }}>
+                      <input type="text" placeholder="Address1" name="address[address1]" class="form-control" value={{ address.address1 }}>
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-md-12 form-group">
-                      <input type="text" placeholder="Address2" class="form-control" value={{ address.address2 }}>
+                      <input type="text" placeholder="Address2" name="address[address2]" class="form-control" value={{ address.address2 }}>
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-12 form-group">
-                      <input type="text" placeholder="city" class="form-control" value={{ address.city }}>
+                      <input type="text" placeholder="city" name="address[city]" class="form-control" value={{ address.city }}>
                     </div>
                   </div>
                   <div class="row">
@@ -180,7 +180,7 @@
                       <input type="text" class="form-control" name="address[zip]" placeholder="Postal/Zip Code" value={{ address.zip }}>
                     </div>
                     <div class="col-md-6 form-group">
-                      <input type="tel" class="form-control" placeholder="Phone" value={{ address.phone }}>
+                      <input type="tel" class="form-control" name="address[phone]" placeholder="Phone" value={{ address.phone }}>
                     </div>
                   </div>
                   <div class="row">
