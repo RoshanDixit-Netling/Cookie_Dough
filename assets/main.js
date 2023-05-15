@@ -276,3 +276,26 @@ jQuery(document).ready(($) => {
 });
 
 
+//loginform
+$("#RecoverPasswordForm").hide();
+$("#RecoverPassword").on("click", function () {
+  $("#RecoverPasswordForm").show();
+  $("#CustomerLoginForm").hide();
+});
+$("#HideRecoverPasswordLink").on("click", function () {
+  $("#RecoverPasswordForm").hide();
+  $("#CustomerLoginForm").show();
+});
+
+//addresses-form
+function cancel_form(form_id) {
+  $("#" + form_id).hide();
+}
+
+function toggle_form(form_id) {
+  $("#" + form_id).toggle();
+}
+
+$(window).load(function () {
+  objectFitImages();
+});

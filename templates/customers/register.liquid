@@ -1,41 +1,58 @@
-{% layout settings.customer_layout %}
-
-<div id="template">
-  <div id="customer">
-	  <!-- Create Customer -->
-	  <div id="create-customer">
-	    <div class="template_header">
-	      <h2 class="title">Create Account</h2>
-	    </div>
-
-	    {% form 'create_customer' %}
-	      {{ form.errors | default_errors }}
-
-	      <div class="clearfix large_form">
-	        <label for="first_name" class="login">First Name</label>
-	        <input type="text" value="" name="customer[first_name]" id="first_name" class="large" size="30" />
-	      </div>
-
-	      <div class="clearfix large_form">
-	        <label for="last_name" class="login">Last Name</label>
-	        <input type="text" value="" name="customer[last_name]" id="last_name" class="large" size="30" />
-	      </div>
-
-	      <div class="clearfix large_form">
-	        <label for="email" class="login">Email Address</label>
-	        <input type="email" value="" name="customer[email]" id="email" class="large" size="30" />
-	      </div>
-
-	      <div class="clearfix large_form">
-	        <label for="password" class="login">Password</label>
-	        <input type="password" value="" name="customer[password]" id="password" class="large password" size="30" />
-	      </div>
-
-	      <div class="action_bottom">
-	        <input class="btn" type="submit" value="Create" />
-	        <span class="note">or <a href="{{ shop.url }}">Return to Store</a></span>
-	      </div>
-	    {% endform %}
-	  </div><!-- /#create-customer -->
+<!-- content -->
+<div id="content">
+  <!-- section -->
+  <div class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5 col-xl-4">
+          <div class="form">
+            <h1 class="h4 text-center mb-4 mb-md-5">Create Account</h1>
+            {% form 'create_customer' %}
+              {{ form.errors | default_errors }}
+              <div class="row">
+                <div class="col-12 form-group">
+                  <input
+                    type="text"
+                    name="customer[first_name]"
+                    id="first_name"
+                    placeholder="Frist Name"
+                    class="form-control"
+                  >
+                </div>
+                <div class="col-12 form-group">
+                  <input
+                    type="text"
+                    name="customer[last_name]"
+                    id="last_name"
+                    placeholder="Last Name"
+                    class="form-control"
+                  >
+                </div>
+                <div class="col-12 form-group">
+                  <input type="email" name="customer[email]" id="email" placeholder="Email" class="form-control">
+                </div>
+                <div class="col-12 form-group">
+                  <input
+                    type="password"
+                    name="customer[password]"
+                    id="password"
+                    placeholder="Password"
+                    class="form-control"
+                  >
+                </div>
+                <div class="col-12 form-group">
+                  <button type="submit" class="btn btn-primary w-100">CREATE</button>
+                </div>
+                <div class="col-12 text-center pt-3">
+                  <p><a href="{{ shop.url }}">Return to Store</a></p>
+                </div>
+              </div>
+            {%- endform -%}
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+  <!-- /section -->
 </div>
+<!-- /content -->
