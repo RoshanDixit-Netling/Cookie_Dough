@@ -43,12 +43,8 @@
                   <input type="text" placeholder="city" name="address[city]" class="form-control">
                 </div>
                 <div class="col-md-6 form-group">
-                  <select name="Country/Region" class="form-control">
-                    <option value="Albania">Albania</option>
-                    <option value="Albania2">Albania2</option>
-                    <option value="Albania3">Albania3</option>
-                    <option value="Albania4">Albania4</option>
-                    <option value="Albania5">Albania5</option>
+                  <select id="address_country_new" name="address[country]" data-default="{{form.country}}">
+                    {{ country_option_tags }}
                   </select>
                 </div>
               </div>
