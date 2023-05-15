@@ -34,7 +34,7 @@
         <div class="col-lg-4">
           <h2 class="h4 mb-2">Account Details</h2>
           {{ customer.addresses }}
-          {% if customer.name %}<p>{{ customer.name }}{% endif %}{% if customer.company %}<br>{{ customer.company }}{%  endif %}<br> {{ customer.default_address.addresses1 }}<br> address 2<br> City 11222555<br> United Kingdom</p>
+          {% if customer.name %}<p>{{ customer.name }}{% endif %}{% if customer.company %}<br>{{ customer.company }}{%  endif %}<br> {{ customer.default_address.addresse1 }}<br> {{ customer.default_address.addresse2 }}<br> {{ customer.default_address.city }} 11222555<br> United Kingdom</p>
           <p><a href="#">View Addresses (2)</a></p>
         </div>
       </div>
