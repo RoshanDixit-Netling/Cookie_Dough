@@ -23,7 +23,7 @@
                 <div class="col-3"><span>#11223</span></div>
                 <div class="col-3"><span>Booked</span></div>
                 <div class="col-3"><span>2</span></div>
-                <div class="col-3"><span>$56</span></div>
+                <div class="col-3"><span>{{ order.total_price | money }}</span></div>
               </div>
               {% endfor %}
             </div>
