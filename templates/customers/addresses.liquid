@@ -208,6 +208,125 @@
             {% endfor %}
             <div id="address_pagination">{{ paginate | default_pagination }}</div>
           {% endpaginate %}
+
+          {% paginate customer.addresses by 10 %}
+          {% for address in customer.addresses %}
+              {% if address != customer.default_address %}
+                <h2 class="h4 fs-6 mb-2">Default</h2> 
+              {% if address -%}
+                <p>
+                  {% if address.name %}
+                    {{ address.name }}
+                  {% endif %}
+                  {% if address.company %}
+                    <br>
+                      {{ address.company }}
+                  {% endif %}
+                  {% if address.address1 -%}
+                    <br>
+                    {{ address.address1 -}}
+                  {%- endif -%}
+                  {%- if address.address2 -%}
+                    <br>
+                    {{ address.address2 -}}
+                  {%- endif -%}
+                  {%- if address.city %}
+                    <br>
+                    {{ address.city }}
+                    {{ address.zip }}
+                  {% endif -%}
+                  {%- if address.country -%}
+                    <br>
+                    {{ address.country -}}
+                  {%- endif %}
+                </p>
+              {%- endif %}
+              <p>
+                <a href="#" onclick="toggle_form('edit_address_{{ address.id }}')">Edit </a> | {{ "Delete" | delete_customer_address_link: address.id }}
+              </p>
+              <div class="form mb-4" id="edit_address_{{ address.id }}">
+                <h2 class="h4 fs-6 mb-2">Edit Address</h2>
+                {% form 'customer_address', address %}
+                  <div class="row">
+                    <div class="col-md-6 form-group">
+                      <input type="text" placeholder="First Name" name="address[first_name]" class="form-control" value={{ address.first_name }}>
+                    </div>
+                    <div class="col-md-6 form-group">
+                      <input type="text" placeholder="Last Name" name="address[last_name]" class="form-control"  value="{{ address.last_name }}">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 form-group">
+                      <input type="text" placeholder="Company" name="address[company]" class="form-control" value={{ address.company }}>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 form-group">
+                      <input type="text" placeholder="Address1" name="address[address1]" class="form-control" value={{ address.address1 }}>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 form-group">
+                      <input type="text" placeholder="Address2" name="address[address2]" class="form-control" value={{ address.address2 }}>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 form-group">
+                      <input type="text" placeholder="city" name="address[city]" class="form-control" value={{ address.city }}>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 form-group">
+                      <select name="Country/Region" class="form-control">
+                        <option value="Albania">Albania</option>
+                        <option value="Albania2">Albania2</option>
+                        <option value="Albania3">Albania3</option>
+                        <option value="Albania4">Albania4</option>
+                        <option value="Albania5">Albania5</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 form-group">
+                      <select name="Province" class="form-control">
+                        <option value="England">England</option>
+                        <option value="England1">England1</option>
+                        <option value="England2">England2</option>
+                        <option value="England3">England3</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 form-group">
+                      <input type="text" class="form-control" name="address[zip]" placeholder="Postal/Zip Code" value={{ address.zip }}>
+                    </div>
+                    <div class="col-md-6 form-group">
+                      <input type="tel" class="form-control" name="address[phone]" placeholder="Phone" value={{ address.phone }}>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 form-group">
+                      <!-- <input type="checkbox" id="default-address" class="me-3"> -->
+                      {{ form.set_as_default_checkbox }}
+                      <label for="default-address">Set as default address</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 form-group">
+                      <button type="submit" class="btn btn-primary px-5">UPDATE ADDRESS</button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <a href="#" onclick="cancel_form('edit_address_{{ address.id }}')">Cancel</a>
+                    </div>
+                  </div>
+                {% endform %}
+                {% endif %}
+              </div>
+            {% endfor %}
+            <div id="address_pagination">{{ paginate | default_pagination }}</div>
+          {% endpaginate %}
         </div>
       </div>
     </div>
