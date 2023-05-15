@@ -357,19 +357,12 @@
                     </div>
                     <div class="row">
                       <div class="col-12 form-group">
-                        <select name="Country/Region" class="form-control">
-                          
-                        </select>
+                        <select id="address_country_new" name="address[country]" data-default="{{form.country}}">{{ country_option_tags }}</select>
                       </div>
                     </div>
                     <div class="row">
                       <div class="col-12 form-group">
-                        <select name="Province" class="form-control">
-                          <option value="England">England</option>
-                          <option value="England1">England1</option>
-                          <option value="England2">England2</option>
-                          <option value="England3">England3</option>
-                        </select>
+                        <select id="address_province_new" class="address_form" name="address[province]" data-default="{{form.province}}"></select>
                       </div>
                     </div>
                     <div class="row">
