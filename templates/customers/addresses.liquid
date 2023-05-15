@@ -256,6 +256,7 @@
             {% endfor %}
             {% for address in customer.addresses %}
               {% if address and address != customer.default_address -%}
+                <h2 class="h4 fs-6 mb-2">Default</h2>
                 <p>
                   {% if address.name %}
                     {{ address.name }}
