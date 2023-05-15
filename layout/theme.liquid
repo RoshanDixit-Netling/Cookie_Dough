@@ -22,7 +22,6 @@
     <!-- Javascript -->
     {{ 'head.core.js' | asset_url | script_tag }}
     {{ 'lt-ie-9.js' | asset_url | script_tag }}
-
     {{ content_for_header }}
   </head>
   {%- assign body_class = '' -%}
@@ -71,8 +70,6 @@
       {{ 'jquery-ui.js' | asset_url | script_tag }}
       {{ 'circletype.js' | asset_url | script_tag }}
       {{ 'add-to-cart.js' | asset_url | script_tag }}
-      {{ 'main.js' | asset_url | script_tag }}
-      
-  </body>
+      {{ 'main.js' | asset_url | script_tag }}</body>
   </body>
 </html>

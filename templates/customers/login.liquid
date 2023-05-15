@@ -9,7 +9,6 @@
             <h1 class="h4 text-center mb-4 mb-md-5">Login</h1>
             {% form 'customer_login' %}
               {{ form.errors | default_errors }}
-              <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
               <div class="row">
                 <div class="col-12 form-group">
                   <input type="email" name="customer[email]" placeholder="Email" class="form-control">
