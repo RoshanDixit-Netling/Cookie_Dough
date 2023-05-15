@@ -185,23 +185,24 @@
                     </div>
                     <div class="row">
                       <div class="col-12 form-group">
-                        <select name="Country/Region" class="form-control">
-                          <option value="Albania">Albania</option>
-                          <option value="Albania2">Albania2</option>
-                          <option value="Albania3">Albania3</option>
-                          <option value="Albania4">Albania4</option>
-                          <option value="Albania5">Albania5</option>
-                        </select>
+                        <select 
+                          class="form-control" 
+                          id="address_country_{{form.id}}"
+                          name="address[country]" 
+                          data-default="{{address.country}}"
+                          >
+                            {{ country_option_tags }}
+                          </select>
                       </div>
                     </div>
                     <div class="row">
-                      <div class="col-12 form-group">
-                        <select name="Province" class="form-control">
-                          <option value="England">England</option>
-                          <option value="England1">England1</option>
-                          <option value="England2">England2</option>
-                          <option value="England3">England3</option>
-                        </select>
+                      <div class="col-12 form-group" id="address_province_container_{{form.id}}" style="display:none">
+                        <select 
+                          id="address_province_{{form.id}}" 
+                          class="form-control" 
+                          name="address[province]" 
+                          data-default="{{form.province}}"
+                          ></select>
                       </div>
                     </div>
                     <div class="row">
