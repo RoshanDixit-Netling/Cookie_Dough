@@ -93,8 +93,7 @@
           {% paginate customer.addresses by 10 %}
             {% for address in customer.addresses %}
               {% if address == customer.default_address %}
-                <h2 class="h4 fs-6 mb-2">Default</h2>
-              {% endif %}
+                <h2 class="h4 fs-6 mb-2">Default</h2> 
               {% if address -%}
                 <p>
                   {% if address.name %}
@@ -204,6 +203,9 @@
                     </div>
                   </div>
                 {% endform %}
+                {% else %}
+                  other address
+                {% endif %}
               </div>
             {% endfor %}
             <div id="address_pagination">{{ paginate | default_pagination }}</div>
