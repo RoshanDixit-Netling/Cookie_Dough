@@ -101,6 +101,12 @@
               {% endif %}
               {% if address -%}
                 <p>
+                  {% if address.name %}
+                    {{ address.name }}
+                  {% endif %}
+                  {% if address.company %}
+                      {{ address.company }}
+                  {% endif %}
                   {% if address.address1 -%}
                     <br>
                     {{ address.address1 -}}
