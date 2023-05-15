@@ -93,7 +93,8 @@
           {% paginate customer.addresses by 10 %}
             {% for address in customer.addresses %}
               {% if address == customer.default_address %}
-                <h2 class="h4 fs-6 mb-2">Default</h2> 
+                <h2 class="h4 fs-6 mb-2">Default</h2>
+              {% endif %}
               {% if address -%}
                 <p>
                   {% if address.name %}
@@ -203,12 +204,9 @@
                     </div>
                   </div>
                 {% endform %}
-                {% endif %}
               </div>
             {% endfor %}
-            <div id="address_pagination">
-              {{ paginate | default_pagination }}
-            </div>
+            <div id="address_pagination">{{ paginate | default_pagination }}</div>
           {% endpaginate %}
         </div>
       </div>
@@ -221,6 +219,6 @@
   // initialize observers on address selectors
   new Shopify.CountryProvinceSelector('address_country_new', 'address_province_new', { hideElement: 'address_province_container_new' });
   {% for address in customer.addresses %}
-  new Shopify.CountryProvinceSelector('address_country_{{ address.id }}', 'address_province_{{address.id}}', { hideElement: 'address_province_container_{{address.id}}' });
+  new Shopify.CountryProvinceSelector('address_country_{{   address.id   }}', 'address_province_{{address.id}}', { hideElement: 'address_province_container_{{address.id}}' });
   {% endfor %}
 </script>
