@@ -168,8 +168,12 @@
                   </div>
                 </form>
               </div>
-              <h2 class="h4 fs-6 mb-2">Default</h2>
-              <p>Roshan Dixit<br> Netling<br> some address<br> address 2<br> City 11222555<br> United Kingdom</p>
+              {% paginate customer.addresses by 10 %}
+              {% for address in customer.addresses %}
+                {% if address == customer.default_address %}
+                <h2 class="h4 fs-6 mb-2">Default</h2> 
+                {% endif %}
+              {% if address %}<p>{% if customer.address.address1 %}<br> {{ customer.address.addresse1 }}{% endif %}{% if customer.address.address1 %}<br> {{ customer.address.addresse2 }}{% endif %}{% if customer.address.city %} <br> {{ customer.address.city }} {{ customer.address.zip }} {% endif %}{% if customer.address.country %}<br> {{ customer.address.country }}{% endif %}</p>{% endif %}
               <p><a href="#" onclick="toggle_form('edit_address_default')">Edit </a> | <a href="#"> Delete</a></p>
               <div class="form mb-4" id="edit_address_default">
                 <h2 class="h4 fs-6 mb-2">Edit Address</h2>
@@ -249,6 +253,9 @@
                   </div>
                 </form>
               </div>
+              {% endfor %}
+              <div id="address_pagination">{{ paginate | default_pagination }}</div>
+              {% endpaginate %}
             </div>
           </div>
         </div>
