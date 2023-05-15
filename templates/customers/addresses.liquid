@@ -97,6 +97,7 @@
               {% if address %}<p>{% if address.address1 %}<br> {{ address.addresse1 }}{% endif %}{% if address.address1 %}<br> {{ address.addresse2 }}{% endif %}{% if address.city %} <br> {{ address.city }} {{ address.zip }} {% endif %}{% if address.country %}<br> {{ address.country }}{% endif %}</p>{% endif %}
               <p><a href="#" onclick="toggle_form('edit_address_default')">Edit </a> | <a href="{{ delete_customer_address_link: address.id }}"> Delete</a></p>
               <div class="form mb-4" id="edit_address_default">
+                {{ "Edit Address" | edit_customer_address_link: address.id }}
                 <h2 class="h4 fs-6 mb-2">Edit Address</h2>
                 {% form 'customer_address', address %}
                   <div class="row">
