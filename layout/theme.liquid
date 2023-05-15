@@ -22,6 +22,7 @@
     <!-- Javascript -->
     {{ 'head.core.js' | asset_url | script_tag }}
     {{ 'lt-ie-9.js' | asset_url | script_tag }}
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6Ld019klAAAAACRImtqm4e5uhwHTk-qPJ0aMDPCM" defer></script>
     {{ content_for_header }}
   </head>
   {%- assign body_class = '' -%}
