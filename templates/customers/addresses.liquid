@@ -14,7 +14,7 @@
         <div class="col-lg-8">
           <div class="form mb-4" id="add_address">
             <h2 class="h4 fs-5">Add a New Address</h2>
-            <form action="#">
+            {% form 'customer_address', customer.new_address %}
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" placeholder="First Name" class="form-control">
@@ -86,7 +86,7 @@
                   <a href="#" onclick="cancel_form('add_address')">Cancel</a>
                 </div>
               </div>
-            </form>
+            {% endform %}
           </div>
           <h2 class="h4 fs-5 mb-2">YOUR ADDRESSES</h2>
           <p>
