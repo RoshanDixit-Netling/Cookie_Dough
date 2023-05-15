@@ -5375,6 +5375,45 @@ Spinner
 }
 
 /* 11-05-23 */
+/*form*/
+.form select.form-control {
+  background-image: url("ico-select.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  padding-right: 40px; }
+
+.form button#HideRecoverPasswordLink {
+  background: transparent;
+  border: none;
+  color: #672567; }
+
+.order-history-wrapper {
+  padding: 0 24px; }
+  .order-history-wrapper .header {
+    border-bottom: 2px solid #672567;
+    margin-bottom: 20px; }
+    .order-history-wrapper .header span {
+      font-weight: bold;
+      font-size: 1.25rem; }
+  .order-history-wrapper .order-details span {
+    font-size: 1.125rem; }
+    .order-history-wrapper .order-details span.cancel {
+      color: rgba(199, 15, 15, 0.851); }
+
+@media (max-width: 767px) {
+  .my-account p {
+    font-size: 1.25rem; }
+  .order-history-wrapper {
+    padding: 0; }
+    .order-history-wrapper .header {
+      text-align: center; }
+      .order-history-wrapper .header span {
+        font-size: 1.125rem; }
+    .order-history-wrapper .order-details {
+      text-align: center; }
+      .order-history-wrapper .order-details span {
+        font-size: 1rem; } }
+
 .address .form {
   display: none; }
 /* 11-05-23 */
