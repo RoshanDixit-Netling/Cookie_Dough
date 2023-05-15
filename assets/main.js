@@ -299,3 +299,23 @@ function toggle_form(form_id) {
 $(window).load(function () {
   objectFitImages();
 });
+
+
+grecaptcha.ready(function () {
+  // bind the form submit event to the onSubmit function
+  $('form').submit(onSubmit);
+});
+
+function onSubmit(event) {
+  // prevent the form from submitting
+  event.preventDefault();
+
+  // execute the reCAPTCHA challenge and submit the form if successful
+  grecaptcha.execute('SITE_KEY', { action: 'submit' }).then(function (token) {
+    // add the token to the form data
+    $('#recaptchaResponse').val(token);
+
+    // submit the form
+    event.target.submit();
+  });
+}
