@@ -98,7 +98,7 @@
               <p><a href="#" onclick="toggle_form('edit_address_default')">Edit </a> | <a href="{{ delete_customer_address_link: address.id }}"> Delete</a></p>
               <div class="form mb-4" id="edit_address_default">
                 <h2 class="h4 fs-6 mb-2">Edit Address</h2>
-                <form action="#">
+                {% form 'customer_address', address %}
                   <div class="row">
                     <div class="col-md-6 form-group">
                       <input type="text" placeholder="First Name" class="form-control">
@@ -172,7 +172,7 @@
                       <a href="#" onclick="cancel_form('edit_address_default')">Cancel</a>
                     </div>
                   </div>
-                </form>
+                {% endform %}
               </div>
               {% endfor %}
               <div id="address_pagination">{{ paginate | default_pagination }}</div>
