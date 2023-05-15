@@ -89,6 +89,7 @@
             </div>
             <h2 class="h4 fs-5 mb-2">YOUR ADDRESSES</h2>
             <p>{{ customer.name }}<br>{{ customer.default_address.country }}</p>
+            {% comment %}
             {% paginate customer.addresses by 10 %}
             {% for address in customer.addresses %}
               {% if address == customer.default_address %}
@@ -191,4 +192,4 @@
   {% for address in customer.addresses %}
   new Shopify.CountryProvinceSelector('address_country_{{address.id}}', 'address_province_{{address.id}}', { hideElement: 'address_province_container_{{address.id}}' });
   {% endfor %}
-</script>
+</script> {% endcomment %}
