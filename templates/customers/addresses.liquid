@@ -42,9 +42,8 @@
                 <div class="col-md-6 form-group">
                   <input type="text" placeholder="city" name="address[city]" class="form-control">
                 </div>
-                <div class="col-md-6 form-group">
-              {{ customer_address.country }}
-                  <select class="form-control" id="address_country_new" name="address[country]" data-default="{{ customer.default_address.country }}">
+                <div class="col-md-6 form-group"> 
+                  <select class="form-control" id="address_country_new" name="address[country]" data-default="{{ form.country }}">
                     {{ country_option_tags }}
                   </select>
                 </div>
