@@ -16,9 +16,15 @@
       </div>
       <div class="col-md-4 col-4 text-end">
         <div id="user-options">
-          <li>
-            <a href="/account">login</a>
-          </li>
+          {% if customer %}
+            <li>
+              <a href="/account">logout</a>
+            </li>
+          {% else %}
+            <li>
+              <a href="/account">login</a>
+            </li>
+          {% endif %}
           <li>
             <a href="/cart" class="cart">
               <svg
