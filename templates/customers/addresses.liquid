@@ -1,190 +1,190 @@
-    <!-- content -->
-    <div id="content">
-      <!-- section -->
-      <div class="section address">
-        <div class="container">
-          <h1 class="h4 text-center mb-4 mb-md-5">My Account</h1>
-          <div class="row justify-content-between">
-            <div class="col-lg-4 mb-4 mb-lg-0">
-              <p class="mb-4 mb-md-5"> <a href="#" class="btn btn-primary" onclick="toggle_form('add_address')">ADD A
-                  NEW ADDRESS</a></p>
-              <p><a href="/account">← RETURN TO ACCOUNT DETAILS</a></p>
+  <!-- content -->
+  <div id="content">
+    <!-- section -->
+    <div class="section address">
+      <div class="container">
+        <h1 class="h4 text-center mb-4 mb-md-5">My Account</h1>
+        <div class="row justify-content-between">
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <p class="mb-4 mb-md-5"> <a href="#" class="btn btn-primary" onclick="toggle_form('add_address')">ADD A
+                NEW ADDRESS</a></p>
+            <p><a href="/account">← RETURN TO ACCOUNT DETAILS</a></p>
+          </div>
+          <div class="col-lg-8">
+            <div class="form mb-4" id="add_address">
+              <h2 class="h4 fs-5">Add a New Address</h2>
+              <form action="#">
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input type="text" placeholder="First Name" class="form-control">
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <input type="text" placeholder="Last Name" class="form-control">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 form-group">
+                    <input type="text" placeholder="Company" class="form-control">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 form-group">
+                    <input type="text" placeholder="Address1" class="form-control">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 form-group">
+                    <input type="text" placeholder="Address2" class="form-control">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input type="text" placeholder="city" class="form-control">
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <select name="Country/Region" class="form-control">
+                      <option value="Albania">Albania</option>
+                      <option value="Albania2">Albania2</option>
+                      <option value="Albania3">Albania3</option>
+                      <option value="Albania4">Albania4</option>
+                      <option value="Albania5">Albania5</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 form-group">
+                    <select name="Province" class="form-control">
+                      <option value="England">England</option>
+                      <option value="England1">England1</option>
+                      <option value="England2">England2</option>
+                      <option value="England3">England3</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input type="text" class="form-control" placeholder="Postal/Zip Code">
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <input type="tel" class="form-control" placeholder="Phone">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 form-group">
+                    <input type="checkbox" id="default-address" class="me-3">
+                    <label for="default-address">Set as default address</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 form-group">
+                    <button type="button" class="btn btn-primary px-5">ADD ADDRESS</button>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <a href="#" onclick="cancel_form('add_address')">Cancel</a>
+                  </div>
+                </div>
+              </form>
             </div>
-            <div class="col-lg-8">
-              <div class="form mb-4" id="add_address">
-                <h2 class="h4 fs-5">Add a New Address</h2>
-                <form action="#">
-                  <div class="row">
-                    <div class="col-md-6 form-group">
-                      <input type="text" placeholder="First Name" class="form-control">
-                    </div>
-                    <div class="col-md-6 form-group">
-                      <input type="text" placeholder="Last Name" class="form-control">
-                    </div>
+            <h2 class="h4 fs-5 mb-2">YOUR ADDRESSES</h2>
+            <p>{{ customer.name }}<br>{{ customer.default_address.country }}</p>
+            {% paginate customer.addresses by 10 %}
+            {% for address in customer.addresses %}
+              {% if address == customer.default_address %}
+              <h2 class="h4 fs-6 mb-2">Default</h2> 
+              {% endif %}
+            {% if address %}<p>{% if address.address1 %}<br> {{ address.addresse1 }}{% endif %}{% if address.address1 %}<br> {{ address.addresse2 }}{% endif %}{% if address.city %} <br> {{ address.city }} {{ address.zip }} {% endif %}{% if address.country %}<br> {{ address.country }}{% endif %}</p>{% endif %}
+            <p>{{ "Edit" | edit_customer_address_link: address.id }} | {{ "Delete" | delete_customer_address_link: address.id }}</p> 
+            <div class="form mb-4" id="{{address.id}}">
+              <h2 class="h4 fs-6 mb-2">Edit Address</h2>
+              {% form 'customer_address', address %}
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input type="text" placeholder="First Name" class="form-control">
                   </div>
-                  <div class="row">
-                    <div class="col-md-12 form-group">
-                      <input type="text" placeholder="Company" class="form-control">
-                    </div>
+                  <div class="col-md-6 form-group">
+                    <input type="text" placeholder="Last Name" class="form-control">
                   </div>
-                  <div class="row">
-                    <div class="col-md-12 form-group">
-                      <input type="text" placeholder="Address1" class="form-control">
-                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 form-group">
+                    <input type="text" placeholder="Company" class="form-control">
                   </div>
-                  <div class="row">
-                    <div class="col-md-12 form-group">
-                      <input type="text" placeholder="Address2" class="form-control">
-                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 form-group">
+                    <input type="text" placeholder="Address1" class="form-control">
                   </div>
-                  <div class="row">
-                    <div class="col-md-6 form-group">
-                      <input type="text" placeholder="city" class="form-control">
-                    </div>
-                    <div class="col-md-6 form-group">
-                      <select name="Country/Region" class="form-control">
-                        <option value="Albania">Albania</option>
-                        <option value="Albania2">Albania2</option>
-                        <option value="Albania3">Albania3</option>
-                        <option value="Albania4">Albania4</option>
-                        <option value="Albania5">Albania5</option>
-                      </select>
-                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 form-group">
+                    <input type="text" placeholder="Address2" class="form-control">
                   </div>
-                  <div class="row">
-                    <div class="col-12 form-group">
-                      <select name="Province" class="form-control">
-                        <option value="England">England</option>
-                        <option value="England1">England1</option>
-                        <option value="England2">England2</option>
-                        <option value="England3">England3</option>
-                      </select>
-                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 form-group">
+                    <input type="text" placeholder="city" class="form-control">
                   </div>
-                  <div class="row">
-                    <div class="col-md-6 form-group">
-                      <input type="text" class="form-control" placeholder="Postal/Zip Code">
-                    </div>
-                    <div class="col-md-6 form-group">
-                      <input type="tel" class="form-control" placeholder="Phone">
-                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 form-group">
+                    <select name="Country/Region" class="form-control">
+                      <option value="Albania">Albania</option>
+                      <option value="Albania2">Albania2</option>
+                      <option value="Albania3">Albania3</option>
+                      <option value="Albania4">Albania4</option>
+                      <option value="Albania5">Albania5</option>
+                    </select>
                   </div>
-                  <div class="row">
-                    <div class="col-md-12 form-group">
-                      <input type="checkbox" id="default-address" class="me-3">
-                      <label for="default-address">Set as default address</label>
-                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 form-group">
+                    <select name="Province" class="form-control">
+                      <option value="England">England</option>
+                      <option value="England1">England1</option>
+                      <option value="England2">England2</option>
+                      <option value="England3">England3</option>
+                    </select>
                   </div>
-                  <div class="row">
-                    <div class="col-md-12 form-group">
-                      <button type="button" class="btn btn-primary px-5">ADD ADDRESS</button>
-                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input type="text" class="form-control" placeholder="Postal/Zip Code">
                   </div>
-                  <div class="row">
-                    <div class="col-12">
-                      <a href="#" onclick="cancel_form('add_address')">Cancel</a>
-                    </div>
+                  <div class="col-md-6 form-group">
+                    <input type="tel" class="form-control" placeholder="Phone">
                   </div>
-                </form>
-              </div>
-              <h2 class="h4 fs-5 mb-2">YOUR ADDRESSES</h2>
-              <p>{{ customer.name }}<br>{{ customer.default_address.country }}</p>
-              {% paginate customer.addresses by 10 %}
-              {% for address in customer.addresses %}
-                {% if address == customer.default_address %}
-                <h2 class="h4 fs-6 mb-2">Default</h2> 
-                {% endif %}
-              {% if address %}<p>{% if address.address1 %}<br> {{ address.addresse1 }}{% endif %}{% if address.address1 %}<br> {{ address.addresse2 }}{% endif %}{% if address.city %} <br> {{ address.city }} {{ address.zip }} {% endif %}{% if address.country %}<br> {{ address.country }}{% endif %}</p>{% endif %}
-              <p>{{ "Edit" | edit_customer_address_link: address.id }} | {{ "Delete" | delete_customer_address_link: address.id }}</p> 
-              <div class="form mb-4" id="{{address.id}}">
-                <h2 class="h4 fs-6 mb-2">Edit Address</h2>
-                {% form 'customer_address', address %}
-                  <div class="row">
-                    <div class="col-md-6 form-group">
-                      <input type="text" placeholder="First Name" class="form-control">
-                    </div>
-                    <div class="col-md-6 form-group">
-                      <input type="text" placeholder="Last Name" class="form-control">
-                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 form-group">
+                    <!--  <input type="checkbox" id="default-address" class="me-3"> -->
+                    {{ form.set_as_default_checkbox }}
+                    <label for="default-address">Set as default address</label>
                   </div>
-                  <div class="row">
-                    <div class="col-md-12 form-group">
-                      <input type="text" placeholder="Company" class="form-control">
-                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 form-group">
+                    <button type="button" class="btn btn-primary px-5">UPDATE ADDRESS</button>
                   </div>
-                  <div class="row">
-                    <div class="col-md-12 form-group">
-                      <input type="text" placeholder="Address1" class="form-control">
-                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <a href="#" onclick="cancel_form('edit_address_default')">Cancel</a>
                   </div>
-                  <div class="row">
-                    <div class="col-md-12 form-group">
-                      <input type="text" placeholder="Address2" class="form-control">
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-12 form-group">
-                      <input type="text" placeholder="city" class="form-control">
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-12 form-group">
-                      <select name="Country/Region" class="form-control">
-                        <option value="Albania">Albania</option>
-                        <option value="Albania2">Albania2</option>
-                        <option value="Albania3">Albania3</option>
-                        <option value="Albania4">Albania4</option>
-                        <option value="Albania5">Albania5</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-12 form-group">
-                      <select name="Province" class="form-control">
-                        <option value="England">England</option>
-                        <option value="England1">England1</option>
-                        <option value="England2">England2</option>
-                        <option value="England3">England3</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6 form-group">
-                      <input type="text" class="form-control" placeholder="Postal/Zip Code">
-                    </div>
-                    <div class="col-md-6 form-group">
-                      <input type="tel" class="form-control" placeholder="Phone">
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12 form-group">
-                      <!--  <input type="checkbox" id="default-address" class="me-3"> -->
-                      {{ form.set_as_default_checkbox }}
-                      <label for="default-address">Set as default address</label>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12 form-group">
-                      <button type="button" class="btn btn-primary px-5">UPDATE ADDRESS</button>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-12">
-                      <a href="#" onclick="cancel_form('edit_address_default')">Cancel</a>
-                    </div>
-                  </div>
-                {% endform %}
-              </div>
-              {% endfor %}
-              <div id="address_pagination">{{ paginate | default_pagination }}</div>
-              {% endpaginate %}
+                </div>
+              {% endform %}
             </div>
+            {% endfor %}
+            <div id="address_pagination">{{ paginate | default_pagination }}</div>
+            {% endpaginate %}
           </div>
         </div>
       </div>
-      <!-- /section -->
     </div>
-    <!-- /content -->
+    <!-- /section -->
+  </div>
+  <!-- /content -->
 <script type="text/javascript" charset="utf-8">
   // initialize observers on address selectors
   new Shopify.CountryProvinceSelector('address_country_new', 'address_province_new', { hideElement: 'address_province_container_new' });
