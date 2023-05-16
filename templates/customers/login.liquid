@@ -1,5 +1,4 @@
-{% if customer %}
-  {% if customer.id %}
+{% if customer %} 
     {% if customer.logged_in %} 
         {% assign account_page_url = '/account' %}
         <script>
@@ -7,7 +6,6 @@
           window.location.href = "{{ account_page_url }}";
         </script>
     {% endif %}
-  {% endif %}
 {% endif %}
 <!-- content -->
 <div id="content">
