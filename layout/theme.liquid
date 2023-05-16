@@ -39,6 +39,9 @@
   {%- if template == 'index' -%}
     {%- assign body_class = body_class | append: 'home ' -%}
   {%- endif - -%}
+  {%- if template == '404' -%}
+    {%- assign body_class = body_class | append: 'error-404 ' -%}
+  {%- endif - -%}
   {%- comment -%} use this to add extra class to body_class variable {%- endcomment -%}
   {%- comment -%} Use this to add/change layout related class {%- endcomment -%}
   {%- if template == 'blog' or template.suffix == 'corporate' or template == 'article' or template == 'index' or template.suffix == 'our-story' -%}
