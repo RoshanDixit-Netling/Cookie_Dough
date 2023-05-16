@@ -1,13 +1,11 @@
 {% if customer %}
   {% if customer.id %}
-    {% if customer.logged_in %}
-      {% if request.path contains '/account/login' %}
+    {% if customer.logged_in %} 
         {% assign account_page_url = '/account' %}
         <script>
           console.log("{{ account_page_url }}");
           window.location.href = "{{ account_page_url }}";
         </script>
-      {% endif %}
     {% endif %}
   {% endif %}
 {% endif %}
