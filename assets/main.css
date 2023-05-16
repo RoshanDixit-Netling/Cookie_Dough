@@ -5424,6 +5424,14 @@ Spinner
   margin-bottom:45px;
   display:none;
 }
+
+.error-404 a{
+  color: #5586cd;
+}
+
+.error-404 a:hover{
+  color: #672567;
+}
 /* 16-05-23 */
 /*  ==========================================================================
 	Vendor
