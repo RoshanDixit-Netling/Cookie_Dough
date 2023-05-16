@@ -5425,11 +5425,11 @@ Spinner
   display:none;
 }
 
-.error-404 a{
+.error-404 .link1{
   color: #5586cd;
 }
 
-.error-404 a:hover{
+.error-404 .link1:hover{
   color: #672567;
 }
 /* 16-05-23 */
