@@ -10,14 +10,13 @@
               <p>{{ block.settings.silder_text }}</p>
               <a href="{{ section.settings.banner_button_link }}" class="btn btn-primary">{{ section.settings.banner_button_label }}</a>
             </div>
-            {% comment %}
+            
             <figure class="figure1 cover-img">
-              <img class="w-100 h-100" src="{{ section.settings.banner_background_image | image_url }}" alt="{{ section.settings.banner_background_image.alt }}" />
-            </figure>
-            {% endcomment %}
-            <video class="w-100 h-100">
+              {% comment %} <img class="w-100 h-100" src="{{ section.settings.banner_background_image | image_url }}" alt="{{ section.settings.banner_background_image.alt }}" /> {% endcomment %}
+              <video class="w-100 h-100">
               <source src="{{ section.settings.banner_background_video_url }}" type="video/mp4">
             </video>
+            </figure> 
         </div>
       {%- endcase -%}
     {%- endfor -%}
