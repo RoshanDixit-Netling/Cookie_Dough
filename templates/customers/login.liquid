@@ -1,3 +1,15 @@
+{% if customer %}
+  {% if customer.id %}
+    {% if customer.logged_in %}
+      {% if request.path contains '/account/login' %}
+        {% assign account_page_url = '/account' %}
+        <script>
+          window.location.href = "{{ account_page_url }}";
+        </script>
+      {% endif %}
+    {% endif %}
+  {% endif %}
+{% endif %}
 <!-- content -->
 <div id="content">
   <!-- section -->
