@@ -15,6 +15,7 @@
                 <video class="w-100 h-100">
                   <source src="{{ section.settings.banner_background_video_url }}" type="video/mp4">
                 </video>
+                {{ section.settings.banner_background_video_url | video_tag: controls: false, autoplay: true, loop: true, class: 'w-100' }}
               </div>
             {% else %}
               <figure class="figure1 cover-img ">
