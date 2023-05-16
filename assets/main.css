@@ -5422,6 +5422,7 @@ Spinner
   min-width:unset;
   padding-left:35px;
   margin-bottom:45px;
+  display:none;
 }
 /* 16-05-23 */
 /*  ==========================================================================
