@@ -6,6 +6,9 @@
         </script>
   {% endif %}
 {% endif %}
+{%  if request.querystring contains 'reset_password_sent=true' %}
+  {{ 'reset pasword' }}
+{%  endif %}
 <!-- content -->
 <div id="content">
   <!-- section -->
