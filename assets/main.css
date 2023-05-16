@@ -5432,6 +5432,13 @@ Spinner
 .error-404 .link1:hover{
   color: #672567;
 }
+
+.home .page-head2 .video-wrapper{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+}
 /* 16-05-23 */
 /*  ==========================================================================
 	Vendor
