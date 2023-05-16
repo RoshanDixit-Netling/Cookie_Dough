@@ -4,6 +4,7 @@
       {% if request.path contains '/account/login' %}
         {% assign account_page_url = '/account' %}
         <script>
+          console.log("{{ account_page_url }}");
           window.location.href = "{{ account_page_url }}";
         </script>
       {% endif %}
