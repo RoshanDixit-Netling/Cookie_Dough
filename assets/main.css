@@ -5438,6 +5438,7 @@ Spinner
   top:0;
   left:0;
   width:100%;
+  height:100%;
 }
 
 .home .page-head2 .video-wrapper::before{
@@ -5448,6 +5449,9 @@ Spinner
   top:0;
   left:0;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) calc(100% - 150px), rgba(0, 0, 0, 0.38) calc(100% - 60px), rgba(0, 0, 0, 0.5));
+}
+.home .page-head2 .video-wrapper video{
+  object-fit:cover;
 }
 /* 16-05-23 */
 /*  ==========================================================================
