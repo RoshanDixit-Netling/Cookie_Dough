@@ -1,8 +1,9 @@
 {%  if customer %}
   {% if customer.id %}
-  <script>
-    console.log("write");
-  </script>
+    {% assign account_page_url = '/account' %}
+        <script>
+          window.location.href = "{{ account_page_url }}";
+        </script>
   {% endif %}
 {% endif %}
 <!-- content -->
