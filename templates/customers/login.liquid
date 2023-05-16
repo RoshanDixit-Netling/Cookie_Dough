@@ -1,7 +1,9 @@
 {%  if customer %}
-<script>
-  console.log("write");
-</script>
+  {% if customer.id %}
+  <script>
+    console.log("write");
+  </script>
+  {% endif %}
 {% endif %}
 <!-- content -->
 <div id="content">
