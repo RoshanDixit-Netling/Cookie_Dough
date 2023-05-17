@@ -4257,7 +4257,7 @@ a,
 .single-product .figure1 .figure,
 .single-product .figure1 img,
 .single-product .figure1 video {
-  height: 349px;
+  max-height: 349px;
 }
 
 .single-product:hover .figure1 .video-overlay {
