@@ -17,7 +17,7 @@
     {%- else if product.featured_media.media_type == "image" -%}
       <img
         class="w-100 {{ image_classes }}"
-        src="{{ product.featured_media | img_url: '500x500' }}"
+        src="{{ product.featured_media | img_url: 'master' }}"
         alt="img">
     {%- endif -%}
     <span class="hover">
