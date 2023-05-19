@@ -1932,6 +1932,48 @@
               "download-pack-title": "",
               "baking-tips": "IMPORTANT! DON'T FORGET TO LOOK AFTER YOUR SKILLET: Please care for your Cast Iron Skillet correctly to avoid it turning orange by following these steps."
             }
+          },
+          "7d71507e-4ff5-4ef8-acbc-f147c46cb896": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "skillets",
+              "tip-content": "Take some Cookie Dough and mould it into the bottom of the pan"
+            }
+          },
+          "2ed90778-1be3-4c65-acb8-0715384ed6fd": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "skillets",
+              "tip-content": "Add the desired sauces or toppings to create the middle filling"
+            }
+          },
+          "cb985501-7d27-4f8a-949e-073fe5f18267": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "skillets",
+              "tip-content": "Flatten out some more Cookie Dough to place on top"
+            }
+          },
+          "89fd0502-3211-40f5-83bf-14d8c2495b14": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "skillets",
+              "tip-content": "Bake at 200°C for 10-12 minutes"
+            }
+          },
+          "ae325ed3-0f02-4f8c-aee0-3aba120802e8": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "skillets",
+              "tip-content": "Leave to cool for 8-10 minutes (Be careful as the skillet will be VERY HOT!)"
+            }
+          },
+          "3b47c26f-9b78-4af1-b29c-f4d7bb92e6d0": {
+            "type": "baking-tips",
+            "settings": {
+              "menu-name": "skillets",
+              "tip-content": "Finish with desired toppings or sauces. We recommend serving with a bit of ice cream!"
+            }
           }
         },
         "block_order": [
@@ -1944,7 +1986,13 @@
           "cf13caf8-40f5-4498-bec1-368cb52b212e",
           "9f487160-fd11-41be-b7e6-de9fff42baeb",
           "e4d974e7-26d7-4f53-b14c-01c4b5ec8343",
-          "40b7aa5a-f516-468d-8e0c-f85cf3592a2d"
+          "40b7aa5a-f516-468d-8e0c-f85cf3592a2d",
+          "7d71507e-4ff5-4ef8-acbc-f147c46cb896",
+          "2ed90778-1be3-4c65-acb8-0715384ed6fd",
+          "cb985501-7d27-4f8a-949e-073fe5f18267",
+          "89fd0502-3211-40f5-83bf-14d8c2495b14",
+          "ae325ed3-0f02-4f8c-aee0-3aba120802e8",
+          "3b47c26f-9b78-4af1-b29c-f4d7bb92e6d0"
         ],
         "settings": {
         }
