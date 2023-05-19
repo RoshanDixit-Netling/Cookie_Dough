@@ -1869,7 +1869,7 @@
             "settings": {
               "menu-name": "bake it yourself",
               "pack-name": "The Famous Five Pack",
-              "pack-download-url": ""
+              "pack-download-url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0620\/4879\/6911\/files\/FamousFiveLeaflet.pdf?v=1684505649"
             }
           },
           "bfd34581-8c62-47a5-900c-3b9feb02c34a": {
@@ -1877,7 +1877,7 @@
             "settings": {
               "menu-name": "bake it yourself",
               "pack-name": "The Special Edition Pack",
-              "pack-download-url": "#"
+              "pack-download-url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0620\/4879\/6911\/files\/SpecialEditionLeaflet.pdf?v=1684505649"
             }
           },
           "a4d0f418-edd7-4c47-a1b1-d85628348d70": {
@@ -1885,15 +1885,7 @@
             "settings": {
               "menu-name": "bake it yourself",
               "pack-name": "The Chocoholics Pack",
-              "pack-download-url": "#"
-            }
-          },
-          "e3446a3a-485b-49bf-8aa5-edfa220039cc": {
-            "type": "download-biy-pack",
-            "settings": {
-              "menu-name": "bake it yourself",
-              "pack-name": "The Vegan BIY Pack",
-              "pack-download-url": "#"
+              "pack-download-url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0620\/4879\/6911\/files\/ChocoholicsLeaflet.pdf?v=1684505649"
             }
           },
           "37477866-cf10-49bc-8407-9f1583339b37": {
@@ -1947,7 +1939,6 @@
           "e1b36779-3327-4d3c-9142-e8590ff61e61",
           "bfd34581-8c62-47a5-900c-3b9feb02c34a",
           "a4d0f418-edd7-4c47-a1b1-d85628348d70",
-          "e3446a3a-485b-49bf-8aa5-edfa220039cc",
           "37477866-cf10-49bc-8407-9f1583339b37",
           "4558d91a-16a8-4be1-8224-34714c3391d3",
           "cf13caf8-40f5-4498-bec1-368cb52b212e",
