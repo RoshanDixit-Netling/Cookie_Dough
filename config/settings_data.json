@@ -1837,37 +1837,16 @@
               "menu-title": "bake it yourself"
             }
           },
-          "1cc505a7-5c8b-44d3-9190-928916250407": {
-            "type": "menu-item",
-            "settings": {
-              "menu-title": "scotch egg"
-            }
-          },
-          "fdef5627-13e3-42fb-bc65-3dd9f4352c94": {
-            "type": "menu-item",
-            "settings": {
-              "menu-title": "stackos"
-            }
-          },
           "e3e0565d-48a3-4678-8e5c-97a87ea96895": {
             "type": "menu-item",
             "settings": {
               "menu-title": "skillets"
             }
-          },
-          "7cfaea42-e76f-417f-a2b7-2a115fdbe5bc": {
-            "type": "menu-item",
-            "settings": {
-              "menu-title": "mississippi love pie"
-            }
           }
         },
         "block_order": [
           "01d7c3ed-6567-41af-ae24-2702166c01f2",
-          "1cc505a7-5c8b-44d3-9190-928916250407",
-          "fdef5627-13e3-42fb-bc65-3dd9f4352c94",
-          "e3e0565d-48a3-4678-8e5c-97a87ea96895",
-          "7cfaea42-e76f-417f-a2b7-2a115fdbe5bc"
+          "e3e0565d-48a3-4678-8e5c-97a87ea96895"
         ],
         "settings": {
         }
