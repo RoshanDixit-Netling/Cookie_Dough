@@ -2890,13 +2890,13 @@ a,
   }
 
   .tabs1.alt .nav {
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: flex-start;
+    justify-content: flex-start;
   }
 
   .tabs1.alt .nav li+li {
-    margin-left: 5px;
+    margin-left: 20px;
   }
 
   .tabs1.alt .nav li button {
