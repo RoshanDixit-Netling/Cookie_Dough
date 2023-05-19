@@ -5453,6 +5453,10 @@ Spinner
 .home .page-head2 .video-wrapper video{
   object-fit:cover;
 }
+
+p {
+    font-weight: 300;
+}
 /* 16-05-23 */
 /*  ==========================================================================
 	Vendor
