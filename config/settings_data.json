@@ -1044,6 +1044,48 @@
               "content_id": "2",
               "content": "Ice Cream! Serve with your own fresh vanilla ice cream for the perfect experience."
             }
+          },
+          "1bef186c-a81a-40ec-a79c-93874e015356": {
+            "type": "additional-info-heading",
+            "settings": {
+              "heading_id": "3",
+              "heading": "What you need"
+            }
+          },
+          "812c32bd-9201-4276-9295-c855bed8e3a0": {
+            "type": "additional-info-content",
+            "settings": {
+              "content_id": "3",
+              "content": "An oven, baking paper and clean washed hands! See the instructional leaflet for more information."
+            }
+          },
+          "a30f13dd-c41a-4445-8464-9abf8078e204": {
+            "type": "additional-info-heading",
+            "settings": {
+              "heading_id": "4",
+              "heading": "Allergen Advice"
+            }
+          },
+          "dc1c50ae-440b-4943-b95b-1f88b2f1c427": {
+            "type": "additional-info-content",
+            "settings": {
+              "content_id": "4",
+              "content": "All of our BIY packs contain MILK (Dairy), WHEAT (Gluten), SOYA and traces of NUTS and traces of EGG as it produced in a factory that contains nuts and eggs. This pack includes Nutella which contains HAZELNUTS."
+            }
+          },
+          "171a0107-f4b5-40ca-b7ba-5133296497e8": {
+            "type": "additional-info-heading",
+            "settings": {
+              "heading_id": "5",
+              "heading": "Storage"
+            }
+          },
+          "0bfbaa0d-c881-4939-a269-ff1a5445cc88": {
+            "type": "additional-info-content",
+            "settings": {
+              "content_id": "5",
+              "content": "COOKIE DOUGH - Place Cookie Dough in the fridge (or freezer) as soon as received. Keep in the fridge for up to 10 days, or freeze it on the first day of receiving it for up to 3 months. Remove from the freezer and store in the fridge for 8 hours before baking."
+            }
           }
         },
         "block_order": [
@@ -1058,7 +1100,13 @@
           "afac8471-390f-4209-a1f0-4645d6a4cc97",
           "27c99eaf-558a-4495-a0e3-19e3b225ce3f",
           "423d7bd5-a50e-441b-b737-3920da563140",
-          "fe006096-dd7d-4486-bd6b-57f728b17171"
+          "fe006096-dd7d-4486-bd6b-57f728b17171",
+          "1bef186c-a81a-40ec-a79c-93874e015356",
+          "812c32bd-9201-4276-9295-c855bed8e3a0",
+          "a30f13dd-c41a-4445-8464-9abf8078e204",
+          "dc1c50ae-440b-4943-b95b-1f88b2f1c427",
+          "171a0107-f4b5-40ca-b7ba-5133296497e8",
+          "0bfbaa0d-c881-4939-a269-ff1a5445cc88"
         ],
         "settings": {
         }
