@@ -68,9 +68,9 @@
   </div>
   {% endif %} {% endcomment %}<br/>
   {% if product.metafields["custom_fields"]["additiobal_information"] != blank %}
-    <div class="custom-accordion color2"> {%- assign i = 1 -%}
+    <div class="custom-accordion color2"> 
     {% for item in product.metafields["custom_fields"]["additiobal_information"] %}
-      <div class="custom-card {% if i == 1 %} active {%- endif -%} {%- assign i = i | plus: 1 -%}">
+      <div class="custom-card">
         {% if item["header"] != blank %}
           <div class="custom-accordion-header">
             {{ item["header"] }}
