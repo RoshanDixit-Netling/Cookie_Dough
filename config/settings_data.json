@@ -1146,7 +1146,7 @@
             "settings": {
               "title_id": "1",
               "faq_question": "What is the allergen information?",
-              "faq_answer": "If you are not using your Cookie Dough immediately, place in the fridge or freezer as soon as you have received your pack. It can be kept in the fridge for up to 10 days, or if stored in the freezer on the first day of receiving for up to 3 months. When you want to use your Cookie Dough remove from the freezer and store in the fridge for 4 hours before baking."
+              "faq_answer": "All products contain WHEAT, GLUTEN, DAIRY, SOYA and MAY CONTAIN TRACES OF NUTS & PEANUTS.\n\nOur Cookie Dough products do not use egg as an ingredient, but may contain traces of egg. It is VEGETARIAN FRIENDLY and HALAL.\n\nOur Stackos contain EGG. \n\nPlease check each product description for specific allergen information, e.g. Nutella contains HAZELNUTS and Peanut Butter products contain PEANUTS. If ordering in store please ask our staff for any allergen advice required."
             }
           },
           "048baf34-3789-42c0-9ef9-4f10712ef704": {
@@ -1154,7 +1154,7 @@
             "settings": {
               "title_id": "1",
               "faq_question": "Do you have Vegan or Gluten-Free products? What about alcohol-free, vegetarian or Halal?",
-              "faq_answer": "If you are not using your Cookie Dough immediately, place in the fridge or freezer as soon as you have received your pack. It can be kept in the fridge for up to 10 days, or if stored in the freezer on the first day of receiving for up to 3 months. When you want to use your Cookie Dough remove from the freezer and store in the fridge for 4 hours before baking."
+              "faq_answer": "Vegan - YES we do! We have our Vegan BIY Pack which is 100% vegan!\n\nGluten-Free - Currently all our products contain Gluten. We are hoping to create some Gluten-Free items in the future. \n\nAlcohol-free\/Vegetarian\/Halal - All of our products are alcohol-free, vegetarian, and Halal. Please note that Stackos do contain free-range eggs, though."
             }
           },
           "dabb7b7d-abfd-4dcd-aad6-911f4cd7d56a": {
@@ -1162,7 +1162,7 @@
             "settings": {
               "title_id": "1",
               "faq_question": "What is the best way to get in touch if I have a question regarding my order?",
-              "faq_answer": "If you are not using your Cookie Dough immediately, place in the fridge or freezer as soon as you have received your pack. It can be kept in the fridge for up to 10 days, or if stored in the freezer on the first day of receiving for up to 3 months. When you want to use your Cookie Dough remove from the freezer and store in the fridge for 4 hours before baking."
+              "faq_answer": "Email is the way to go! Our social media team are unable to action anything relating to orders through a DM or a comment, so please email orders@mycookiedough.com so our customer service team will be able to get back to you. Any order-related DMs will be asked to send our team an email, so to save time, please email us right off the bat and we’ll be happy to help!"
             }
           },
           "f6cef040-6358-4502-8eb8-fc39b59d23aa": {
@@ -1170,7 +1170,7 @@
             "settings": {
               "title_id": "1",
               "faq_question": "Do you offer delivery or takeaway?",
-              "faq_answer": "If you are not using your Cookie Dough immediately, place in the fridge or freezer as soon as you have received your pack. It can be kept in the fridge for up to 10 days, or if stored in the freezer on the first day of receiving for up to 3 months. When you want to use your Cookie Dough remove from the freezer and store in the fridge for 4 hours before baking."
+              "faq_answer": "**PLEASE NOTE: Due to COVID our open stores will be doing takeaway only and Click and Collect may be unavailable for some stores at this time**\n\nAs our product is baked freshly on site we recommend you eat your Cookie Dough when you purchase. However, if you inform our staff you would like to takeaway at the time of your order, we can box it up for you to go. \n\nClick & Collect is available at selected stores, please see the page for more information on how to order.\n\nIf you're looking for Cookie Dough delivered to your door, try one of our BIY or Stacko packs from the online shop."
             }
           },
           "afef90f5-c576-42f5-88e4-27ccc6fa8107": {
@@ -1184,7 +1184,7 @@
             "type": "faq_block",
             "settings": {
               "title_id": "2",
-              "faq_question": "Online Products: Can I swap out a flavour if I don’t like one in the pack?",
+              "faq_question": "Online Products: Can I swap out a flavour if I don't like one in the pack?",
               "faq_answer": "Unfortunately due to our small team during this busy time, we are unable to personalise\/customise any orders. We do hope to offer more personalisation in the future though!"
             }
           },
@@ -1193,7 +1193,7 @@
             "settings": {
               "title_id": "2",
               "faq_question": "How long will it take for my order to arrive?",
-              "faq_answer": "If you are not using your Cookie Dough immediately, place in the fridge or freezer as soon as you have received your pack. It can be kept in the fridge for up to 10 days, or if stored in the freezer on the first day of receiving for up to 3 months. When you want to use your Cookie Dough remove from the freezer and store in the fridge for 4 hours before baking."
+              "faq_answer": "Our current dispatch time for orders is approximately 1-3 working days (Monday-Friday) from the day the order was placed. Once dispatched, all orders should be delivered on a “next-day” DPD service so your treats will arrive perfectly fresh and delicious.\n\nPlease only get in touch with our customer service team if it has been longer than 5 working days (Monday-Friday) since your order was placed."
             }
           },
           "65f4b9e4-e026-4e0c-9ce7-2ab0ab6abb96": {
@@ -1201,7 +1201,7 @@
             "settings": {
               "title_id": "2",
               "faq_question": "Can I add a note to my order as it is a gift for someone?",
-              "faq_answer": "If you are not using your Cookie Dough immediately, place in the fridge or freezer as soon as you have received your pack. It can be kept in the fridge for up to 10 days, or if stored in the freezer on the first day of receiving for up to 3 months. When you want to use your Cookie Dough remove from the freezer and store in the fridge for 4 hours before baking."
+              "faq_answer": "Unfortunately, this is not a service we offer currently. We will send you an email once DPD has received your parcel (meaning it will likely be delivered the following day) and DPD will send you an SMS or email to let you know the 1-hour slot your gift will be delivered to the recipient if you wish to send an e-card or a text message to go along with it."
             }
           },
           "74cbc00f-c222-4046-bf25-7c9b1ed0bf26": {
@@ -1209,7 +1209,7 @@
             "settings": {
               "title_id": "2",
               "faq_question": "I have a question but haven’t heard back from you!",
-              "faq_answer": "If you are not using your Cookie Dough immediately, place in the fridge or freezer as soon as you have received your pack. It can be kept in the fridge for up to 10 days, or if stored in the freezer on the first day of receiving for up to 3 months. When you want to use your Cookie Dough remove from the freezer and store in the fridge for 4 hours before baking."
+              "faq_answer": "Our customer service team is very small, and we are doing our best to get back to everyone within 2 working days, but please bear with us. Please refrain from sending duplicate emails as this only complicates things on our end and may delay you receiving a response. Thank you for your understanding!"
             }
           },
           "481d8b4e-3336-4b8e-a4fc-27f74f277c06": {
@@ -1217,7 +1217,7 @@
             "settings": {
               "title_id": "2",
               "faq_question": "Do you have any tips for baking the Cookie Dough?",
-              "faq_answer": "If you are not using your Cookie Dough immediately, place in the fridge or freezer as soon as you have received your pack. It can be kept in the fridge for up to 10 days, or if stored in the freezer on the first day of receiving for up to 3 months. When you want to use your Cookie Dough remove from the freezer and store in the fridge for 4 hours before baking."
+              "faq_answer": "Yes we do!\n1. Make sure you use baking paper when cooking\n2. Ensure your oven is completely preheated before beginning to bake.\n3. It is a good idea to chill your baking tray before baking - your cookie dough should also be chilled.\n4. Once the cookie dough is slightly golden brown (usually after 8-9 minutes), remove it from the oven. You can use a large spatula to push on the 4 sides to prevent it expanding too much, and to help it keep its ‘square shape’.\n5. Gently (very gently) wriggle the spatula completely under the cookie dough, before transferring to a plate to decorate & EAT!"
             }
           },
           "472bc753-deff-49f7-9fa6-65f080557f36": {
@@ -1225,7 +1225,7 @@
             "settings": {
               "title_id": "2",
               "faq_question": "My Cookie Dough is still soft after extra time in the oven…?",
-              "faq_answer": "If you are not using your Cookie Dough immediately, place in the fridge or freezer as soon as you have received your pack. It can be kept in the fridge for up to 10 days, or if stored in the freezer on the first day of receiving for up to 3 months. When you want to use your Cookie Dough remove from the freezer and store in the fridge for 4 hours before baking."
+              "faq_answer": "Our cookie dough is not like a cookie and is not intended to go hard in the oven. It will always remain soft to touch, even after extra time in the oven! It will be soft on the inside and crispy on the edges\/outside. Our recommended baking time of 8-9 minutes in the oven is a guide and will apply to most ovens. It will only harden up if left to cool down (although it is much better served fresh out of the oven!)"
             }
           }
         },
