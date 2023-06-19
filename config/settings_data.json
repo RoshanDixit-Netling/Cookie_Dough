@@ -188,7 +188,7 @@
           "3f54fad8-b200-464b-8983-aff4722033b1": {
             "type": "store",
             "settings": {
-              "store-image": "shopify:\/\/shop_images\/image1.jpg",
+              "store-image": "shopify:\/\/shop_images\/birmingham.jpg",
               "store-location": "Birmingham",
               "store-address": "<p>Bullring Shopping Centre, Lower Mall (Next to Burger King)<\/p>",
               "timing-label": "OPENING TIMES",
@@ -206,7 +206,7 @@
           "aa8729db-6224-49c4-a156-7de7022458d9": {
             "type": "store",
             "settings": {
-              "store-image": "shopify:\/\/shop_images\/image1.jpg",
+              "store-image": "shopify:\/\/shop_images\/cardiff.jpg",
               "store-location": "Cardiff",
               "store-address": "<p>St Davids Shopping Centre, Mall 2, Floor 1 (towards Debenhams)<\/p>",
               "timing-label": "OPENING TIMES",
@@ -242,7 +242,7 @@
           "f6f687d6-4499-4b67-81a8-477446f319b6": {
             "type": "store",
             "settings": {
-              "store-image": "shopify:\/\/shop_images\/image1.jpg",
+              "store-image": "shopify:\/\/shop_images\/leeds.jpg",
               "store-location": "Leeds",
               "store-address": "<p>My Cookie Dough Cafe Flagship Store, 24 Albion Place, LS1 6JS<\/p>",
               "timing-label": "OPENING TIMES",
@@ -260,7 +260,7 @@
           "b071de58-bb8d-45dd-85cd-1bfa58369472": {
             "type": "store",
             "settings": {
-              "store-image": "shopify:\/\/shop_images\/image1.jpg",
+              "store-image": "shopify:\/\/shop_images\/Liverpool.jpg",
               "store-location": "Liverpool",
               "store-address": "<p>My Cookie Dough Cafe, Unit 88c, Liverpool One, 6 Wall Street<\/p>",
               "timing-label": "OPENING TIMES",
@@ -278,7 +278,7 @@
           "17fbb1f2-6639-4479-923f-a090e9093c4c": {
             "type": "store",
             "settings": {
-              "store-image": "shopify:\/\/shop_images\/image1.jpg",
+              "store-image": "shopify:\/\/shop_images\/gateshead.jpg",
               "store-location": "Gateshead",
               "store-address": "<p>Metro Centre, Lower platinum Mall (next to Game)<\/p>",
               "timing-label": "OPENING TIMES",
