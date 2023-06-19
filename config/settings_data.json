@@ -1959,10 +1959,10 @@
       "franchises-testimonial": {
         "type": "franchises-testimonial",
         "settings": {
-          "reviewers_name": "Jane Smith",
-          "reviewers_position": "Social Media Influencer",
+          "reviewers_name": "Norbert",
+          "reviewers_position": "Owner of MyCookieDough Malta",
           "image": "shopify:\/\/shop_images\/franchise-testimonial.jpg",
-          "review": "<p> “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat” <\/p>"
+          "review": "<p> “Visiting My Cookie Dough way back in 2018, I instantly knew this brand needs to be open in Malta. Fast forward to November 2022 we opened our very first store in Malta's biggest shopping Mall. Working alongside the founders to open this Franchise in Malta was an absolute pleasure of an experience. The Cookie doughs, Milkshakes, Cookies and coffees are all made with love and the response has, without a doubt been stellar” <\/p>"
         }
       },
       "franchises-discovery-call": {
