@@ -313,7 +313,7 @@
         "type": "stores-banner",
         "settings": {
           "heading": "MyCookiedough<sup>r<\/sup><br> Stores",
-          "text": "<p>Indulge in the moment at our <br\/> My Cookie Dough Stores<\/p>",
+          "text": "",
           "button-label": "View all locations",
           "button_url": "#shopify-section-our-stores"
         }
