@@ -1478,7 +1478,7 @@ a,
 .cloud {
   position: absolute;
   width: 100%;
-  background: url("cloud1.svg") no-repeat;
+  background: url("cloud1-flip.svg") no-repeat;
   background-size: auto 100%;
   -webkit-animation-duration: 120s;
   animation-duration: 120s;
