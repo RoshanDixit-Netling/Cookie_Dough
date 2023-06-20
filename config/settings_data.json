@@ -2019,29 +2019,7 @@
           "ff5e3142-6be4-4c8a-80c4-b3d11688dd5f": {
             "type": "job",
             "settings": {
-              "job_title": "Cookie Maker",
-              "job_type": "Part-Time",
-              "short_description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation                ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>",
-              "full_description": "",
-              "button_label": "Read the job description",
-              "button_url": "#"
-            }
-          },
-          "345d7e4e-9665-4464-8e47-c9b169198167": {
-            "type": "job",
-            "settings": {
-              "job_title": "Sales Assistant",
-              "job_type": "Full-Time",
-              "short_description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation                ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>",
-              "full_description": "",
-              "button_label": "Read the job description",
-              "button_url": "#"
-            }
-          },
-          "d6b63923-8f20-4d9a-8e3e-c4191f38964f": {
-            "type": "job",
-            "settings": {
-              "job_title": "Sales Assistant",
+              "job_title": "Store Manager",
               "job_type": "Full-Time",
               "short_description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation                ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>",
               "full_description": "",
@@ -2051,12 +2029,10 @@
           }
         },
         "block_order": [
-          "ff5e3142-6be4-4c8a-80c4-b3d11688dd5f",
-          "345d7e4e-9665-4464-8e47-c9b169198167",
-          "d6b63923-8f20-4d9a-8e3e-c4191f38964f"
+          "ff5e3142-6be4-4c8a-80c4-b3d11688dd5f"
         ],
         "settings": {
-          "heading": "AVAILABLE POSITIONS"
+          "heading": "CURRENT POSITIONS"
         }
       },
       "main-cart": {
