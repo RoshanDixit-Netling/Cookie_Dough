@@ -5463,10 +5463,10 @@ p {
   width:33px;
   height:31px;
 }
-#themesWrapper .splide__slide:nth-child(odd) .postImg{
+#themesWrapper .splide__slide:nth-child(odd) .postTag{
   transform: rotate(5deg);
 }
-#themesWrapper .splide__slide:nth-child(even) .postImg{
+#themesWrapper .splide__slide:nth-child(even) .postTag{
   transform: rotate(-5deg);
 }
 
