@@ -5468,7 +5468,7 @@ p {
 }
 
 #themesWrapper .splide__slide .postTag{
- margin-right: 25px;
+ margin-right: 35px;
     height: 235px !important;
     border-radius: 10px !important;
 }
@@ -5482,14 +5482,15 @@ p {
   #themesWrapper .splide__slide{
   width:33.33% !important;
 }
+  #themesWrapper .splide__slide .postTag{
+    margin-right:16px;
+  }
 }
 @media (max-width:767px){
   #themesWrapper .splide__slide{
   width:50% !important;
 }
-  #themesWrapper .splide__slide .postTag{
-    margin-right:6px;
-  }
+
 }
 /* 20-06-23 */
 /*  ==========================================================================
