@@ -5468,7 +5468,7 @@ p {
 }
 
 #themesWrapper .splide__slide .postTag{
- margin-right: 35px;
+ margin-right: 25px;
     height: 235px !important;
     border-radius: 10px !important;
 }
@@ -5484,7 +5484,7 @@ p {
   width:33.33% !important;
 }
   #themesWrapper .splide__slide .postTag{
-    margin-right:16px;
+    margin-right:6px;
   }
 }
 @media (max-width:767px){
