@@ -5472,10 +5472,10 @@ p {
     height: 235px !important;
     border-radius: 10px !important;
 }
-#themesWrapper .splide__slide:nth-child(odd) .postTag,#themesWrapper .splide__slide:nth-child(even) .postImg img{
+#themesWrapper .splide__slide:nth-child(odd) .postTag{
   transform: rotate(5deg);
 }
-#themesWrapper .splide__slide:nth-child(even) .postTag,#themesWrapper .splide__slide:nth-child(odd) .postImg img{
+#themesWrapper .splide__slide:nth-child(even) .postTag{
   transform: rotate(-5deg);
 }
 
