@@ -5472,12 +5472,13 @@ p {
     height: 235px !important;
     border-radius: 10px !important;
 }
-#themesWrapper .splide__slide:nth-child(odd) .postTag{
+#themesWrapper .splide__slide:nth-child(odd) .postTag,#themesWrapper .splide__slide:nth-child(odd) .postImg img{
   transform: rotate(5deg);
 }
-#themesWrapper .splide__slide:nth-child(even) .postTag{
+#themesWrapper .splide__slide:nth-child(even) .postTag,#themesWrapper .splide__slide:nth-child(even) .postImg img{
   transform: rotate(-5deg);
 }
+
 @media (max-width:991px){
   #themesWrapper .splide__slide{
   width:33.33% !important;
