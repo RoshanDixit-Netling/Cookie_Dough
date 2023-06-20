@@ -5466,6 +5466,7 @@ p {
 #themesWrapper .splide__list{
   margin-bottom:80px !important;
 }
+
 #themesWrapper .splide__slide .postTag{
  margin-right: 25px;
     height: 235px !important;
@@ -5477,7 +5478,11 @@ p {
 #themesWrapper .splide__slide:nth-child(even) .postTag{
   transform: rotate(-5deg);
 }
-
+@media (max-width:991px){
+  #themesWrapper .splide__slide{
+  width:33.33% !important;
+}
+}
 /* 20-06-23 */
 /*  ==========================================================================
 	Vendor
