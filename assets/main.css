@@ -5483,6 +5483,11 @@ p {
   width:33.33% !important;
 }
 }
+@media (max-width:767px){
+  #themesWrapper .splide__slide{
+  width:50% !important;
+}
+}
 /* 20-06-23 */
 /*  ==========================================================================
 	Vendor
