@@ -5463,6 +5463,9 @@ p {
   width:33px;
   height:31px;
 }
+#themesWrapper .splide__slide .postTag{
+  margin-right:35px;
+}
 #themesWrapper .splide__slide:nth-child(odd) .postTag{
   transform: rotate(5deg);
 }
