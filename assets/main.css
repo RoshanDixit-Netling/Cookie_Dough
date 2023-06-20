@@ -5464,7 +5464,7 @@ p {
   height:31px;
 }
 #themesWrapper .splide__list{
-  margin-bottom:80px;
+  margin-bottom:80px !important;
 }
 #themesWrapper .splide__slide .postTag{
  margin-right: 35px;
