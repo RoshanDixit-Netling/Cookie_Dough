@@ -6,9 +6,8 @@
         {{ section.settings.section_title }}
       </h4>
     </header>
-    <div class="owl-carousel carousel4">
-      <div id="insta-feed"></div>
-     {% comment %} {%- for block in section.blocks -%}
+    <div class="owl-carousel carousel4"> 
+      {%- for block in section.blocks -%}
         {%- case block.type -%}
         {% when 'image_block' %}
         <div class="item">
@@ -17,7 +16,8 @@
           </figure>
         </div>
         {% endcase %}
-      {% endfor %} {% endcomment %}
+      {% endfor %}
+      <div id="insta-feed"></div>
     </div>
     <footer>
       <div class="row justify-content-center px-lg-5">
