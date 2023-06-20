@@ -5463,6 +5463,9 @@ p {
   width:33px;
   height:31px;
 }
+#themesWrapper .splide__list{
+  margin-bottom:80px;
+}
 #themesWrapper .splide__slide .postTag{
  margin-right: 35px;
     height: 235px !important;
