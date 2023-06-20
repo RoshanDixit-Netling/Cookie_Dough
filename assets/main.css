@@ -5487,6 +5487,9 @@ p {
   #themesWrapper .splide__slide{
   width:50% !important;
 }
+  #themesWrapper .splide__slide .postTag{
+    margin-right:16px;
+  }
 }
 /* 20-06-23 */
 /*  ==========================================================================
