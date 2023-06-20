@@ -5463,6 +5463,13 @@ p {
   width:33px;
   height:31px;
 }
+#themesWrapper .splide__slide:nth-child(odd) .postImg{
+  transform: rotate(5deg);
+}
+#themesWrapper .splide__slide:nth-child(even) .postImg{
+  transform: rotate(-5deg);
+}
+
 /* 20-06-23 */
 /*  ==========================================================================
 	Vendor
