@@ -5484,7 +5484,7 @@ p {
   width:33.33% !important;
 }
   #themesWrapper .splide__slide .postTag{
-    margin-right:6px;
+    margin-right:0px;
   }
 }
 @media (max-width:767px){
