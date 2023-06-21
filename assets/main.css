@@ -1967,8 +1967,8 @@ a,
 .slideshow2 .slick-slide img {
   -webkit-filter: drop-shadow(10px 14px 20px rgba(103, 37, 103, 0.3));
   filter: drop-shadow(10px 14px 20px rgba(103, 37, 103, 0.3));
-  -webkit-animation: bounce 5s ease-in-out infinite;
-  animation: bounce 5s ease-in-out infinite;
+/*   -webkit-animation: bounce 5s ease-in-out infinite;
+  animation: bounce 5s ease-in-out infinite; */
 }
 
 .slideshow2-nav .thumb-img {
