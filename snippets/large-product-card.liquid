@@ -7,6 +7,7 @@
 {%- endif -%}
 <div class="col-lg-4 col-md-6 column single-product">
   <div class="figure1 {{ figure_classes }}">
+    <a href="{{ product.url }}">
     {%- if product.featured_media.media_type == "video" -%}
       <img
         class="w-100 {{ image_classes }}"
@@ -19,6 +20,7 @@
         src="{{ product.featured_media | img_url: 'master' }}"
         alt="img">
     {%- endif -%}
+    </a>
     <span class="hover">
       <a href="#" class="btn btn-outline-primary bg-color1 btn-sm add-to-cart" data-product-id="{{ product.variants.first.id }}">Add to cart</a>
     </span>
