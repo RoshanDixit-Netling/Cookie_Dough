@@ -1275,37 +1275,37 @@
           "bd78181c-e32c-4e95-a4bc-d8c29fac75ca": {
             "type": "review_block",
             "settings": {
-              "reviewers_name": "Jane Smith",
-              "review": "<p>This is the Best Cookie Dough you can buy. It’s beyond amazing!<\/p>",
+              "reviewers_name": "Miracule Okorie",
+              "review": "<p>I’ve been going to my cookie dough every week for the past 5 years and it gets better every time. My favourite is the kinder and Nutella with smarties, brownies pieces and salted Carmel sauce. I really recommend the Nutella milkshake if you’re looking to get a drink instead<\/p>",
               "reviewers_position": "Social Media Influencer",
-              "reviewers_image": "shopify:\/\/shop_images\/image29.jpg"
+              "reviewers_image": "shopify:\/\/shop_images\/miracule-testimonial.jpg"
             }
           },
           "2bd90e43-97e6-4f71-9e7c-f6083fd170a6": {
             "type": "review_block",
             "settings": {
-              "reviewers_name": "Jane Smith",
-              "review": "<p>This is the Best Cookie Dough you can buy. It’s beyond amazing!<\/p>",
+              "reviewers_name": "Soraya",
+              "review": "<p>MyCookieDough is one of the best dessert shops I have been to! The Kinder cookie dough is my go-to whenever I'm out shopping - the flavours just melt in your mouth, especially with the ice cream!<\/p>",
               "reviewers_position": "Social Media Influencer",
-              "reviewers_image": "shopify:\/\/shop_images\/image30.jpg"
+              "reviewers_image": "shopify:\/\/shop_images\/soraya-testimonial.jpg"
             }
           },
           "df4e4c44-367e-4fa5-ae04-ff37ac42b5f3": {
             "type": "review_block",
             "settings": {
-              "reviewers_name": "Jane Smith",
-              "review": "<p>This is the Best Cookie Dough you can buy. It’s beyond amazing!<\/p>",
+              "reviewers_name": "Camille",
+              "review": "<p>If you have a little bit of a sweet tooth like I do, you have to try MyCookieDough. The cookie dough is so soft yet crispy at the same time and they're super generous with toppings. I recommend the Caramelised Biscuit Stack!<\/p>",
               "reviewers_position": "Social Media Influencer",
-              "reviewers_image": "shopify:\/\/shop_images\/image31.jpg"
+              "reviewers_image": "shopify:\/\/shop_images\/camille.jpg"
             }
           },
           "8334fc2d-b7e5-413a-bfc3-043c6038f38d": {
             "type": "review_block",
             "settings": {
-              "reviewers_name": "Jane Smith",
-              "review": "<p>This is the Best Cookie Dough you can buy. It’s beyond amazing!<\/p>",
+              "reviewers_name": "Amy and Callum",
+              "review": "<p>MyCookieDough is our go to treat! We love sharing one of their stacks or getting a milkshake each, the milkshakes are delicious, super creamy and full of flavour!<\/p>",
               "reviewers_position": "Social Media Influencer",
-              "reviewers_image": "shopify:\/\/shop_images\/image32.jpg"
+              "reviewers_image": "shopify:\/\/shop_images\/amy-and-callum.jpg"
             }
           }
         },
