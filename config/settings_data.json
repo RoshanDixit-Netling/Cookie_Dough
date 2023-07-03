@@ -167,24 +167,6 @@
       "our-stores": {
         "type": "our-stores",
         "blocks": {
-          "f6c99c3e-428c-4d8d-9a90-e7784c4c307e": {
-            "type": "store",
-            "settings": {
-              "store-image": "shopify:\/\/shop_images\/image1.jpg",
-              "store-location": "LONDON",
-              "store-address": "<p>Westfield London White City, First Floor (near Primark)<\/p>",
-              "timing-label": "OPENING TIMES",
-              "mon-timing": "9:00 AM - 6:00 PM",
-              "tue-timing": "9:00 AM - 6:00 PM",
-              "wed-timing": "9:00 AM - 6:00 PM",
-              "thu-timing": "9:00 AM - 6:00 PM",
-              "fri-timing": "9:00 AM - 6:00 PM",
-              "sat-timing": "9:00 AM - 6:00 PM",
-              "sun-timing": "11:00 AM - 5:00 PM",
-              "button-label": "Get Directions",
-              "button-url": "https:\/\/www.google.com\/maps\/dir\/\/First+Floor,+MyCookieDough+Westfield+London+(Shepherd's+Bush),+My+Cookie+Dough,+Westfield+London+Shopping+Centre+Ariel+Way,+Kiosk+2204,+London+W12+7HT\/@51.5089036,-0.2473829,14.62z\/data=!3m1!5s0x48760fd07c4faf0d:0x55f0c588f4d12046!4m9!4m8!1m0!1m5!1m1!1s0x48760f6ca24c99bf:0x26d9ea2533eca428!2m2!1d-0.2218485!2d51.509084!3e0"
-            }
-          },
           "3f54fad8-b200-464b-8983-aff4722033b1": {
             "type": "store",
             "settings": {
@@ -224,7 +206,7 @@
           "9d5fa986-6de8-4918-8069-2c9872608695": {
             "type": "store",
             "settings": {
-              "store-image": "shopify:\/\/shop_images\/image1.jpg",
+              "store-image": "shopify:\/\/shop_images\/TRAFFORD.jpg",
               "store-location": "Manchester",
               "store-address": "<p>The Trafford Centre, Ground Floor (next to Footlocker)<\/p>",
               "timing-label": "OPENING TIMES",
@@ -295,7 +277,6 @@
           }
         },
         "block_order": [
-          "f6c99c3e-428c-4d8d-9a90-e7784c4c307e",
           "3f54fad8-b200-464b-8983-aff4722033b1",
           "aa8729db-6224-49c4-a156-7de7022458d9",
           "9d5fa986-6de8-4918-8069-2c9872608695",
@@ -1601,6 +1582,7 @@
           "a469c80d-ad06-4432-a6f8-65e7d6fae25a"
         ],
         "settings": {
+          "section_title": "International Stores"
         }
       },
       "how-to-bake-it-menu": {
