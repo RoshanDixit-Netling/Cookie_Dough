@@ -6,7 +6,8 @@
         {%- when 'banner_slide_block' -%}
           <div class="item">
             <div class="content-wrapper">
-              <img class="mx-auto" src="{{ block.settings.slide_image | image_url }}" alt="{{ block.settings.slide_image.alt }}" />
+              {% comment %} <img class="mx-auto" src="{{ block.settings.slide_image | image_url }}" alt="{{ block.settings.slide_image.alt }}" /> {% endcomment %}
+              {% if block.settings.slide_text != empty %}<h1 class="display-1 alt">{{ block.settings.slide_text }}</h1>{% endif %}
               <p>{{ block.settings.silder_text }}</p>
               <a href="{{ section.settings.banner_button_link }}" class="btn btn-primary">{{ section.settings.banner_button_label }}</a>
             </div>
@@ -58,10 +59,15 @@
       "type": "banner_slide_block",
       "name": "Banner Slide Block",
       "settings": [
+        // {
+        //   "type": "image_picker",
+        //   "label": "Slide Image",
+        //   "id": "slide_image"
+        // },
         {
-          "type": "image_picker",
-          "label": "Slide Image",
-          "id": "slide_image"
+          "type": "text",
+          "label": "Slide Heading Text",
+          "id": "slide_text"
         },
         {
           "type": "textarea",
