@@ -1450,6 +1450,7 @@
           },
           "ed55418d-57f1-4d8f-86ed-6102ad3b53c9": {
             "type": "tab_menu",
+            "disabled": true,
             "settings": {
               "tab_menu_label": "MyCookies",
               "tab_menu_id": "mycookies"
@@ -1457,6 +1458,7 @@
           },
           "f90f2f39-84a3-4f62-bbed-1b7be86b3e30": {
             "type": "content",
+            "disabled": true,
             "settings": {
               "tab_menu_id": "mycookies",
               "content": "<p>After launching the UKs most successful cookie dough company My Cookie Dough was bombarded with requests for a baked cookie offering so customers could enjoy My Cookie Dough’s innovative and indulgent flavours anywhere at any time.<\/p>"
@@ -1464,6 +1466,7 @@
           },
           "bfbbcbc4-b9df-429a-8c6b-a3ec599ebbc2": {
             "type": "image_with_content",
+            "disabled": true,
             "settings": {
               "tab_menu_id": "mycookies",
               "image": "shopify:\/\/shop_images\/mycookies-story.jpg",
@@ -1473,6 +1476,7 @@
           },
           "15d4acb9-72bf-41a2-bfc3-a26469d47134": {
             "type": "only_image",
+            "disabled": true,
             "settings": {
               "tab_menu_id": "mycookies",
               "image": "shopify:\/\/shop_images\/cookies.jpg"
@@ -1480,6 +1484,7 @@
           },
           "a26a0fe4-2ecc-4320-b0a1-83d95c4b0d26": {
             "type": "justified_content",
+            "disabled": true,
             "settings": {
               "tab_menu_id": "mycookies",
               "content": "<p>Our cookies will never be bland and boring, you’ll always have something new and innovative to try. Want a flavour? Just request it. Drop us a line on Instagram or TikTok.<\/p>",
