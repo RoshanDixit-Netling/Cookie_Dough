@@ -1420,30 +1420,30 @@
             "type": "content",
             "settings": {
               "tab_menu_id": "my-cookie-dough",
-              "content": "<p>Our sweet-toothed founders met at university and instantly connected over their passion for all things food. One evening, after trying to find a delicious dessert for movie night, they found themself stumped. There was nothing available that would satisfy their desire for something warm, sweet and indulgent.<\/p>"
+              "content": "<p>It all started when two University students studying Food Science met and bonded over their shared love for sweet treats, especially cookies! <br\/>They would spend their Friday evenings whipping up batches of homemade cookie dough, with different flavours, and toppings to indulge in the soft baked cookies with ice cream. They couldn’t understand why this delicious combo wasn’t readily available in the market. And so, the idea of MyCookieDough came to life.<\/p>"
             }
           },
           "2b730fec-2b54-4742-86e1-18df09f303bf": {
             "type": "image_with_content",
             "settings": {
               "tab_menu_id": "my-cookie-dough",
-              "image": "shopify:\/\/shop_images\/story-cookie-dough.jpg",
-              "upper_content": "<p>They then began thinking up their dream dessert offering, and found they both had the knack and passion for creating delicious things, and so they set out to bless the world with something truly mouth-watering.<\/p>",
-              "bottom_content": "<p>Following weeks of testing, creating, tasting and perfecting like mad scientists they emerged, covered in crumbs and dusted with sugar, they had done it! The perfect cookie dough, which was nothing like the world had seen before. With a top secret recipe (hush hush!) and a one of a kind baking method, My Cookie Dough was born.<\/p>"
+              "image": "shopify:\/\/shop_images\/founders.jpg",
+              "upper_content": "<p>Their mission was clear: to create a place where people could pause from their busy lives and indulge in the most mouth-watering, freshly baked cookies & cookie dough.<\/p>",
+              "bottom_content": "<p>After over a year of hard work, they opened up their first store in 2014 in Cardiff and quickly gained a reputation for irresistible treats.<br\/>They then faced their first challenge of finding a bakery that could replicate their vision for cookie dough. Undeterred, they took matters into their own hands and established their own bakery in the southwest of England. With an unwavering commitment to top-quality ingredients and innovative methods, they earned a reputation for producing the most delicious and indulgent cookie dough, and the brand grew exponentially. MyCookieDough soon became the go-to destination for cookie lovers throughout the UK. As they expanded, both nationally and internationally, they maintained their original bakery and perfected their unique techniques.<\/p>"
             }
           },
           "5942257c-27f6-4c46-ac51-44bd001d7d2b": {
             "type": "only_image",
             "settings": {
               "tab_menu_id": "my-cookie-dough",
-              "image": "shopify:\/\/shop_images\/image35.jpg"
+              "image": "shopify:\/\/shop_images\/story-large.jpg"
             }
           },
           "9f063ee9-9a7b-4a2b-9450-222f10661637": {
             "type": "justified_content",
             "settings": {
               "tab_menu_id": "my-cookie-dough",
-              "content": "<p>Our cookie dough is freshly baked, soft, gooey and makes tastebuds squeal in delight. We’ve set out to play in the world of desserts, with the sole purple-wrapped mission of putting big smiles on faces. We bake our cookie dough with endless joy, so that your day can be just that little bit better.<\/p>",
+              "content": "<p>Today, MyCookieDough is not just a brand; it is a heartfelt passion. The founders love for desserts, sweet treats, and cookies remains the driving force behind everything they do. Each day, they strive to create the ultimate cookie experience for their customers, reminiscent of the very moment it all began in their kitchen. Whether you find yourself in London, Qatar, or anywhere in between, you can indulge in the same delightful cookie dough that started their journey.<br\/> <br\/><br\/>So go ahead and indulge, because at MyCookieDough, it's not just about the cookie—it's about the moment.<\/p>",
               "button_label": "Visit Our Stores",
               "button_link": "shopify:\/\/pages\/stores"
             }
