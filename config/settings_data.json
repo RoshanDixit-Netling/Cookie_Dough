@@ -4,22 +4,22 @@
       "header": {
         "type": "header",
         "blocks": {
-          "d079aa56-ee86-449e-9180-68f3696a4a44": {
-            "type": "image",
-            "settings": {
-              "block-image": "shopify:\/\/shop_images\/ChocoholicsBIY04_1080x_bb18f92a-8bfd-47b1-a9d8-befac4bf9c59.webp"
-            }
-          },
           "fd79da6d-ed81-4fb4-b69d-18de276f7a8d": {
             "type": "image",
             "settings": {
               "block-image": "shopify:\/\/shop_images\/mycookies-story.jpg"
             }
+          },
+          "d079aa56-ee86-449e-9180-68f3696a4a44": {
+            "type": "image",
+            "settings": {
+              "block-image": "shopify:\/\/shop_images\/ChocoholicsBIY04_1080x_bb18f92a-8bfd-47b1-a9d8-befac4bf9c59.webp"
+            }
           }
         },
         "block_order": [
-          "d079aa56-ee86-449e-9180-68f3696a4a44",
-          "fd79da6d-ed81-4fb4-b69d-18de276f7a8d"
+          "fd79da6d-ed81-4fb4-b69d-18de276f7a8d",
+          "d079aa56-ee86-449e-9180-68f3696a4a44"
         ],
         "settings": {
           "menu-heading": "<small>SHOP<\/small> MY COOKIE DOUGH <br> My COOKIES",
