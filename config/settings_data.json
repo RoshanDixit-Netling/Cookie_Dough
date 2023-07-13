@@ -1514,8 +1514,8 @@
           "bc14d3e1-bead-4e9d-b229-59e672781cd2": {
             "type": "map_pin",
             "settings": {
-              "store_name": "Prague, Czech Republic",
-              "place_name": "Westfield Chodov, Praha",
+              "store_name": "Belgium",
+              "place_name": "Geel",
               "coords": "608,201,615,203,619,206,619,215,614,220,613,235,610,236,607,218,601,212,604,206,615,203,620,207"
             }
           },
@@ -1562,8 +1562,8 @@
           "a40e42eb-3d8c-4a7c-b7d8-587a087aca29": {
             "type": "map_pin",
             "settings": {
-              "store_name": "Prague, Czech Republic 7",
-              "place_name": "Westfield Chodov, Praha",
+              "store_name": "Oman",
+              "place_name": "Salalah Gardens Mall",
               "coords": "777,341,781,332,791,332,796,339,793,346,789,351,787,372,783,351,777,343"
             }
           },
