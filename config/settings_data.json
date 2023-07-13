@@ -1530,7 +1530,7 @@
           "69e253b9-d138-4b4b-8707-73ddac29973d": {
             "type": "map_pin",
             "settings": {
-              "store_name": "Cyprus",
+              "store_name": "Cyprus x 2",
               "place_name": "Ayia Napa & Protaras",
               "coords": "705,269,716,273,717,280,711,287,708,310,705,287,698,280"
             }
@@ -1554,8 +1554,8 @@
           "4966e9ea-765c-46b0-a4f8-f10f6ab1c664": {
             "type": "map_pin",
             "settings": {
-              "store_name": "Prague, Czech Republic 6",
-              "place_name": "Westfield Chodov, Praha",
+              "store_name": "Qatar, Doha x 4",
+              "place_name": "The Gate Mall, Lusail Food Arena, Monoprix – The Pearl, Monoprix – Iconic 2022, Monoprix – Doha Festival City",
               "coords": "771,329,771,318,777,313,782,318,782,326,777,331,772,347,768,324"
             }
           },
