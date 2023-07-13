@@ -1587,7 +1587,8 @@
           "a469c80d-ad06-4432-a6f8-65e7d6fae25a"
         ],
         "settings": {
-          "section_title": "International Stores"
+          "section_title": "International Stores",
+          "map_image": "shopify:\/\/shop_images\/new-map.svg"
         }
       },
       "how-to-bake-it-menu": {
