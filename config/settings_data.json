@@ -1847,77 +1847,68 @@
           "d3d064d8-a4c1-462f-a7b3-0feb69e22313": {
             "type": "map_pin",
             "settings": {
-              "store_name": "Prague, Czech Republic",
-              "place_name": "Westfield Chodov, Praha",
-              "coords": "608,201,615,203,619,206,619,215,614,220,613,235,610,236,607,218,601,212,604,206,615,203,620,207"
+              "store_name": "Belgium",
+              "place_name": "Geel",
+              "coords": "604,200,614,205,614,215,607,222,605,233,599,218,597,206,615,209"
             }
           },
-          "1401c4b1-9a78-4fab-89bd-1ec9356d050b": {
+          "29cd8346-1b8f-4fed-bd87-a49ed9b5bdaa": {
             "type": "map_pin",
             "settings": {
-              "store_name": "Prague, Czech Republic-2",
-              "place_name": "Westfield Chodov, Praha-2",
-              "coords": "656,201,663,205,663,213,657,220,656,237,653,238,650,221,646,213,648,203,659,202"
+              "store_name": "New Pin",
+              "place_name": "",
+              "coords": "646,267,655,270,655,283,650,288,648,302,644,285,638,273"
             }
           },
           "4976457f-2fcd-4c78-aa9e-aeea00085c4d": {
             "type": "map_pin",
             "settings": {
-              "store_name": "Prague, Czech Republic-3",
-              "place_name": "Westfield Chodov, Praha-3",
-              "coords": "705,269,716,273,717,280,711,287,708,310,705,287,698,280"
+              "store_name": "Cyprus x 2",
+              "place_name": "Ayia Napa & Protaras",
+              "coords": "703,272,714,273,716,282,710,290,708,304,703,288,697,279"
             }
           },
           "a82dc6a1-b3b3-40b4-9d07-4bd755e3418f": {
             "type": "map_pin",
             "settings": {
-              "store_name": "Prague, Czech Republic-4",
-              "place_name": "Westfield Chodov, Praha-4",
-              "coords": "714,296,719,288,729,291,729,302,722,308,723,321,720,320,716,303"
+              "store_name": "Jordan x 2",
+              "place_name": "Abdoun & Khalda",
+              "coords": "712,296,719,288,730,292,731,303,724,307,722,322,715,305"
             }
           },
           "c26ff0f7-e207-4bf1-96c1-b2af082c8038": {
             "type": "map_pin",
             "settings": {
-              "store_name": "Prague, Czech Republic-5",
-              "place_name": "Westfield Chodov, Praha-5",
-              "coords": "775,312,770,317,769,324,768,339,761,323,757,313,760,306,769,305"
+              "store_name": "Qatar, Doha x 4",
+              "place_name": "The Gate Mall, Lusail Food Arena, Monoprix – The Pearl, Monoprix – Iconic 2022, Monoprix – Doha Festival City",
+              "coords": "762,312,775,310,779,322,772,329,771,342,764,326,760,321,767,310"
             }
           },
           "a4877fee-cbda-4bc3-be14-a0df522e095c": {
             "type": "map_pin",
             "settings": {
-              "store_name": "Prague, Czech Republic-6",
-              "place_name": "Westfield Chodov, Praha-6",
-              "coords": "771,329,771,318,777,313,782,318,782,326,777,331,772,347,768,324"
+              "store_name": "Oman",
+              "place_name": "Salalah Gardens Mall",
+              "coords": "779,336,789,331,797,339,791,350,787,365,783,351,778,346"
             }
           },
           "9584247c-5f7c-4712-8878-6ce7a0f5bc9c": {
             "type": "map_pin",
             "settings": {
-              "store_name": "Prague, Czech Republic-7",
-              "place_name": "Westfield Chodov, Praha-7",
-              "coords": "777,341,781,332,791,332,796,339,793,346,789,351,787,372,783,351,777,343"
-            }
-          },
-          "2353f213-fc17-46e7-9798-090228c9a149": {
-            "type": "map_pin",
-            "settings": {
-              "store_name": "Prague, Czech Republic-8",
-              "place_name": "Westfield Chodov, Praha-8",
-              "coords": "978,387,990,385,992,395,989,402,985,422,979,405,975,397"
+              "store_name": "Malaysia Kuala Lumpur",
+              "place_name": "Publika Shopping Gallery",
+              "coords": "975,393,983,387,992,393,991,403,984,409,983,422,977,406,975,401"
             }
           }
         },
         "block_order": [
           "d3d064d8-a4c1-462f-a7b3-0feb69e22313",
-          "1401c4b1-9a78-4fab-89bd-1ec9356d050b",
+          "29cd8346-1b8f-4fed-bd87-a49ed9b5bdaa",
           "4976457f-2fcd-4c78-aa9e-aeea00085c4d",
           "a82dc6a1-b3b3-40b4-9d07-4bd755e3418f",
           "c26ff0f7-e207-4bf1-96c1-b2af082c8038",
           "a4877fee-cbda-4bc3-be14-a0df522e095c",
-          "9584247c-5f7c-4712-8878-6ce7a0f5bc9c",
-          "2353f213-fc17-46e7-9798-090228c9a149"
+          "9584247c-5f7c-4712-8878-6ce7a0f5bc9c"
         ],
         "settings": {
           "heading": "My Cookie Dough Around The World",
