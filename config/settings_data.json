@@ -909,8 +909,8 @@
       "instore-menu": {
         "type": "instore-menu",
         "settings": {
-          "instore-menu-title": "Instore Menu",
-          "instore-menu-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.<\/p>",
+          "instore-menu-title": "",
+          "instore-menu-content": "",
           "menu-image": "shopify:\/\/shop_images\/MCD_WebsiteMenu_23.png"
         }
       },
