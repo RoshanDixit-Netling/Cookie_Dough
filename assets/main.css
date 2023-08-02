@@ -5505,7 +5505,7 @@ p {
   }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
-  #page-head.page-head2 h1.display1 {
+  #page-head.page-head2 h1.display-1 {
     font-size: 90px !important;
  }
 }
