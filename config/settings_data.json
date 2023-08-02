@@ -1985,22 +1985,6 @@
       },
       "jobs-listing": {
         "type": "jobs-listing",
-        "blocks": {
-          "ff5e3142-6be4-4c8a-80c4-b3d11688dd5f": {
-            "type": "job",
-            "settings": {
-              "job_title": "Store Manager",
-              "job_type": "Full-Time",
-              "short_description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation                ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>",
-              "full_description": "",
-              "button_label": "Read the job description",
-              "button_url": "#"
-            }
-          }
-        },
-        "block_order": [
-          "ff5e3142-6be4-4c8a-80c4-b3d11688dd5f"
-        ],
         "settings": {
           "heading": "CURRENT POSITIONS"
         }
