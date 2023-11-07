@@ -261,24 +261,6 @@
               "button-label": "Get Directions",
               "button-url": "https:\/\/www.google.co.uk\/maps\/dir\/\/MyCookieDough+Liverpool,+My+Cookie+Dough,+6+Wall+St,+Liverpool+L1+8JQ\/@53.4036569,-2.9917964,15.79z\/data=!3m1!5s0x487b212f052d3063:0x38cb8419488b4935!4m9!4m8!1m0!1m5!1m1!1s0x487b2166affd4d23:0x8f284c30507fdc14!2m2!1d-2.9866828!2d53.4043588!3e0?hl=en"
             }
-          },
-          "17fbb1f2-6639-4479-923f-a090e9093c4c": {
-            "type": "store",
-            "settings": {
-              "store-image": "shopify:\/\/shop_images\/gateshead.jpg",
-              "store-location": "Gateshead",
-              "store-address": "<p>Metro Centre, Lower platinum Mall (next to Game)<\/p>",
-              "timing-label": "OPENING TIMES",
-              "mon-timing": "9:00 AM - 6:00 PM",
-              "tue-timing": "9:00 AM - 6:00 PM",
-              "wed-timing": "9:00 AM - 6:00 PM",
-              "thu-timing": "9:00 AM - 6:00 PM",
-              "fri-timing": "9:00 AM - 6:00 PM",
-              "sat-timing": "9:00 AM - 6:00 PM",
-              "sun-timing": "11:00 AM - 5:00 PM",
-              "button-label": "Get Directions",
-              "button-url": "https:\/\/www.google.co.uk\/maps\/dir\/\/Metrocentre,+Gateshead\/@54.9572077,-1.6765019,14.97z\/data=!3m1!5s0x487b212f052d3063:0x38cb8419488b4935!4m9!4m8!1m0!1m5!1m1!1s0x487e7778969b7f2b:0x651a7690a537ea1c!2m2!1d-1.6654297!2d54.9566878!3e0?hl=en"
-            }
           }
         },
         "block_order": [
@@ -286,8 +268,7 @@
           "aa8729db-6224-49c4-a156-7de7022458d9",
           "9d5fa986-6de8-4918-8069-2c9872608695",
           "f6f687d6-4499-4b67-81a8-477446f319b6",
-          "b071de58-bb8d-45dd-85cd-1bfa58369472",
-          "17fbb1f2-6639-4479-923f-a090e9093c4c"
+          "b071de58-bb8d-45dd-85cd-1bfa58369472"
         ],
         "settings": {
           "more-store-label": "More UK Stores opening soon!",
