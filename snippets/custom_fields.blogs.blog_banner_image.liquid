@@ -1,0 +1,8 @@
+{% if blog.metafields["custom_fields"]["blog_banner_image"] != blank %}
+  <div class="custom-field custom-field__blog-banner-image custom-field__type--image">
+    <h3 class="custom-field--title">Blog Banner Image</h3>
+    <div class="custom-field--value">  
+      {% render 'cf-image' with image: blog.metafields["custom_fields"]["blog_banner_image"] %}
+    </div>
+  </div>
+{% endif %}

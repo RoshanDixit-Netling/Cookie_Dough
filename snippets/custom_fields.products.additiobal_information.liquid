@@ -1,0 +1,31 @@
+{% if product.metafields["custom_fields"]["additiobal_information"] != blank %}
+  <div class="custom-field custom-field__additiobal-information custom-field__type--field-collection-json">
+    <h3 class="custom-field--title">Additiobal Information</h3>
+    <div class="custom-field--value">
+      {% for item in product.metafields["custom_fields"]["additiobal_information"] %}
+        <div class="fc-item fc-index--{{ forloop.index0 }}">
+           {% if item["header"] != blank %}
+             <div class="fc-field field__header field-type--text">
+               <h4 class="custom-field--title">Additional Information Heading</h4>
+               <div class="custom-field--value">
+                 {{ item["header"] }}
+               </div>
+             </div>
+           {% endif %}
+           {% if item["information"] != blank %}
+             <div class="fc-field field__information field-type--text-repeater">
+               <h4 class="custom-field--title">Additional Information</h4>
+               <div class="custom-field--value">
+                 {% for repeater_item in item["information"] %}
+                   <div class="repeater-item repeater-item--text">
+                     {{ repeater_item["information"] }}
+                   </div>
+                 {% endfor %}
+               </div>
+             </div>
+           {% endif %}
+         </div>
+       {% endfor %}
+    </div>
+  </div>
+{% endif %}
