@@ -1,14 +1,7 @@
 <div class="col-lg-4 col-md-6 column">
   <article class="post single-post">
     <figure class="figure1">
-      {% comment %}
-      <img
-        class="w-100"
-        src="{{ article.image | image_url }}"
-        alt="img">{% endcomment %}
-        {% if article.metafields["custom_fields"]["banner_image"] != blank %}
-          <img class="w-100" src={{ article.metafields["custom_fields"]["banner_image"] | image_url }} >
-      {% endif %}
+      <img class="w-100" src="{{ article.image | image_url }}" alt="img">
     </figure>
     <div class="content">
       <span class="post-date">{{ article.created_at | date: " %d %b %Y" }}</span>
