@@ -16,12 +16,7 @@
       alt="img">
       {% endcomment %}
       {% if article.metafields["custom_fields"]["banner_image"] != blank %}
-        <div class="custom-field custom-field__banner-image custom-field__type--image">
-          <h3 class="custom-field--title">Banner Image</h3>
-          <div class="custom-field--value">  
-            {% render 'cf-image' with image: article.metafields["custom_fields"]["banner_image"] %}
-          </div>
-        </div>
+            {% render 'cf-image' with image: IMAGE, print: "url", size: "1920x1080", crop: "center" %}
       {% endif %}
   </figure>
 </div>
