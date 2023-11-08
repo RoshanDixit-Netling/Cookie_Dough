@@ -16,7 +16,7 @@
       alt="img">
       {% endcomment %}
       {% if article.metafields["custom_fields"]["banner_image"] != blank %}
-            {% render 'cf-image' with image: IMAGE, print: "url", size: "1920x1080", crop: "center" %}
+            {% render 'cf-image' with image: article.metafields["custom_fields"]["banner_image"], print: "url", size: "1920x1080", crop: "center" %}
       {% endif %}
   </figure>
 </div>
