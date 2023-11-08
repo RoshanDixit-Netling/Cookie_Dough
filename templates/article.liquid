@@ -9,10 +9,15 @@
     </div>
   </div>
   <figure class="figure1 cover-img">
+    {% comment %}
     <img
       class="w-100"
-      src="{{ article.image }}"
+      src="{{ article.image | image_url }}"
       alt="img">
+      {% endcomment %}
+      {% if article.metafields["custom_fields"]["banner_image"] != blank %}
+        <img class="w-100" src={{ article.metafields["custom_fields"]["banner_image"] | image_url }} >
+      {% endif %}
   </figure>
 </div>
 <!-- /page head --->
