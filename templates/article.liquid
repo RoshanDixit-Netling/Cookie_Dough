@@ -16,7 +16,7 @@
       alt="img">
       {% endcomment %}
       {% if article.metafields["custom_fields"]["banner_image"] != blank %}
-        <img class="w-100" src={{ article.metafields["custom_fields"]["banner_image"] | image_url }} >
+        <img class="w-100" src={{ article.metafields["custom_fields"]["banner_image"] }} >
       {% endif %}
   </figure>
 </div>
