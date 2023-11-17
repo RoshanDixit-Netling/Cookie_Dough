@@ -22,3 +22,34 @@
   </div>
 </div>
 <!-- /section -->
+
+{% schema %}
+{
+  "name": "Newsletter",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "textarea",
+      "label": "Heading Text",
+      "id": "heading_text"
+    },
+    {
+      "type": "textarea",
+      "label": "Subheading",
+      "id": "subheading"
+    }
+  ],
+  "blocks": [],
+  "presets": [
+    {
+      "name": "My New Section"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
