@@ -143,3 +143,5 @@ function hidePopup() {
   }
 }
 /* !to auto hide successfull and error popup */
+
+console.log(window.location.href);
