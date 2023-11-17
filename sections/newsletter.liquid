@@ -13,14 +13,8 @@
       <div class="col-lg-8 col-xl-7 pt-4">
         <div class="form email-form">
           {%- form 'customer' -%}
-            <input
-              type="email"
-              class="form-control"
-              placeholder="Email" />
-            <input
-              type="submit"
-              class="btn btn-primary"
-              value="Submit" />
+            <input type="email" name="contact[email]" class="form-control" placeholder="Email" />
+            <input type="submit" class="btn btn-primary" value="Submit" />
           {% endform %}
         </div>
       </div>
