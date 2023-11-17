@@ -145,11 +145,11 @@ function hidePopup() {
 /* !to auto hide successfull and error popup */
 const searchParams = new URLSearchParams(window.location.search);
  if( searchParams.get('contact_posted') === true ){
-   $('#success').html("Contact From submitted Successfully");
+   $('#success').html("<p> Contact From submitted Successfully.</p>");
    $('#success').addClass('active');
    hidePopup();
  } else if( searchParams.get('contact_posted') === false ){
-  $('#error').html("Failed to Submit Form. Please try again.");
+  $('#error').html("<p> Failed to Submit Form. Please try again.</p>");
    $('#error').addClass('active');
    hidePopup();
  }
