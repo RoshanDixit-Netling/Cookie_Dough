@@ -143,6 +143,7 @@ function hidePopup() {
   }
 }
 /* !to auto hide successfull and error popup */
+/* show popups when form is submitted or failed */
 const searchParams = new URLSearchParams(window.location.search);
  if( searchParams.get('contact_posted') == "true" ){
    $('#success').html("<p> Contact From submitted Successfully.</p>");
@@ -153,3 +154,4 @@ const searchParams = new URLSearchParams(window.location.search);
    $('#error').addClass('active');
    hidePopup();
  }
+/* show popups when form is submitted or failed */
