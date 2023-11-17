@@ -143,5 +143,5 @@ function hidePopup() {
   }
 }
 /* !to auto hide successfull and error popup */
-
-console.log(window.location.pathname);
+const searchParams = new URLSearchParams(window.location.search);
+console.log( searchParams );
