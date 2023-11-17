@@ -145,5 +145,5 @@ function hidePopup() {
 /* !to auto hide successfull and error popup */
 const searchParams = new URLSearchParams(window.location.search);
  if( searchParams.has('contact_posted') && searchParams.get('contact_posted') ){
-   console.log("work here");
+   
 }
