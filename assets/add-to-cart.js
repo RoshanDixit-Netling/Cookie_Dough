@@ -148,4 +148,8 @@ const searchParams = new URLSearchParams(window.location.search);
    $('#success').html("Contact From submitted Successfully");
    $('#success').addClass('active');
    hidePopup();
-}
+} else {
+  $('#error').html("Failed to Submit Form. Please try again.");
+   $('#error').addClass('active');
+   hidePopup();
+ }
