@@ -12,7 +12,7 @@
       </div>
       <div class="col-lg-8 col-xl-7 pt-4">
         <div class="form email-form">
-          <form action="#">
+          {%- form 'customer' -%}
             <input
               type="email"
               class="form-control"
@@ -21,7 +21,7 @@
               type="submit"
               class="btn btn-primary"
               value="Submit" />
-          </form>
+          {% endform %}
         </div>
       </div>
     </div>
