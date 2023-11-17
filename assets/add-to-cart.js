@@ -145,5 +145,7 @@ function hidePopup() {
 /* !to auto hide successfull and error popup */
 const searchParams = new URLSearchParams(window.location.search);
  if( searchParams.has('contact_posted') && searchParams.get('contact_posted') ){
-   
+   $('#success').html("Contact From submitted Successfully");
+   $('#success').addClass('active');
+   hidePopup();
 }
