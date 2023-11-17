@@ -1383,6 +1383,8 @@
       "newsletter": {
         "type": "newsletter",
         "settings": {
+          "heading_text": "Get 15% OFF your first order when you sign up",
+          "subheading": "Subscribe to our newsletter to be first to hear about latest news, dough-licious recipes and exclusive offers!"
         }
       },
       "our-story-banner": {
