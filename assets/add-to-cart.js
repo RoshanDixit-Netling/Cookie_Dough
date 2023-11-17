@@ -144,4 +144,4 @@ function hidePopup() {
 }
 /* !to auto hide successfull and error popup */
 const searchParams = new URLSearchParams(window.location.search);
-console.log( console.log(searchParams.has('contact_posted')) );
+console.log(searchParams.has('contact_posted'));
