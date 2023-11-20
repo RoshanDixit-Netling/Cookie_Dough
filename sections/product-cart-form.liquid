@@ -1,3 +1,20 @@
+
+  {{ product.options.size }}
+  <div>
+    {% if product.options.size > 1 %}
+      <div class="variation-options">
+        {% for option in product.options %}
+          <label>{{ option }}</label>
+          <select name="{{ option | handle }}" id="{{ option | handle }}">
+            {% for value in product.variants[0].options %}
+              <option value="{{ value }}">{{ value }}</option>
+            {% endfor %}
+          </select>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+
 <footer>
   <div class="row">
     <div class="col-lg-6">
