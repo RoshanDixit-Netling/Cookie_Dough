@@ -8,6 +8,10 @@
   {% for option in product.options_with_values %}
     {{ option.name | escape }}
     {% assign option_index = forloop.index %}
+      {% for variant in product.variants %}
+
+      {% endfor %}
+    
     {% comment %}
     {% for value in option.values %}
       {% assign variant_label_state = true %}
