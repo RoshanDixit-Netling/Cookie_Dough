@@ -1,6 +1,6 @@
 
 {% for variant in product.variants %}
-  {{ variant.title | json }}
+  {{ variant | json }}
   <!-- <p>Variant ID: {{ variant.id }}</p> -->
 {% endfor %}
 
@@ -10,7 +10,7 @@
     {% assign option_index = forloop.index %}
       {% for variant in product.variants %}
         <input type="radio" value="{{ variant.id }}" class="single-option-selector__radio{% unless variant_label_state %} disabled{% endunless %}" >
-        <label for="ProductSelect-option-{{ variant.title | handleize }}-{{ value | escape }}"{% unless variant_label_state %} class="disabled"{% endunless %}>{{ value | escape }}</label>
+        <label for="ProductSelect-option-{{ variant.title | handleize }}-{{ variant.title | escape }}"{% unless variant_label_state %} class="disabled"{% endunless %}>{{ value | escape }}</label>
       {% endfor %}
     
     {% comment %}
