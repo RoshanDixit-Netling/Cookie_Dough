@@ -23,8 +23,8 @@
 
 <footer>
   <div class="row">
-      {{ product.options_with_values.size }}
       {% for option in product.options_with_values %}
+        {{ option.values.size }}
         <label>{{ option.name }}</label>
         <div>
           {% for value in option.values %}
