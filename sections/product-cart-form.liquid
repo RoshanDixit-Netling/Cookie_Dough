@@ -65,14 +65,15 @@
     var variantMatches = false;
     var selectedVariantId = null;
     var productVariants = {{ product.variants | json }};
-    console.log(productVariants);
-    {% for variant in productVariants %}
+    $.each( productVariants , function( index, value ) {
+      console.log( index + ": " + value );
+    });
       if (selectedOption === "{{ variant.title }}") {
         selectedVariantId = "{{ variant.id }}";
         variantMatches = true;
         // break;
       }
-    {% endfor %}
+
 
     if (variantMatches) {
       console.log(selectedVariantId);
