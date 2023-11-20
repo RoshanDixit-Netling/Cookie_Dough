@@ -54,8 +54,6 @@
 
 
 <script>
-(function($){
-
   document.addEventListener('change', function (event) {
     if (event.target.type === 'radio' && event.target.name !== 'id') {
       updateSelectedVariant();
@@ -67,9 +65,9 @@
     var variantMatches = false;
     var selectedVariantId = null;
     var productVariants = {{ product.variants | json }};
-    $.each( productVariants , function( index, value ) {
-      console.log( index + ": " + value );
-    });
+      productVariants.forEach( function(currentElement){
+        console.log(currentElement);
+      });
       if (selectedOption === "{{ variant.title }}") {
         selectedVariantId = "{{ variant.id }}";
         variantMatches = true;
@@ -84,7 +82,6 @@
 
   updateSelectedVariant();
 
-}(jQuery));
 </script>
 
 {% schema %}
