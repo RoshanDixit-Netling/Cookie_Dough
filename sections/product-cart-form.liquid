@@ -25,27 +25,78 @@
   <div class="row">
     {% if product.options.size > 1 %}
       {% for option in product.options_with_values %}
-        <select name="{{ option.name }}">
+        <label>{{ option.name }}</label>
+        <div>
           {% for value in option.values %}
-            <option value="{{ value }}">{{ value }}</option>
+            <input type="radio"
+                   name="{{ option.name | handle }}"
+                   value="{{ value }}"
+                   data-option="{{ option.name }}"
+                   data-value="{{ value }}">
+            {{ value }}
           {% endfor %}
-        </select>
+        </div>
       {% endfor %}
     {% endif %}
 
-    {% for variant in product.variants %}
-      <div class="col-lg-6">
-        <form method="post" action="/cart/add">
-          <input type="hidden" name="id" value="{{ variant.id }}">
-          <button type="submit" class="btn btn-outline-primary w-100 mb-3 add-to-cart" data-product-id="{{ variant.id }}">Add to cart</button>
-        </form>
-      </div>
-      <div class="col-lg-6">
-        <a href="#" class="btn btn-primary w-100 mb-3 buy-now-button" data-product-id="{{ variant.id }}">Buy it now</a>
-      </div>
-    {% endfor %}
+    <div class="col-lg-6">
+      <form method="post" action="/cart/add">
+        <input type="hidden" id="selected-variant-id" name="id" value="{{ product.variants.first.id }}">
+        <button type="submit" class="btn btn-outline-primary w-100 mb-3 add-to-cart" data-product-id="{{ product.variants.first.id }}">Add to cart</button>
+      </form>
+    </div>
+    <div class="col-lg-6">
+      <a href="#" class="btn btn-primary w-100 mb-3 buy-now-button" data-product-id="{{ product.variants.first.id }}">Buy it now</a>
+    </div>
   </div>
 </footer>
+
+<script>
+  document.addEventListener('change', function (event) {
+    if (event.target.type === 'radio' && event.target.name !== 'id') {
+      updateSelectedVariant();
+    }
+  });
+
+  function updateSelectedVariant() {
+    var selectedOptions = {};
+    var selectedVariantId = null;
+
+    {% for option in product.options_with_values %}
+      var optionName = '{{ option.name | handle }}';
+      var selectedOption = document.querySelector('input[name="' + optionName + '"]:checked');
+
+      if (selectedOption) {
+        selectedOptions[optionName] = selectedOption.value;
+      }
+    {% endfor %}
+
+    {% for variant in product.variants %}
+      var variantMatches = true;
+      {% for option in product.options %}
+        var optionName = '{{ option.name | handle }}';
+        if (selectedOptions[optionName] !== '{{ variant[optionName] }}') {
+          variantMatches = false;
+        }
+      {% endfor %}
+
+      if (variantMatches) {
+        selectedVariantId = '{{ variant.id }}';
+        break;
+      }
+    {% endfor %}
+
+    document.getElementById('selected-variant-id').value = selectedVariantId;
+    document.querySelector('.add-to-cart').setAttribute('data-product-id', selectedVariantId);
+    document.querySelector('.buy-now-button').setAttribute('data-product-id', selectedVariantId);
+  }
+
+  // Initialize selected variant on page load
+  updateSelectedVariant();
+</script>
+
+
+
 {% schema %}
   {
     "name": "Product Main Section",
