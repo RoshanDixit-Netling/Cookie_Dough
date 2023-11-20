@@ -1,9 +1,9 @@
-
+{% comment %}
 {% for variant in product.variants %}
   {{ variant | json }}
   <!-- <p>Variant ID: {{ variant.id }}</p> -->
 {% endfor %}
-
+{% endcomment %}
 
 {% unless product.has_only_default_variant %}
   {% for option in product.options_with_values %}
