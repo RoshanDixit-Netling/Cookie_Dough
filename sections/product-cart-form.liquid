@@ -8,7 +8,7 @@
 {% unless product.has_only_default_variant %}
   {% for option in product.options_with_values %}
     {{ option.name | escape }}
-    
+    {{ option | json }}
     {% assign option_index = forloop.index %}
     {% for value in option.values %}
       {% assign variant_label_state = true %}
