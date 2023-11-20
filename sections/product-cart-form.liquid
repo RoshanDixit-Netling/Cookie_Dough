@@ -32,6 +32,54 @@
     
   {% endfor %}
 {% endunless %}
+
+
+
+
+{% unless product.has_only_default_variant %}
+  {% for option in product.options_with_values %}
+    {{ option.name | escape }}
+    
+    {% assign option_index = forloop.index %}
+    {% for value in option.values %}
+      {% assign variant_label_state = true %}
+      {% if product.options.size == 1 %}
+        {% unless product.variants[forloop.index0].available %}
+          {% assign variant_label_state = false %}
+        {% endunless %}
+      {% endif %}
+      <input type="radio"
+        {% if option.selected_value == value %} checked="checked"{% endif %}
+        {% unless variant_label_state %} disabled="disabled"{% endunless %}
+        value="{{ value | escape }}"
+        data-index="option{{ option_index }}"
+        name="option{{ option.position }}"
+        class="single-option-selector__radio{% unless variant_label_state %} disabled{% endunless %}"
+        id="ProductSelect-option-{{ option.name | handleize }}-{{ value | escape }}" product-variation-id="">
+      <label for="ProductSelect-option-{{ option.name | handleize }}-{{ value | escape }}"{% unless variant_label_state %} class="disabled"{% endunless %}>{{ value | escape }}</label>
+    {% endfor %}
+
+    {% endfor %}
+    {% for variant in product.variants %}
+      {% assign variant_label_state = true %}
+      {% if product.options.size > 1 %}
+        {% for option in product.options %}
+          {% unless variant.available and option.values contains variant[option.name] %}
+            {% assign variant_label_state = false %}
+          {% endunless %}
+        {% endfor %}
+      {% endif %}
+      <input type="radio"
+        {% if product.selected_variant.id == variant.id %} checked="checked"{% endif %}
+        {% unless variant_label_state %} disabled="disabled"{% endunless %}
+        value="{{ variant.id | escape }}"
+        data-index="variant"
+        name="variant"
+        class="single-option-selector__radio{% unless variant_label_state %} disabled{% endunless %}"
+        id="ProductSelect-variant-{{ variant.id }}" product-variation-id="{{ variant.id }}">
+      <label for="ProductSelect-variant-{{ variant.id }}"{% unless variant_label_state %} class="disabled"{% endunless %}>{{ variant.title | escape }}</label>
+    {% endfor %}
+{% endunless %}
 <footer>
   <div class="row">
     <input type="hidden" id="product-variation-id" value="{{ product.variants.first.id }}" />
