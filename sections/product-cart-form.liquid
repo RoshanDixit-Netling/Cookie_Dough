@@ -86,7 +86,7 @@
         break;
       }
     {% endfor %}
-
+    console.log(selectedVariantId);
     document.getElementById('selected-variant-id').value = selectedVariantId;
     document.querySelector('.add-to-cart').setAttribute('data-product-id', selectedVariantId);
     document.querySelector('.buy-now-button').setAttribute('data-product-id', selectedVariantId);
