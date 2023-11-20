@@ -1,6 +1,6 @@
 
 {% for variant in product.variants %}
-  <p>Selected Variant ID: {{ product.selected_variant.id }}</p>
+  {{ variant | json }}
   <!-- <p>Variant ID: {{ variant.id }}</p> -->
 {% endfor %}
 
