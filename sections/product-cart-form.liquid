@@ -67,8 +67,9 @@
     var productVariants = {{ product.variants | json }};
       productVariants.forEach( function(currentElement){
         if (selectedOption === currentElement.title ) {
-          selectedVariantId = "{{ variant.id }}";
+          selectedVariantId = currentElement.id;
           variantMatches = true;
+          console.log(selectedVariantId);
           // break;
         }
       });
