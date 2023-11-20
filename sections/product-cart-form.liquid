@@ -67,7 +67,6 @@
     {% for option in product.options_with_values %}
       var optionName = '{{ option.name | handle }}';
       var selectedOption = document.querySelector('input[name="' + optionName + '"]:checked');
-      console.log(selectedOption);
       if (selectedOption) {
         selectedOptions[optionName] = selectedOption.value;
       }
@@ -77,6 +76,7 @@
       var variantMatches = true;
       {% for option in product.options %}
         var optionName = '{{ option.name | handle }}';
+    console.log(optionName);
         if (selectedOptions[optionName] !== '{{ variant[optionName] }}') {
           variantMatches = false;
         }
