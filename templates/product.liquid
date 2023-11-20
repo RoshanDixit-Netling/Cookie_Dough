@@ -60,47 +60,6 @@
             <footer>
               <div class="row">
                 <div class="col-lg-6">
-                  {% comment %} added 20-11-2023 {% endcomment %}
-                    {% unless product.has_only_default_variant %}
-                {% for option in product.options_with_values %}
-                  <div class="radio-wrapper js product-form__item">
-                    <label class="single-option-radio__label"
-                      for="ProductSelect-option-{{ forloop.index0 }}">
-                      {{ option.name | escape }}
-                    </label>
-                    {% if section.settings.product_selector == 'radio' %}
-                      <fieldset class="single-option-radio"
-                        id="ProductSelect-option-{{ forloop.index0 }}">
-                        {% assign option_index = forloop.index %}
-                        {% for value in option.values %}
-                          {% assign variant_label_state = true %}
-                          {% if product.options.size == 1 %}
-                            {% unless product.variants[forloop.index0].available  %}
-                              {% assign variant_label_state = false %}
-                            {% endunless %}
-                          {% endif %}
-                          <input type="radio"
-                            {% if option.selected_value == value %} checked="checked"{% endif %}
-                            {% unless variant_label_state %} disabled="disabled"{% endunless %}
-                            value="{{ value | escape }}"
-                            data-index="option{{ option_index }}"
-                            name="option{{ option.position }}"
-                            class="single-option-selector__radio{% unless variant_label_state %} disabled{% endunless %}"
-                            id="ProductSelect-option-{{ option.name | handleize }}-{{ value | escape }}">
-                          <label for="ProductSelect-option-{{ option.name | handleize }}-{{ value | escape }}"{% unless variant_label_state %} class="disabled"{% endunless %}>{{ value | escape }}</label>
-                        {% endfor %}
-                      </fieldset>
-                    {% else %}
-                      <select class="single-option-selector__radio single-option-selector-{{ section.id }} product-form__input" id="SingleOptionSelector-{{ forloop.index0 }}" data-index="option{{ forloop.index }}">
-                        {% for value in option.values %}
-                          <option value="{{ value | escape }}"{% if option.selected_value == value %} selected="selected"{% endif %}>{{ value | escape }}</option>
-                        {% endfor %}
-                      </select>
-                    {% endif %}
-                  </div>
-                {% endfor %}
-              {% endunless %}
-                  {% comment %} added 20-11-2023 {% endcomment %}
                   {% comment %} <form method="post" action="/cart/add"> {% endcomment %}
                   <button
                     type="submit"
