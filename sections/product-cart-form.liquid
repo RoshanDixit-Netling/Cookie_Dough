@@ -18,9 +18,20 @@
         data-index="option{{ option_index }}"
         name="option{{ option.position }}"
         class="single-option-selector__radio{% unless variant_label_state %} disabled{% endunless %}"
-        id="ProductSelect-option-{{ option.name | handleize }}-{{ value | escape }}" product-variation-id="{{ variant_label_state }}">
+        id="ProductSelect-option-{{ option.name | handleize }}-{{ value | escape }}" product-variation-id="{{ va }}">
       <label for="ProductSelect-option-{{ option.name | handleize }}-{{ value | escape }}"{% unless variant_label_state %} class="disabled"{% endunless %}>{{ value | escape }}</label>
-    {% endfor %}
+
+      <input type="radio"
+    {% if product.selected_variant.id == variant.id %} checked="checked"{% endif %}
+    {% unless variant_label_state %} disabled="disabled"{% endunless %}
+    value="{{ variant.id | escape }}"
+    data-index="variant"
+    name="variant"
+    class="single-option-selector__radio{% unless variant_label_state %} disabled{% endunless %}"
+    id="ProductSelect-variant-{{ variant.id }}" product-variation-id="{{ variant.id }}">
+<label for="ProductSelect-variant-{{ variant.id }}"{% unless variant_label_state %} class="disabled"{% endunless %}>{{ variant.title | escape }}</label>
+      
+      {% endfor %}
 
     {% comment %}
     <select class="single-option-selector__radio single-option-selector-{{ section.id }} product-form__input" id="SingleOptionSelector-{{ forloop.index0 }}" data-index="option{{ forloop.index }}">
