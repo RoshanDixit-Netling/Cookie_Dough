@@ -1,37 +1,4 @@
-{% unless product.has_only_default_variant %}
-  {% for option in product.options_with_values %}
-    {{ option.name | escape }}
-    {% assign option_index = forloop.index %}
-    
-    {% for value in option.values %}
-      {% assign variant_label_state = true %}
-      {% if product.options.size == 1 %}
-        {% unless product.variants[forloop.index0].available  %}
-          {% assign variant_label_state = false %}
-        {% endunless %}
-      {% endif %}
-      <input type="radio"
-        {% if option.selected_value == value %} checked="checked"{% endif %}
-        {% unless variant_label_state %} disabled="disabled"{% endunless %}
-        value="{{ value | escape }}"
-        data-index="option{{ option_index }}"
-        name="option{{ option.position }}"
-        class="single-option-selector__radio{% unless variant_label_state %} disabled{% endunless %}"
-        id="ProductSelect-option-{{ option.name | handleize }}-{{ value | escape }}" product-variation-id="{{ va }}">
-      <label for="ProductSelect-option-{{ option.name | handleize }}-{{ value | escape }}"{% unless variant_label_state %} class="disabled"{% endunless %}>{{ value | escape }}</label>
-      {% endfor %}
-    
-    {% comment %}
-    <select class="single-option-selector__radio single-option-selector-{{ section.id }} product-form__input" id="SingleOptionSelector-{{ forloop.index0 }}" data-index="option{{ forloop.index }}">
-      {% for value in option.values %}
-        <option value="{{ value | escape }}"{% if option.selected_value == value %} selected="selected"{% endif %}>{{ value | escape }}</option>
-      {% endfor %}
-    </select>
-    {% endcomment %}
-    
-  {% endfor %}
-{% endunless %}
-
+<!--
 <footer>
   <div class="row">
     <input type="hidden" id="product-variation-id" value="{{ product.variants.first.id }}" />
@@ -52,7 +19,33 @@
     </div>
   </div>
 </footer>
+-->
 
+<footer>
+  <div class="row">
+    {% if product.options.size > 1 %}
+      {% for option in product.options_with_values %}
+        <select name="{{ option.name }}">
+          {% for value in option.values %}
+            <option value="{{ value }}">{{ value }}</option>
+          {% endfor %}
+        </select>
+      {% endfor %}
+    {% endif %}
+
+    {% for variant in product.variants %}
+      <div class="col-lg-6">
+        <form method="post" action="/cart/add">
+          <input type="hidden" name="id" value="{{ variant.id }}">
+          <button type="submit" class="btn btn-outline-primary w-100 mb-3 add-to-cart" data-product-id="{{ variant.id }}">Add to cart</button>
+        </form>
+      </div>
+      <div class="col-lg-6">
+        <a href="#" class="btn btn-primary w-100 mb-3 buy-now-button" data-product-id="{{ variant.id }}">Buy it now</a>
+      </div>
+    {% endfor %}
+  </div>
+</footer>
 {% schema %}
   {
     "name": "Product Main Section",
