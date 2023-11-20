@@ -23,7 +23,6 @@
 
 <footer>
   <div class="row">
-    {{ product.options | json }}
     {% if product.options > 1 %}
       {% for option in product.options_with_values %}
         <label>{{ option.name }}</label>
