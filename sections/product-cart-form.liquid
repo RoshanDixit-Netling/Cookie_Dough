@@ -64,12 +64,12 @@
     var selectedOption = document.querySelector('input[name="pick-an-amount"]:checked').value;
     var variantMatches = false;
     var selectedVariantId = null;
-
+    var productVariants = {{ product.variants | json }};
     {% for variant in product.variants %}
       if (selectedOption === "{{ variant.title }}") {
         selectedVariantId = "{{ variant.id }}";
         variantMatches = true;
-        break; // Use JavaScript 'break' here
+        break;
       }
     {% endfor %}
 
