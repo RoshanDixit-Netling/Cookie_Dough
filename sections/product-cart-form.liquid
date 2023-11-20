@@ -3,7 +3,15 @@
     {{ option.name | escape }}
     {% assign option_index = forloop.index %}
       {% for variant in product.variants %}
-          {{ variant | json }}
+      <input type="radio"
+        {% if option.selected_value == value %} checked="checked"{% endif %}
+        {% unless variant_label_state %} disabled="disabled"{% endunless %}
+        value="{{ value | escape }}"
+        data-index="option{{ option_index }}"
+        name="option{{ option.position }}"
+        class="single-option-selector__radio{% unless variant_label_state %} disabled{% endunless %}"
+        id="ProductSelect-option-{{ option.name | handleize }}-{{ value | escape }}" product-variation-id="{{ va }}">
+      <label for="ProductSelect-option-{{ option.name | handleize }}-{{ value | escape }}"{% unless variant_label_state %} class="disabled"{% endunless %}>{{ value | escape }}</label>
       {% endfor %}
     
     {% comment %}
