@@ -64,7 +64,7 @@ function updateSelectedVariant() {
 
   {% for variant in product.variants %}
     var variantMatches = false;
-    console.log( {{variant.title | handle }});
+    console.log( {{variant.title | strip_html }});
   {% endfor %}
   
 }
