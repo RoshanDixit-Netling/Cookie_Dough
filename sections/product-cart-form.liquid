@@ -58,40 +58,41 @@
       updateSelectedVariant();
     }
   });
+  
+function updateSelectedVariant() {
+  var selectedOptions = {};
+  var selectedVariantId = null;
 
-  function updateSelectedVariant() {
-    console.log("updateSelectedVariant");
-    var selectedOptions = {};
-    var selectedVariantId = null;
+  {% for option in product.options_with_values %}
+    var optionName = '{{ option.name | handle }}';
+    var selectedOption = document.querySelector('input[name="' + optionName + '"]:checked');
 
-    {% for option in product.options_with_values %}
-      var optionName = '{{ option.name | handle }}';
-      var selectedOption = document.querySelector('input[name="' + optionName + '"]:checked');
-      if (selectedOption) {
-        selectedOptions[optionName] = selectedOption.value;
+    if (selectedOption) {
+      selectedOptions[optionName] = selectedOption.value;
+    }
+  {% endfor %}
+
+  {% for variant in product.variants %}
+    var variantMatches = true;
+    {% for option in product.options %}
+      var optionName = '{{ option.name }}';
+      if (selectedOptions[optionName] !== '{{ variant[optionName] }}') {
+        variantMatches = false;
       }
     {% endfor %}
 
-    {% for variant in product.variants %}
-      var variantMatches = true;
-      {% for option in product.options %}
-        var optionName = '{{ option.name }}';
+    if (variantMatches) {
+      selectedVariantId = '{{ variant.id }}';
+      break; // exit the loop once a matching variant is found
+    }
+  {% endfor %}
 
-        console.log( {{ option.title | json }} );
-        if ( selectedOptions[optionName] !== '{{ variant[optionName] }}') {
-          variantMatches = false;
-        }
-      {% endfor %}
-      console.log(variantMatches);
-      if (variantMatches) {
-        selectedVariantId = '{{ variant.id }}';
-      }
-    {% endfor %}
-    console.log(selectedVariantId);
-    document.getElementById('selected-variant-id').value = selectedVariantId;
-    document.querySelector('.add-to-cart').setAttribute('data-product-id', selectedVariantId);
-    document.querySelector('.buy-now-button').setAttribute('data-product-id', selectedVariantId);
-  }
+  console.log(selectedVariantId);
+
+  document.getElementById('selected-variant-id').value = selectedVariantId;
+  document.querySelector('.add-to-cart').setAttribute('data-product-id', selectedVariantId);
+  document.querySelector('.buy-now-button').setAttribute('data-product-id', selectedVariantId);
+}
 
   // Initialize selected variant on page load
   updateSelectedVariant();
