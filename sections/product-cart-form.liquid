@@ -60,21 +60,20 @@
   });
   
 function updateSelectedVariant() {
-   let selectedOption = document.querySelector('input[name="pick-an-amount"]:checked').value;
-
+  var selectedOption = document.querySelector('input[name="pick-an-amount"]:checked').value;
+  var variantMatches = false;
+  var selectedVariantId = null;
+  
   {% for variant in product.variants %}
-    var variantMatches = false;
-    let variantTitle = "{{ variant.title }}";
-    
-    console.log( selectedOption );
-    if( selectedOption == "{{ variant.title }}"){
-      let selectedVariantId = "{{ variant.id }}";
+    if (selectedOption === "{{ variant.title }}") {
+      selectedVariantId = "{{ variant.id }}";
       variantMatches = true;
+      break;
     }
   {% endfor %}
-
-  if( variantMatches ){
-    console.log( selectedVariantId );
+  
+  if (variantMatches) {
+    console.log(selectedVariantId);
   }
   
 }
