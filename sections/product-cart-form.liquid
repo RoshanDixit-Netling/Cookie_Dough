@@ -2,6 +2,10 @@
 {% unless product.has_only_default_variant %}
   {% for option in product.options_with_values %}
     {{ option.name | escape }}
+
+    {% assign option_index = forloop.index %}
+
+    
   {% endfor %}
 {% endunless %}
 <footer>
