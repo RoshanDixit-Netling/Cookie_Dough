@@ -63,7 +63,8 @@
 {% stylesheet %}
 {% endstylesheet %}
 
-{% javascript %}
+
+<script>
   document.addEventListener('change', function (event) {
     if (event.target.type === 'radio' && event.target.name !== 'id') {
       updateSelectedVariant();
@@ -85,4 +86,5 @@
   }
   
   updateSelectedVariant();
-{% endjavascript %}
+
+  </script>
