@@ -34,12 +34,13 @@
 {% endunless %}
 <footer>
   <div class="row">
+    <input type="hidden" id="product-variation-id" value="{{ product.variants.first.id }}" />
     <div class="col-lg-6">
       {% comment %} <form method="post" action="/cart/add"> {% endcomment %}
       <button
         type="submit"
         class="btn btn-outline-primary w-100 mb-3 add-to-cart"
-        data-product-id="{{product.variants.first.id }}">Add to cart</button>
+        data-product-id="{{ product.variants.first.id }}">Add to cart</button>
       {% comment %} </form> {% endcomment %}
     </div>
     <div class="col-lg-6">
