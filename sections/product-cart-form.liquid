@@ -1,9 +1,3 @@
-
-{% for variant in product.variants %}
-  {{ variant | json }}
-  <!-- <p>Variant ID: {{ variant.id }}</p> -->
-{% endfor %}
-
 {% unless product.has_only_default_variant %}
   {% for option in product.options_with_values %}
     {{ option.name | escape }}
@@ -13,7 +7,7 @@
         <label for="ProductSelect-option-{{ variant.title | handleize }}-{{ variant.title | escape }}"{% unless variant_label_state %} class="disabled"{% endunless %}>{{ value | escape }}</label>
       {% endfor %}
     
-    {% comment %}
+
     {% for value in option.values %}
       {% assign variant_label_state = true %}
       {% if product.options.size == 1 %}
@@ -31,7 +25,7 @@
         id="ProductSelect-option-{{ option.name | handleize }}-{{ value | escape }}" product-variation-id="{{ va }}">
       <label for="ProductSelect-option-{{ option.name | handleize }}-{{ value | escape }}"{% unless variant_label_state %} class="disabled"{% endunless %}>{{ value | escape }}</label>
       {% endfor %}
-      {% endcomment %}
+    
     {% comment %}
     <select class="single-option-selector__radio single-option-selector-{{ section.id }} product-form__input" id="SingleOptionSelector-{{ forloop.index0 }}" data-index="option{{ forloop.index }}">
       {% for value in option.values %}
