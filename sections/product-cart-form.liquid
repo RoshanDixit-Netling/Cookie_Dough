@@ -71,7 +71,7 @@
         selectedOptions[optionName] = selectedOption.value;
       }
     {% endfor %}
-
+    console.log(selectedOptions[optionName]);
     {% for variant in product.variants %}
       var variantMatches = true;
       {% for option in product.options %}
