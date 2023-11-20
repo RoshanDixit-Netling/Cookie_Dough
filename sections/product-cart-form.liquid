@@ -65,6 +65,9 @@ function updateSelectedVariant() {
   {% for variant in product.variants %}
     var variantMatches = false;
     console.log( "{{variant.title }}");
+    if( selectedOption == "{{ variant.title }}"){
+      let selectedVariantId = "{{ variant.id }}";
+    }
   {% endfor %}
   
 }
