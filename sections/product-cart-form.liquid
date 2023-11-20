@@ -75,6 +75,7 @@
     {% for variant in product.variants %}
       var variantMatches = true;
       {% for option in product.options %}
+        console.log({{ option | json }})
         var optionName = '{{ option.name | handle }}';
         if (selectedOptions[optionName] !== '{{ variant[optionName] }}') {
           variantMatches = false;
