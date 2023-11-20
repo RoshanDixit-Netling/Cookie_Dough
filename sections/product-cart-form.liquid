@@ -32,7 +32,8 @@
                    name="{{ option.name | handle }}"
                    value="{{ value }}"
                    data-option="{{ option.name }}"
-                   data-value="{{ value }}">
+                   data-value="{{ value }}"
+                   {% if forloop.first %} checked="checked"{% endif %}>
             {{ value }}
           {% endfor %}
         </div>
