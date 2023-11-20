@@ -5,7 +5,6 @@
     
     {% assign option_index = forloop.index %}
     {% for value in option.values %}
-      {{ value }}
       {% assign variant_label_state = true %}
       {% if product.options.size == 1 %}
         {% unless product.variants[forloop.index0].available  %}
