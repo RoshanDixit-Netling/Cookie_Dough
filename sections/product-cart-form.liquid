@@ -2,12 +2,7 @@
   {% for option in product.options_with_values %}
     {{ option.name | escape }}
     {% assign option_index = forloop.index %}
-      {% for variant in product.variants %}
-        <input type="radio" value="{{ variant.id }}" class="single-option-selector__radio{% unless variant_label_state %} disabled{% endunless %}" >
-        <label for="ProductSelect-option-{{ variant.title | handleize }}-{{ variant.title | escape }}"{% unless variant_label_state %} class="disabled"{% endunless %}>{{ value | escape }}</label>
-      {% endfor %}
     
-
     {% for value in option.values %}
       {% assign variant_label_state = true %}
       {% if product.options.size == 1 %}
