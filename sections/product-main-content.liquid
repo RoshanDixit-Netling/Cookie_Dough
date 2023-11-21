@@ -11,13 +11,13 @@
           <label>{{ option.name | escape }}</label>
           <div class="single-option-radio">
             {% for value in option.values %}
-              <input type="radio" id="ProductSelect-option-pick-an-amount-{{ value }}"
+              <input type="radio" id="ProductSelect-{{ product.id }}-{{ option.name | handleize }}-{{ value | handleize }}"
                      name="{{ option.name | handle }}"
                      value="{{ value }}"
                      data-option="{{ option.name }}"
                      data-value="{{ value }}"
                      {% if forloop.first %} checked="checked"{% endif %}>
-              <label for="ProductSelect-option-pick-an-amount-{{ value }}">{{ value }}</label>
+              <label for="ProductSelect-{{ product.id }}-{{ option.name | handleize }}-{{ value | handleize }}">{{ value }}</label>
             {% endfor %}
           </div>
           {% endif %}
