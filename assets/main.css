@@ -5516,6 +5516,24 @@ p {
     font-weight: 300;
     margin-bottom: 18px;
 }
+
+/* 21-11-23 */
+.single-option-radio label{
+  font-family: Montserrat,sans-serif;
+    font-weight: 400;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    line-height: 1;
+    padding: 9px 11px;
+    margin: 3px 4px 7px 3px;
+    font-size: .76471em;
+    font-style: normal;
+    background-color: #f6e8f4;
+    border: 1px solid #f6e8f4;
+    color: #682567;
+}
 /*  ==========================================================================
 	Vendor
     ========================================================================== */
