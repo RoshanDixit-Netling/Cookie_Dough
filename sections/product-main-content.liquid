@@ -20,39 +20,43 @@
   </div>
 </footer>
 -->
-
-<footer>
-  <div class="row">
-    <div class="col-12 mb-4">
-      {% for option in product.options_with_values %}
-        {% if option.values.size  > 1 %}
-        <label>{{ option.name }}</label>
-        <div class="single-option-radio">
-          {% for value in option.values %}
-            <input type="radio" id="ProductSelect-option-pick-an-amount-{{ value }}"
-                   name="{{ option.name | handle }}"
-                   value="{{ value }}"
-                   data-option="{{ option.name }}"
-                   data-value="{{ value }}"
-                   {% if forloop.first %} checked="checked"{% endif %}>
-            <label for="ProductSelect-option-pick-an-amount-{{ value }}">{{ value }}</label>
-          {% endfor %}
-        </div>
-        {% endif %}
-      {% endfor %}
-    </div>  
-    <div class="col-lg-6">
-      <form method="post" action="/cart/add">
-        <input type="hidden" id="selected-variant-id" name="id" value="{{ product.variants.first.id }}">
-        <button type="submit" class="btn btn-outline-primary w-100 mb-3 add-to-cart" data-product-id="{{ product.variants.first.id }}">Add to cart</button>
-      </form>
+<div class="side-content">
+  <h1>{{ product.title }}</h1>
+  <p>{{ product.description }}</p>
+  <p class="p-price">{{ product.price | money }}</p>
+  <p class="p-offer">🚚 FREE Shipping on orders over £40 Tax included. Shipping calculated at checkout.</p>
+  <footer>
+    <div class="row">
+      <div class="col-12 mb-4">
+        {% for option in product.options_with_values %}
+          {% if option.values.size  > 1 %}
+          <label>{{ option.name }}</label>
+          <div class="single-option-radio">
+            {% for value in option.values %}
+              <input type="radio" id="ProductSelect-option-pick-an-amount-{{ value }}"
+                     name="{{ option.name | handle }}"
+                     value="{{ value }}"
+                     data-option="{{ option.name }}"
+                     data-value="{{ value }}"
+                     {% if forloop.first %} checked="checked"{% endif %}>
+              <label for="ProductSelect-option-pick-an-amount-{{ value }}">{{ value }}</label>
+            {% endfor %}
+          </div>
+          {% endif %}
+        {% endfor %}
+      </div>  
+      <div class="col-lg-6">
+        <form method="post" action="/cart/add">
+          <input type="hidden" id="selected-variant-id" name="id" value="{{ product.variants.first.id }}">
+          <button type="submit" class="btn btn-outline-primary w-100 mb-3 add-to-cart" data-product-id="{{ product.variants.first.id }}">Add to cart</button>
+        </form>
+      </div>
+      <div class="col-lg-6">
+        <a href="#" class="btn btn-primary w-100 mb-3 buy-now-button" id="buy-now-button" data-product-id="{{ product.variants.first.id }}" >Buy it now</a>
+      </div>
     </div>
-    <div class="col-lg-6">
-      <a href="#" class="btn btn-primary w-100 mb-3 buy-now-button" id="buy-now-button" data-product-id="{{ product.variants.first.id }}" >Buy it now</a>
-    </div>
-  </div>
-</footer>
-
+  </footer>
+</div>
 
 <script>
   document.addEventListener('change', function (event) {
