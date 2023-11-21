@@ -5541,6 +5541,11 @@ p {
     color: #682567;
 }
 
+.single-option-radio label:active, .single-option-radio label:focus {
+    background-color: #efd6eb;
+    border-color: #efd6eb;
+}
+
 .single-option-radio input{
   position: absolute;
   width: 1px;
