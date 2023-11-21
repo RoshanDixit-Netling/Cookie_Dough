@@ -23,6 +23,7 @@
 
 <footer>
   <div class="row">
+    <div class="col-lg-6">
       {% for option in product.options_with_values %}
         {% if option.values.size  > 1 %}
         <label>{{ option.name }}</label>
@@ -39,7 +40,7 @@
         </div>
         {% endif %}
       {% endfor %}
-
+    </div>  
     <div class="col-lg-6">
       <form method="post" action="/cart/add">
         <input type="hidden" id="selected-variant-id" name="id" value="{{ product.variants.first.id }}">
