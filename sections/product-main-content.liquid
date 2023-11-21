@@ -44,22 +44,25 @@
   });
 
   function updateSelectedVariant() {
-    var selectedOption = document.querySelector('input[name="pick-an-amount"]:checked').value;
-    var variantMatches = false;
-    var selectedVariantId = null;
-    var productVariants = {{ product.variants | json }};
-      productVariants.forEach( function(currentElement){
-        if (selectedOption === currentElement.title ) {
-          selectedVariantId = currentElement.id;
-          variantMatches = true;
-          return false;
-        }
-      });
-      
-    if (variantMatches) {
-      document.getElementById('selected-variant-id').value = selectedVariantId;
-      document.querySelector('.add-to-cart').setAttribute('data-product-id', selectedVariantId);
-      document.querySelector('.buy-now-button').setAttribute('data-product-id', selectedVariantId);
+    var selectedOptionInput = document.querySelector('input[name="pick-an-amount"]:checked');
+    if( selectedOptionInput ){
+      var selectedOption = document.querySelector('input[name="pick-an-amount"]:checked').value;
+      var variantMatches = false;
+      var selectedVariantId = null;
+      var productVariants = {{ product.variants | json }};
+        productVariants.forEach( function(currentElement){
+          if (selectedOption === currentElement.title ) {
+            selectedVariantId = currentElement.id;
+            variantMatches = true;
+            return false;
+          }
+        });
+        
+      if (variantMatches) {
+        document.getElementById('selected-variant-id').value = selectedVariantId;
+        document.querySelector('.add-to-cart').setAttribute('data-product-id', selectedVariantId);
+        document.querySelector('.buy-now-button').setAttribute('data-product-id', selectedVariantId);
+      }
     }
   }
 
