@@ -5554,6 +5554,7 @@ p {
 
 .single-option-radio input[type=radio]:checked+label {
     border-color: #682567;
+    background-color: #efd6eb;
 }
 /*  ==========================================================================
 	Vendor
