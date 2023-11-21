@@ -35,7 +35,7 @@
                    data-option="{{ option.name }}"
                    data-value="{{ value }}"
                    {% if forloop.first %} checked="checked"{% endif %}>
-            {{ value }}
+            <label>{{ value }}</label>
           {% endfor %}
         </div>
         {% endif %}
