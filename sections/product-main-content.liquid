@@ -67,8 +67,40 @@
 </script>
 
 {% schema %}
-  {
-    "name": "Product Main Section",
-    "settings": []
-  }
+{
+  "name": "Product Main Content",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "textarea",
+      "label": "Offer text",
+      "id": "offer_text",
+      "default": "🚚 FREE Shipping on orders over £40 Tax included. Shipping calculated at checkout."
+    },
+    {
+      "type": "text",
+      "label": "Add to cart button text",
+      "id": "add_to_cart_button_text",
+      "default": "Add to cart"
+    },
+    {
+      "type": "text",
+      "label": "Buy now button text",
+      "id": "buy_now_button_text",
+      "default": "Buy it now"
+    }
+  ],
+  "blocks": [],
+  "presets": [
+    {
+      "name": "Product Main Content"
+    }
+  ]
+}
 {% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
