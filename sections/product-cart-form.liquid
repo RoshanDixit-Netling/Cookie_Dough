@@ -27,7 +27,7 @@
       {% for option in product.options_with_values %}
         {% if option.values.size  > 1 %}
         <label>{{ option.name }}</label>
-        <div>
+        <div class="single-option-radio">
           {% for value in option.values %}
             <input type="radio" id="ProductSelect-option-pick-an-amount-{{ value }}"
                    name="{{ option.name | handle }}"
