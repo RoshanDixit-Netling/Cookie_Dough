@@ -5521,7 +5521,6 @@ p {
 .single-option-radio{
   display:flex;
   flex-wrap:wrap;
-  justify-content:space-between;
 }
 
 .single-option-radio label{
