@@ -2,7 +2,7 @@
   <h1>{{ product.title }}</h1>
   <p>{{ product.description }}</p>
   <p class="p-price">{{ product.price | money }}</p>
-  <p class="p-offer">🚚 FREE Shipping on orders over £40 Tax included. Shipping calculated at checkout.</p>
+  <p class="p-offer">{{ section.settings.offer_text }}</p>
   <footer>
     <div class="row">
       <div class="col-12 mb-4">
