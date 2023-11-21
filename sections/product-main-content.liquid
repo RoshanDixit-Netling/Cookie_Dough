@@ -8,7 +8,7 @@
       <div class="col-12 mb-4">
         {% for option in product.options_with_values %}
           {% if option.values.size  > 1 %}
-          <label>{{ option.name }}</label>
+          <label>{{ option.name | escape }}</label>
           <div class="single-option-radio">
             {% for value in option.values %}
               <input type="radio" id="ProductSelect-option-pick-an-amount-{{ value }}"
