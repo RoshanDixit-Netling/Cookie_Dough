@@ -99,5 +99,7 @@
 {% stylesheet %}
 {% endstylesheet %}
 {% javascript %}
-  console.log("javascript here");
+  document.addEventListener("shopify:section:load", function(event) {
+    console.log(1)
+});
 {% endjavascript %}
