@@ -5518,6 +5518,12 @@ p {
 }
 
 /* 21-11-23 */
+.single-option-radio{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+}
+
 .single-option-radio label{
   font-family: Montserrat,sans-serif;
     font-weight: 400;
