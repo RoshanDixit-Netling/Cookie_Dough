@@ -46,7 +46,7 @@
   function updateSelectedVariant() {
     var selectedOptionInput = document.querySelector('input[name="pick-an-amount"]:checked');
     if( selectedOptionInput ){
-      var selectedOption = document.querySelector('input[name="pick-an-amount"]:checked').value;
+      var selectedOption = selectedOptionInput.value;
       var variantMatches = false;
       var selectedVariantId = null;
       var productVariants = {{ product.variants | json }};
