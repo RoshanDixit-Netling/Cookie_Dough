@@ -2,7 +2,18 @@
   <div class="custom-field custom-field__banner-image custom-field__type--image">
     <h3 class="custom-field--title">Banner Image</h3>
     <div class="custom-field--value">  
-      {% render 'cf-image' with image: article.metafields["custom_fields"]["banner_image"] %}
+      {% render 'cf-image' with image, image: article.metafields.custom_fields.banner_image %}
     </div>
   </div>
-{% endif %}
+{% endif %}{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: '{% render ''cf-image'' with image: article.metafields["custom_fields"]["banner_image"]
+    %}'
+  to: "{% render 'cf-image' with image, image: article.metafields.custom_fields.banner_image
+    %}"
+  position: 252..340
+{%- endcomment -%}

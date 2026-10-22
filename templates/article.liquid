@@ -10,7 +10,7 @@
   </div>
   <figure class="figure1 cover-img">
       {% if article.metafields["custom_fields"]["banner_image"] != blank %}
-        <img class="w-100" src="{% render 'cf-image' with image: article.metafields["custom_fields"]["banner_image"], print: "url" %}" alt="banner-img">
+        <img class="w-100" src="{% render 'cf-image' with image, image: article.metafields.custom_fields.banner_image, print: "url" %}" alt="banner-img">
       {% else %}
         <img class="w-100" src="{{ article.image | image_url }}" alt="img">
       {% endif %}
@@ -36,4 +36,15 @@
   {%- section 'latest-news' -%}
   <!-- /section -->
 </div>
-<!-- /content -->
+<!-- /content -->{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: '{% render ''cf-image'' with image: article.metafields["custom_fields"]["banner_image"],
+    print: "url" %}'
+  to: '{% render ''cf-image'' with image, image: article.metafields.custom_fields.banner_image,
+    print: "url" %}'
+  position: 471..573
+{%- endcomment -%}
